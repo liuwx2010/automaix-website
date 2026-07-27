@@ -7,12 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
-        /* ===== RESET ===== */
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; font-size: 16px; }
         body {
             font-family: 'Noto Sans JP', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-            color: #333;
+            color: #2c3e50;
             line-height: 1.8;
             background: #fff;
             overflow-x: hidden;
@@ -21,28 +20,46 @@
         img { max-width: 100%; display: block; }
         ul { list-style: none; }
 
-        /* ===== VARIABLES ===== */
         :root {
-            --primary: #003d7a;
-            --primary-light: #0066cc;
-            --primary-lighter: #e8f2ff;
+            --blueprint: #0077b6;
+            --blueprint-dark: #005f8d;
+            --blueprint-deep: #003d5c;
+            --blueprint-light: #48cae4;
+            --blueprint-pale: #e8f4f8;
+            --blueprint-ghost: rgba(0,119,182,0.04);
             --accent: #e8531e;
             --accent-light: #ff6b35;
-            --dark: #111;
-            --gray-100: #f7f8fa;
-            --gray-200: #eef0f4;
-            --gray-300: #ddd;
-            --gray-500: #888;
-            --gray-700: #555;
-            --text: #222;
-            --text-light: #666;
+            --dark: #0a1628;
+            --gray-100: #f7f9fb;
+            --gray-200: #edf2f7;
+            --gray-300: #d1dbe6;
+            --gray-500: #8899aa;
+            --text: #1a2a3a;
+            --text-light: #5a6a7a;
             --white: #fff;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
-            --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
-            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
-            --radius: 8px;
+            --shadow-sm: 0 1px 3px rgba(0,40,80,0.06);
+            --shadow-md: 0 4px 20px rgba(0,40,80,0.08);
+            --shadow-lg: 0 10px 40px rgba(0,40,80,0.12);
+            --radius: 6px;
             --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             --max-width: 1280px;
+            --line-color: rgba(0,119,182,0.1);
+        }
+
+        /* ===== BLUEPRINT GRID BACKGROUND ===== */
+        .blueprint-bg {
+            background-image:
+                linear-gradient(var(--line-color) 1px, transparent 1px),
+                linear-gradient(90deg, var(--line-color) 1px, transparent 1px),
+                linear-gradient(rgba(0,119,182,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,119,182,0.03) 1px, transparent 1px);
+            background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+        }
+
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
         /* ===== HEADER ===== */
@@ -52,7 +69,8 @@
             left: 0;
             right: 0;
             z-index: 1000;
-            background: var(--white);
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(20px);
             border-bottom: 1px solid var(--gray-200);
             transition: var(--transition);
         }
@@ -61,10 +79,11 @@
             border-bottom-color: transparent;
         }
         .header-top {
-            background: var(--primary);
-            color: rgba(255,255,255,0.85);
-            font-size: 0.75rem;
-            padding: 6px 0;
+            background: var(--blueprint-deep);
+            color: rgba(255,255,255,0.8);
+            font-size: 0.72rem;
+            padding: 5px 0;
+            letter-spacing: 0.5px;
         }
         .header-top .container {
             display: flex;
@@ -72,51 +91,55 @@
             gap: 1.5rem;
             align-items: center;
         }
-        .header-top a {
-            color: rgba(255,255,255,0.85);
-            transition: color 0.2s;
-        }
+        .header-top a { color: rgba(255,255,255,0.8); transition: color 0.2s; }
         .header-top a:hover { color: #fff; }
-        .header-main {
-            padding: 0;
-        }
         .header-main .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 72px;
+            height: 68px;
         }
-        .logo {
+        .logo { display: flex; align-items: center; gap: 0.6rem; }
+        .logo-mark {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, var(--blueprint), var(--blueprint-light));
+            border-radius: 8px;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            justify-content: center;
+            color: #fff;
+            font-weight: 900;
+            font-size: 0.9rem;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -1px;
         }
         .logo-text {
-            font-size: 1.65rem;
+            font-size: 1.5rem;
             font-weight: 900;
-            letter-spacing: 3px;
-            color: var(--primary);
+            letter-spacing: 2px;
+            color: var(--blueprint-deep);
         }
         .logo-text span { color: var(--accent); }
         .logo-sub {
-            font-size: 0.6rem;
+            font-size: 0.55rem;
             color: var(--gray-500);
             letter-spacing: 1px;
             line-height: 1.3;
             border-left: 1px solid var(--gray-300);
             padding-left: 0.5rem;
         }
-        .main-nav { display: flex; gap: 0; height: 72px; align-items: center; }
+        .main-nav { display: flex; gap: 0; height: 68px; align-items: center; }
         .main-nav > li { position: relative; height: 100%; display: flex; align-items: center; }
         .main-nav > li > a {
             display: flex;
             align-items: center;
-            padding: 0 1.25rem;
+            padding: 0 1.15rem;
             height: 100%;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             font-weight: 500;
             color: var(--text);
-            letter-spacing: 0.5px;
+            letter-spacing: 0.3px;
             transition: var(--transition);
             position: relative;
         }
@@ -127,12 +150,12 @@
             left: 50%;
             transform: translateX(-50%);
             width: 0;
-            height: 3px;
-            background: var(--accent);
+            height: 2px;
+            background: var(--blueprint);
             transition: width var(--transition);
         }
-        .main-nav > li > a:hover { color: var(--primary); }
-        .main-nav > li > a:hover::after { width: 80%; }
+        .main-nav > li > a:hover { color: var(--blueprint); }
+        .main-nav > li > a:hover::after { width: 70%; }
         .hamburger {
             display: none;
             flex-direction: column;
@@ -140,193 +163,186 @@
             cursor: pointer;
             padding: 8px;
         }
-        .hamburger span {
-            width: 24px;
-            height: 2px;
-            background: var(--dark);
-            transition: var(--transition);
-        }
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+        .hamburger span { width: 24px; height: 2px; background: var(--dark); transition: var(--transition); }
 
         /* ===== HERO ===== */
         .hero {
-            margin-top: 110px;
+            margin-top: 100px;
             position: relative;
-            height: 85vh;
-            min-height: 560px;
-            max-height: 900px;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
             overflow: hidden;
-            background: linear-gradient(135deg, #0a1628 0%, #0d2137 40%, #133a5c 100%);
+            background: var(--dark);
         }
-        .hero-bg {
+        .hero-bg-img {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+        .hero-bg-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.25;
+            filter: brightness(0.6) contrast(1.2);
+        }
+        .hero-overlay {
             position: absolute;
             inset: 0;
             background:
-                radial-gradient(ellipse 80% 60% at 70% 40%, rgba(0,102,204,0.15) 0%, transparent 70%),
-                radial-gradient(ellipse 60% 50% at 20% 80%, rgba(232,83,30,0.08) 0%, transparent 70%);
-        }
-        .hero-grid {
-            position: absolute;
-            inset: 0;
-            background-image:
-                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-            background-size: 60px 60px;
+                linear-gradient(135deg, rgba(10,22,40,0.92) 0%, rgba(0,61,92,0.75) 50%, rgba(0,119,182,0.3) 100%),
+                repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(0,119,182,0.06) 19px, rgba(0,119,182,0.06) 20px),
+                repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(0,119,182,0.06) 19px, rgba(0,119,182,0.06) 20px);
+            z-index: 1;
         }
         .hero-content {
             position: relative;
             z-index: 2;
-            height: 100%;
-            display: flex;
-            align-items: center;
+            padding: 4rem 0;
         }
         .hero-inner {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.1fr 0.9fr;
             gap: 4rem;
             align-items: center;
-            width: 100%;
         }
         .hero-badge {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.12);
-            padding: 6px 16px;
+            border: 1px solid rgba(0,119,182,0.4);
+            padding: 5px 16px;
             border-radius: 50px;
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.7);
-            letter-spacing: 1px;
+            font-size: 0.7rem;
+            color: var(--blueprint-light);
+            letter-spacing: 2px;
             margin-bottom: 1.5rem;
-            backdrop-filter: blur(10px);
+            font-family: 'Inter', sans-serif;
         }
         .hero-badge .dot {
             width: 6px;
             height: 6px;
             border-radius: 50%;
-            background: var(--accent);
+            background: var(--blueprint-light);
             animation: pulse 2s infinite;
         }
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
-        }
+        @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
         .hero-text h1 {
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-weight: 900;
-            color: var(--white);
+            color: #fff;
             line-height: 1.25;
             margin-bottom: 1.5rem;
             letter-spacing: 1px;
         }
-        .hero-text h1 .highlight {
-            background: linear-gradient(90deg, var(--accent-light), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .hero-text h1 .line {
+            color: var(--blueprint-light);
         }
         .hero-text p {
-            font-size: 1.05rem;
-            color: rgba(255,255,255,0.65);
+            font-size: 1rem;
+            color: rgba(255,255,255,0.6);
             line-height: 2;
             margin-bottom: 2.5rem;
             max-width: 520px;
         }
-        .hero-btns {
-            display: flex;
-            gap: 1rem;
-        }
+        .hero-btns { display: flex; gap: 1rem; }
         .btn {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 14px 32px;
+            padding: 13px 30px;
             border-radius: 50px;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             letter-spacing: 0.5px;
             transition: all var(--transition);
             cursor: pointer;
             border: none;
         }
         .btn-primary {
-            background: var(--accent);
-            color: var(--white);
-            box-shadow: 0 4px 20px rgba(232,83,30,0.35);
+            background: var(--blueprint);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(0,119,182,0.3);
         }
         .btn-primary:hover {
-            background: var(--accent-light);
+            background: var(--blueprint-light);
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(232,83,30,0.45);
+            box-shadow: 0 8px 30px rgba(0,119,182,0.4);
         }
         .btn-ghost {
             background: transparent;
-            color: var(--white);
+            color: #fff;
             border: 1.5px solid rgba(255,255,255,0.3);
         }
         .btn-ghost:hover {
             border-color: rgba(255,255,255,0.7);
-            background: rgba(255,255,255,0.06);
+            background: rgba(255,255,255,0.05);
         }
         .btn-arrow { font-size: 1.1rem; transition: transform 0.3s; }
         .btn:hover .btn-arrow { transform: translateX(4px); }
+
         .hero-visual {
             position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
         }
-        .hero-img-wrapper {
+        .hero-img-frame {
             position: relative;
-            border-radius: 16px;
+            border: 2px solid rgba(0,119,182,0.3);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4), inset 0 0 0 1px rgba(0,119,182,0.1);
         }
-        .hero-img-wrapper img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .hero-img-wrapper::before {
+        .hero-img-frame::before {
             content: '';
             position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(0,61,122,0.1) 0%, transparent 50%);
-            z-index: 1;
+            top: 8px; left: 8px; right: 8px; bottom: 8px;
+            border: 1px solid rgba(0,119,182,0.15);
+            border-radius: 8px;
+            z-index: 2;
+            pointer-events: none;
+        }
+        .hero-img-frame img {
+            width: 100%;
+            display: block;
         }
         .hero-stats {
             display: flex;
             gap: 2.5rem;
             margin-top: 3rem;
         }
+        .hero-stat {
+            position: relative;
+            padding-left: 1rem;
+        }
+        .hero-stat::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--blueprint);
+            border-radius: 1px;
+        }
         .hero-stat .number {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 900;
-            color: var(--white);
+            color: #fff;
             font-family: 'Inter', sans-serif;
         }
         .hero-stat .number span {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             font-weight: 400;
-            color: rgba(255,255,255,0.5);
+            color: rgba(255,255,255,0.45);
             margin-left: 2px;
         }
         .hero-stat .label {
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.45);
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.4);
             letter-spacing: 1px;
         }
 
-        /* ===== PICKUP ===== */
-        .pickup {
-            padding: 5rem 0;
-            background: var(--white);
-        }
+        /* ===== SECTION COMMON ===== */
         .section-header {
             display: flex;
             justify-content: space-between;
@@ -334,33 +350,34 @@
             margin-bottom: 3rem;
         }
         .section-header h2 {
-            font-size: 1.8rem;
+            font-size: 1.75rem;
             font-weight: 700;
-            color: var(--dark);
+            color: var(--text);
             position: relative;
-            padding-left: 1rem;
+            padding-left: 1.2rem;
         }
         .section-header h2::before {
             content: '';
             position: absolute;
             left: 0;
-            top: 0.2em;
-            bottom: 0.2em;
+            top: 0.15em;
+            bottom: 0.15em;
             width: 4px;
-            background: var(--accent);
+            background: linear-gradient(180deg, var(--blueprint), var(--blueprint-light));
             border-radius: 2px;
         }
         .section-header .en {
             font-family: 'Inter', sans-serif;
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: var(--gray-500);
+            color: var(--blueprint);
             margin-bottom: 0.3rem;
+            font-weight: 600;
         }
         .section-header .more {
-            font-size: 0.85rem;
-            color: var(--primary);
+            font-size: 0.82rem;
+            color: var(--blueprint);
             font-weight: 500;
             display: flex;
             align-items: center;
@@ -368,6 +385,9 @@
             transition: gap 0.3s;
         }
         .section-header .more:hover { gap: 0.6rem; }
+
+        /* ===== PICKUP ===== */
+        .pickup { padding: 5rem 0; background: var(--white); }
         .pickup-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -384,15 +404,14 @@
         .pickup-card:hover {
             transform: translateY(-6px);
             box-shadow: var(--shadow-lg);
-            border-color: transparent;
+            border-color: var(--blueprint);
         }
-        .pickup-card:first-child {
-            grid-column: span 2;
-        }
+        .pickup-card:first-child { grid-column: span 2; }
         .pickup-card .thumb {
             width: 100%;
             height: 220px;
             overflow: hidden;
+            position: relative;
         }
         .pickup-card:first-child .thumb { height: 280px; }
         .pickup-card .thumb img {
@@ -402,14 +421,12 @@
             transition: transform 0.6s;
         }
         .pickup-card:hover .thumb img { transform: scale(1.05); }
-        .pickup-card .body {
-            padding: 1.5rem;
-        }
+        .pickup-card .body { padding: 1.5rem; }
         .pickup-card .tag {
             display: inline-block;
-            background: var(--primary-lighter);
-            color: var(--primary);
-            font-size: 0.7rem;
+            background: var(--blueprint-pale);
+            color: var(--blueprint);
+            font-size: 0.68rem;
             font-weight: 600;
             padding: 3px 10px;
             border-radius: 3px;
@@ -417,9 +434,9 @@
             letter-spacing: 0.5px;
         }
         .pickup-card h3 {
-            font-size: 1rem;
+            font-size: 0.98rem;
             font-weight: 600;
-            color: var(--dark);
+            color: var(--text);
             line-height: 1.7;
             margin-bottom: 0.5rem;
             display: -webkit-box;
@@ -441,7 +458,19 @@
         .solutions {
             padding: 5rem 0;
             background: var(--gray-100);
+            position: relative;
         }
+        .solutions::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(var(--line-color) 1px, transparent 1px),
+                linear-gradient(90deg, var(--line-color) 1px, transparent 1px);
+            background-size: 80px 80px;
+            opacity: 0.5;
+        }
+        .solutions .container { position: relative; z-index: 1; }
         .solutions-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -458,10 +487,10 @@
         .sol-card:hover {
             transform: translateY(-6px);
             box-shadow: var(--shadow-lg);
-            border-color: transparent;
+            border-color: var(--blueprint);
         }
         .sol-card .sol-img {
-            height: 200px;
+            height: 180px;
             overflow: hidden;
         }
         .sol-card .sol-img img {
@@ -471,31 +500,27 @@
             transition: transform 0.6s;
         }
         .sol-card:hover .sol-img img { transform: scale(1.08); }
-        .sol-card .sol-body {
-            padding: 1.5rem;
-        }
+        .sol-card .sol-body { padding: 1.4rem; }
         .sol-card .sol-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: 38px;
+            height: 38px;
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            background: var(--blueprint-pale);
+            border: 1px solid rgba(0,119,182,0.1);
         }
-        .sol-card:nth-child(1) .sol-icon { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
-        .sol-card:nth-child(2) .sol-icon { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
-        .sol-card:nth-child(3) .sol-icon { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); }
-        .sol-card:nth-child(4) .sol-icon { background: linear-gradient(135deg, #fce4ec, #f8bbd0); }
         .sol-card h3 {
-            font-size: 1.05rem;
+            font-size: 1rem;
             font-weight: 600;
-            color: var(--dark);
-            margin-bottom: 0.6rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
         }
         .sol-card p {
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             color: var(--text-light);
             line-height: 1.7;
         }
@@ -503,19 +528,16 @@
             display: inline-flex;
             align-items: center;
             gap: 0.3rem;
-            margin-top: 1rem;
-            font-size: 0.8rem;
+            margin-top: 0.8rem;
+            font-size: 0.78rem;
             font-weight: 600;
-            color: var(--primary);
+            color: var(--blueprint);
             transition: gap 0.3s;
         }
         .sol-card:hover .sol-link { gap: 0.6rem; }
 
         /* ===== PRODUCT SHOWCASE ===== */
-        .showcase {
-            padding: 5rem 0;
-            background: var(--white);
-        }
+        .showcase { padding: 5rem 0; background: var(--white); }
         .showcase-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -523,10 +545,11 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: var(--shadow-lg);
+            border: 1px solid var(--gray-200);
         }
         .showcase-img {
             position: relative;
-            min-height: 500px;
+            min-height: 480px;
             overflow: hidden;
         }
         .showcase-img img {
@@ -537,92 +560,120 @@
             object-fit: cover;
         }
         .showcase-info {
-            padding: 3.5rem;
+            padding: 3rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             background: var(--gray-100);
+            position: relative;
         }
-        .showcase-info .product-tag {
+        .showcase-info::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0,119,182,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,119,182,0.03) 1px, transparent 1px);
+            background-size: 30px 30px;
+            opacity: 0.5;
+        }
+        .showcase-info > * { position: relative; z-index: 1; }
+        .product-tag {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            background: var(--primary);
+            background: var(--blueprint);
             color: var(--white);
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             font-weight: 600;
             padding: 5px 14px;
             border-radius: 50px;
             letter-spacing: 1px;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
             width: fit-content;
         }
         .showcase-info h3 {
-            font-size: 1.8rem;
+            font-size: 1.7rem;
             font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 0.5rem;
+            color: var(--text);
+            margin-bottom: 0.4rem;
         }
         .showcase-info .subtitle {
-            font-size: 0.95rem;
-            color: var(--accent);
+            font-size: 0.9rem;
+            color: var(--blueprint);
             font-weight: 600;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1.2rem;
         }
-        .showcase-info p {
-            font-size: 0.95rem;
+        .showcase-info p.desc {
+            font-size: 0.9rem;
             color: var(--text-light);
             line-height: 2;
-            margin-bottom: 2rem;
+            margin-bottom: 1.8rem;
         }
         .showcase-specs {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            margin-bottom: 2rem;
+            gap: 0.8rem;
+            margin-bottom: 1.8rem;
         }
         .spec-box {
             background: var(--white);
-            padding: 1rem 1.2rem;
+            padding: 0.9rem 1rem;
             border-radius: var(--radius);
             border: 1px solid var(--gray-200);
         }
         .spec-box .spec-label {
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             color: var(--gray-500);
             letter-spacing: 0.5px;
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.15rem;
         }
         .spec-box .spec-value {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 700;
-            color: var(--dark);
+            color: var(--text);
             font-family: 'Inter', sans-serif;
         }
         .showcase-btn {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 12px 28px;
-            background: var(--primary);
+            padding: 11px 24px;
+            background: var(--blueprint);
             color: var(--white);
             border-radius: 50px;
             font-weight: 600;
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             transition: all var(--transition);
             width: fit-content;
         }
         .showcase-btn:hover {
-            background: var(--primary-light);
+            background: var(--blueprint-light);
             transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,61,122,0.3);
+            box-shadow: 0 4px 15px rgba(0,119,182,0.3);
         }
 
         /* ===== FLOW ===== */
         .flow-section {
             padding: 5rem 0;
-            background: var(--gray-100);
+            background: var(--blueprint-deep);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
         }
+        .flow-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(0,119,182,0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0,119,182,0.08) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        .flow-section .container { position: relative; z-index: 1; }
+        .flow-section .section-header h2 { color: #fff; }
+        .flow-section .section-header h2::before { background: var(--blueprint-light); }
+        .flow-section .section-header .en { color: var(--blueprint-light); }
         .flow-track {
             position: relative;
             display: grid;
@@ -632,12 +683,11 @@
         .flow-track::before {
             content: '';
             position: absolute;
-            top: 32px;
-            left: 5%;
-            right: 5%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary), var(--accent));
-            border-radius: 2px;
+            top: 30px;
+            left: 8%;
+            right: 8%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--blueprint), var(--blueprint-light));
             z-index: 0;
         }
         .flow-item {
@@ -646,45 +696,41 @@
             z-index: 1;
         }
         .flow-num {
-            width: 64px;
-            height: 64px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
-            background: var(--white);
-            border: 3px solid var(--primary);
+            background: transparent;
+            border: 2px solid var(--blueprint-light);
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 1rem;
             font-family: 'Inter', sans-serif;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: 700;
-            color: var(--primary);
+            color: var(--blueprint-light);
             transition: all var(--transition);
-            position: relative;
         }
         .flow-item:hover .flow-num {
-            background: var(--primary);
-            color: var(--white);
+            background: var(--blueprint);
+            border-color: var(--blueprint);
+            color: #fff;
             transform: scale(1.1);
-            box-shadow: 0 4px 20px rgba(0,61,122,0.3);
+            box-shadow: 0 0 25px rgba(0,119,182,0.4);
         }
         .flow-item h4 {
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             font-weight: 600;
-            color: var(--dark);
-            margin-bottom: 0.4rem;
+            margin-bottom: 0.3rem;
         }
         .flow-item p {
-            font-size: 0.75rem;
-            color: var(--text-light);
-            line-height: 1.6;
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.5);
+            line-height: 1.5;
         }
 
         /* ===== COMPANY ===== */
-        .company {
-            padding: 5rem 0;
-            background: var(--white);
-        }
+        .company { padding: 5rem 0; background: var(--white); }
         .company-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -694,20 +740,16 @@
             border-radius: 12px;
             overflow: hidden;
             box-shadow: var(--shadow-md);
-            position: relative;
+            border: 1px solid var(--gray-200);
         }
-        .company-visual img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        .company-visual img { width: 100%; height: 100%; object-fit: cover; }
         .company-links {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
         }
         .company-link {
-            padding: 1.5rem;
+            padding: 1.3rem;
             background: var(--gray-100);
             border-radius: var(--radius);
             transition: all var(--transition);
@@ -716,33 +758,41 @@
         }
         .company-link:hover {
             background: var(--white);
-            border-color: var(--primary);
+            border-color: var(--blueprint);
             box-shadow: var(--shadow-md);
         }
         .company-link .link-icon {
-            font-size: 1.5rem;
-            margin-bottom: 0.8rem;
+            font-size: 1.4rem;
+            margin-bottom: 0.6rem;
         }
         .company-link h4 {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            color: var(--dark);
-            margin-bottom: 0.3rem;
+            color: var(--text);
+            margin-bottom: 0.2rem;
         }
         .company-link p {
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             color: var(--text-light);
         }
 
         /* ===== ADVANTAGES ===== */
         .advantages {
             padding: 5rem 0;
-            background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #133a5c 100%);
-            color: var(--white);
+            background: var(--white);
+            position: relative;
         }
-        .advantages .section-header h2 { color: var(--white); }
-        .advantages .section-header h2::before { background: var(--accent-light); }
-        .advantages .section-header .en { color: rgba(255,255,255,0.4); }
+        .advantages::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(var(--line-color) 1px, transparent 1px),
+                linear-gradient(90deg, var(--line-color) 1px, transparent 1px);
+            background-size: 80px 80px;
+            opacity: 0.4;
+        }
+        .advantages .container { position: relative; z-index: 1; }
         .adv-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -751,37 +801,42 @@
         .adv-card {
             padding: 2.5rem 1.5rem;
             border-radius: 12px;
-            background: rgba(255,255,255,0.04);
-            border: 1px solid rgba(255,255,255,0.08);
+            background: var(--white);
+            border: 1px solid var(--gray-200);
             text-align: center;
             transition: all var(--transition);
-            backdrop-filter: blur(10px);
         }
         .adv-card:hover {
-            background: rgba(255,255,255,0.08);
             transform: translateY(-5px);
-            border-color: rgba(255,255,255,0.15);
+            border-color: var(--blueprint);
+            box-shadow: var(--shadow-lg);
         }
         .adv-card .adv-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1.2rem;
+            width: 56px;
+            height: 56px;
+            border-radius: 14px;
+            background: var(--blueprint-pale);
+            border: 1px solid rgba(0,119,182,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin: 0 auto 1.2rem;
         }
         .adv-card h3 {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             font-weight: 600;
-            margin-bottom: 0.8rem;
+            color: var(--text);
+            margin-bottom: 0.7rem;
         }
         .adv-card p {
-            font-size: 0.85rem;
-            color: rgba(255,255,255,0.6);
+            font-size: 0.82rem;
+            color: var(--text-light);
             line-height: 1.7;
         }
 
         /* ===== NEWS ===== */
-        .news {
-            padding: 5rem 0;
-            background: var(--gray-100);
-        }
+        .news { padding: 5rem 0; background: var(--gray-100); }
         .news-tabs {
             display: flex;
             gap: 0;
@@ -789,8 +844,8 @@
             border-bottom: 2px solid var(--gray-200);
         }
         .news-tab {
-            padding: 10px 24px;
-            font-size: 0.85rem;
+            padding: 10px 22px;
+            font-size: 0.82rem;
             font-weight: 500;
             color: var(--gray-500);
             cursor: pointer;
@@ -799,9 +854,7 @@
             background: none;
             border: none;
         }
-        .news-tab.active, .news-tab:hover {
-            color: var(--primary);
-        }
+        .news-tab.active, .news-tab:hover { color: var(--blueprint); }
         .news-tab.active::after {
             content: '';
             position: absolute;
@@ -809,60 +862,50 @@
             left: 0;
             right: 0;
             height: 2px;
-            background: var(--primary);
-        }
-        .news-list {
-            display: none;
-        }
-        .news-list.active {
-            display: block;
+            background: var(--blueprint);
         }
         .news-item {
             display: flex;
             align-items: flex-start;
             gap: 1.5rem;
-            padding: 1.2rem 0;
+            padding: 1.1rem 0;
             border-bottom: 1px solid var(--gray-200);
             transition: all var(--transition);
         }
-        .news-item:hover {
-            padding-left: 0.5rem;
-        }
+        .news-item:hover { padding-left: 0.5rem; }
         .news-date {
             font-family: 'Inter', sans-serif;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             color: var(--gray-500);
-            min-width: 100px;
+            min-width: 90px;
             padding-top: 2px;
         }
         .news-tag {
             display: inline-block;
-            font-size: 0.65rem;
+            font-size: 0.62rem;
             font-weight: 600;
             padding: 2px 8px;
             border-radius: 3px;
-            min-width: 60px;
+            min-width: 55px;
             text-align: center;
         }
-        .news-tag.info { background: #e3f2fd; color: #1565c0; }
+        .news-tag.info { background: var(--blueprint-pale); color: var(--blueprint); }
         .news-tag.product { background: #fff3e0; color: #e65100; }
         .news-tag.event { background: #e8f5e9; color: #2e7d32; }
-        .news-content {
-            flex: 1;
-        }
+        .news-content { flex: 1; }
         .news-content a {
-            font-size: 0.9rem;
+            font-size: 0.88rem;
             font-weight: 500;
             color: var(--text);
             transition: color 0.2s;
             line-height: 1.7;
         }
-        .news-content a:hover { color: var(--primary); }
+        .news-content a:hover { color: var(--blueprint); }
 
         /* ===== CTA ===== */
         .cta {
             padding: 5rem 0;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            background: linear-gradient(135deg, var(--blueprint-deep) 0%, var(--blueprint) 100%);
             text-align: center;
             color: var(--white);
             position: relative;
@@ -871,31 +914,20 @@
         .cta::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
-            border-radius: 50%;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
         }
-        .cta h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 0.8rem;
-            position: relative;
-        }
-        .cta p {
-            font-size: 1rem;
-            opacity: 0.85;
-            margin-bottom: 2rem;
-            position: relative;
-        }
+        .cta > .container { position: relative; z-index: 1; }
+        .cta h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.8rem; }
+        .cta p { font-size: 1rem; opacity: 0.85; margin-bottom: 2rem; }
         .cta .btn {
-            background: var(--white);
-            color: var(--primary);
+            background: #fff;
+            color: var(--blueprint);
             font-weight: 700;
             box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-            position: relative;
         }
         .cta .btn:hover {
             transform: translateY(-2px);
@@ -904,68 +936,65 @@
 
         /* ===== FOOTER ===== */
         .site-footer {
-            background: #0a0f1a;
-            color: rgba(255,255,255,0.6);
-            padding: 4rem 0 0;
+            background: var(--dark);
+            color: rgba(255,255,255,0.55);
+            padding: 3.5rem 0 0;
         }
         .footer-grid {
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 3rem;
-            padding-bottom: 3rem;
+            gap: 2.5rem;
+            padding-bottom: 2.5rem;
         }
         .footer-brand .logo-text {
-            color: var(--white);
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
+            color: #fff;
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
             display: inline-block;
         }
         .footer-brand .logo-text span { color: var(--accent-light); }
-        .footer-brand p {
-            font-size: 0.85rem;
-            line-height: 1.8;
-            margin-bottom: 1.5rem;
-        }
-        .footer-social {
-            display: flex;
-            gap: 0.8rem;
-        }
+        .footer-brand p { font-size: 0.82rem; line-height: 1.8; margin-bottom: 1.2rem; }
+        .footer-social { display: flex; gap: 0.7rem; }
         .footer-social a {
-            width: 36px;
-            height: 36px;
+            width: 34px;
+            height: 34px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.08);
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             transition: all 0.3s;
         }
         .footer-social a:hover {
-            background: var(--primary);
-            color: var(--white);
+            background: var(--blueprint);
+            border-color: var(--blueprint);
+            color: #fff;
         }
         .footer-col h4 {
-            color: var(--white);
-            font-size: 0.85rem;
+            color: #fff;
+            font-size: 0.82rem;
             font-weight: 600;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1rem;
             letter-spacing: 0.5px;
         }
         .footer-col a {
             display: block;
-            font-size: 0.8rem;
-            padding: 0.35rem 0;
+            font-size: 0.78rem;
+            padding: 0.3rem 0;
             transition: color 0.2s;
         }
-        .footer-col a:hover { color: var(--white); }
+        .footer-col a:hover { color: #fff; }
         .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.08);
-            padding: 1.5rem 0;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            padding: 1.3rem 0;
             text-align: center;
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.35);
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.3);
         }
+        .footer-bottom a { color: rgba(255,255,255,0.4); }
+        .footer-bottom a:hover { color: rgba(255,255,255,0.7); }
 
         /* ===== ANIMATIONS ===== */
         .fade-up {
@@ -973,23 +1002,20 @@
             transform: translateY(30px);
             transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        .fade-up.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
 
         /* ===== RESPONSIVE ===== */
         @media (max-width: 1024px) {
             .hero-inner { grid-template-columns: 1fr; }
             .hero-visual { display: none; }
-            .hero-text h1 { font-size: 2.4rem; }
-            .hero { height: auto; min-height: 50vh; padding: 3rem 0; }
+            .hero-text h1 { font-size: 2.2rem; }
+            .hero { min-height: 50vh; }
             .solutions-grid { grid-template-columns: repeat(2, 1fr); }
             .adv-grid { grid-template-columns: repeat(2, 1fr); }
             .flow-track { grid-template-columns: repeat(4, 1fr); }
             .flow-track::before { display: none; }
             .showcase-layout { grid-template-columns: 1fr; }
-            .showcase-img { min-height: 300px; }
+            .showcase-img { min-height: 280px; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
         @media (max-width: 768px) {
@@ -997,7 +1023,7 @@
             .main-nav {
                 display: none;
                 position: absolute;
-                top: 72px;
+                top: 68px;
                 left: 0;
                 right: 0;
                 background: var(--white);
@@ -1005,14 +1031,14 @@
                 padding: 1rem 2rem 2rem;
                 box-shadow: var(--shadow-lg);
                 height: auto;
+                border-top: 1px solid var(--gray-200);
             }
             .main-nav.open { display: flex; }
             .main-nav > li { height: auto; }
-            .main-nav > li > a { padding: 0.8rem 0; height: auto; }
+            .main-nav > li > a { padding: 0.7rem 0; height: auto; }
             .hamburger { display: flex; }
-            .hero-text h1 { font-size: 1.8rem; }
-            .hero-stats { gap: 1.5rem; }
-            .hero-stat .number { font-size: 1.5rem; }
+            .hero-text h1 { font-size: 1.7rem; }
+            .hero-stats { flex-direction: column; gap: 1rem; }
             .pickup-grid { grid-template-columns: 1fr; }
             .pickup-card:first-child { grid-column: span 1; }
             .solutions-grid { grid-template-columns: 1fr; }
@@ -1040,8 +1066,11 @@
         <div class="header-main">
             <div class="container">
                 <a href="#" class="logo">
-                    <div class="logo-text">AUTO<span>MAIX</span></div>
-                    <div class="logo-sub">Co., Ltd.<br>物流テクノロジー</div>
+                    <div class="logo-mark">Ax</div>
+                    <div>
+                        <div class="logo-text">AUTO<span>MAIX</span></div>
+                        <div class="logo-sub">Co., Ltd. | 物流テクノロジー</div>
+                    </div>
                 </a>
                 <ul class="main-nav" id="mainNav">
                     <li><a href="#solutions">ソリューション</a></li>
@@ -1060,8 +1089,10 @@
 
     <!-- HERO -->
     <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-grid"></div>
+        <div class="hero-bg-img">
+            <img src="images/company-future.png" alt="AUTOMAIX">
+        </div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="container">
                 <div class="hero-inner">
@@ -1070,7 +1101,7 @@
                             <span class="dot"></span>
                             LOGISTICS TECHNOLOGY
                         </div>
-                        <h1>物流の未来を、<br><span class="highlight">もっと速く、</span><br><span class="highlight">もっと正確に。</span></h1>
+                        <h1>物流の未来を、<br><span class="line">もっと速く、</span><br><span class="line">もっと正確に。</span></h1>
                         <p>EC小物や宅配荷物など、さまざまな荷物の仕分けをスムーズにサポート。高速で正確な仕分けにより作業者の負担を軽減し、省人化・効率化・誤仕分け削減に貢献します。</p>
                         <div class="hero-btns">
                             <a href="#products" class="btn btn-primary">製品を見る <span class="btn-arrow">→</span></a>
@@ -1092,7 +1123,7 @@
                         </div>
                     </div>
                     <div class="hero-visual">
-                        <div class="hero-img-wrapper">
+                        <div class="hero-img-frame">
                             <img src="images/1.png" alt="AUTOMAIX 3D仕分けシステム">
                         </div>
                     </div>
@@ -1116,8 +1147,8 @@
                     <div class="thumb"><img src="images/2.png" alt="物流フロー"></div>
                     <div class="body">
                         <span class="tag">ソリューション</span>
-                        <h3>物流センターの自動化で実現する、2.5時間出荷オペレーション</h3>
-                        <p>物流を顧客価値創出の基盤と位置づけ、その高度化を推進。AUTOMAIXの3D仕分けシステムで物流効率を飛躍的に向上させます。</p>
+                        <h3>物流センターの自動化で実現する、高効率オペレーション</h3>
+                        <p>物流を顧客価値創出の基盤と位置づけ、AUTOMAIXの3D仕分けシステムで物流効率を飛躍的に向上させます。</p>
                     </div>
                 </div>
                 <div class="pickup-card fade-up">
@@ -1197,23 +1228,22 @@
                     <img src="images/5.png" alt="まかせ君">
                 </div>
                 <div class="showcase-info">
-                    <div class="product-flagship">★  flagship product</div>
-                    <div class="product-tag">高速3D仕分けシステム</div>
+                    <div class="product-tag">★ FLAGSHIP PRODUCT</div>
                     <h3>まかせ君</h3>
-                    <div class="subtitle">驚異のパフォーマンス</div>
-                    <p>大型物流センターに最適な高速・大量処理型の3D仕分けシステム。多箇口対応で、一次・二次仕分けに対応しています。現場の作業をすべて任せられる、頼もしい存在です。</p>
+                    <div class="subtitle">高速3D仕分けシステム — 驚異のパフォーマンス</div>
+                    <p class="desc">大型物流センターに最適な高速・大量処理型の3D仕分けシステム。多箇口対応で、一次・二次仕分けに対応しています。</p>
                     <div class="showcase-specs">
                         <div class="spec-box">
                             <div class="spec-label">処理能力</div>
-                            <div class="spec-value">1,400<span style="font-size:0.7rem;font-weight:400;color:#888"> pcs/時</span></div>
+                            <div class="spec-value">1,400<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> pcs/時</small></div>
                         </div>
                         <div class="spec-box">
                             <div class="spec-label">仕分け間口</div>
-                            <div class="spec-value">48<span style="font-size:0.7rem;font-weight:400;color:#888"> 口</span></div>
+                            <div class="spec-value">48<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> 口</small></div>
                         </div>
                         <div class="spec-box">
                             <div class="spec-label">運転速度</div>
-                            <div class="spec-value">2.5<span style="font-size:0.7rem;font-weight:400;color:#888"> m/s</span></div>
+                            <div class="spec-value">2.5<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> m/s</small></div>
                         </div>
                         <div class="spec-box">
                             <div class="spec-label">対応重量</div>
@@ -1223,34 +1253,32 @@
                     <a href="#" class="showcase-btn">製品詳細を見る →</a>
                 </div>
             </div>
-
             <div style="height:2rem"></div>
-
             <div class="showcase-layout fade-up" style="direction:rtl">
                 <div class="showcase-img" style="direction:ltr">
                     <img src="images/4.png" alt="つばめちゃん">
                 </div>
                 <div class="showcase-info" style="direction:ltr">
-                    <div class="product-tag">コンパクト仕分けシステム</div>
+                    <div class="product-tag">COMPACT SORTER</div>
                     <h3>つばめちゃん</h3>
-                    <div class="subtitle">省スペース設計の柔軟な仕分け</div>
-                    <p>省スペース設計で柔軟に導入可能なコンパクト仕分けシステム。小口・多品種の仕分けに最適で、冷蔵・冷凍仕様にもカスタマイズ対応可能です。</p>
+                    <div class="subtitle">コンパクト仕分けシステム — 省スペース設計</div>
+                    <p class="desc">省スペース設計で柔軟に導入可能。冷蔵・冷凍仕様にもカスタマイズ対応。モジュール構造で最短1日設置。</p>
                     <div class="showcase-specs">
                         <div class="spec-box">
                             <div class="spec-label">処理能力</div>
-                            <div class="spec-value">1,000<span style="font-size:0.7rem;font-weight:400;color:#888"> pcs/時</span></div>
+                            <div class="spec-value">1,000<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> pcs/時</small></div>
                         </div>
                         <div class="spec-box">
                             <div class="spec-label">仕分け間口</div>
-                            <div class="spec-value">40〜60<span style="font-size:0.7rem;font-weight:400;color:#888"> 口</span></div>
+                            <div class="spec-value">40〜60<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> 口</small></div>
                         </div>
                         <div class="spec-box">
                             <div class="spec-label">運転速度</div>
-                            <div class="spec-value">2.0<span style="font-size:0.7rem;font-weight:400;color:#888"> m/s</span></div>
+                            <div class="spec-value">2.0<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> m/s</small></div>
                         </div>
                         <div class="spec-box">
                             <div class="spec-label">設置面積</div>
-                            <div class="spec-value">~12<span style="font-size:0.7rem;font-weight:400;color:#888"> ㎡</span></div>
+                            <div class="spec-value">~12<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> ㎡</small></div>
                         </div>
                     </div>
                     <a href="#" class="showcase-btn">製品詳細を見る →</a>
@@ -1272,7 +1300,7 @@
                 <div class="flow-item">
                     <div class="flow-num">1</div>
                     <h4>入荷</h4>
-                    <p>荷物の降ろし・検品・データ登録</p>
+                    <p>荷物の降ろし・検品</p>
                 </div>
                 <div class="flow-item">
                     <div class="flow-num">2</div>
@@ -1282,27 +1310,27 @@
                 <div class="flow-item">
                     <div class="flow-num">3</div>
                     <h4>一時保管</h4>
-                    <p>バッファエリアで一時保管</p>
+                    <p>バッファエリアで保管</p>
                 </div>
                 <div class="flow-item">
                     <div class="flow-num">4</div>
                     <h4>一次仕分け</h4>
-                    <p>エリア・方面別に大まかに仕分け</p>
+                    <p>エリア別に仕分け</p>
                 </div>
                 <div class="flow-item">
                     <div class="flow-num">5</div>
                     <h4>二次仕分け</h4>
-                    <p>コース・便別に細かく仕分け</p>
+                    <p>コース別に仕分け</p>
                 </div>
                 <div class="flow-item">
                     <div class="flow-num">6</div>
                     <h4>出荷準備</h4>
-                    <p>積み付け・出荷準備</p>
+                    <p>積み付け・準備</p>
                 </div>
                 <div class="flow-item">
                     <div class="flow-num">7</div>
                     <h4>出荷</h4>
-                    <p>トラック積み込み・出荷完了</p>
+                    <p>積み込み・出荷完了</p>
                 </div>
             </div>
         </div>
@@ -1320,7 +1348,7 @@
             </div>
             <div class="company-grid">
                 <div class="company-visual fade-up">
-                    <img src="images/1.png" alt="AUTOMAIX">
+                    <img src="images/company-future.png" alt="AUTOMAIX">
                 </div>
                 <div class="company-links fade-up">
                     <div class="company-link">
@@ -1371,22 +1399,22 @@
                 <div class="adv-card fade-up">
                     <div class="adv-icon">📈</div>
                     <h3>作業効率の向上</h3>
-                    <p>自動化による大幅な作業効率改善。人的ミスを排除し、生産性を最大化します。</p>
+                    <p>自動化による大幅な作業効率改善。人的ミスを排除し、生産性を最大化。</p>
                 </div>
                 <div class="adv-card fade-up">
                     <div class="adv-icon">👥</div>
                     <h3>人手不足の解消</h3>
-                    <p>深刻化する人手不足をテクノロジーで解決。貴重な人材を付加価値の高い業務へ。</p>
+                    <p>深刻化する人手不足をテクノロジーで解決。人材を高付加価値業務へ。</p>
                 </div>
                 <div class="adv-card fade-up">
                     <div class="adv-icon">💰</div>
                     <h3>コスト削減</h3>
-                    <p>運用コストの大幅削減。短期間での投資回収を実現する高効率システム。</p>
+                    <p>運用コストの大幅削減。短期間での投資回収を実現。</p>
                 </div>
                 <div class="adv-card fade-up">
                     <div class="adv-icon">⭐</div>
                     <h3>サービス品質の向上</h3>
-                    <p>誤仕分けの劇的な削減により、顧客満足度とサービス品質を飛躍的に向上。</p>
+                    <p>誤仕分けの劇的な削減で、顧客満足度を飛躍的に向上。</p>
                 </div>
             </div>
         </div>
@@ -1403,37 +1431,35 @@
                 <a href="#" class="more">すべて見る →</a>
             </div>
             <div class="news-tabs">
-                <button class="news-tab active" onclick="switchNews('all')">すべて</button>
-                <button class="news-tab" onclick="switchNews('info')">ニュース・お知らせ</button>
-                <button class="news-tab" onclick="switchNews('product')">事業・製品</button>
-                <button class="news-tab" onclick="switchNews('event')">イベント</button>
+                <button class="news-tab active" onclick="switchNews(this)">すべて</button>
+                <button class="news-tab" onclick="switchNews(this)">ニュース・お知らせ</button>
+                <button class="news-tab" onclick="switchNews(this)">事業・製品</button>
+                <button class="news-tab" onclick="switchNews(this)">イベント</button>
             </div>
-            <div class="news-list active" id="news-all">
-                <div class="news-item">
-                    <span class="news-date">2026.07.15</span>
-                    <span class="news-tag product">事業</span>
-                    <div class="news-content"><a href="#">「まかせ君」シリーズ処理能力アップデートのお知らせ</a></div>
-                </div>
-                <div class="news-item">
-                    <span class="news-date">2026.06.20</span>
-                    <span class="news-tag event">イベント</span>
-                    <div class="news-content"><a href="#">Logis-Tech Tokyo 2026 出展のお知らせ</a></div>
-                </div>
-                <div class="news-item">
-                    <span class="news-date">2026.05.10</span>
-                    <span class="news-tag info">お知らせ</span>
-                    <div class="news-content"><a href="#">本社移転のお知らせ</a></div>
-                </div>
-                <div class="news-item">
-                    <span class="news-date">2026.04.01</span>
-                    <span class="news-tag product">事業</span>
-                    <div class="news-content"><a href="#">冷蔵・冷凍仕様「つばめちゃん」新モデル発売開始</a></div>
-                </div>
-                <div class="news-item">
-                    <span class="news-date">2026.03.15</span>
-                    <span class="news-tag info">お知らせ</span>
-                    <div class="news-content"><a href="#">全国導入実績100拠点突破のお知らせ</a></div>
-                </div>
+            <div class="news-item">
+                <span class="news-date">2026.07.15</span>
+                <span class="news-tag product">事業</span>
+                <div class="news-content"><a href="#">「まかせ君」シリーズ処理能力アップデートのお知らせ</a></div>
+            </div>
+            <div class="news-item">
+                <span class="news-date">2026.06.20</span>
+                <span class="news-tag event">イベント</span>
+                <div class="news-content"><a href="#">Logis-Tech Tokyo 2026 出展のお知らせ</a></div>
+            </div>
+            <div class="news-item">
+                <span class="news-date">2026.05.10</span>
+                <span class="news-tag info">お知らせ</span>
+                <div class="news-content"><a href="#">本社移転のお知らせ</a></div>
+            </div>
+            <div class="news-item">
+                <span class="news-date">2026.04.01</span>
+                <span class="news-tag product">事業</span>
+                <div class="news-content"><a href="#">冷蔵・冷凍仕様「つばめちゃん」新モデル発売開始</a></div>
+            </div>
+            <div class="news-item">
+                <span class="news-date">2026.03.15</span>
+                <span class="news-tag info">お知らせ</span>
+                <div class="news-content"><a href="#">全国導入実績100拠点突破のお知らせ</a></div>
             </div>
         </div>
     </section>
@@ -1483,23 +1509,18 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; 2026 AUTOMAIX Co., Ltd. All Rights Reserved. | <a href="#" style="color:rgba(255,255,255,0.5)">プライバシーポリシー</a> | <a href="#" style="color:rgba(255,255,255,0.5)">サイトポリシー</a>
+                &copy; 2026 AUTOMAIX Co., Ltd. All Rights Reserved. | <a href="#">プライバシーポリシー</a> | <a href="#">サイトポリシー</a>
             </div>
         </div>
     </footer>
 
     <script>
-        // Mobile menu
         document.getElementById('hamburger').addEventListener('click', () => {
             document.getElementById('mainNav').classList.toggle('open');
         });
-
-        // Header scroll
         window.addEventListener('scroll', () => {
             document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
         });
-
-        // Scroll animations
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry, i) => {
                 if (entry.isIntersecting) {
@@ -1508,14 +1529,10 @@
             });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-        // News tabs
-        function switchNews(cat) {
+        function switchNews(btn) {
             document.querySelectorAll('.news-tab').forEach(t => t.classList.remove('active'));
-            event.target.classList.add('active');
+            btn.classList.add('active');
         }
-
-        // Close mobile menu on link click
         document.querySelectorAll('.main-nav a').forEach(a => {
             a.addEventListener('click', () => {
                 document.getElementById('mainNav').classList.remove('open');
