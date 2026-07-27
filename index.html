@@ -11,7 +11,7 @@
         html { scroll-behavior: smooth; font-size: 16px; }
         body {
             font-family: 'Noto Sans JP', 'Inter', 'Helvetica Neue', Arial, sans-serif;
-            color: #2c3e50;
+            color: #1a2a3a;
             line-height: 1.8;
             background: #fff;
             overflow-x: hidden;
@@ -19,14 +19,12 @@
         a { text-decoration: none; color: inherit; }
         img { max-width: 100%; display: block; }
         ul { list-style: none; }
-
         :root {
             --blueprint: #0077b6;
             --blueprint-dark: #005f8d;
             --blueprint-deep: #003d5c;
             --blueprint-light: #48cae4;
             --blueprint-pale: #e8f4f8;
-            --blueprint-ghost: rgba(0,119,182,0.04);
             --accent: #e8531e;
             --accent-light: #ff6b35;
             --dark: #0a1628;
@@ -45,963 +43,330 @@
             --max-width: 1280px;
             --line-color: rgba(0,119,182,0.1);
         }
-
-        /* ===== BLUEPRINT GRID BACKGROUND ===== */
-        .blueprint-bg {
-            background-image:
-                linear-gradient(var(--line-color) 1px, transparent 1px),
-                linear-gradient(90deg, var(--line-color) 1px, transparent 1px),
-                linear-gradient(rgba(0,119,182,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0,119,182,0.03) 1px, transparent 1px);
-            background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
-        }
-
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
 
         /* ===== HEADER ===== */
         .site-header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--gray-200);
-            transition: var(--transition);
+            position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+            background: rgba(255,255,255,0.95); backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--gray-200); transition: var(--transition);
         }
-        .site-header.scrolled {
-            box-shadow: var(--shadow-md);
-            border-bottom-color: transparent;
-        }
+        .site-header.scrolled { box-shadow: var(--shadow-md); border-bottom-color: transparent; }
         .header-top {
-            background: var(--blueprint-deep);
-            color: rgba(255,255,255,0.8);
-            font-size: 0.72rem;
-            padding: 5px 0;
-            letter-spacing: 0.5px;
+            background: var(--blueprint-deep); color: rgba(255,255,255,0.8);
+            font-size: 0.72rem; padding: 5px 0; letter-spacing: 0.5px;
         }
-        .header-top .container {
-            display: flex;
-            justify-content: flex-end;
-            gap: 1.5rem;
-            align-items: center;
-        }
+        .header-top .container { display: flex; justify-content: flex-end; gap: 1.5rem; align-items: center; }
         .header-top a { color: rgba(255,255,255,0.8); transition: color 0.2s; }
         .header-top a:hover { color: #fff; }
-        .header-main .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 68px;
-        }
+        .header-main .container { display: flex; justify-content: space-between; align-items: center; height: 68px; }
         .logo { display: flex; align-items: center; gap: 0.6rem; }
         .logo-mark {
-            width: 36px;
-            height: 36px;
+            width: 38px; height: 38px;
             background: linear-gradient(135deg, var(--blueprint), var(--blueprint-light));
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-weight: 900;
-            font-size: 0.9rem;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: -1px;
+            border-radius: 8px; display: flex; align-items: center; justify-content: center;
+            color: #fff; font-weight: 900; font-size: 0.85rem; font-family: 'Inter', sans-serif; letter-spacing: -1px;
         }
-        .logo-text {
-            font-size: 1.5rem;
-            font-weight: 900;
-            letter-spacing: 2px;
-            color: var(--blueprint-deep);
-        }
+        .logo-text { font-size: 1.5rem; font-weight: 900; letter-spacing: 2px; color: var(--blueprint-deep); }
         .logo-text span { color: var(--accent); }
-        .logo-sub {
-            font-size: 0.55rem;
-            color: var(--gray-500);
-            letter-spacing: 1px;
-            line-height: 1.3;
-            border-left: 1px solid var(--gray-300);
-            padding-left: 0.5rem;
-        }
+        .logo-sub { font-size: 0.55rem; color: var(--gray-500); letter-spacing: 1px; line-height: 1.3; border-left: 1px solid var(--gray-300); padding-left: 0.5rem; }
         .main-nav { display: flex; gap: 0; height: 68px; align-items: center; }
         .main-nav > li { position: relative; height: 100%; display: flex; align-items: center; }
         .main-nav > li > a {
-            display: flex;
-            align-items: center;
-            padding: 0 1.15rem;
-            height: 100%;
-            font-size: 0.82rem;
-            font-weight: 500;
-            color: var(--text);
-            letter-spacing: 0.3px;
-            transition: var(--transition);
-            position: relative;
+            display: flex; align-items: center; padding: 0 1.15rem; height: 100%;
+            font-size: 0.82rem; font-weight: 500; color: var(--text); letter-spacing: 0.3px;
+            transition: var(--transition); position: relative;
         }
         .main-nav > li > a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background: var(--blueprint);
-            transition: width var(--transition);
+            content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+            width: 0; height: 2px; background: var(--blueprint); transition: width var(--transition);
         }
         .main-nav > li > a:hover { color: var(--blueprint); }
         .main-nav > li > a:hover::after { width: 70%; }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 8px;
-        }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 8px; }
         .hamburger span { width: 24px; height: 2px; background: var(--dark); transition: var(--transition); }
 
         /* ===== HERO ===== */
         .hero {
-            margin-top: 100px;
-            position: relative;
-            min-height: 90vh;
-            display: flex;
-            align-items: center;
-            overflow: hidden;
-            background: var(--dark);
+            margin-top: 100px; position: relative; min-height: 90vh;
+            display: flex; align-items: center; overflow: hidden; background: var(--dark);
         }
-        .hero-bg-img {
-            position: absolute;
-            inset: 0;
-            z-index: 0;
-        }
-        .hero-bg-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0.25;
-            filter: brightness(0.6) contrast(1.2);
-        }
+        .hero-bg-img { position: absolute; inset: 0; z-index: 0; }
+        .hero-bg-img img { width: 100%; height: 100%; object-fit: cover; opacity: 0.2; filter: brightness(0.5) contrast(1.2); }
         .hero-overlay {
-            position: absolute;
-            inset: 0;
+            position: absolute; inset: 0;
             background:
-                linear-gradient(135deg, rgba(10,22,40,0.92) 0%, rgba(0,61,92,0.75) 50%, rgba(0,119,182,0.3) 100%),
-                repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(0,119,182,0.06) 19px, rgba(0,119,182,0.06) 20px),
-                repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(0,119,182,0.06) 19px, rgba(0,119,182,0.06) 20px);
+                linear-gradient(135deg, rgba(10,22,40,0.93) 0%, rgba(0,61,92,0.78) 50%, rgba(0,119,182,0.25) 100%),
+                repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(0,119,182,0.05) 19px, rgba(0,119,182,0.05) 20px),
+                repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(0,119,182,0.05) 19px, rgba(0,119,182,0.05) 20px);
             z-index: 1;
         }
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            padding: 4rem 0;
-        }
-        .hero-inner {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 4rem;
-            align-items: center;
-        }
+        .hero-content { position: relative; z-index: 2; padding: 4rem 0; }
+        .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center; }
         .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            border: 1px solid rgba(0,119,182,0.4);
-            padding: 5px 16px;
-            border-radius: 50px;
-            font-size: 0.7rem;
-            color: var(--blueprint-light);
-            letter-spacing: 2px;
-            margin-bottom: 1.5rem;
-            font-family: 'Inter', sans-serif;
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            border: 1px solid rgba(0,119,182,0.4); padding: 5px 16px; border-radius: 50px;
+            font-size: 0.7rem; color: var(--blueprint-light); letter-spacing: 2px;
+            margin-bottom: 1.5rem; font-family: 'Inter', sans-serif;
         }
-        .hero-badge .dot {
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--blueprint-light);
-            animation: pulse 2s infinite;
-        }
+        .hero-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--blueprint-light); animation: pulse 2s infinite; }
         @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-        .hero-text h1 {
-            font-size: 3rem;
-            font-weight: 900;
-            color: #fff;
-            line-height: 1.25;
-            margin-bottom: 1.5rem;
-            letter-spacing: 1px;
-        }
-        .hero-text h1 .line {
-            color: var(--blueprint-light);
-        }
-        .hero-text p {
-            font-size: 1rem;
-            color: rgba(255,255,255,0.6);
-            line-height: 2;
-            margin-bottom: 2.5rem;
-            max-width: 520px;
-        }
+        .hero-text h1 { font-size: 3rem; font-weight: 900; color: #fff; line-height: 1.25; margin-bottom: 1.5rem; letter-spacing: 1px; }
+        .hero-text h1 .line { color: var(--blueprint-light); }
+        .hero-text p { font-size: 1rem; color: rgba(255,255,255,0.6); line-height: 2; margin-bottom: 2.5rem; max-width: 520px; }
         .hero-btns { display: flex; gap: 1rem; }
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 13px 30px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.88rem;
-            letter-spacing: 0.5px;
-            transition: all var(--transition);
-            cursor: pointer;
-            border: none;
+            display: inline-flex; align-items: center; gap: 0.5rem; padding: 13px 30px;
+            border-radius: 50px; font-weight: 600; font-size: 0.88rem; letter-spacing: 0.5px;
+            transition: all var(--transition); cursor: pointer; border: none;
         }
-        .btn-primary {
-            background: var(--blueprint);
-            color: #fff;
-            box-shadow: 0 4px 20px rgba(0,119,182,0.3);
-        }
-        .btn-primary:hover {
-            background: var(--blueprint-light);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(0,119,182,0.4);
-        }
-        .btn-ghost {
-            background: transparent;
-            color: #fff;
-            border: 1.5px solid rgba(255,255,255,0.3);
-        }
-        .btn-ghost:hover {
-            border-color: rgba(255,255,255,0.7);
-            background: rgba(255,255,255,0.05);
-        }
+        .btn-primary { background: var(--blueprint); color: #fff; box-shadow: 0 4px 20px rgba(0,119,182,0.3); }
+        .btn-primary:hover { background: var(--blueprint-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,119,182,0.4); }
+        .btn-ghost { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.3); }
+        .btn-ghost:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.05); }
         .btn-arrow { font-size: 1.1rem; transition: transform 0.3s; }
         .btn:hover .btn-arrow { transform: translateX(4px); }
-
-        .hero-visual {
-            position: relative;
-        }
+        .hero-visual { position: relative; }
         .hero-img-frame {
-            position: relative;
-            border: 2px solid rgba(0,119,182,0.3);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.4), inset 0 0 0 1px rgba(0,119,182,0.1);
+            position: relative; border: 2px solid rgba(0,119,182,0.3); border-radius: 12px;
+            overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.4);
         }
         .hero-img-frame::before {
-            content: '';
-            position: absolute;
-            top: 8px; left: 8px; right: 8px; bottom: 8px;
-            border: 1px solid rgba(0,119,182,0.15);
-            border-radius: 8px;
-            z-index: 2;
-            pointer-events: none;
+            content: ''; position: absolute; top: 8px; left: 8px; right: 8px; bottom: 8px;
+            border: 1px solid rgba(0,119,182,0.15); border-radius: 8px; z-index: 2; pointer-events: none;
         }
-        .hero-img-frame img {
-            width: 100%;
-            display: block;
-        }
-        .hero-stats {
-            display: flex;
-            gap: 2.5rem;
-            margin-top: 3rem;
-        }
-        .hero-stat {
-            position: relative;
-            padding-left: 1rem;
-        }
-        .hero-stat::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: var(--blueprint);
-            border-radius: 1px;
-        }
-        .hero-stat .number {
-            font-size: 1.8rem;
-            font-weight: 900;
-            color: #fff;
-            font-family: 'Inter', sans-serif;
-        }
-        .hero-stat .number span {
-            font-size: 0.8rem;
-            font-weight: 400;
-            color: rgba(255,255,255,0.45);
-            margin-left: 2px;
-        }
-        .hero-stat .label {
-            font-size: 0.72rem;
-            color: rgba(255,255,255,0.4);
-            letter-spacing: 1px;
-        }
+        .hero-img-frame img { width: 100%; display: block; }
+        .hero-stats { display: flex; gap: 2.5rem; margin-top: 3rem; }
+        .hero-stat { position: relative; padding-left: 1rem; }
+        .hero-stat::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: var(--blueprint); border-radius: 1px; }
+        .hero-stat .number { font-size: 1.8rem; font-weight: 900; color: #fff; font-family: 'Inter', sans-serif; }
+        .hero-stat .number span { font-size: 0.8rem; font-weight: 400; color: rgba(255,255,255,0.45); margin-left: 2px; }
+        .hero-stat .label { font-size: 0.72rem; color: rgba(255,255,255,0.4); letter-spacing: 1px; }
 
         /* ===== SECTION COMMON ===== */
-        .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            margin-bottom: 3rem;
-        }
-        .section-header h2 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--text);
-            position: relative;
-            padding-left: 1.2rem;
-        }
+        .section-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; }
+        .section-header h2 { font-size: 1.75rem; font-weight: 700; color: var(--text); position: relative; padding-left: 1.2rem; }
         .section-header h2::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0.15em;
-            bottom: 0.15em;
-            width: 4px;
-            background: linear-gradient(180deg, var(--blueprint), var(--blueprint-light));
-            border-radius: 2px;
+            content: ''; position: absolute; left: 0; top: 0.15em; bottom: 0.15em;
+            width: 4px; background: linear-gradient(180deg, var(--blueprint), var(--blueprint-light)); border-radius: 2px;
         }
-        .section-header .en {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.68rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: var(--blueprint);
-            margin-bottom: 0.3rem;
-            font-weight: 600;
-        }
-        .section-header .more {
-            font-size: 0.82rem;
-            color: var(--blueprint);
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-            transition: gap 0.3s;
-        }
+        .section-header .en { font-family: 'Inter', sans-serif; font-size: 0.68rem; letter-spacing: 3px; text-transform: uppercase; color: var(--blueprint); margin-bottom: 0.3rem; font-weight: 600; }
+        .section-header .more { font-size: 0.82rem; color: var(--blueprint); font-weight: 500; display: flex; align-items: center; gap: 0.3rem; transition: gap 0.3s; }
         .section-header .more:hover { gap: 0.6rem; }
 
-        /* ===== PICKUP ===== */
-        .pickup { padding: 5rem 0; background: var(--white); }
-        .pickup-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
+        /* ===== PRODUCTS GRID ===== */
+        .products-section { padding: 5rem 0; background: var(--white); }
+        .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .prod-card {
+            background: var(--white); border-radius: var(--radius); overflow: hidden;
+            border: 1px solid var(--gray-200); transition: all var(--transition); cursor: pointer;
         }
-        .pickup-card {
-            border-radius: var(--radius);
-            overflow: hidden;
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            transition: all var(--transition);
-            cursor: pointer;
+        .prod-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: var(--blueprint); }
+        .prod-card .prod-img {
+            height: 220px; overflow: hidden; position: relative;
+            background: linear-gradient(135deg, #f0f7fa, #e8f4f8);
+            display: flex; align-items: center; justify-content: center;
         }
-        .pickup-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--blueprint);
+        .prod-card .prod-img img { max-height: 90%; max-width: 90%; object-fit: contain; transition: transform 0.6s; }
+        .prod-card:hover .prod-img img { transform: scale(1.05); }
+        .prod-card .prod-body { padding: 1.4rem; }
+        .prod-card .prod-num {
+            font-family: 'Inter', sans-serif; font-size: 0.65rem; font-weight: 700;
+            color: var(--blueprint); letter-spacing: 1px; margin-bottom: 0.4rem;
         }
-        .pickup-card:first-child { grid-column: span 2; }
-        .pickup-card .thumb {
-            width: 100%;
-            height: 220px;
-            overflow: hidden;
-            position: relative;
+        .prod-card h3 { font-size: 1rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
+        .prod-card p { font-size: 0.82rem; color: var(--text-light); line-height: 1.7; }
+        .prod-card .prod-link {
+            display: inline-flex; align-items: center; gap: 0.3rem;
+            margin-top: 0.8rem; font-size: 0.78rem; font-weight: 600; color: var(--blueprint); transition: gap 0.3s;
         }
-        .pickup-card:first-child .thumb { height: 280px; }
-        .pickup-card .thumb img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s;
-        }
-        .pickup-card:hover .thumb img { transform: scale(1.05); }
-        .pickup-card .body { padding: 1.5rem; }
-        .pickup-card .tag {
-            display: inline-block;
-            background: var(--blueprint-pale);
-            color: var(--blueprint);
-            font-size: 0.68rem;
-            font-weight: 600;
-            padding: 3px 10px;
-            border-radius: 3px;
-            margin-bottom: 0.8rem;
-            letter-spacing: 0.5px;
-        }
-        .pickup-card h3 {
-            font-size: 0.98rem;
-            font-weight: 600;
-            color: var(--text);
-            line-height: 1.7;
-            margin-bottom: 0.5rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        .pickup-card p {
-            font-size: 0.85rem;
-            color: var(--text-light);
-            line-height: 1.7;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
+        .prod-card:hover .prod-link { gap: 0.6rem; }
 
-        /* ===== SOLUTIONS ===== */
-        .solutions {
-            padding: 5rem 0;
-            background: var(--gray-100);
-            position: relative;
+        /* ===== SHOWCASE ===== */
+        .showcase { padding: 5rem 0; background: var(--gray-100); position: relative; }
+        .showcase::before {
+            content: ''; position: absolute; inset: 0;
+            background-image: linear-gradient(var(--line-color) 1px, transparent 1px), linear-gradient(90deg, var(--line-color) 1px, transparent 1px);
+            background-size: 80px 80px; opacity: 0.4;
         }
-        .solutions::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image:
-                linear-gradient(var(--line-color) 1px, transparent 1px),
-                linear-gradient(90deg, var(--line-color) 1px, transparent 1px);
-            background-size: 80px 80px;
-            opacity: 0.5;
-        }
-        .solutions .container { position: relative; z-index: 1; }
-        .solutions-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-        }
-        .sol-card {
-            background: var(--white);
-            border-radius: var(--radius);
-            overflow: hidden;
-            transition: all var(--transition);
-            cursor: pointer;
-            border: 1px solid var(--gray-200);
-        }
-        .sol-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-lg);
-            border-color: var(--blueprint);
-        }
-        .sol-card .sol-img {
-            height: 180px;
-            overflow: hidden;
-        }
-        .sol-card .sol-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.6s;
-        }
-        .sol-card:hover .sol-img img { transform: scale(1.08); }
-        .sol-card .sol-body { padding: 1.4rem; }
-        .sol-card .sol-icon {
-            width: 38px;
-            height: 38px;
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.1rem;
-            margin-bottom: 0.8rem;
-            background: var(--blueprint-pale);
-            border: 1px solid rgba(0,119,182,0.1);
-        }
-        .sol-card h3 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: 0.5rem;
-        }
-        .sol-card p {
-            font-size: 0.82rem;
-            color: var(--text-light);
-            line-height: 1.7;
-        }
-        .sol-card .sol-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.3rem;
-            margin-top: 0.8rem;
-            font-size: 0.78rem;
-            font-weight: 600;
-            color: var(--blueprint);
-            transition: gap 0.3s;
-        }
-        .sol-card:hover .sol-link { gap: 0.6rem; }
-
-        /* ===== PRODUCT SHOWCASE ===== */
-        .showcase { padding: 5rem 0; background: var(--white); }
+        .showcase .container { position: relative; z-index: 1; }
         .showcase-layout {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            border: 1px solid var(--gray-200);
+            display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+            border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--gray-200);
         }
         .showcase-img {
-            position: relative;
-            min-height: 480px;
-            overflow: hidden;
+            position: relative; min-height: 460px; overflow: hidden;
+            background: linear-gradient(135deg, #f0f7fa, #e8f4f8);
+            display: flex; align-items: center; justify-content: center;
         }
-        .showcase-img img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        .showcase-img img { max-height: 85%; max-width: 85%; object-fit: contain; }
         .showcase-info {
-            padding: 3rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background: var(--gray-100);
-            position: relative;
+            padding: 3rem; display: flex; flex-direction: column; justify-content: center;
+            background: var(--gray-100); position: relative;
         }
         .showcase-info::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image:
-                linear-gradient(rgba(0,119,182,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0,119,182,0.03) 1px, transparent 1px);
-            background-size: 30px 30px;
-            opacity: 0.5;
+            content: ''; position: absolute; inset: 0;
+            background-image: linear-gradient(rgba(0,119,182,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0,119,182,0.03) 1px, transparent 1px);
+            background-size: 30px 30px; opacity: 0.5;
         }
         .showcase-info > * { position: relative; z-index: 1; }
         .product-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: var(--blueprint);
-            color: var(--white);
-            font-size: 0.68rem;
-            font-weight: 600;
-            padding: 5px 14px;
-            border-radius: 50px;
-            letter-spacing: 1px;
-            margin-bottom: 1.2rem;
-            width: fit-content;
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: var(--blueprint); color: var(--white); font-size: 0.68rem; font-weight: 600;
+            padding: 5px 14px; border-radius: 50px; letter-spacing: 1px; margin-bottom: 1.2rem; width: fit-content;
         }
-        .showcase-info h3 {
-            font-size: 1.7rem;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: 0.4rem;
-        }
-        .showcase-info .subtitle {
-            font-size: 0.9rem;
-            color: var(--blueprint);
-            font-weight: 600;
-            margin-bottom: 1.2rem;
-        }
-        .showcase-info p.desc {
-            font-size: 0.9rem;
-            color: var(--text-light);
-            line-height: 2;
-            margin-bottom: 1.8rem;
-        }
-        .showcase-specs {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.8rem;
-            margin-bottom: 1.8rem;
-        }
-        .spec-box {
-            background: var(--white);
-            padding: 0.9rem 1rem;
-            border-radius: var(--radius);
-            border: 1px solid var(--gray-200);
-        }
-        .spec-box .spec-label {
-            font-size: 0.68rem;
-            color: var(--gray-500);
-            letter-spacing: 0.5px;
-            margin-bottom: 0.15rem;
-        }
-        .spec-box .spec-value {
-            font-size: 1.05rem;
-            font-weight: 700;
-            color: var(--text);
-            font-family: 'Inter', sans-serif;
-        }
+        .showcase-info h3 { font-size: 1.7rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
+        .showcase-info .subtitle { font-size: 0.9rem; color: var(--blueprint); font-weight: 600; margin-bottom: 1.2rem; }
+        .showcase-info p.desc { font-size: 0.9rem; color: var(--text-light); line-height: 2; margin-bottom: 1.8rem; }
+        .showcase-specs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.8rem; margin-bottom: 1.8rem; }
+        .spec-box { background: var(--white); padding: 0.9rem 1rem; border-radius: var(--radius); border: 1px solid var(--gray-200); }
+        .spec-box .spec-label { font-size: 0.68rem; color: var(--gray-500); letter-spacing: 0.5px; margin-bottom: 0.15rem; }
+        .spec-box .spec-value { font-size: 1.05rem; font-weight: 700; color: var(--text); font-family: 'Inter', sans-serif; }
         .showcase-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 11px 24px;
-            background: var(--blueprint);
-            color: var(--white);
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.82rem;
-            transition: all var(--transition);
-            width: fit-content;
+            display: inline-flex; align-items: center; gap: 0.5rem; padding: 11px 24px;
+            background: var(--blueprint); color: var(--white); border-radius: 50px;
+            font-weight: 600; font-size: 0.82rem; transition: all var(--transition); width: fit-content;
         }
-        .showcase-btn:hover {
-            background: var(--blueprint-light);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0,119,182,0.3);
-        }
+        .showcase-btn:hover { background: var(--blueprint-light); transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,119,182,0.3); }
 
         /* ===== FLOW ===== */
         .flow-section {
-            padding: 5rem 0;
-            background: var(--blueprint-deep);
-            color: #fff;
-            position: relative;
-            overflow: hidden;
+            padding: 5rem 0; background: var(--blueprint-deep); color: #fff;
+            position: relative; overflow: hidden;
         }
         .flow-section::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image:
-                linear-gradient(rgba(0,119,182,0.08) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(0,119,182,0.08) 1px, transparent 1px);
+            content: ''; position: absolute; inset: 0;
+            background-image: linear-gradient(rgba(0,119,182,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(0,119,182,0.08) 1px, transparent 1px);
             background-size: 60px 60px;
         }
         .flow-section .container { position: relative; z-index: 1; }
         .flow-section .section-header h2 { color: #fff; }
         .flow-section .section-header h2::before { background: var(--blueprint-light); }
         .flow-section .section-header .en { color: var(--blueprint-light); }
-        .flow-track {
-            position: relative;
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 1rem;
-        }
+        .flow-visual { margin-bottom: 3rem; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.3); }
+        .flow-visual img { width: 100%; display: block; }
+        .flow-track { position: relative; display: grid; grid-template-columns: repeat(8, 1fr); gap: 0.8rem; }
         .flow-track::before {
-            content: '';
-            position: absolute;
-            top: 30px;
-            left: 8%;
-            right: 8%;
-            height: 2px;
-            background: linear-gradient(90deg, var(--blueprint), var(--blueprint-light));
-            z-index: 0;
+            content: ''; position: absolute; top: 28px; left: 6%; right: 6%;
+            height: 2px; background: linear-gradient(90deg, var(--blueprint), var(--blueprint-light)); z-index: 0;
         }
-        .flow-item {
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
+        .flow-item { text-align: center; position: relative; z-index: 1; }
         .flow-num {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: transparent;
-            border: 2px solid var(--blueprint-light);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-family: 'Inter', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--blueprint-light);
-            transition: all var(--transition);
+            width: 56px; height: 56px; border-radius: 50%; background: transparent;
+            border: 2px solid var(--blueprint-light); display: flex; align-items: center; justify-content: center;
+            margin: 0 auto 0.8rem; font-family: 'Inter', sans-serif; font-size: 1rem; font-weight: 700;
+            color: var(--blueprint-light); transition: all var(--transition);
         }
         .flow-item:hover .flow-num {
-            background: var(--blueprint);
-            border-color: var(--blueprint);
-            color: #fff;
-            transform: scale(1.1);
-            box-shadow: 0 0 25px rgba(0,119,182,0.4);
+            background: var(--blueprint); border-color: var(--blueprint); color: #fff;
+            transform: scale(1.1); box-shadow: 0 0 25px rgba(0,119,182,0.4);
         }
-        .flow-item h4 {
-            font-size: 0.82rem;
-            font-weight: 600;
-            margin-bottom: 0.3rem;
-        }
-        .flow-item p {
-            font-size: 0.72rem;
-            color: rgba(255,255,255,0.5);
-            line-height: 1.5;
-        }
+        .flow-item h4 { font-size: 0.78rem; font-weight: 600; margin-bottom: 0.2rem; }
+        .flow-item p { font-size: 0.68rem; color: rgba(255,255,255,0.5); line-height: 1.4; }
 
         /* ===== COMPANY ===== */
         .company { padding: 5rem 0; background: var(--white); }
-        .company-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
+        .company-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+        .company-visual { border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--gray-200); }
+        .company-visual img { width: 100%; display: block; }
+        .company-text h3 { font-size: 1.4rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; }
+        .company-text p { font-size: 0.9rem; color: var(--text-light); line-height: 2; margin-bottom: 1.5rem; }
+        .locations { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+        .loc-card {
+            padding: 1.2rem; background: var(--gray-100); border-radius: var(--radius);
+            border: 1px solid transparent; transition: all var(--transition);
         }
-        .company-visual {
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--gray-200);
-        }
-        .company-visual img { width: 100%; height: 100%; object-fit: cover; }
-        .company-links {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-        .company-link {
-            padding: 1.3rem;
-            background: var(--gray-100);
-            border-radius: var(--radius);
-            transition: all var(--transition);
-            cursor: pointer;
-            border: 1px solid transparent;
-        }
-        .company-link:hover {
-            background: var(--white);
-            border-color: var(--blueprint);
-            box-shadow: var(--shadow-md);
-        }
-        .company-link .link-icon {
-            font-size: 1.4rem;
-            margin-bottom: 0.6rem;
-        }
-        .company-link h4 {
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: 0.2rem;
-        }
-        .company-link p {
-            font-size: 0.78rem;
-            color: var(--text-light);
-        }
+        .loc-card:hover { border-color: var(--blueprint); background: var(--white); box-shadow: var(--shadow-md); }
+        .loc-card .loc-flag { font-size: 1.2rem; margin-bottom: 0.4rem; }
+        .loc-card h4 { font-size: 0.88rem; font-weight: 600; color: var(--text); margin-bottom: 0.2rem; }
+        .loc-card p { font-size: 0.75rem; color: var(--text-light); }
 
         /* ===== ADVANTAGES ===== */
-        .advantages {
-            padding: 5rem 0;
-            background: var(--white);
-            position: relative;
-        }
+        .advantages { padding: 5rem 0; background: var(--white); position: relative; }
         .advantages::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image:
-                linear-gradient(var(--line-color) 1px, transparent 1px),
-                linear-gradient(90deg, var(--line-color) 1px, transparent 1px);
-            background-size: 80px 80px;
-            opacity: 0.4;
+            content: ''; position: absolute; inset: 0;
+            background-image: linear-gradient(var(--line-color) 1px, transparent 1px), linear-gradient(90deg, var(--line-color) 1px, transparent 1px);
+            background-size: 80px 80px; opacity: 0.3;
         }
         .advantages .container { position: relative; z-index: 1; }
-        .adv-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem;
-        }
+        .adv-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
         .adv-card {
-            padding: 2.5rem 1.5rem;
-            border-radius: 12px;
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            text-align: center;
-            transition: all var(--transition);
+            padding: 2.2rem 1.5rem; border-radius: 12px; background: var(--white);
+            border: 1px solid var(--gray-200); text-align: center; transition: all var(--transition);
         }
-        .adv-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--blueprint);
-            box-shadow: var(--shadow-lg);
-        }
+        .adv-card:hover { transform: translateY(-5px); border-color: var(--blueprint); box-shadow: var(--shadow-lg); }
         .adv-card .adv-icon {
-            width: 56px;
-            height: 56px;
-            border-radius: 14px;
-            background: var(--blueprint-pale);
-            border: 1px solid rgba(0,119,182,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            margin: 0 auto 1.2rem;
+            width: 52px; height: 52px; border-radius: 12px; background: var(--blueprint-pale);
+            border: 1px solid rgba(0,119,182,0.1); display: flex; align-items: center; justify-content: center;
+            font-size: 1.4rem; margin: 0 auto 1rem;
         }
-        .adv-card h3 {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: 0.7rem;
-        }
-        .adv-card p {
-            font-size: 0.82rem;
-            color: var(--text-light);
-            line-height: 1.7;
-        }
+        .adv-card h3 { font-size: 1rem; font-weight: 600; color: var(--text); margin-bottom: 0.6rem; }
+        .adv-card p { font-size: 0.82rem; color: var(--text-light); line-height: 1.7; }
 
         /* ===== NEWS ===== */
         .news { padding: 5rem 0; background: var(--gray-100); }
-        .news-tabs {
-            display: flex;
-            gap: 0;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid var(--gray-200);
-        }
+        .news-tabs { display: flex; gap: 0; margin-bottom: 2rem; border-bottom: 2px solid var(--gray-200); }
         .news-tab {
-            padding: 10px 22px;
-            font-size: 0.82rem;
-            font-weight: 500;
-            color: var(--gray-500);
-            cursor: pointer;
-            transition: all var(--transition);
-            position: relative;
-            background: none;
-            border: none;
+            padding: 10px 22px; font-size: 0.82rem; font-weight: 500; color: var(--gray-500);
+            cursor: pointer; transition: all var(--transition); position: relative; background: none; border: none;
         }
         .news-tab.active, .news-tab:hover { color: var(--blueprint); }
-        .news-tab.active::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--blueprint);
-        }
+        .news-tab.active::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 2px; background: var(--blueprint); }
         .news-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 1.5rem;
-            padding: 1.1rem 0;
-            border-bottom: 1px solid var(--gray-200);
-            transition: all var(--transition);
+            display: flex; align-items: flex-start; gap: 1.5rem; padding: 1.1rem 0;
+            border-bottom: 1px solid var(--gray-200); transition: all var(--transition);
         }
         .news-item:hover { padding-left: 0.5rem; }
-        .news-date {
-            font-family: 'Inter', sans-serif;
-            font-size: 0.78rem;
-            color: var(--gray-500);
-            min-width: 90px;
-            padding-top: 2px;
-        }
-        .news-tag {
-            display: inline-block;
-            font-size: 0.62rem;
-            font-weight: 600;
-            padding: 2px 8px;
-            border-radius: 3px;
-            min-width: 55px;
-            text-align: center;
-        }
+        .news-date { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: var(--gray-500); min-width: 90px; padding-top: 2px; }
+        .news-tag { display: inline-block; font-size: 0.62rem; font-weight: 600; padding: 2px 8px; border-radius: 3px; min-width: 55px; text-align: center; }
         .news-tag.info { background: var(--blueprint-pale); color: var(--blueprint); }
         .news-tag.product { background: #fff3e0; color: #e65100; }
         .news-tag.event { background: #e8f5e9; color: #2e7d32; }
         .news-content { flex: 1; }
-        .news-content a {
-            font-size: 0.88rem;
-            font-weight: 500;
-            color: var(--text);
-            transition: color 0.2s;
-            line-height: 1.7;
-        }
+        .news-content a { font-size: 0.88rem; font-weight: 500; color: var(--text); transition: color 0.2s; line-height: 1.7; }
         .news-content a:hover { color: var(--blueprint); }
 
         /* ===== CTA ===== */
         .cta {
-            padding: 5rem 0;
-            background: linear-gradient(135deg, var(--blueprint-deep) 0%, var(--blueprint) 100%);
-            text-align: center;
-            color: var(--white);
-            position: relative;
-            overflow: hidden;
+            padding: 5rem 0; background: linear-gradient(135deg, var(--blueprint-deep) 0%, var(--blueprint) 100%);
+            text-align: center; color: var(--white); position: relative; overflow: hidden;
         }
         .cta::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image:
-                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            content: ''; position: absolute; inset: 0;
+            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
             background-size: 50px 50px;
         }
         .cta > .container { position: relative; z-index: 1; }
         .cta h2 { font-size: 2rem; font-weight: 700; margin-bottom: 0.8rem; }
         .cta p { font-size: 1rem; opacity: 0.85; margin-bottom: 2rem; }
-        .cta .btn {
-            background: #fff;
-            color: var(--blueprint);
-            font-weight: 700;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-        }
-        .cta .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-        }
+        .cta .btn { background: #fff; color: var(--blueprint); font-weight: 700; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+        .cta .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.3); }
 
         /* ===== FOOTER ===== */
-        .site-footer {
-            background: var(--dark);
-            color: rgba(255,255,255,0.55);
-            padding: 3.5rem 0 0;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 2.5rem;
-            padding-bottom: 2.5rem;
-        }
-        .footer-brand .logo-text {
-            color: #fff;
-            font-size: 1.3rem;
-            margin-bottom: 0.8rem;
-            display: inline-block;
-        }
+        .site-footer { background: var(--dark); color: rgba(255,255,255,0.55); padding: 3.5rem 0 0; }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; }
+        .footer-brand .logo-text { color: #fff; font-size: 1.3rem; margin-bottom: 0.8rem; display: inline-block; }
         .footer-brand .logo-text span { color: var(--accent-light); }
         .footer-brand p { font-size: 0.82rem; line-height: 1.8; margin-bottom: 1.2rem; }
         .footer-social { display: flex; gap: 0.7rem; }
         .footer-social a {
-            width: 34px;
-            height: 34px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.08);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.8rem;
-            transition: all 0.3s;
+            width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center;
+            font-size: 0.8rem; transition: all 0.3s;
         }
-        .footer-social a:hover {
-            background: var(--blueprint);
-            border-color: var(--blueprint);
-            color: #fff;
-        }
-        .footer-col h4 {
-            color: #fff;
-            font-size: 0.82rem;
-            font-weight: 600;
-            margin-bottom: 1rem;
-            letter-spacing: 0.5px;
-        }
-        .footer-col a {
-            display: block;
-            font-size: 0.78rem;
-            padding: 0.3rem 0;
-            transition: color 0.2s;
-        }
+        .footer-social a:hover { background: var(--blueprint); border-color: var(--blueprint); color: #fff; }
+        .footer-col h4 { color: #fff; font-size: 0.82rem; font-weight: 600; margin-bottom: 1rem; letter-spacing: 0.5px; }
+        .footer-col a { display: block; font-size: 0.78rem; padding: 0.3rem 0; transition: color 0.2s; }
         .footer-col a:hover { color: #fff; }
         .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.06);
-            padding: 1.3rem 0;
-            text-align: center;
-            font-size: 0.72rem;
-            color: rgba(255,255,255,0.3);
+            border-top: 1px solid rgba(255,255,255,0.06); padding: 1.3rem 0;
+            text-align: center; font-size: 0.72rem; color: rgba(255,255,255,0.3);
         }
         .footer-bottom a { color: rgba(255,255,255,0.4); }
         .footer-bottom a:hover { color: rgba(255,255,255,0.7); }
 
         /* ===== ANIMATIONS ===== */
-        .fade-up {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        .fade-up { opacity: 0; transform: translateY(30px); transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1); }
         .fade-up.visible { opacity: 1; transform: translateY(0); }
 
         /* ===== RESPONSIVE ===== */
@@ -1010,28 +375,21 @@
             .hero-visual { display: none; }
             .hero-text h1 { font-size: 2.2rem; }
             .hero { min-height: 50vh; }
-            .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
             .adv-grid { grid-template-columns: repeat(2, 1fr); }
             .flow-track { grid-template-columns: repeat(4, 1fr); }
             .flow-track::before { display: none; }
             .showcase-layout { grid-template-columns: 1fr; }
             .showcase-img { min-height: 280px; }
+            .company-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr 1fr; }
         }
         @media (max-width: 768px) {
             .header-top { display: none; }
             .main-nav {
-                display: none;
-                position: absolute;
-                top: 68px;
-                left: 0;
-                right: 0;
-                background: var(--white);
-                flex-direction: column;
-                padding: 1rem 2rem 2rem;
-                box-shadow: var(--shadow-lg);
-                height: auto;
-                border-top: 1px solid var(--gray-200);
+                display: none; position: absolute; top: 68px; left: 0; right: 0;
+                background: var(--white); flex-direction: column; padding: 1rem 2rem 2rem;
+                box-shadow: var(--shadow-lg); height: auto; border-top: 1px solid var(--gray-200);
             }
             .main-nav.open { display: flex; }
             .main-nav > li { height: auto; }
@@ -1039,12 +397,9 @@
             .hamburger { display: flex; }
             .hero-text h1 { font-size: 1.7rem; }
             .hero-stats { flex-direction: column; gap: 1rem; }
-            .pickup-grid { grid-template-columns: 1fr; }
-            .pickup-card:first-child { grid-column: span 1; }
-            .solutions-grid { grid-template-columns: 1fr; }
+            .products-grid { grid-template-columns: 1fr; }
             .flow-track { grid-template-columns: repeat(2, 1fr); }
-            .company-grid { grid-template-columns: 1fr; }
-            .company-links { grid-template-columns: 1fr; }
+            .locations { grid-template-columns: 1fr; }
             .adv-grid { grid-template-columns: 1fr; }
             .section-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
             .footer-grid { grid-template-columns: 1fr; }
@@ -1073,34 +428,27 @@
                     </div>
                 </a>
                 <ul class="main-nav" id="mainNav">
-                    <li><a href="#solutions">ソリューション</a></li>
                     <li><a href="#products">製品</a></li>
                     <li><a href="#flow">物流フロー</a></li>
                     <li><a href="#company">会社情報</a></li>
+                    <li><a href="#advantages">強み</a></li>
                     <li><a href="#news">ニュース</a></li>
                     <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
-                <div class="hamburger" id="hamburger">
-                    <span></span><span></span><span></span>
-                </div>
+                <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
             </div>
         </div>
     </header>
 
     <!-- HERO -->
     <section class="hero">
-        <div class="hero-bg-img">
-            <img src="images/company-future.png" alt="AUTOMAIX">
-        </div>
+        <div class="hero-bg-img"><img src="images/factory6.png" alt="AUTOMAIX"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="container">
                 <div class="hero-inner">
                     <div class="hero-text">
-                        <div class="hero-badge">
-                            <span class="dot"></span>
-                            LOGISTICS TECHNOLOGY
-                        </div>
+                        <div class="hero-badge"><span class="dot"></span>LOGISTICS TECHNOLOGY</div>
                         <h1>物流の未来を、<br><span class="line">もっと速く、</span><br><span class="line">もっと正確に。</span></h1>
                         <p>EC小物や宅配荷物など、さまざまな荷物の仕分けをスムーズにサポート。高速で正確な仕分けにより作業者の負担を軽減し、省人化・効率化・誤仕分け削減に貢献します。</p>
                         <div class="hero-btns">
@@ -1108,23 +456,14 @@
                             <a href="#contact" class="btn btn-ghost">お問い合わせ <span class="btn-arrow">→</span></a>
                         </div>
                         <div class="hero-stats">
-                            <div class="hero-stat">
-                                <div class="number">10,000<span>/時</span></div>
-                                <div class="label">最大処理能力</div>
-                            </div>
-                            <div class="hero-stat">
-                                <div class="number">60<span>口</span></div>
-                                <div class="label">仕分け間口</div>
-                            </div>
-                            <div class="hero-stat">
-                                <div class="number">2.5<span>m/s</span></div>
-                                <div class="label">最大走行速度</div>
-                            </div>
+                            <div class="hero-stat"><div class="number">10,000<span>/時</span></div><div class="label">最大処理能力</div></div>
+                            <div class="hero-stat"><div class="number">60<span>口</span></div><div class="label">仕分け間口</div></div>
+                            <div class="hero-stat"><div class="number">2.5<span>m/s</span></div><div class="label">最大走行速度</div></div>
                         </div>
                     </div>
                     <div class="hero-visual">
                         <div class="hero-img-frame">
-                            <img src="images/1.png" alt="AUTOMAIX 3D仕分けシステム">
+                            <img src="images/product-big.png" alt="AUTOMAIX 3D仕分けシステム">
                         </div>
                     </div>
                 </div>
@@ -1132,154 +471,90 @@
         </div>
     </section>
 
-    <!-- PICK UP -->
-    <section class="pickup">
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
         <div class="container">
             <div class="section-header">
-                <div>
-                    <div class="en">PICK UP</div>
-                    <h2>注目のコンテンツ</h2>
-                </div>
-                <a href="#" class="more">もっと見る →</a>
-            </div>
-            <div class="pickup-grid">
-                <div class="pickup-card fade-up">
-                    <div class="thumb"><img src="images/2.png" alt="物流フロー"></div>
-                    <div class="body">
-                        <span class="tag">ソリューション</span>
-                        <h3>物流センターの自動化で実現する、高効率オペレーション</h3>
-                        <p>物流を顧客価値創出の基盤と位置づけ、AUTOMAIXの3D仕分けシステムで物流効率を飛躍的に向上させます。</p>
-                    </div>
-                </div>
-                <div class="pickup-card fade-up">
-                    <div class="thumb"><img src="images/5.png" alt="まかせ君"></div>
-                    <div class="body">
-                        <span class="tag">新製品</span>
-                        <h3>高速3D仕分けシステム「まかせ君」— 処理能力10,000個/時</h3>
-                        <p>大型物流センターに最適な大量処理型システム。</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SOLUTIONS -->
-    <section class="solutions" id="solutions">
-        <div class="container">
-            <div class="section-header">
-                <div>
-                    <div class="en">SOLUTIONS</div>
-                    <h2>ソリューション</h2>
-                </div>
+                <div><div class="en">PRODUCTS</div><h2>製品ラインナップ</h2></div>
                 <a href="#" class="more">すべて見る →</a>
             </div>
-            <div class="solutions-grid">
-                <div class="sol-card fade-up">
-                    <div class="sol-img"><img src="images/5.png" alt="まかせ君"></div>
-                    <div class="sol-body">
-                        <div class="sol-icon">⚡</div>
-                        <h3>高速3D仕分け</h3>
-                        <p>高速走行による高効率仕分け。多箇口対応で大量処理に最適。</p>
-                        <span class="sol-link">詳細を見る →</span>
+            <div class="products-grid">
+                <div class="prod-card fade-up">
+                    <div class="prod-img"><img src="images/product-big.png" alt="まかせ君"></div>
+                    <div class="prod-body">
+                        <div class="prod-num">PRODUCT 01</div>
+                        <h3>まかせ君 — 高速3D仕分けシステム</h3>
+                        <p>大型物流センターに最適。処理能力1,400 pcs/時、48口仕分け対応。</p>
+                        <span class="prod-link">詳細を見る →</span>
                     </div>
                 </div>
-                <div class="sol-card fade-up">
-                    <div class="sol-img"><img src="images/4.png" alt="つばめちゃん"></div>
-                    <div class="sol-body">
-                        <div class="sol-icon">📦</div>
-                        <h3>コンパクト仕分け</h3>
-                        <p>省スペース設計で柔軟に導入可能。小口・多品種に最適。</p>
-                        <span class="sol-link">詳細を見る →</span>
+                <div class="prod-card fade-up">
+                    <div class="prod-img"><img src="images/fig5.png" alt="自動保管システム"></div>
+                    <div class="prod-body">
+                        <div class="prod-num">PRODUCT 02</div>
+                        <h3>立体保管・仕分けシステム</h3>
+                        <p>保管・集約・仕分け機能を立体化し、省スペース化を実現。</p>
+                        <span class="prod-link">詳細を見る →</span>
                     </div>
                 </div>
-                <div class="sol-card fade-up">
-                    <div class="sol-img"><img src="images/2.png" alt="システム連携"></div>
-                    <div class="sol-body">
-                        <div class="sol-icon">🔗</div>
-                        <h3>システム連携</h3>
-                        <p>WMS／ERP／宅配システムと連携し、データを一元管理。</p>
-                        <span class="sol-link">詳細を見る →</span>
+                <div class="prod-card fade-up">
+                    <div class="prod-img"><img src="images/fig3.png" alt="自動倉庫"></div>
+                    <div class="prod-body">
+                        <div class="prod-num">PRODUCT 03</div>
+                        <h3>自動計測システム</h3>
+                        <p>貨物の寸法・重量・バーコード情報を自動取得し、データ化。</p>
+                        <span class="prod-link">詳細を見る →</span>
                     </div>
                 </div>
-                <div class="sol-card fade-up">
-                    <div class="sol-img"><img src="images/3.png" alt="導入支援"></div>
-                    <div class="sol-body">
-                        <div class="sol-icon">🛠️</div>
-                        <h3>導入・保守支援</h3>
-                        <p>最短1日の設置から運用サポートまで、フルサポート。</p>
-                        <span class="sol-link">詳細を見る →</span>
+                <div class="prod-card fade-up">
+                    <div class="prod-img"><img src="images/fig6.png" alt="仕分け装置"></div>
+                    <div class="prod-body">
+                        <div class="prod-num">PRODUCT 04</div>
+                        <h3>ホイールソーター</h3>
+                        <p>貨物を複数方面へ高速かつ正確に仕分け。大量処理に最適。</p>
+                        <span class="prod-link">詳細を見る →</span>
+                    </div>
+                </div>
+                <div class="prod-card fade-up">
+                    <div class="prod-img"><img src="images/4.png" alt="つばめちゃん"></div>
+                    <div class="prod-body">
+                        <div class="prod-num">PRODUCT 05</div>
+                        <h3>つばめちゃん — コンパクト仕分け</h3>
+                        <p>省スペース設計で柔軟に導入可能。冷蔵・冷凍仕様にも対応。</p>
+                        <span class="prod-link">詳細を見る →</span>
+                    </div>
+                </div>
+                <div class="prod-card fade-up">
+                    <div class="prod-img"><img src="images/product7.png" alt="製品一覧"></div>
+                    <div class="prod-body">
+                        <div class="prod-num">PRODUCT 06</div>
+                        <h3>クロスベルトソーター</h3>
+                        <p>多品種の貨物を多方面へ高速・高精度に仕分け。</p>
+                        <span class="prod-link">詳細を見る →</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- PRODUCT SHOWCASE -->
-    <section class="showcase" id="products">
+    <!-- SHOWCASE -->
+    <section class="showcase">
         <div class="container">
             <div class="section-header">
-                <div>
-                    <div class="en">PRODUCTS</div>
-                    <h2>製品ラインナップ</h2>
-                </div>
+                <div><div class="en">FLAGSHIP</div><h2>主力製品</h2></div>
             </div>
             <div class="showcase-layout fade-up">
-                <div class="showcase-img">
-                    <img src="images/5.png" alt="まかせ君">
-                </div>
+                <div class="showcase-img"><img src="images/product-big.png" alt="まかせ君"></div>
                 <div class="showcase-info">
                     <div class="product-tag">★ FLAGSHIP PRODUCT</div>
                     <h3>まかせ君</h3>
                     <div class="subtitle">高速3D仕分けシステム — 驚異のパフォーマンス</div>
                     <p class="desc">大型物流センターに最適な高速・大量処理型の3D仕分けシステム。多箇口対応で、一次・二次仕分けに対応しています。</p>
                     <div class="showcase-specs">
-                        <div class="spec-box">
-                            <div class="spec-label">処理能力</div>
-                            <div class="spec-value">1,400<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> pcs/時</small></div>
-                        </div>
-                        <div class="spec-box">
-                            <div class="spec-label">仕分け間口</div>
-                            <div class="spec-value">48<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> 口</small></div>
-                        </div>
-                        <div class="spec-box">
-                            <div class="spec-label">運転速度</div>
-                            <div class="spec-value">2.5<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> m/s</small></div>
-                        </div>
-                        <div class="spec-box">
-                            <div class="spec-label">対応重量</div>
-                            <div class="spec-value">30g〜5kg</div>
-                        </div>
-                    </div>
-                    <a href="#" class="showcase-btn">製品詳細を見る →</a>
-                </div>
-            </div>
-            <div style="height:2rem"></div>
-            <div class="showcase-layout fade-up" style="direction:rtl">
-                <div class="showcase-img" style="direction:ltr">
-                    <img src="images/4.png" alt="つばめちゃん">
-                </div>
-                <div class="showcase-info" style="direction:ltr">
-                    <div class="product-tag">COMPACT SORTER</div>
-                    <h3>つばめちゃん</h3>
-                    <div class="subtitle">コンパクト仕分けシステム — 省スペース設計</div>
-                    <p class="desc">省スペース設計で柔軟に導入可能。冷蔵・冷凍仕様にもカスタマイズ対応。モジュール構造で最短1日設置。</p>
-                    <div class="showcase-specs">
-                        <div class="spec-box">
-                            <div class="spec-label">処理能力</div>
-                            <div class="spec-value">1,000<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> pcs/時</small></div>
-                        </div>
-                        <div class="spec-box">
-                            <div class="spec-label">仕分け間口</div>
-                            <div class="spec-value">40〜60<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> 口</small></div>
-                        </div>
-                        <div class="spec-box">
-                            <div class="spec-label">運転速度</div>
-                            <div class="spec-value">2.0<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> m/s</small></div>
-                        </div>
-                        <div class="spec-box">
-                            <div class="spec-label">設置面積</div>
-                            <div class="spec-value">~12<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> ㎡</small></div>
-                        </div>
+                        <div class="spec-box"><div class="spec-label">処理能力</div><div class="spec-value">1,400<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> pcs/時</small></div></div>
+                        <div class="spec-box"><div class="spec-label">仕分け間口</div><div class="spec-value">48<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> 口</small></div></div>
+                        <div class="spec-box"><div class="spec-label">運転速度</div><div class="spec-value">2.5<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> m/s</small></div></div>
+                        <div class="spec-box"><div class="spec-label">対応重量</div><div class="spec-value">30g〜5kg</div></div>
                     </div>
                     <a href="#" class="showcase-btn">製品詳細を見る →</a>
                 </div>
@@ -1291,47 +566,18 @@
     <section class="flow-section" id="flow">
         <div class="container">
             <div class="section-header">
-                <div>
-                    <div class="en">LOGISTICS FLOW</div>
-                    <h2>物流フロー</h2>
-                </div>
+                <div><div class="en">LOGISTICS FLOW</div><h2>物流フロー</h2></div>
             </div>
+            <div class="flow-visual fade-up"><img src="images/product7.png" alt="物流フロー全体図"></div>
             <div class="flow-track fade-up">
-                <div class="flow-item">
-                    <div class="flow-num">1</div>
-                    <h4>入荷</h4>
-                    <p>荷物の降ろし・検品</p>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-num">2</div>
-                    <h4>検品・計測</h4>
-                    <p>サイズ・重量の自動計測</p>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-num">3</div>
-                    <h4>一時保管</h4>
-                    <p>バッファエリアで保管</p>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-num">4</div>
-                    <h4>一次仕分け</h4>
-                    <p>エリア別に仕分け</p>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-num">5</div>
-                    <h4>二次仕分け</h4>
-                    <p>コース別に仕分け</p>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-num">6</div>
-                    <h4>出荷準備</h4>
-                    <p>積み付け・準備</p>
-                </div>
-                <div class="flow-item">
-                    <div class="flow-num">7</div>
-                    <h4>出荷</h4>
-                    <p>積み込み・出荷完了</p>
-                </div>
+                <div class="flow-item"><div class="flow-num">1</div><h4>入荷</h4><p>荷下ろし・検品</p></div>
+                <div class="flow-item"><div class="flow-num">2</div><h4>検品・計測</h4><p>自動計測</p></div>
+                <div class="flow-item"><div class="flow-num">3</div><h4>一時保管</h4><p>バッファ保管</p></div>
+                <div class="flow-item"><div class="flow-num">4</div><h4>単品化</h4><p>貨物を分離</p></div>
+                <div class="flow-item"><div class="flow-num">5</div><h4>一次仕分け</h4><p>エリア別に大分類</p></div>
+                <div class="flow-item"><div class="flow-num">6</div><h4>二次仕分け</h4><p>コース別に詳細</p></div>
+                <div class="flow-item"><div class="flow-num">7</div><h4>出荷準備</h4><p>集約・積付</p></div>
+                <div class="flow-item"><div class="flow-num">8</div><h4>出荷</h4><p>積込・出荷完了</p></div>
             </div>
         </div>
     </section>
@@ -1340,46 +586,35 @@
     <section class="company" id="company">
         <div class="container">
             <div class="section-header">
-                <div>
-                    <div class="en">COMPANY</div>
-                    <h2>会社情報</h2>
-                </div>
+                <div><div class="en">COMPANY</div><h2>会社情報</h2></div>
                 <a href="#" class="more">会社情報を見る →</a>
             </div>
             <div class="company-grid">
-                <div class="company-visual fade-up">
-                    <img src="images/company-future.png" alt="AUTOMAIX">
-                </div>
-                <div class="company-links fade-up">
-                    <div class="company-link">
-                        <div class="link-icon">🏢</div>
-                        <h4>ごあいさつ</h4>
-                        <p>代表からのメッセージ</p>
-                    </div>
-                    <div class="company-link">
-                        <div class="link-icon">📊</div>
-                        <h4>事業概要</h4>
-                        <p>事業内容のご紹介</p>
-                    </div>
-                    <div class="company-link">
-                        <div class="link-icon">💪</div>
-                        <h4>AUTOMAIXの強み</h4>
-                        <p>技術力と提案力</p>
-                    </div>
-                    <div class="company-link">
-                        <div class="link-icon">📋</div>
-                        <h4>会社概要</h4>
-                        <p>会社の基本情報</p>
-                    </div>
-                    <div class="company-link">
-                        <div class="link-icon">🌏</div>
-                        <h4>グループ拠点</h4>
-                        <p>国内外の拠点一覧</p>
-                    </div>
-                    <div class="company-link">
-                        <div class="link-icon">👥</div>
-                        <h4>採用情報</h4>
-                        <p>中途・新卒採用</p>
+                <div class="company-visual fade-up"><img src="images/factory6.png" alt="AUTOMAIX 拠点"></div>
+                <div class="company-text fade-up">
+                    <h3>技術・製造・販売・品質を最大化</h3>
+                    <p>AUTOMAIXは4つの拠点が連携し、物流自動化ソリューションの開発から製造、販売、品質管理まで一貫して提供しています。</p>
+                    <div class="locations">
+                        <div class="loc-card">
+                            <div class="loc-flag">🇨🇳</div>
+                            <h4>中国常州工場</h4>
+                            <p>板金加工・溶接・塗装・組立</p>
+                        </div>
+                        <div class="loc-card">
+                            <div class="loc-flag">🇨🇳</div>
+                            <h4>中国蘇州 R&D</h4>
+                            <p>研究開発・技術設計・試作検証</p>
+                        </div>
+                        <div class="loc-card">
+                            <div class="loc-flag">🇯🇵</div>
+                            <h4>東京本社</h4>
+                            <p>営業・マーケティング・保守</p>
+                        </div>
+                        <div class="loc-card">
+                            <div class="loc-flag">🇯🇵</div>
+                            <h4>愛知県</h4>
+                            <p>品質管理・改善活動</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1387,35 +622,16 @@
     </section>
 
     <!-- ADVANTAGES -->
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <div class="section-header">
-                <div>
-                    <div class="en">WHY AUTOMAIX</div>
-                    <h2>AUTOMAIXが選ばれる理由</h2>
-                </div>
+                <div><div class="en">WHY AUTOMAIX</div><h2>AUTOMAIXが選ばれる理由</h2></div>
             </div>
             <div class="adv-grid">
-                <div class="adv-card fade-up">
-                    <div class="adv-icon">📈</div>
-                    <h3>作業効率の向上</h3>
-                    <p>自動化による大幅な作業効率改善。人的ミスを排除し、生産性を最大化。</p>
-                </div>
-                <div class="adv-card fade-up">
-                    <div class="adv-icon">👥</div>
-                    <h3>人手不足の解消</h3>
-                    <p>深刻化する人手不足をテクノロジーで解決。人材を高付加価値業務へ。</p>
-                </div>
-                <div class="adv-card fade-up">
-                    <div class="adv-icon">💰</div>
-                    <h3>コスト削減</h3>
-                    <p>運用コストの大幅削減。短期間での投資回収を実現。</p>
-                </div>
-                <div class="adv-card fade-up">
-                    <div class="adv-icon">⭐</div>
-                    <h3>サービス品質の向上</h3>
-                    <p>誤仕分けの劇的な削減で、顧客満足度を飛躍的に向上。</p>
-                </div>
+                <div class="adv-card fade-up"><div class="adv-icon">📈</div><h3>作業効率の向上</h3><p>自動化による大幅な作業効率改善。人的ミスを排除し、生産性を最大化。</p></div>
+                <div class="adv-card fade-up"><div class="adv-icon">👥</div><h3>人手不足の解消</h3><p>深刻化する人手不足をテクノロジーで解決。人材を高付加価値業務へ。</p></div>
+                <div class="adv-card fade-up"><div class="adv-icon">💰</div><h3>コスト削減</h3><p>運用コストの大幅削減。短期間での投資回収を実現。</p></div>
+                <div class="adv-card fade-up"><div class="adv-icon">⭐</div><h3>サービス品質の向上</h3><p>誤仕分けの劇的な削減で、顧客満足度を飛躍的に向上。</p></div>
             </div>
         </div>
     </section>
@@ -1424,10 +640,7 @@
     <section class="news" id="news">
         <div class="container">
             <div class="section-header">
-                <div>
-                    <div class="en">NEWS</div>
-                    <h2>ニュース・お知らせ</h2>
-                </div>
+                <div><div class="en">NEWS</div><h2>ニュース・お知らせ</h2></div>
                 <a href="#" class="more">すべて見る →</a>
             </div>
             <div class="news-tabs">
@@ -1436,31 +649,11 @@
                 <button class="news-tab" onclick="switchNews(this)">事業・製品</button>
                 <button class="news-tab" onclick="switchNews(this)">イベント</button>
             </div>
-            <div class="news-item">
-                <span class="news-date">2026.07.15</span>
-                <span class="news-tag product">事業</span>
-                <div class="news-content"><a href="#">「まかせ君」シリーズ処理能力アップデートのお知らせ</a></div>
-            </div>
-            <div class="news-item">
-                <span class="news-date">2026.06.20</span>
-                <span class="news-tag event">イベント</span>
-                <div class="news-content"><a href="#">Logis-Tech Tokyo 2026 出展のお知らせ</a></div>
-            </div>
-            <div class="news-item">
-                <span class="news-date">2026.05.10</span>
-                <span class="news-tag info">お知らせ</span>
-                <div class="news-content"><a href="#">本社移転のお知らせ</a></div>
-            </div>
-            <div class="news-item">
-                <span class="news-date">2026.04.01</span>
-                <span class="news-tag product">事業</span>
-                <div class="news-content"><a href="#">冷蔵・冷凍仕様「つばめちゃん」新モデル発売開始</a></div>
-            </div>
-            <div class="news-item">
-                <span class="news-date">2026.03.15</span>
-                <span class="news-tag info">お知らせ</span>
-                <div class="news-content"><a href="#">全国導入実績100拠点突破のお知らせ</a></div>
-            </div>
+            <div class="news-item"><span class="news-date">2026.07.15</span><span class="news-tag product">事業</span><div class="news-content"><a href="#">「まかせ君」シリーズ処理能力アップデートのお知らせ</a></div></div>
+            <div class="news-item"><span class="news-date">2026.06.20</span><span class="news-tag event">イベント</span><div class="news-content"><a href="#">Logis-Tech Tokyo 2026 出展のお知らせ</a></div></div>
+            <div class="news-item"><span class="news-date">2026.05.10</span><span class="news-tag info">お知らせ</span><div class="news-content"><a href="#">本社移転のお知らせ</a></div></div>
+            <div class="news-item"><span class="news-date">2026.04.01</span><span class="news-tag product">事業</span><div class="news-content"><a href="#">冷蔵・冷凍仕様「つばめちゃん」新モデル発売開始</a></div></div>
+            <div class="news-item"><span class="news-date">2026.03.15</span><span class="news-tag info">お知らせ</span><div class="news-content"><a href="#">全国導入実績100拠点突破のお知らせ</a></div></div>
         </div>
     </section>
 
@@ -1480,64 +673,32 @@
                 <div class="footer-brand">
                     <div class="logo-text">AUTO<span>MAIX</span></div>
                     <p>物流の未来を、もっと速く、もっと正確に。<br>最先端の3D仕分けテクノロジーで物流業界の革新を推進します。</p>
-                    <div class="footer-social">
-                        <a href="#">𝕏</a>
-                        <a href="#">in</a>
-                        <a href="#">▶</a>
-                    </div>
+                    <div class="footer-social"><a href="#">𝕏</a><a href="#">in</a><a href="#">▶</a></div>
                 </div>
                 <div class="footer-col">
                     <h4>ソリューション</h4>
-                    <a href="#">物流ソリューション</a>
-                    <a href="#">高速3D仕分け</a>
-                    <a href="#">コンパクト仕分け</a>
-                    <a href="#">システム連携</a>
+                    <a href="#">物流ソリューション</a><a href="#">高速3D仕分け</a><a href="#">コンパクト仕分け</a><a href="#">システム連携</a>
                 </div>
                 <div class="footer-col">
                     <h4>会社情報</h4>
-                    <a href="#">ごあいさつ</a>
-                    <a href="#">事業概要</a>
-                    <a href="#">会社概要</a>
-                    <a href="#">グループ拠点</a>
+                    <a href="#">ごあいさつ</a><a href="#">事業概要</a><a href="#">会社概要</a><a href="#">グループ拠点</a>
                 </div>
                 <div class="footer-col">
                     <h4>サポート</h4>
-                    <a href="#">お問い合わせ</a>
-                    <a href="#">資料請求</a>
-                    <a href="#">導入事例</a>
-                    <a href="#">よくある質問</a>
+                    <a href="#">お問い合わせ</a><a href="#">資料請求</a><a href="#">導入事例</a><a href="#">よくある質問</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                &copy; 2026 AUTOMAIX Co., Ltd. All Rights Reserved. | <a href="#">プライバシーポリシー</a> | <a href="#">サイトポリシー</a>
-            </div>
+            <div class="footer-bottom">&copy; 2026 AUTOMAIX Co., Ltd. All Rights Reserved. | <a href="#">プライバシーポリシー</a> | <a href="#">サイトポリシー</a></div>
         </div>
     </footer>
 
     <script>
-        document.getElementById('hamburger').addEventListener('click', () => {
-            document.getElementById('mainNav').classList.toggle('open');
-        });
-        window.addEventListener('scroll', () => {
-            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
-        });
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, i) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
-                }
-            });
-        }, { threshold: 0.1 });
+        document.getElementById('hamburger').addEventListener('click', () => document.getElementById('mainNav').classList.toggle('open'));
+        window.addEventListener('scroll', () => document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50));
+        const observer = new IntersectionObserver((entries) => { entries.forEach((e, i) => { if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 80); }); }, { threshold: 0.1 });
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-        function switchNews(btn) {
-            document.querySelectorAll('.news-tab').forEach(t => t.classList.remove('active'));
-            btn.classList.add('active');
-        }
-        document.querySelectorAll('.main-nav a').forEach(a => {
-            a.addEventListener('click', () => {
-                document.getElementById('mainNav').classList.remove('open');
-            });
-        });
+        function switchNews(btn) { document.querySelectorAll('.news-tab').forEach(t => t.classList.remove('active')); btn.classList.add('active'); }
+        document.querySelectorAll('.main-nav a').forEach(a => a.addEventListener('click', () => document.getElementById('mainNav').classList.remove('open')));
     </script>
 
 </body>
