@@ -3,1220 +3,1523 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社AUTOMAIX - 物流の未来を、もっと速く、もっと正確に</title>
+    <title>AUTOMAIX | 3D仕分けシステム - 物流の未来を、もっと速く、もっと正確に</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #1a73e8;
-            --primary-dark: #1557b0;
-            --accent: #ff6b35;
-            --dark: #1a1a2e;
-            --gray: #f5f7fa;
-            --text: #333;
-            --text-light: #666;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        /* ===== RESET ===== */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
         body {
-            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-            color: var(--text);
+            font-family: 'Noto Sans JP', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
             line-height: 1.8;
+            background: #fff;
+            overflow-x: hidden;
+        }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+        ul { list-style: none; }
+
+        /* ===== VARIABLES ===== */
+        :root {
+            --primary: #003d7a;
+            --primary-light: #0066cc;
+            --primary-lighter: #e8f2ff;
+            --accent: #e8531e;
+            --accent-light: #ff6b35;
+            --dark: #111;
+            --gray-100: #f7f8fa;
+            --gray-200: #eef0f4;
+            --gray-300: #ddd;
+            --gray-500: #888;
+            --gray-700: #555;
+            --text: #222;
+            --text-light: #666;
+            --white: #fff;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --radius: 8px;
+            --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --max-width: 1280px;
         }
 
         /* ===== HEADER ===== */
-        header {
+        .site-header {
             position: fixed;
             top: 0;
-            width: 100%;
+            left: 0;
+            right: 0;
             z-index: 1000;
-            background: rgba(255,255,255,0.97);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s;
+            background: var(--white);
+            border-bottom: 1px solid var(--gray-200);
+            transition: var(--transition);
         }
-
-        .header-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
+        .site-header.scrolled {
+            box-shadow: var(--shadow-md);
+            border-bottom-color: transparent;
+        }
+        .header-top {
+            background: var(--primary);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.75rem;
+            padding: 6px 0;
+        }
+        .header-top .container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .header-top a {
+            color: rgba(255,255,255,0.85);
+            transition: color 0.2s;
+        }
+        .header-top a:hover { color: #fff; }
+        .header-main {
+            padding: 0;
+        }
+        .header-main .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 70px;
+            height: 72px;
         }
-
         .logo {
-            font-size: 1.6rem;
-            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .logo-text {
+            font-size: 1.65rem;
+            font-weight: 900;
+            letter-spacing: 3px;
             color: var(--primary);
-            letter-spacing: 2px;
-            text-decoration: none;
         }
-
-        .logo span {
-            color: var(--accent);
+        .logo-text span { color: var(--accent); }
+        .logo-sub {
+            font-size: 0.6rem;
+            color: var(--gray-500);
+            letter-spacing: 1px;
+            line-height: 1.3;
+            border-left: 1px solid var(--gray-300);
+            padding-left: 0.5rem;
         }
-
-        nav a {
-            text-decoration: none;
-            color: var(--text);
-            margin-left: 2rem;
+        .main-nav { display: flex; gap: 0; height: 72px; align-items: center; }
+        .main-nav > li { position: relative; height: 100%; display: flex; align-items: center; }
+        .main-nav > li > a {
+            display: flex;
+            align-items: center;
+            padding: 0 1.25rem;
+            height: 100%;
+            font-size: 0.85rem;
             font-weight: 500;
-            font-size: 0.95rem;
-            transition: color 0.3s;
+            color: var(--text);
+            letter-spacing: 0.5px;
+            transition: var(--transition);
             position: relative;
         }
-
-        nav a::after {
+        .main-nav > li > a::after {
             content: '';
             position: absolute;
-            bottom: -4px;
-            left: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 0;
-            height: 2px;
+            height: 3px;
             background: var(--accent);
-            transition: width 0.3s;
+            transition: width var(--transition);
         }
-
-        nav a:hover {
-            color: var(--primary);
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
+        .main-nav > li > a:hover { color: var(--primary); }
+        .main-nav > li > a:hover::after { width: 80%; }
         .hamburger {
             display: none;
             flex-direction: column;
-            cursor: pointer;
             gap: 5px;
+            cursor: pointer;
+            padding: 8px;
         }
-
         .hamburger span {
-            width: 25px;
-            height: 3px;
+            width: 24px;
+            height: 2px;
             background: var(--dark);
-            transition: 0.3s;
+            transition: var(--transition);
+        }
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 2rem;
         }
 
         /* ===== HERO ===== */
         .hero {
-            min-height: 100vh;
+            margin-top: 110px;
+            position: relative;
+            height: 85vh;
+            min-height: 560px;
+            max-height: 900px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0a1628 0%, #0d2137 40%, #133a5c 100%);
+        }
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 70% 40%, rgba(0,102,204,0.15) 0%, transparent 70%),
+                radial-gradient(ellipse 60% 50% at 20% 80%, rgba(232,83,30,0.08) 0%, transparent 70%);
+        }
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
-            position: relative;
-            overflow: hidden;
-            padding-top: 70px;
         }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(26,115,232,0.15) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(255,107,53,0.1) 0%, transparent 70%);
-            border-radius: 50%;
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
+        .hero-inner {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
-            position: relative;
-            z-index: 1;
+            width: 100%;
         }
-
-        .hero-text h1 {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #fff;
-            line-height: 1.3;
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.7);
+            letter-spacing: 1px;
             margin-bottom: 1.5rem;
+            backdrop-filter: blur(10px);
         }
-
-        .hero-text h1 span {
-            background: linear-gradient(90deg, var(--primary), #64b5f6);
+        .hero-badge .dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+        .hero-text h1 {
+            font-size: 3.2rem;
+            font-weight: 900;
+            color: var(--white);
+            line-height: 1.25;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+        .hero-text h1 .highlight {
+            background: linear-gradient(90deg, var(--accent-light), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
         .hero-text p {
-            font-size: 1.15rem;
-            color: rgba(255,255,255,0.8);
-            margin-bottom: 2rem;
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.65);
             line-height: 2;
+            margin-bottom: 2.5rem;
+            max-width: 520px;
         }
-
-        .hero-buttons {
+        .hero-btns {
             display: flex;
             gap: 1rem;
-            flex-wrap: wrap;
         }
-
         .btn {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             padding: 14px 32px;
             border-radius: 50px;
             font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: all 0.3s;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            transition: all var(--transition);
             cursor: pointer;
             border: none;
         }
-
         .btn-primary {
-            background: linear-gradient(135deg, var(--primary), #42a5f5);
-            color: #fff;
-            box-shadow: 0 4px 20px rgba(26,115,232,0.4);
+            background: var(--accent);
+            color: var(--white);
+            box-shadow: 0 4px 20px rgba(232,83,30,0.35);
         }
-
         .btn-primary:hover {
+            background: var(--accent-light);
             transform: translateY(-2px);
-            box-shadow: 0 6px 30px rgba(26,115,232,0.5);
+            box-shadow: 0 8px 30px rgba(232,83,30,0.45);
         }
-
-        .btn-outline {
+        .btn-ghost {
             background: transparent;
-            color: #fff;
-            border: 2px solid rgba(255,255,255,0.4);
+            color: var(--white);
+            border: 1.5px solid rgba(255,255,255,0.3);
         }
-
-        .btn-outline:hover {
-            border-color: #fff;
-            background: rgba(255,255,255,0.1);
+        .btn-ghost:hover {
+            border-color: rgba(255,255,255,0.7);
+            background: rgba(255,255,255,0.06);
         }
-
-        .hero-image {
-            text-align: center;
-        }
-
-        .hero-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-        }
-
-        /* ===== SECTION COMMON ===== */
-        section {
-            padding: 6rem 2rem;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .section-title h2 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 1rem;
-        }
-
-        .section-title p {
-            color: var(--text-light);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .section-title .en {
-            font-size: 0.85rem;
-            color: var(--primary);
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-        }
-
-        /* ===== FEATURES ===== */
-        .features {
-            background: var(--gray);
-        }
-
-        .features-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-        }
-
-        .feature-card {
-            background: #fff;
-            border-radius: 16px;
-            padding: 2.5rem 2rem;
-            text-align: center;
-            transition: all 0.3s;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-        }
-
-        .feature-icon {
-            width: 70px;
-            height: 70px;
-            border-radius: 20px;
+        .btn-arrow { font-size: 1.1rem; transition: transform 0.3s; }
+        .btn:hover .btn-arrow { transform: translateX(4px); }
+        .hero-visual {
+            position: relative;
             display: flex;
+            justify-content: center;
             align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-            font-size: 2rem;
         }
-
-        .feature-card:nth-child(1) .feature-icon { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
-        .feature-card:nth-child(2) .feature-icon { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
-        .feature-card:nth-child(3) .feature-icon { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); }
-
-        .feature-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
+        .hero-img-wrapper {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.4);
         }
-
-        .feature-card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* ===== PRODUCTS ===== */
-        .products {
-            background: #fff;
-        }
-
-        .products-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .product-tabs {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-
-        .tab-btn {
-            padding: 12px 28px;
-            border: 2px solid var(--primary);
-            background: transparent;
-            color: var(--primary);
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .tab-btn.active, .tab-btn:hover {
-            background: var(--primary);
-            color: #fff;
-        }
-
-        .product-panel {
-            display: none;
-            animation: fadeIn 0.5s ease;
-        }
-
-        .product-panel.active {
+        .hero-img-wrapper img {
+            width: 100%;
+            height: auto;
             display: block;
         }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .hero-img-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,61,122,0.1) 0%, transparent 50%);
+            z-index: 1;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        .hero-stat .number {
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-stat .number span {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: rgba(255,255,255,0.5);
+            margin-left: 2px;
+        }
+        .hero-stat .label {
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.45);
+            letter-spacing: 1px;
         }
 
-        .product-content {
+        /* ===== PICKUP ===== */
+        .pickup {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 3rem;
+        }
+        .section-header h2 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark);
+            position: relative;
+            padding-left: 1rem;
+        }
+        .section-header h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.2em;
+            bottom: 0.2em;
+            width: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+        .section-header .en {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gray-500);
+            margin-bottom: 0.3rem;
+        }
+        .section-header .more {
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            transition: gap 0.3s;
+        }
+        .section-header .more:hover { gap: 0.6rem; }
+        .pickup-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .pickup-card {
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            transition: all var(--transition);
+            cursor: pointer;
+        }
+        .pickup-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        .pickup-card:first-child {
+            grid-column: span 2;
+        }
+        .pickup-card .thumb {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+        .pickup-card:first-child .thumb { height: 280px; }
+        .pickup-card .thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+        .pickup-card:hover .thumb img { transform: scale(1.05); }
+        .pickup-card .body {
+            padding: 1.5rem;
+        }
+        .pickup-card .tag {
+            display: inline-block;
+            background: var(--primary-lighter);
+            color: var(--primary);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 3px;
+            margin-bottom: 0.8rem;
+            letter-spacing: 0.5px;
+        }
+        .pickup-card h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--dark);
+            line-height: 1.7;
+            margin-bottom: 0.5rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .pickup-card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.7;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* ===== SOLUTIONS ===== */
+        .solutions {
+            padding: 5rem 0;
+            background: var(--gray-100);
+        }
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .sol-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: all var(--transition);
+            cursor: pointer;
+            border: 1px solid var(--gray-200);
+        }
+        .sol-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: transparent;
+        }
+        .sol-card .sol-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        .sol-card .sol-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s;
+        }
+        .sol-card:hover .sol-img img { transform: scale(1.08); }
+        .sol-card .sol-body {
+            padding: 1.5rem;
+        }
+        .sol-card .sol-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .sol-card:nth-child(1) .sol-icon { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
+        .sol-card:nth-child(2) .sol-icon { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
+        .sol-card:nth-child(3) .sol-icon { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); }
+        .sol-card:nth-child(4) .sol-icon { background: linear-gradient(135deg, #fce4ec, #f8bbd0); }
+        .sol-card h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.6rem;
+        }
+        .sol-card p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        .sol-card .sol-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            margin-top: 1rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            transition: gap 0.3s;
+        }
+        .sol-card:hover .sol-link { gap: 0.6rem; }
+
+        /* ===== PRODUCT SHOWCASE ===== */
+        .showcase {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+        .showcase-layout {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
+            gap: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
         }
-
-        .product-image img {
+        .showcase-img {
+            position: relative;
+            min-height: 500px;
+            overflow: hidden;
+        }
+        .showcase-img img {
+            position: absolute;
+            inset: 0;
             width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            height: 100%;
+            object-fit: cover;
         }
-
-        .product-info h3 {
+        .showcase-info {
+            padding: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: var(--gray-100);
+        }
+        .showcase-info .product-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--primary);
+            color: var(--white);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 5px 14px;
+            border-radius: 50px;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            width: fit-content;
+        }
+        .showcase-info h3 {
             font-size: 1.8rem;
+            font-weight: 700;
             color: var(--dark);
             margin-bottom: 0.5rem;
         }
-
-        .product-info .subtitle {
+        .showcase-info .subtitle {
+            font-size: 0.95rem;
             color: var(--accent);
             font-weight: 600;
             margin-bottom: 1.5rem;
         }
-
-        .product-info p {
+        .showcase-info p {
+            font-size: 0.95rem;
             color: var(--text-light);
-            margin-bottom: 1.5rem;
             line-height: 2;
+            margin-bottom: 2rem;
         }
-
-        .specs {
+        .showcase-specs {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
+            margin-bottom: 2rem;
         }
-
-        .spec-item {
-            background: var(--gray);
-            padding: 1rem;
-            border-radius: 12px;
+        .spec-box {
+            background: var(--white);
+            padding: 1rem 1.2rem;
+            border-radius: var(--radius);
+            border: 1px solid var(--gray-200);
         }
-
-        .spec-item .label {
-            font-size: 0.8rem;
-            color: var(--text-light);
-            margin-bottom: 0.3rem;
+        .spec-box .spec-label {
+            font-size: 0.7rem;
+            color: var(--gray-500);
+            letter-spacing: 0.5px;
+            margin-bottom: 0.2rem;
         }
-
-        .spec-item .value {
+        .spec-box .spec-value {
             font-size: 1.1rem;
             font-weight: 700;
             color: var(--dark);
+            font-family: 'Inter', sans-serif;
+        }
+        .showcase-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 12px 28px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all var(--transition);
+            width: fit-content;
+        }
+        .showcase-btn:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,61,122,0.3);
         }
 
         /* ===== FLOW ===== */
-        .flow {
-            background: var(--gray);
+        .flow-section {
+            padding: 5rem 0;
+            background: var(--gray-100);
         }
-
-        .flow-container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .flow-steps {
+        .flow-track {
             position: relative;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1rem;
         }
-
-        .flow-steps::before {
+        .flow-track::before {
             content: '';
             position: absolute;
-            left: 30px;
-            top: 0;
-            bottom: 0;
-            width: 3px;
-            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            top: 32px;
+            left: 5%;
+            right: 5%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
             border-radius: 2px;
+            z-index: 0;
         }
-
-        .flow-step {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 2rem;
+        .flow-item {
+            text-align: center;
             position: relative;
+            z-index: 1;
         }
-
-        .flow-number {
-            width: 60px;
-            height: 60px;
-            min-width: 60px;
+        .flow-num {
+            width: 64px;
+            height: 64px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--primary), #42a5f5);
-            color: #fff;
+            background: var(--white);
+            border: 3px solid var(--primary);
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 0 auto 1rem;
+            font-family: 'Inter', sans-serif;
             font-size: 1.2rem;
             font-weight: 700;
+            color: var(--primary);
+            transition: all var(--transition);
             position: relative;
-            z-index: 1;
-            box-shadow: 0 4px 15px rgba(26,115,232,0.3);
         }
-
-        .flow-content {
-            background: #fff;
-            padding: 1.5rem 2rem;
-            border-radius: 16px;
-            margin-left: 1.5rem;
-            flex: 1;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            transition: all 0.3s;
+        .flow-item:hover .flow-num {
+            background: var(--primary);
+            color: var(--white);
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0,61,122,0.3);
         }
-
-        .flow-content:hover {
-            transform: translateX(8px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
-        }
-
-        .flow-content h4 {
-            font-size: 1.15rem;
+        .flow-item h4 {
+            font-size: 0.85rem;
+            font-weight: 600;
             color: var(--dark);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.4rem;
         }
-
-        .flow-content p {
+        .flow-item p {
+            font-size: 0.75rem;
             color: var(--text-light);
-            font-size: 0.95rem;
+            line-height: 1.6;
         }
 
-        /* ===== COMPARISON ===== */
-        .comparison {
-            background: #fff;
+        /* ===== COMPANY ===== */
+        .company {
+            padding: 5rem 0;
+            background: var(--white);
         }
-
-        .comparison-container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .comparison-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-        }
-
-        .comparison-table th {
-            background: linear-gradient(135deg, var(--primary), #42a5f5);
-            color: #fff;
-            padding: 1.2rem 1.5rem;
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .comparison-table td {
-            padding: 1rem 1.5rem;
-            border-bottom: 1px solid #eee;
-            font-size: 0.95rem;
-        }
-
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        .comparison-table tr:nth-child(even) td {
-            background: var(--gray);
-        }
-
-        .comparison-table td:first-child {
-            font-weight: 600;
-            color: var(--dark);
-            background: rgba(26,115,232,0.03);
-        }
-
-        /* ===== SYSTEM ===== */
-        .system {
-            background: var(--gray);
-        }
-
-        .system-container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .company-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 3rem;
         }
-
-        .system-image img {
+        .company-visual {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            position: relative;
+        }
+        .company-visual img {
             width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            height: 100%;
+            object-fit: cover;
         }
-
-        .system-info h3 {
-            font-size: 1.6rem;
-            color: var(--dark);
-            margin-bottom: 1.5rem;
-        }
-
-        .system-features {
-            list-style: none;
-        }
-
-        .system-features li {
-            padding: 1rem 0;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
-            display: flex;
-            align-items: flex-start;
+        .company-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 1rem;
         }
-
-        .system-features li:last-child {
-            border-bottom: none;
+        .company-link {
+            padding: 1.5rem;
+            background: var(--gray-100);
+            border-radius: var(--radius);
+            transition: all var(--transition);
+            cursor: pointer;
+            border: 1px solid transparent;
         }
-
-        .check-icon {
-            width: 24px;
-            height: 24px;
-            min-width: 24px;
-            background: linear-gradient(135deg, #4caf50, #81c784);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 0.8rem;
-            margin-top: 4px;
+        .company-link:hover {
+            background: var(--white);
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
         }
-
-        /* ===== BENEFITS ===== */
-        .benefits {
-            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
-            color: #fff;
-        }
-
-        .benefits .section-title h2 {
-            color: #fff;
-        }
-
-        .benefits .section-title p {
-            color: rgba(255,255,255,0.7);
-        }
-
-        .benefits .section-title .en {
-            color: var(--accent);
-        }
-
-        .benefits-grid {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-        }
-
-        .benefit-card {
-            text-align: center;
-            padding: 2rem 1.5rem;
-            border-radius: 16px;
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            transition: all 0.3s;
-        }
-
-        .benefit-card:hover {
-            background: rgba(255,255,255,0.1);
-            transform: translateY(-5px);
-        }
-
-        .benefit-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .benefit-card h3 {
-            font-size: 1.2rem;
+        .company-link .link-icon {
+            font-size: 1.5rem;
             margin-bottom: 0.8rem;
         }
-
-        .benefit-card p {
-            font-size: 0.9rem;
-            color: rgba(255,255,255,0.7);
+        .company-link h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 0.3rem;
         }
+        .company-link p {
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        /* ===== ADVANTAGES ===== */
+        .advantages {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #0a1628 0%, #0d2137 50%, #133a5c 100%);
+            color: var(--white);
+        }
+        .advantages .section-header h2 { color: var(--white); }
+        .advantages .section-header h2::before { background: var(--accent-light); }
+        .advantages .section-header .en { color: rgba(255,255,255,0.4); }
+        .adv-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        .adv-card {
+            padding: 2.5rem 1.5rem;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            text-align: center;
+            transition: all var(--transition);
+            backdrop-filter: blur(10px);
+        }
+        .adv-card:hover {
+            background: rgba(255,255,255,0.08);
+            transform: translateY(-5px);
+            border-color: rgba(255,255,255,0.15);
+        }
+        .adv-card .adv-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.2rem;
+        }
+        .adv-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+        }
+        .adv-card p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.7;
+        }
+
+        /* ===== NEWS ===== */
+        .news {
+            padding: 5rem 0;
+            background: var(--gray-100);
+        }
+        .news-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--gray-200);
+        }
+        .news-tab {
+            padding: 10px 24px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--gray-500);
+            cursor: pointer;
+            transition: all var(--transition);
+            position: relative;
+            background: none;
+            border: none;
+        }
+        .news-tab.active, .news-tab:hover {
+            color: var(--primary);
+        }
+        .news-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary);
+        }
+        .news-list {
+            display: none;
+        }
+        .news-list.active {
+            display: block;
+        }
+        .news-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--gray-200);
+            transition: all var(--transition);
+        }
+        .news-item:hover {
+            padding-left: 0.5rem;
+        }
+        .news-date {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            min-width: 100px;
+            padding-top: 2px;
+        }
+        .news-tag {
+            display: inline-block;
+            font-size: 0.65rem;
+            font-weight: 600;
+            padding: 2px 8px;
+            border-radius: 3px;
+            min-width: 60px;
+            text-align: center;
+        }
+        .news-tag.info { background: #e3f2fd; color: #1565c0; }
+        .news-tag.product { background: #fff3e0; color: #e65100; }
+        .news-tag.event { background: #e8f5e9; color: #2e7d32; }
+        .news-content {
+            flex: 1;
+        }
+        .news-content a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text);
+            transition: color 0.2s;
+            line-height: 1.7;
+        }
+        .news-content a:hover { color: var(--primary); }
 
         /* ===== CTA ===== */
         .cta {
-            background: linear-gradient(135deg, var(--primary) 0%, #42a5f5 100%);
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
             text-align: center;
-            padding: 5rem 2rem;
-            color: #fff;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
         }
-
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,255,255,0.06) 0%, transparent 70%);
+            border-radius: 50%;
+        }
         .cta h2 {
-            font-size: 2.2rem;
-            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            position: relative;
         }
-
         .cta p {
-            font-size: 1.1rem;
+            font-size: 1rem;
+            opacity: 0.85;
             margin-bottom: 2rem;
-            opacity: 0.9;
+            position: relative;
         }
-
         .cta .btn {
-            background: #fff;
+            background: var(--white);
             color: var(--primary);
             font-weight: 700;
             box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            position: relative;
         }
-
         .cta .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 30px rgba(0,0,0,0.3);
         }
 
         /* ===== FOOTER ===== */
-        footer {
-            background: var(--dark);
-            color: rgba(255,255,255,0.7);
-            padding: 3rem 2rem;
+        .site-footer {
+            background: #0a0f1a;
+            color: rgba(255,255,255,0.6);
+            padding: 4rem 0 0;
         }
-
-        .footer-inner {
-            max-width: 1200px;
-            margin: 0 auto;
+        .footer-grid {
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
             gap: 3rem;
+            padding-bottom: 3rem;
         }
-
-        .footer-brand .logo {
-            color: #fff;
+        .footer-brand .logo-text {
+            color: var(--white);
+            font-size: 1.4rem;
             margin-bottom: 1rem;
             display: inline-block;
         }
-
+        .footer-brand .logo-text span { color: var(--accent-light); }
         .footer-brand p {
-            font-size: 0.9rem;
-            line-height: 1.8;
-        }
-
-        .footer-links h4 {
-            color: #fff;
-            margin-bottom: 1rem;
-            font-size: 1rem;
-        }
-
-        .footer-links a {
-            display: block;
-            color: rgba(255,255,255,0.6);
-            text-decoration: none;
-            padding: 0.3rem 0;
-            font-size: 0.9rem;
-            transition: color 0.3s;
-        }
-
-        .footer-links a:hover {
-            color: #fff;
-        }
-
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 2rem auto 0;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            text-align: center;
             font-size: 0.85rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
         }
-
-        /* ===== RESPONSIVE ===== */
-        @media (max-width: 968px) {
-            .hero-content {
-                grid-template-columns: 1fr;
-                text-align: center;
-            }
-
-            .hero-text h1 {
-                font-size: 2.2rem;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .product-content {
-                grid-template-columns: 1fr;
-            }
-
-            .system-container {
-                grid-template-columns: 1fr;
-            }
-
-            .benefits-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .footer-inner {
-                grid-template-columns: 1fr;
-            }
-
-            nav {
-                display: none;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            nav.open {
-                display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                right: 0;
-                background: #fff;
-                padding: 1rem 2rem 2rem;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            }
-
-            nav.open a {
-                margin: 0;
-                padding: 0.8rem 0;
-            }
+        .footer-social {
+            display: flex;
+            gap: 0.8rem;
         }
-
-        @media (max-width: 640px) {
-            .hero-text h1 {
-                font-size: 1.8rem;
-            }
-
-            .section-title h2 {
-                font-size: 1.8rem;
-            }
-
-            .specs {
-                grid-template-columns: 1fr;
-            }
-
-            .benefits-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .comparison-table {
-                font-size: 0.85rem;
-            }
-
-            .comparison-table th,
-            .comparison-table td {
-                padding: 0.8rem;
-            }
+        .footer-social a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+        }
+        .footer-social a:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            letter-spacing: 0.5px;
+        }
+        .footer-col a {
+            display: block;
+            font-size: 0.8rem;
+            padding: 0.35rem 0;
+            transition: color 0.2s;
+        }
+        .footer-col a:hover { color: var(--white); }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 0.75rem;
+            color: rgba(255,255,255,0.35);
         }
 
         /* ===== ANIMATIONS ===== */
-        .fade-in {
+        .fade-up {
             opacity: 0;
             transform: translateY(30px);
-            transition: all 0.6s ease;
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
         }
-
-        .fade-in.visible {
+        .fade-up.visible {
             opacity: 1;
             transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero-inner { grid-template-columns: 1fr; }
+            .hero-visual { display: none; }
+            .hero-text h1 { font-size: 2.4rem; }
+            .hero { height: auto; min-height: 50vh; padding: 3rem 0; }
+            .solutions-grid { grid-template-columns: repeat(2, 1fr); }
+            .adv-grid { grid-template-columns: repeat(2, 1fr); }
+            .flow-track { grid-template-columns: repeat(4, 1fr); }
+            .flow-track::before { display: none; }
+            .showcase-layout { grid-template-columns: 1fr; }
+            .showcase-img { min-height: 300px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .header-top { display: none; }
+            .main-nav {
+                display: none;
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1rem 2rem 2rem;
+                box-shadow: var(--shadow-lg);
+                height: auto;
+            }
+            .main-nav.open { display: flex; }
+            .main-nav > li { height: auto; }
+            .main-nav > li > a { padding: 0.8rem 0; height: auto; }
+            .hamburger { display: flex; }
+            .hero-text h1 { font-size: 1.8rem; }
+            .hero-stats { gap: 1.5rem; }
+            .hero-stat .number { font-size: 1.5rem; }
+            .pickup-grid { grid-template-columns: 1fr; }
+            .pickup-card:first-child { grid-column: span 1; }
+            .solutions-grid { grid-template-columns: 1fr; }
+            .flow-track { grid-template-columns: repeat(2, 1fr); }
+            .company-grid { grid-template-columns: 1fr; }
+            .company-links { grid-template-columns: 1fr; }
+            .adv-grid { grid-template-columns: 1fr; }
+            .section-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .showcase-specs { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
     <!-- HEADER -->
-    <header>
-        <div class="header-inner">
-            <a href="#" class="logo">AUTO<span>MAIX</span></a>
-            <nav id="nav">
-                <a href="#features">特徴</a>
-                <a href="#products">製品</a>
-                <a href="#flow">物流フロー</a>
-                <a href="#comparison">製品比較</a>
-                <a href="#system">システム連携</a>
-                <a href="#contact">お問い合わせ</a>
-            </nav>
-            <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')">
-                <span></span><span></span><span></span>
+    <header class="site-header" id="header">
+        <div class="header-top">
+            <div class="container">
+                <a href="#">🌐 English</a>
+                <a href="#">📋 採用情報</a>
+                <a href="#">📩 お問い合わせ</a>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <a href="#" class="logo">
+                    <div class="logo-text">AUTO<span>MAIX</span></div>
+                    <div class="logo-sub">Co., Ltd.<br>物流テクノロジー</div>
+                </a>
+                <ul class="main-nav" id="mainNav">
+                    <li><a href="#solutions">ソリューション</a></li>
+                    <li><a href="#products">製品</a></li>
+                    <li><a href="#flow">物流フロー</a></li>
+                    <li><a href="#company">会社情報</a></li>
+                    <li><a href="#news">ニュース</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
             </div>
         </div>
     </header>
 
     <!-- HERO -->
     <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
         <div class="hero-content">
-            <div class="hero-text">
-                <h1>物流の未来を<br><span>もっと速く、もっと正確に</span></h1>
-                <p>EC小物や宅配荷物など、さまざまな荷物の仕分けをスムーズにサポート。高速で正確な仕分けにより作業者の負担を軽減し、省人化・効率化・誤仕分け削減に貢献します。</p>
-                <div class="hero-buttons">
-                    <a href="#products" class="btn btn-primary">製品を見る</a>
-                    <a href="#contact" class="btn btn-outline">お問い合わせ</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="images/1.png" alt="AUTOMAIX 3Dソーター">
-            </div>
-        </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="features" id="features">
-        <div class="section-title">
-            <p class="en">Why AUTOMAIX</p>
-            <h2>選ばれる理由</h2>
-            <p>最先端のテクノロジーで、物流現場の課題を解決します</p>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card fade-in">
-                <div class="feature-icon">⚡</div>
-                <h3>高速処理</h3>
-                <p>最大10,000個/時間の処理能力で、大規模物流センターのニーズに応えます。高速走行による高効率な仕分けを実現。</p>
-            </div>
-            <div class="feature-card fade-in">
-                <div class="feature-icon">🎯</div>
-                <h3>高精度仕分け</h3>
-                <p>自動スキャンと精密制御による誤仕分けの劇的な削減。配送先への正確な仕分けでサービス品質を向上させます。</p>
-            </div>
-            <div class="feature-card fade-in">
-                <div class="feature-icon">📐</div>
-                <h3>省スペース設計</h3>
-                <p>約12㎡から設置可能なコンパクト設計。限られたスペースでも柔軟に導入でき、モジュール構造で最短1日で設置完了。</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRODUCTS -->
-    <section class="products" id="products">
-        <div class="section-title">
-            <p class="en">Products</p>
-            <h2>製品ラインナップ</h2>
-            <p>現場に合わせた2つのソリューション</p>
-        </div>
-        <div class="products-container">
-            <div class="product-tabs">
-                <button class="tab-btn active" onclick="switchTab('makase')">まかせ君</button>
-                <button class="tab-btn" onclick="switchTab('tsubame')">つばめちゃん</button>
-            </div>
-
-            <!-- まかせ君 -->
-            <div class="product-panel active" id="panel-makase">
-                <div class="product-content">
-                    <div class="product-image">
-                        <img src="images/5.png" alt="まかせ君">
-                    </div>
-                    <div class="product-info">
-                        <h3>まかせ君</h3>
-                        <p class="subtitle">高速3D仕分けシステム</p>
-                        <p>大型物流センターに最適な高速・大量処理型の3D仕分けシステム。多箇口対応で、一次・二次仕分けに対応しています。現場の作業をすべて任せられる、頼もしい存在です。</p>
-                        <div class="specs">
-                            <div class="spec-item">
-                                <div class="label">処理能力</div>
-                                <div class="value">1,400 pcs/時</div>
+            <div class="container">
+                <div class="hero-inner">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <span class="dot"></span>
+                            LOGISTICS TECHNOLOGY
+                        </div>
+                        <h1>物流の未来を、<br><span class="highlight">もっと速く、</span><br><span class="highlight">もっと正確に。</span></h1>
+                        <p>EC小物や宅配荷物など、さまざまな荷物の仕分けをスムーズにサポート。高速で正確な仕分けにより作業者の負担を軽減し、省人化・効率化・誤仕分け削減に貢献します。</p>
+                        <div class="hero-btns">
+                            <a href="#products" class="btn btn-primary">製品を見る <span class="btn-arrow">→</span></a>
+                            <a href="#contact" class="btn btn-ghost">お問い合わせ <span class="btn-arrow">→</span></a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <div class="number">10,000<span>/時</span></div>
+                                <div class="label">最大処理能力</div>
                             </div>
-                            <div class="spec-item">
+                            <div class="hero-stat">
+                                <div class="number">60<span>口</span></div>
                                 <div class="label">仕分け間口</div>
-                                <div class="value">48口</div>
                             </div>
-                            <div class="spec-item">
-                                <div class="label">運転速度</div>
-                                <div class="value">最大2.5m/s</div>
+                            <div class="hero-stat">
+                                <div class="number">2.5<span>m/s</span></div>
+                                <div class="label">最大走行速度</div>
                             </div>
-                            <div class="spec-item">
-                                <div class="label">対応重量</div>
-                                <div class="value">30g〜5,000g</div>
-                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-img-wrapper">
+                            <img src="images/1.png" alt="AUTOMAIX 3D仕分けシステム">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- つばめちゃん -->
-            <div class="product-panel" id="panel-tsubame">
-                <div class="product-content">
-                    <div class="product-image">
-                        <img src="images/4.png" alt="つばめちゃん">
+    <!-- PICK UP -->
+    <section class="pickup">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="en">PICK UP</div>
+                    <h2>注目のコンテンツ</h2>
+                </div>
+                <a href="#" class="more">もっと見る →</a>
+            </div>
+            <div class="pickup-grid">
+                <div class="pickup-card fade-up">
+                    <div class="thumb"><img src="images/2.png" alt="物流フロー"></div>
+                    <div class="body">
+                        <span class="tag">ソリューション</span>
+                        <h3>物流センターの自動化で実現する、2.5時間出荷オペレーション</h3>
+                        <p>物流を顧客価値創出の基盤と位置づけ、その高度化を推進。AUTOMAIXの3D仕分けシステムで物流効率を飛躍的に向上させます。</p>
                     </div>
-                    <div class="product-info">
-                        <h3>つばめちゃん</h3>
-                        <p class="subtitle">コンパクト仕分けシステム</p>
-                        <p>省スペース設計で柔軟に導入可能なコンパクト仕分けシステム。小口・多品種の仕分けに最適で、冷蔵・冷凍仕様にもカスタマイズ対応可能です。</p>
-                        <div class="specs">
-                            <div class="spec-item">
-                                <div class="label">処理能力</div>
-                                <div class="value">1,000 pcs/時</div>
-                            </div>
-                            <div class="spec-item">
-                                <div class="label">仕分け間口</div>
-                                <div class="value">40〜60口</div>
-                            </div>
-                            <div class="spec-item">
-                                <div class="label">運転速度</div>
-                                <div class="value">最大2m/s</div>
-                            </div>
-                            <div class="spec-item">
-                                <div class="label">対応重量</div>
-                                <div class="value">30g〜5,000g</div>
-                            </div>
+                </div>
+                <div class="pickup-card fade-up">
+                    <div class="thumb"><img src="images/5.png" alt="まかせ君"></div>
+                    <div class="body">
+                        <span class="tag">新製品</span>
+                        <h3>高速3D仕分けシステム「まかせ君」— 処理能力10,000個/時</h3>
+                        <p>大型物流センターに最適な大量処理型システム。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOLUTIONS -->
+    <section class="solutions" id="solutions">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="en">SOLUTIONS</div>
+                    <h2>ソリューション</h2>
+                </div>
+                <a href="#" class="more">すべて見る →</a>
+            </div>
+            <div class="solutions-grid">
+                <div class="sol-card fade-up">
+                    <div class="sol-img"><img src="images/5.png" alt="まかせ君"></div>
+                    <div class="sol-body">
+                        <div class="sol-icon">⚡</div>
+                        <h3>高速3D仕分け</h3>
+                        <p>高速走行による高効率仕分け。多箇口対応で大量処理に最適。</p>
+                        <span class="sol-link">詳細を見る →</span>
+                    </div>
+                </div>
+                <div class="sol-card fade-up">
+                    <div class="sol-img"><img src="images/4.png" alt="つばめちゃん"></div>
+                    <div class="sol-body">
+                        <div class="sol-icon">📦</div>
+                        <h3>コンパクト仕分け</h3>
+                        <p>省スペース設計で柔軟に導入可能。小口・多品種に最適。</p>
+                        <span class="sol-link">詳細を見る →</span>
+                    </div>
+                </div>
+                <div class="sol-card fade-up">
+                    <div class="sol-img"><img src="images/2.png" alt="システム連携"></div>
+                    <div class="sol-body">
+                        <div class="sol-icon">🔗</div>
+                        <h3>システム連携</h3>
+                        <p>WMS／ERP／宅配システムと連携し、データを一元管理。</p>
+                        <span class="sol-link">詳細を見る →</span>
+                    </div>
+                </div>
+                <div class="sol-card fade-up">
+                    <div class="sol-img"><img src="images/3.png" alt="導入支援"></div>
+                    <div class="sol-body">
+                        <div class="sol-icon">🛠️</div>
+                        <h3>導入・保守支援</h3>
+                        <p>最短1日の設置から運用サポートまで、フルサポート。</p>
+                        <span class="sol-link">詳細を見る →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCT SHOWCASE -->
+    <section class="showcase" id="products">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="en">PRODUCTS</div>
+                    <h2>製品ラインナップ</h2>
+                </div>
+            </div>
+            <div class="showcase-layout fade-up">
+                <div class="showcase-img">
+                    <img src="images/5.png" alt="まかせ君">
+                </div>
+                <div class="showcase-info">
+                    <div class="product-flagship">★  flagship product</div>
+                    <div class="product-tag">高速3D仕分けシステム</div>
+                    <h3>まかせ君</h3>
+                    <div class="subtitle">驚異のパフォーマンス</div>
+                    <p>大型物流センターに最適な高速・大量処理型の3D仕分けシステム。多箇口対応で、一次・二次仕分けに対応しています。現場の作業をすべて任せられる、頼もしい存在です。</p>
+                    <div class="showcase-specs">
+                        <div class="spec-box">
+                            <div class="spec-label">処理能力</div>
+                            <div class="spec-value">1,400<span style="font-size:0.7rem;font-weight:400;color:#888"> pcs/時</span></div>
+                        </div>
+                        <div class="spec-box">
+                            <div class="spec-label">仕分け間口</div>
+                            <div class="spec-value">48<span style="font-size:0.7rem;font-weight:400;color:#888"> 口</span></div>
+                        </div>
+                        <div class="spec-box">
+                            <div class="spec-label">運転速度</div>
+                            <div class="spec-value">2.5<span style="font-size:0.7rem;font-weight:400;color:#888"> m/s</span></div>
+                        </div>
+                        <div class="spec-box">
+                            <div class="spec-label">対応重量</div>
+                            <div class="spec-value">30g〜5kg</div>
                         </div>
                     </div>
+                    <a href="#" class="showcase-btn">製品詳細を見る →</a>
+                </div>
+            </div>
+
+            <div style="height:2rem"></div>
+
+            <div class="showcase-layout fade-up" style="direction:rtl">
+                <div class="showcase-img" style="direction:ltr">
+                    <img src="images/4.png" alt="つばめちゃん">
+                </div>
+                <div class="showcase-info" style="direction:ltr">
+                    <div class="product-tag">コンパクト仕分けシステム</div>
+                    <h3>つばめちゃん</h3>
+                    <div class="subtitle">省スペース設計の柔軟な仕分け</div>
+                    <p>省スペース設計で柔軟に導入可能なコンパクト仕分けシステム。小口・多品種の仕分けに最適で、冷蔵・冷凍仕様にもカスタマイズ対応可能です。</p>
+                    <div class="showcase-specs">
+                        <div class="spec-box">
+                            <div class="spec-label">処理能力</div>
+                            <div class="spec-value">1,000<span style="font-size:0.7rem;font-weight:400;color:#888"> pcs/時</span></div>
+                        </div>
+                        <div class="spec-box">
+                            <div class="spec-label">仕分け間口</div>
+                            <div class="spec-value">40〜60<span style="font-size:0.7rem;font-weight:400;color:#888"> 口</span></div>
+                        </div>
+                        <div class="spec-box">
+                            <div class="spec-label">運転速度</div>
+                            <div class="spec-value">2.0<span style="font-size:0.7rem;font-weight:400;color:#888"> m/s</span></div>
+                        </div>
+                        <div class="spec-box">
+                            <div class="spec-label">設置面積</div>
+                            <div class="spec-value">~12<span style="font-size:0.7rem;font-weight:400;color:#888"> ㎡</span></div>
+                        </div>
+                    </div>
+                    <a href="#" class="showcase-btn">製品詳細を見る →</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FLOW -->
-    <section class="flow" id="flow">
-        <div class="section-title">
-            <p class="en">Logistics Flow</p>
-            <h2>物流フロー</h2>
-            <p>入荷から出荷まで、7つのステップで完全サポート</p>
+    <section class="flow-section" id="flow">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="en">LOGISTICS FLOW</div>
+                    <h2>物流フロー</h2>
+                </div>
+            </div>
+            <div class="flow-track fade-up">
+                <div class="flow-item">
+                    <div class="flow-num">1</div>
+                    <h4>入荷</h4>
+                    <p>荷物の降ろし・検品・データ登録</p>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-num">2</div>
+                    <h4>検品・計測</h4>
+                    <p>サイズ・重量の自動計測</p>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-num">3</div>
+                    <h4>一時保管</h4>
+                    <p>バッファエリアで一時保管</p>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-num">4</div>
+                    <h4>一次仕分け</h4>
+                    <p>エリア・方面別に大まかに仕分け</p>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-num">5</div>
+                    <h4>二次仕分け</h4>
+                    <p>コース・便別に細かく仕分け</p>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-num">6</div>
+                    <h4>出荷準備</h4>
+                    <p>積み付け・出荷準備</p>
+                </div>
+                <div class="flow-item">
+                    <div class="flow-num">7</div>
+                    <h4>出荷</h4>
+                    <p>トラック積み込み・出荷完了</p>
+                </div>
+            </div>
         </div>
-        <div class="flow-container">
-            <div class="flow-steps">
-                <div class="flow-step fade-in">
-                    <div class="flow-number">1</div>
-                    <div class="flow-content">
-                        <h4>入荷</h4>
-                        <p>トラックから荷物を降ろし、検品し、入荷データを登録</p>
-                    </div>
+    </section>
+
+    <!-- COMPANY -->
+    <section class="company" id="company">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="en">COMPANY</div>
+                    <h2>会社情報</h2>
                 </div>
-                <div class="flow-step fade-in">
-                    <div class="flow-number">2</div>
-                    <div class="flow-content">
-                        <h4>入荷検品・計測</h4>
-                        <p>サイズ・重量の自動計測とバーコード読み取りを実施</p>
-                    </div>
+                <a href="#" class="more">会社情報を見る →</a>
+            </div>
+            <div class="company-grid">
+                <div class="company-visual fade-up">
+                    <img src="images/1.png" alt="AUTOMAIX">
                 </div>
-                <div class="flow-step fade-in">
-                    <div class="flow-number">3</div>
-                    <div class="flow-content">
-                        <h4>一時保管・バッファ</h4>
-                        <p>仕分け前の荷物を一時保管し、効率的に搬送</p>
+                <div class="company-links fade-up">
+                    <div class="company-link">
+                        <div class="link-icon">🏢</div>
+                        <h4>ごあいさつ</h4>
+                        <p>代表からのメッセージ</p>
                     </div>
-                </div>
-                <div class="flow-step fade-in">
-                    <div class="flow-number">4</div>
-                    <div class="flow-content">
-                        <h4>一次仕分け（エリア別）</h4>
-                        <p>配送先エリア・方面別に大まかに仕分け</p>
+                    <div class="company-link">
+                        <div class="link-icon">📊</div>
+                        <h4>事業概要</h4>
+                        <p>事業内容のご紹介</p>
                     </div>
-                </div>
-                <div class="flow-step fade-in">
-                    <div class="flow-number">5</div>
-                    <div class="flow-content">
-                        <h4>二次仕分け（コース別）</h4>
-                        <p>店舗・コース・便別に細かく仕分け</p>
+                    <div class="company-link">
+                        <div class="link-icon">💪</div>
+                        <h4>AUTOMAIXの強み</h4>
+                        <p>技術力と提案力</p>
                     </div>
-                </div>
-                <div class="flow-step fade-in">
-                    <div class="flow-number">6</div>
-                    <div class="flow-content">
-                        <h4>出荷準備</h4>
-                        <p>仕分け後の荷物を出荷準備・積み付け</p>
+                    <div class="company-link">
+                        <div class="link-icon">📋</div>
+                        <h4>会社概要</h4>
+                        <p>会社の基本情報</p>
                     </div>
-                </div>
-                <div class="flow-step fade-in">
-                    <div class="flow-number">7</div>
-                    <div class="flow-content">
-                        <h4>出荷</h4>
-                        <p>トラックへ積み込み、出荷完了</p>
+                    <div class="company-link">
+                        <div class="link-icon">🌏</div>
+                        <h4>グループ拠点</h4>
+                        <p>国内外の拠点一覧</p>
+                    </div>
+                    <div class="company-link">
+                        <div class="link-icon">👥</div>
+                        <h4>採用情報</h4>
+                        <p>中途・新卒採用</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- COMPARISON -->
-    <section class="comparison" id="comparison">
-        <div class="section-title">
-            <p class="en">Product Comparison</p>
-            <h2>製品比較</h2>
-            <p>現場に最適な製品をお選びいただけます</p>
-        </div>
-        <div class="comparison-container">
-            <table class="comparison-table fade-in">
-                <thead>
-                    <tr>
-                        <th>項目</th>
-                        <th>まかせ君</th>
-                        <th>つばめちゃん</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>位置づけ</td>
-                        <td>大型・高速の3D仕分け設備</td>
-                        <td>小型〜中型の省スペース仕分け設備</td>
-                    </tr>
-                    <tr>
-                        <td>主な特徴</td>
-                        <td>高速・大量処理向け</td>
-                        <td>省スペース・保守しやすい・日本向け構成</td>
-                    </tr>
-                    <tr>
-                        <td>処理能力</td>
-                        <td>10,000個程度/時間</td>
-                        <td>1,000〜1,400個/時間</td>
-                    </tr>
-                    <tr>
-                        <td>設置面積</td>
-                        <td>約100㎡</td>
-                        <td>約12㎡</td>
-                    </tr>
-                    <tr>
-                        <td>仕分け間口</td>
-                        <td>多い</td>
-                        <td>少ない</td>
-                    </tr>
-                    <tr>
-                        <td>向いている現場</td>
-                        <td>大型物流センター、宅配・ECの大量仕分け</td>
-                        <td>限られたスペース、小規模〜中規模拠点、二次仕分け</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- SYSTEM -->
-    <section class="system" id="system">
-        <div class="section-title">
-            <p class="en">System Integration</p>
-            <h2>システム連携</h2>
-            <p>既存システムとのシームレスな連携</p>
-        </div>
-        <div class="system-container">
-            <div class="system-image fade-in">
-                <img src="images/2.png" alt="システム連携">
+    <!-- ADVANTAGES -->
+    <section class="advantages">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="en">WHY AUTOMAIX</div>
+                    <h2>AUTOMAIXが選ばれる理由</h2>
+                </div>
             </div>
-            <div class="system-info fade-in">
-                <h3>WMS／ERP／宅配システムと連携</h3>
-                <p style="color: var(--text-light); margin-bottom: 1.5rem;">外部システムと連携し、データを一元管理。リアルタイムな可視化で運用効率を最大化します。</p>
-                <ul class="system-features">
-                    <li>
-                        <span class="check-icon">✓</span>
-                        <div><strong>在庫管理</strong><br><span style="color: var(--text-light); font-size: 0.9rem;">リアルタイムの在庫状況を把握</span></div>
-                    </li>
-                    <li>
-                        <span class="check-icon">✓</span>
-                        <div><strong>作業指示</strong><br><span style="color: var(--text-light); font-size: 0.9rem;">自動的な作業指示の発行と管理</span></div>
-                    </li>
-                    <li>
-                        <span class="check-icon">✓</span>
-                        <div><strong>データ集計・帳票出力</strong><br><span style="color: var(--text-light); font-size: 0.9rem;">作業データの自動集計と帳票生成</span></div>
-                    </li>
-                    <li>
-                        <span class="check-icon">✓</span>
-                        <div><strong>運用分析・可視化ダッシュボード</strong><br><span style="color: var(--text-light); font-size: 0.9rem;">現場の状況を直感的に把握できるUI</span></div>
-                    </li>
-                </ul>
+            <div class="adv-grid">
+                <div class="adv-card fade-up">
+                    <div class="adv-icon">📈</div>
+                    <h3>作業効率の向上</h3>
+                    <p>自動化による大幅な作業効率改善。人的ミスを排除し、生産性を最大化します。</p>
+                </div>
+                <div class="adv-card fade-up">
+                    <div class="adv-icon">👥</div>
+                    <h3>人手不足の解消</h3>
+                    <p>深刻化する人手不足をテクノロジーで解決。貴重な人材を付加価値の高い業務へ。</p>
+                </div>
+                <div class="adv-card fade-up">
+                    <div class="adv-icon">💰</div>
+                    <h3>コスト削減</h3>
+                    <p>運用コストの大幅削減。短期間での投資回収を実現する高効率システム。</p>
+                </div>
+                <div class="adv-card fade-up">
+                    <div class="adv-icon">⭐</div>
+                    <h3>サービス品質の向上</h3>
+                    <p>誤仕分けの劇的な削減により、顧客満足度とサービス品質を飛躍的に向上。</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- BENEFITS -->
-    <section class="benefits">
-        <div class="section-title">
-            <p class="en">Benefits</p>
-            <h2>導入メリット</h2>
-            <p>AUTOMAIXの導入で得られる4つのメリット</p>
-        </div>
-        <div class="benefits-grid">
-            <div class="benefit-card fade-in">
-                <div class="benefit-icon">📈</div>
-                <h3>作業効率の向上</h3>
-                <p>自動化による大幅な作業効率改善。人的ミスを排除し、生産性を最大化。</p>
+    <!-- NEWS -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="en">NEWS</div>
+                    <h2>ニュース・お知らせ</h2>
+                </div>
+                <a href="#" class="more">すべて見る →</a>
             </div>
-            <div class="benefit-card fade-in">
-                <div class="benefit-icon">👥</div>
-                <h3>人手不足の解消</h3>
-                <p>深刻化する人手不足をテクノロジーで解決。貴重な人材をより付加価値の高い業務へ。</p>
+            <div class="news-tabs">
+                <button class="news-tab active" onclick="switchNews('all')">すべて</button>
+                <button class="news-tab" onclick="switchNews('info')">ニュース・お知らせ</button>
+                <button class="news-tab" onclick="switchNews('product')">事業・製品</button>
+                <button class="news-tab" onclick="switchNews('event')">イベント</button>
             </div>
-            <div class="benefit-card fade-in">
-                <div class="benefit-icon">💰</div>
-                <h3>コスト削減</h3>
-                <p>運用コストの大幅削減。短期間での投資回収を実現する高効率システム。</p>
-            </div>
-            <div class="benefit-card fade-in">
-                <div class="benefit-icon">⭐</div>
-                <h3>サービス品質の向上</h3>
-                <p>誤仕分けの削減により、顧客満足度とサービス品質を飛躍的に向上。</p>
+            <div class="news-list active" id="news-all">
+                <div class="news-item">
+                    <span class="news-date">2026.07.15</span>
+                    <span class="news-tag product">事業</span>
+                    <div class="news-content"><a href="#">「まかせ君」シリーズ処理能力アップデートのお知らせ</a></div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.06.20</span>
+                    <span class="news-tag event">イベント</span>
+                    <div class="news-content"><a href="#">Logis-Tech Tokyo 2026 出展のお知らせ</a></div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.05.10</span>
+                    <span class="news-tag info">お知らせ</span>
+                    <div class="news-content"><a href="#">本社移転のお知らせ</a></div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.04.01</span>
+                    <span class="news-tag product">事業</span>
+                    <div class="news-content"><a href="#">冷蔵・冷凍仕様「つばめちゃん」新モデル発売開始</a></div>
+                </div>
+                <div class="news-item">
+                    <span class="news-date">2026.03.15</span>
+                    <span class="news-tag info">お知らせ</span>
+                    <div class="news-content"><a href="#">全国導入実績100拠点突破のお知らせ</a></div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- CTA -->
     <section class="cta" id="contact">
-        <h2>物流の自動化を始めませんか？</h2>
-        <p>導入に関するご相談・お見積りは無料です。お気軽にお問い合わせください。</p>
-        <a href="mailto:info@automaix.co.jp" class="btn">お問い合わせする</a>
+        <div class="container">
+            <h2>物流の自動化を始めませんか？</h2>
+            <p>導入に関するご相談・お見積りは無料です。お気軽にお問い合わせください。</p>
+            <a href="mailto:info@automaix.co.jp" class="btn">お問い合わせする <span class="btn-arrow">→</span></a>
+        </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-brand">
-                <a href="#" class="logo">AUTO<span>MAIX</span></a>
-                <p>物流の未来を、もっと速く、もっと正確に。<br>株式会社AUTOMAIXは、最先端の3D仕分けテクノロジーで物流業界の革新を推進します。</p>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-text">AUTO<span>MAIX</span></div>
+                    <p>物流の未来を、もっと速く、もっと正確に。<br>最先端の3D仕分けテクノロジーで物流業界の革新を推進します。</p>
+                    <div class="footer-social">
+                        <a href="#">𝕏</a>
+                        <a href="#">in</a>
+                        <a href="#">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>ソリューション</h4>
+                    <a href="#">物流ソリューション</a>
+                    <a href="#">高速3D仕分け</a>
+                    <a href="#">コンパクト仕分け</a>
+                    <a href="#">システム連携</a>
+                </div>
+                <div class="footer-col">
+                    <h4>会社情報</h4>
+                    <a href="#">ごあいさつ</a>
+                    <a href="#">事業概要</a>
+                    <a href="#">会社概要</a>
+                    <a href="#">グループ拠点</a>
+                </div>
+                <div class="footer-col">
+                    <h4>サポート</h4>
+                    <a href="#">お問い合わせ</a>
+                    <a href="#">資料請求</a>
+                    <a href="#">導入事例</a>
+                    <a href="#">よくある質問</a>
+                </div>
             </div>
-            <div class="footer-links">
-                <h4>コンテンツ</h4>
-                <a href="#features">特徴</a>
-                <a href="#products">製品</a>
-                <a href="#flow">物流フロー</a>
-                <a href="#system">システム連携</a>
+            <div class="footer-bottom">
+                &copy; 2026 AUTOMAIX Co., Ltd. All Rights Reserved. | <a href="#" style="color:rgba(255,255,255,0.5)">プライバシーポリシー</a> | <a href="#" style="color:rgba(255,255,255,0.5)">サイトポリシー</a>
             </div>
-            <div class="footer-links">
-                <h4>お問い合わせ</h4>
-                <a href="mailto:info@automaix.co.jp">info@automaix.co.jp</a>
-                <a href="#">お問い合わせフォーム</a>
-                <a href="#">資料請求</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 AUTOMAIX Co., Ltd. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Tab switching
-        function switchTab(id) {
-            document.querySelectorAll('.product-panel').forEach(p => p.classList.remove('active'));
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            document.getElementById('panel-' + id).classList.add('active');
-            event.target.classList.add('active');
-        }
+        // Mobile menu
+        document.getElementById('hamburger').addEventListener('click', () => {
+            document.getElementById('mainNav').classList.toggle('open');
+        });
+
+        // Header scroll
+        window.addEventListener('scroll', () => {
+            document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+        });
 
         // Scroll animations
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
+            entries.forEach((entry, i) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    setTimeout(() => entry.target.classList.add('visible'), i * 80);
                 }
             });
         }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        // News tabs
+        function switchNews(cat) {
+            document.querySelectorAll('.news-tab').forEach(t => t.classList.remove('active'));
+            event.target.classList.add('active');
+        }
 
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.12)';
-            } else {
-                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
-            }
+        // Close mobile menu on link click
+        document.querySelectorAll('.main-nav a').forEach(a => {
+            a.addEventListener('click', () => {
+                document.getElementById('mainNav').classList.remove('open');
+            });
         });
     </script>
 
