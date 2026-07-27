@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社AUTOMAIX - 物流の未来を、もっと速く、もっと正確に</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a73e8;
+            --primary-dark: #1557b0;
+            --accent: #ff6b35;
+            --dark: #1a1a2e;
+            --gray: #f5f7fa;
+            --text: #333;
+            --text-light: #666;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255,255,255,0.97);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+        }
+
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text);
+            margin-left: 2rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--dark);
+            transition: 0.3s;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 50%, #415a77 100%);
+            position: relative;
+            overflow: hidden;
+            padding-top: 70px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(26,115,232,0.15) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255,107,53,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero-text h1 span {
+            background: linear-gradient(90deg, var(--primary), #64b5f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text p {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.8);
+            margin-bottom: 2rem;
+            line-height: 2;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), #42a5f5);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(26,115,232,0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 30px rgba(26,115,232,0.5);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255,255,255,0.4);
+        }
+
+        .btn-outline:hover {
+            border-color: #fff;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        /* ===== SECTION COMMON ===== */
+        section {
+            padding: 6rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-title .en {
+            font-size: 0.85rem;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ===== FEATURES ===== */
+        .features {
+            background: var(--gray);
+        }
+
+        .features-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: all 0.3s;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+        }
+
+        .feature-card:nth-child(1) .feature-icon { background: linear-gradient(135deg, #e3f2fd, #bbdefb); }
+        .feature-card:nth-child(2) .feature-icon { background: linear-gradient(135deg, #fff3e0, #ffe0b2); }
+        .feature-card:nth-child(3) .feature-icon { background: linear-gradient(135deg, #e8f5e9, #c8e6c9); }
+
+        .feature-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* ===== PRODUCTS ===== */
+        .products {
+            background: #fff;
+        }
+
+        .products-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .tab-btn {
+            padding: 12px 28px;
+            border: 2px solid var(--primary);
+            background: transparent;
+            color: var(--primary);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+
+        .product-panel {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .product-panel.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .product-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .product-info h3 {
+            font-size: 1.8rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-info .subtitle {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-info p {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            line-height: 2;
+        }
+
+        .specs {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .spec-item {
+            background: var(--gray);
+            padding: 1rem;
+            border-radius: 12px;
+        }
+
+        .spec-item .label {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .spec-item .value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark);
+        }
+
+        /* ===== FLOW ===== */
+        .flow {
+            background: var(--gray);
+        }
+
+        .flow-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .flow-steps {
+            position: relative;
+        }
+
+        .flow-steps::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+            border-radius: 2px;
+        }
+
+        .flow-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .flow-number {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--primary), #42a5f5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 4px 15px rgba(26,115,232,0.3);
+        }
+
+        .flow-content {
+            background: #fff;
+            padding: 1.5rem 2rem;
+            border-radius: 16px;
+            margin-left: 1.5rem;
+            flex: 1;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+        }
+
+        .flow-content:hover {
+            transform: translateX(8px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+
+        .flow-content h4 {
+            font-size: 1.15rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .flow-content p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* ===== COMPARISON ===== */
+        .comparison {
+            background: #fff;
+        }
+
+        .comparison-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+        }
+
+        .comparison-table th {
+            background: linear-gradient(135deg, var(--primary), #42a5f5);
+            color: #fff;
+            padding: 1.2rem 1.5rem;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .comparison-table td {
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:nth-child(even) td {
+            background: var(--gray);
+        }
+
+        .comparison-table td:first-child {
+            font-weight: 600;
+            color: var(--dark);
+            background: rgba(26,115,232,0.03);
+        }
+
+        /* ===== SYSTEM ===== */
+        .system {
+            background: var(--gray);
+        }
+
+        .system-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .system-image img {
+            width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .system-info h3 {
+            font-size: 1.6rem;
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+        }
+
+        .system-features {
+            list-style: none;
+        }
+
+        .system-features li {
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .system-features li:last-child {
+            border-bottom: none;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            min-width: 24px;
+            background: linear-gradient(135deg, #4caf50, #81c784);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 0.8rem;
+            margin-top: 4px;
+        }
+
+        /* ===== BENEFITS ===== */
+        .benefits {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b263b 100%);
+            color: #fff;
+        }
+
+        .benefits .section-title h2 {
+            color: #fff;
+        }
+
+        .benefits .section-title p {
+            color: rgba(255,255,255,0.7);
+        }
+
+        .benefits .section-title .en {
+            color: var(--accent);
+        }
+
+        .benefits-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            border-radius: 16px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+
+        .benefit-card:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .benefit-card p {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.7);
+        }
+
+        /* ===== CTA ===== */
+        .cta {
+            background: linear-gradient(135deg, var(--primary) 0%, #42a5f5 100%);
+            text-align: center;
+            padding: 5rem 2rem;
+            color: #fff;
+        }
+
+        .cta h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta .btn {
+            background: #fff;
+            color: var(--primary);
+            font-weight: 700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .cta .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--dark);
+            color: rgba(255,255,255,0.7);
+            padding: 3rem 2rem;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .footer-brand .logo {
+            color: #fff;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .footer-brand p {
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .footer-links h4 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .footer-links a {
+            display: block;
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+            padding: 0.3rem 0;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 968px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-content {
+                grid-template-columns: 1fr;
+            }
+
+            .system-container {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            nav.open {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: #fff;
+                padding: 1rem 2rem 2rem;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            }
+
+            nav.open a {
+                margin: 0;
+                padding: 0.8rem 0;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-text h1 {
+                font-size: 1.8rem;
+            }
+
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .specs {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-table {
+                font-size: 0.85rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.8rem;
+            }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <a href="#" class="logo">AUTO<span>MAIX</span></a>
+            <nav id="nav">
+                <a href="#features">特徴</a>
+                <a href="#products">製品</a>
+                <a href="#flow">物流フロー</a>
+                <a href="#comparison">製品比較</a>
+                <a href="#system">システム連携</a>
+                <a href="#contact">お問い合わせ</a>
+            </nav>
+            <div class="hamburger" onclick="document.getElementById('nav').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>物流の未来を<br><span>もっと速く、もっと正確に</span></h1>
+                <p>EC小物や宅配荷物など、さまざまな荷物の仕分けをスムーズにサポート。高速で正確な仕分けにより作業者の負担を軽減し、省人化・効率化・誤仕分け削減に貢献します。</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">製品を見る</a>
+                    <a href="#contact" class="btn btn-outline">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/1.png" alt="AUTOMAIX 3Dソーター">
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features">
+        <div class="section-title">
+            <p class="en">Why AUTOMAIX</p>
+            <h2>選ばれる理由</h2>
+            <p>最先端のテクノロジーで、物流現場の課題を解決します</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card fade-in">
+                <div class="feature-icon">⚡</div>
+                <h3>高速処理</h3>
+                <p>最大10,000個/時間の処理能力で、大規模物流センターのニーズに応えます。高速走行による高効率な仕分けを実現。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">🎯</div>
+                <h3>高精度仕分け</h3>
+                <p>自動スキャンと精密制御による誤仕分けの劇的な削減。配送先への正確な仕分けでサービス品質を向上させます。</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="feature-icon">📐</div>
+                <h3>省スペース設計</h3>
+                <p>約12㎡から設置可能なコンパクト設計。限られたスペースでも柔軟に導入でき、モジュール構造で最短1日で設置完了。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+        <div class="section-title">
+            <p class="en">Products</p>
+            <h2>製品ラインナップ</h2>
+            <p>現場に合わせた2つのソリューション</p>
+        </div>
+        <div class="products-container">
+            <div class="product-tabs">
+                <button class="tab-btn active" onclick="switchTab('makase')">まかせ君</button>
+                <button class="tab-btn" onclick="switchTab('tsubame')">つばめちゃん</button>
+            </div>
+
+            <!-- まかせ君 -->
+            <div class="product-panel active" id="panel-makase">
+                <div class="product-content">
+                    <div class="product-image">
+                        <img src="images/5.png" alt="まかせ君">
+                    </div>
+                    <div class="product-info">
+                        <h3>まかせ君</h3>
+                        <p class="subtitle">高速3D仕分けシステム</p>
+                        <p>大型物流センターに最適な高速・大量処理型の3D仕分けシステム。多箇口対応で、一次・二次仕分けに対応しています。現場の作業をすべて任せられる、頼もしい存在です。</p>
+                        <div class="specs">
+                            <div class="spec-item">
+                                <div class="label">処理能力</div>
+                                <div class="value">1,400 pcs/時</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="label">仕分け間口</div>
+                                <div class="value">48口</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="label">運転速度</div>
+                                <div class="value">最大2.5m/s</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="label">対応重量</div>
+                                <div class="value">30g〜5,000g</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- つばめちゃん -->
+            <div class="product-panel" id="panel-tsubame">
+                <div class="product-content">
+                    <div class="product-image">
+                        <img src="images/4.png" alt="つばめちゃん">
+                    </div>
+                    <div class="product-info">
+                        <h3>つばめちゃん</h3>
+                        <p class="subtitle">コンパクト仕分けシステム</p>
+                        <p>省スペース設計で柔軟に導入可能なコンパクト仕分けシステム。小口・多品種の仕分けに最適で、冷蔵・冷凍仕様にもカスタマイズ対応可能です。</p>
+                        <div class="specs">
+                            <div class="spec-item">
+                                <div class="label">処理能力</div>
+                                <div class="value">1,000 pcs/時</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="label">仕分け間口</div>
+                                <div class="value">40〜60口</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="label">運転速度</div>
+                                <div class="value">最大2m/s</div>
+                            </div>
+                            <div class="spec-item">
+                                <div class="label">対応重量</div>
+                                <div class="value">30g〜5,000g</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FLOW -->
+    <section class="flow" id="flow">
+        <div class="section-title">
+            <p class="en">Logistics Flow</p>
+            <h2>物流フロー</h2>
+            <p>入荷から出荷まで、7つのステップで完全サポート</p>
+        </div>
+        <div class="flow-container">
+            <div class="flow-steps">
+                <div class="flow-step fade-in">
+                    <div class="flow-number">1</div>
+                    <div class="flow-content">
+                        <h4>入荷</h4>
+                        <p>トラックから荷物を降ろし、検品し、入荷データを登録</p>
+                    </div>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="flow-number">2</div>
+                    <div class="flow-content">
+                        <h4>入荷検品・計測</h4>
+                        <p>サイズ・重量の自動計測とバーコード読み取りを実施</p>
+                    </div>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="flow-number">3</div>
+                    <div class="flow-content">
+                        <h4>一時保管・バッファ</h4>
+                        <p>仕分け前の荷物を一時保管し、効率的に搬送</p>
+                    </div>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="flow-number">4</div>
+                    <div class="flow-content">
+                        <h4>一次仕分け（エリア別）</h4>
+                        <p>配送先エリア・方面別に大まかに仕分け</p>
+                    </div>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="flow-number">5</div>
+                    <div class="flow-content">
+                        <h4>二次仕分け（コース別）</h4>
+                        <p>店舗・コース・便別に細かく仕分け</p>
+                    </div>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="flow-number">6</div>
+                    <div class="flow-content">
+                        <h4>出荷準備</h4>
+                        <p>仕分け後の荷物を出荷準備・積み付け</p>
+                    </div>
+                </div>
+                <div class="flow-step fade-in">
+                    <div class="flow-number">7</div>
+                    <div class="flow-content">
+                        <h4>出荷</h4>
+                        <p>トラックへ積み込み、出荷完了</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section class="comparison" id="comparison">
+        <div class="section-title">
+            <p class="en">Product Comparison</p>
+            <h2>製品比較</h2>
+            <p>現場に最適な製品をお選びいただけます</p>
+        </div>
+        <div class="comparison-container">
+            <table class="comparison-table fade-in">
+                <thead>
+                    <tr>
+                        <th>項目</th>
+                        <th>まかせ君</th>
+                        <th>つばめちゃん</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>位置づけ</td>
+                        <td>大型・高速の3D仕分け設備</td>
+                        <td>小型〜中型の省スペース仕分け設備</td>
+                    </tr>
+                    <tr>
+                        <td>主な特徴</td>
+                        <td>高速・大量処理向け</td>
+                        <td>省スペース・保守しやすい・日本向け構成</td>
+                    </tr>
+                    <tr>
+                        <td>処理能力</td>
+                        <td>10,000個程度/時間</td>
+                        <td>1,000〜1,400個/時間</td>
+                    </tr>
+                    <tr>
+                        <td>設置面積</td>
+                        <td>約100㎡</td>
+                        <td>約12㎡</td>
+                    </tr>
+                    <tr>
+                        <td>仕分け間口</td>
+                        <td>多い</td>
+                        <td>少ない</td>
+                    </tr>
+                    <tr>
+                        <td>向いている現場</td>
+                        <td>大型物流センター、宅配・ECの大量仕分け</td>
+                        <td>限られたスペース、小規模〜中規模拠点、二次仕分け</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- SYSTEM -->
+    <section class="system" id="system">
+        <div class="section-title">
+            <p class="en">System Integration</p>
+            <h2>システム連携</h2>
+            <p>既存システムとのシームレスな連携</p>
+        </div>
+        <div class="system-container">
+            <div class="system-image fade-in">
+                <img src="images/2.png" alt="システム連携">
+            </div>
+            <div class="system-info fade-in">
+                <h3>WMS／ERP／宅配システムと連携</h3>
+                <p style="color: var(--text-light); margin-bottom: 1.5rem;">外部システムと連携し、データを一元管理。リアルタイムな可視化で運用効率を最大化します。</p>
+                <ul class="system-features">
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div><strong>在庫管理</strong><br><span style="color: var(--text-light); font-size: 0.9rem;">リアルタイムの在庫状況を把握</span></div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div><strong>作業指示</strong><br><span style="color: var(--text-light); font-size: 0.9rem;">自動的な作業指示の発行と管理</span></div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div><strong>データ集計・帳票出力</strong><br><span style="color: var(--text-light); font-size: 0.9rem;">作業データの自動集計と帳票生成</span></div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div><strong>運用分析・可視化ダッシュボード</strong><br><span style="color: var(--text-light); font-size: 0.9rem;">現場の状況を直感的に把握できるUI</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="benefits">
+        <div class="section-title">
+            <p class="en">Benefits</p>
+            <h2>導入メリット</h2>
+            <p>AUTOMAIXの導入で得られる4つのメリット</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon">📈</div>
+                <h3>作業効率の向上</h3>
+                <p>自動化による大幅な作業効率改善。人的ミスを排除し、生産性を最大化。</p>
+            </div>
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon">👥</div>
+                <h3>人手不足の解消</h3>
+                <p>深刻化する人手不足をテクノロジーで解決。貴重な人材をより付加価値の高い業務へ。</p>
+            </div>
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon">💰</div>
+                <h3>コスト削減</h3>
+                <p>運用コストの大幅削減。短期間での投資回収を実現する高効率システム。</p>
+            </div>
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon">⭐</div>
+                <h3>サービス品質の向上</h3>
+                <p>誤仕分けの削減により、顧客満足度とサービス品質を飛躍的に向上。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="contact">
+        <h2>物流の自動化を始めませんか？</h2>
+        <p>導入に関するご相談・お見積りは無料です。お気軽にお問い合わせください。</p>
+        <a href="mailto:info@automaix.co.jp" class="btn">お問い合わせする</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="#" class="logo">AUTO<span>MAIX</span></a>
+                <p>物流の未来を、もっと速く、もっと正確に。<br>株式会社AUTOMAIXは、最先端の3D仕分けテクノロジーで物流業界の革新を推進します。</p>
+            </div>
+            <div class="footer-links">
+                <h4>コンテンツ</h4>
+                <a href="#features">特徴</a>
+                <a href="#products">製品</a>
+                <a href="#flow">物流フロー</a>
+                <a href="#system">システム連携</a>
+            </div>
+            <div class="footer-links">
+                <h4>お問い合わせ</h4>
+                <a href="mailto:info@automaix.co.jp">info@automaix.co.jp</a>
+                <a href="#">お問い合わせフォーム</a>
+                <a href="#">資料請求</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AUTOMAIX Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tab switching
+        function switchTab(id) {
+            document.querySelectorAll('.product-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById('panel-' + id).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 30px rgba(0,0,0,0.12)';
+            } else {
+                header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.08)';
+            }
+        });
+    </script>
+
+</body>
+</html>
