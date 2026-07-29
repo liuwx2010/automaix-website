@@ -186,6 +186,18 @@
             letter-spacing: 1px;
         }
         .prod-cat-header p { font-size: 0.85rem; color: var(--text-light); margin-left: auto; }
+        .prod-sub { margin-bottom: 2.5rem; }
+        .prod-sub-header {
+            display: flex; align-items: center; gap: 0.8rem;
+            margin-bottom: 1.2rem; padding-left: 1rem;
+            border-left: 3px solid var(--blueprint);
+        }
+        .prod-sub-header h4 { font-size: 1.1rem; font-weight: 700; color: var(--text); }
+        .prod-sub-header .prod-sub-tag {
+            font-size: 0.62rem; font-weight: 600; color: var(--white);
+            background: var(--blueprint); padding: 2px 10px; border-radius: 50px;
+            letter-spacing: 1px;
+        }
         .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .prod-card {
             background: var(--white); border-radius: var(--radius); overflow: hidden;
@@ -516,15 +528,98 @@
                 <div><div class="en">PRODUCTS</div><h2>製品ラインナップ</h2></div>
             </div>
             <div class="prod-tabs" id="prodTabs">
-                <button class="prod-tab active" data-cat="sorting">仕分けシステム</button>
+                <button class="prod-tab active" data-cat="robot">3D仕分けロボット</button>
+                <button class="prod-tab" data-cat="sorting">仕分けシステム</button>
                 <button class="prod-tab" data-cat="separation">単品分離システム</button>
                 <button class="prod-tab" data-cat="conveyor">コンベアシステム</button>
                 <button class="prod-tab" data-cat="special">特殊機器</button>
                 <button class="prod-tab" data-cat="warehouse">倉庫機器</button>
             </div>
 
+            <!-- 3D仕分けロボット -->
+            <div class="prod-category active" data-cat="robot">
+                <div class="prod-cat-header">
+                    <h3>3D仕分けロボット</h3>
+                    <span class="prod-cat-tag">3D SORTING ROBOT</span>
+                    <p>AI搭載の次世代3D仕分けロボットラインナップ</p>
+                </div>
+
+                <div class="prod-sub">
+                    <div class="prod-sub-header">
+                        <h4>おまかせくん</h4>
+                        <span class="prod-sub-tag">LARGE</span>
+                    </div>
+                    <div class="products-grid">
+                        <div class="prod-card fade-up">
+                            <div class="prod-img"><img src="images/product-big.png" alt="おまかせくん"></div>
+                            <div class="prod-body">
+                                <div class="prod-num">PRODUCT 01</div>
+                                <h3>おまかせくん — 高速3D仕分けロボット</h3>
+                                <p>大型物流センターに最適な高速・大量処理型の3D仕分けロボット。3DカメラとAIによる認識で、多箇口対応の一次・二次仕分けを実現。省人化・効率化・誤仕分け削減に大きく貢献。</p>
+                                <div class="prod-specs">
+                                    <span class="prod-spec">1,400 pcs/時</span>
+                                    <span class="prod-spec">48口</span>
+                                    <span class="prod-spec">2.5 m/s</span>
+                                    <span class="prod-spec">30g〜5kg</span>
+                                </div>
+                                <span class="prod-link">詳細を見る →</span>
+                            </div>
+                        </div>
+                        <div class="prod-card fade-up">
+                            <div class="prod-img"><img src="images/product-big.png" alt="おまかせくん プロ"></div>
+                            <div class="prod-body">
+                                <div class="prod-num">PRODUCT 02</div>
+                                <h3>おまかせくん プロ — 超大量処理仕分けロボット</h3>
+                                <p>超大型物流拠点向けのフラッグシップモデル。処理能力と仕分け間口を大幅に拡張し、一次・二次・三次仕分けにも対応。</p>
+                                <div class="prod-specs">
+                                    <span class="prod-spec">10,000 pcs/時</span>
+                                    <span class="prod-spec">60口</span>
+                                    <span class="prod-spec">2.5 m/s</span>
+                                </div>
+                                <span class="prod-link">詳細を見る →</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prod-sub">
+                    <div class="prod-sub-header">
+                        <h4>おつばめちゃん</h4>
+                        <span class="prod-sub-tag">COMPACT</span>
+                    </div>
+                    <div class="products-grid">
+                        <div class="prod-card fade-up">
+                            <div class="prod-img"><img src="images/4.png" alt="おつばめちゃん"></div>
+                            <div class="prod-body">
+                                <div class="prod-num">PRODUCT 01</div>
+                                <h3>おつばめちゃん — コンパクト仕分けロボット</h3>
+                                <p>省スペース設計で柔軟に導入可能。中規模物流センターに最適。冷蔵・冷凍仕様にも対応し、食品物流にも活用可能。</p>
+                                <div class="prod-specs">
+                                    <span class="prod-spec">コンパクト設計</span>
+                                    <span class="prod-spec">冷凍対応</span>
+                                </div>
+                                <span class="prod-link">詳細を見る →</span>
+                            </div>
+                        </div>
+                        <div class="prod-card fade-up">
+                            <div class="prod-img"><img src="images/4.png" alt="おつばめちゃん ミニ"></div>
+                            <div class="prod-body">
+                                <div class="prod-num">PRODUCT 02</div>
+                                <h3>おつばめちゃん ミニ — 小型仕分けロボット</h3>
+                                <p>小型拠点や既存ラインへの後付けに最適。最小限のスペースで仕分け自動化を実現。導入コストを抑えたい場合にも最適。</p>
+                                <div class="prod-specs">
+                                    <span class="prod-spec">超省スペース</span>
+                                    <span class="prod-spec">低コスト</span>
+                                </div>
+                                <span class="prod-link">詳細を見る →</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- 仕分けシステム -->
-            <div class="prod-category active" data-cat="sorting">
+            <div class="prod-category" data-cat="sorting">
                 <div class="prod-cat-header">
                     <h3>仕分けシステム</h3>
                     <span class="prod-cat-tag">SORTING</span>
@@ -532,24 +627,9 @@
                 </div>
                 <div class="products-grid">
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/product-big.png" alt="まかせ君"></div>
-                        <div class="prod-body">
-                            <div class="prod-num">PRODUCT 01</div>
-                            <h3>まかせ君 — 高速3D仕分けシステム</h3>
-                            <p>大型物流センターに最適な高速・大量処理型の3D仕分けシステム。多箇口対応で、一次・二次仕分けに対応。</p>
-                            <div class="prod-specs">
-                                <span class="prod-spec">1,400 pcs/時</span>
-                                <span class="prod-spec">48口</span>
-                                <span class="prod-spec">2.5 m/s</span>
-                                <span class="prod-spec">30g〜5kg</span>
-                            </div>
-                            <span class="prod-link">詳細を見る →</span>
-                        </div>
-                    </div>
-                    <div class="prod-card fade-up">
                         <div class="prod-img"><img src="images/fig6.png" alt="ホイールソーター"></div>
                         <div class="prod-body">
-                            <div class="prod-num">PRODUCT 02</div>
+                            <div class="prod-num">PRODUCT 01</div>
                             <h3>高速ホイールソーター</h3>
                             <p>サーボ駆動による迅速な応答と低騒音。片側70度の最大角度仕分けを実現し、エラー率はほぼゼロ。</p>
                             <div class="prod-specs">
@@ -564,7 +644,7 @@
                     <div class="prod-card fade-up">
                         <div class="prod-img"><img src="images/product7.png" alt="クロスベルトソーター"></div>
                         <div class="prod-body">
-                            <div class="prod-num">PRODUCT 03</div>
+                            <div class="prod-num">PRODUCT 02</div>
                             <h3>クロスベルトソーター</h3>
                             <p>環形・直線タイプを搭載。モジュラー設計で据え付け簡便、保守容易。多品種の貨物を多方面へ高速・高精度に仕分け。</p>
                             <div class="prod-specs">
@@ -576,18 +656,9 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/4.png" alt="つばめちゃん"></div>
-                        <div class="prod-body">
-                            <div class="prod-num">PRODUCT 04</div>
-                            <h3>つばめちゃん — コンパクト仕分け</h3>
-                            <p>省スペース設計で柔軟に導入可能。冷蔵・冷凍仕様にも対応。</p>
-                            <span class="prod-link">詳細を見る →</span>
-                        </div>
-                    </div>
-                    <div class="prod-card fade-up">
                         <div class="prod-img"><img src="images/fig5.png" alt="立体保管仕分け"></div>
                         <div class="prod-body">
-                            <div class="prod-num">PRODUCT 05</div>
+                            <div class="prod-num">PRODUCT 03</div>
                             <h3>立体保管・仕分けシステム</h3>
                             <p>保管・集約・仕分け機能を立体化し、省スペース化を実現。</p>
                             <span class="prod-link">詳細を見る →</span>
@@ -596,7 +667,7 @@
                     <div class="prod-card fade-up">
                         <div class="prod-img"><img src="images/fig3.png" alt="自動計測"></div>
                         <div class="prod-body">
-                            <div class="prod-num">PRODUCT 06</div>
+                            <div class="prod-num">PRODUCT 04</div>
                             <h3>自動計測システム</h3>
                             <p>貨物の寸法・重量・バーコード情報を自動取得し、データ化。</p>
                             <span class="prod-link">詳細を見る →</span>
