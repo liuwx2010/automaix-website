@@ -156,6 +156,36 @@
 
         /* ===== PRODUCTS GRID ===== */
         .products-section { padding: 5rem 0; background: var(--white); }
+        .prod-tabs {
+            display: flex; gap: 0; margin-bottom: 2.5rem;
+            border-bottom: 2px solid var(--gray-200); overflow-x: auto;
+            -webkit-overflow-scrolling: touch; scrollbar-width: none;
+        }
+        .prod-tabs::-webkit-scrollbar { display: none; }
+        .prod-tab {
+            padding: 12px 20px; font-size: 0.82rem; font-weight: 500; color: var(--gray-500);
+            cursor: pointer; transition: all var(--transition); position: relative;
+            background: none; border: none; white-space: nowrap; flex-shrink: 0;
+        }
+        .prod-tab.active, .prod-tab:hover { color: var(--blueprint); }
+        .prod-tab.active::after {
+            content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+            height: 2px; background: var(--blueprint);
+        }
+        .prod-category { display: none; }
+        .prod-category.active { display: block; }
+        .prod-cat-header {
+            display: flex; align-items: center; gap: 1rem;
+            margin-bottom: 1.5rem; padding-bottom: 1rem;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        .prod-cat-header h3 { font-size: 1.3rem; font-weight: 700; color: var(--text); }
+        .prod-cat-header .prod-cat-tag {
+            font-size: 0.65rem; font-weight: 600; color: var(--blueprint);
+            background: var(--blueprint-pale); padding: 3px 10px; border-radius: 50px;
+            letter-spacing: 1px;
+        }
+        .prod-cat-header p { font-size: 0.85rem; color: var(--text-light); margin-left: auto; }
         .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
         .prod-card {
             background: var(--white); border-radius: var(--radius); overflow: hidden;
@@ -176,6 +206,13 @@
         }
         .prod-card h3 { font-size: 1rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; }
         .prod-card p { font-size: 0.82rem; color: var(--text-light); line-height: 1.7; }
+        .prod-card .prod-specs {
+            display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.7rem;
+        }
+        .prod-card .prod-spec {
+            font-size: 0.68rem; color: var(--blueprint); background: var(--blueprint-pale);
+            padding: 2px 8px; border-radius: 3px; font-weight: 500;
+        }
         .prod-card .prod-link {
             display: inline-flex; align-items: center; gap: 0.3rem;
             margin-top: 0.8rem; font-size: 0.78rem; font-weight: 600; color: var(--blueprint); transition: gap 0.3s;
@@ -404,6 +441,7 @@
             .section-header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
             .footer-grid { grid-template-columns: 1fr; }
             .showcase-specs { grid-template-columns: 1fr; }
+            .prod-tab { padding: 10px 14px; font-size: 0.75rem; }
         }
     </style>
 </head>
@@ -476,61 +514,292 @@
         <div class="container">
             <div class="section-header">
                 <div><div class="en">PRODUCTS</div><h2>製品ラインナップ</h2></div>
-                <a href="#" class="more">すべて見る →</a>
             </div>
-            <div class="products-grid">
-                <div class="prod-card fade-up">
-                    <div class="prod-img"><img src="images/product-big.png" alt="まかせ君"></div>
-                    <div class="prod-body">
-                        <div class="prod-num">PRODUCT 01</div>
-                        <h3>まかせ君 — 高速3D仕分けシステム</h3>
-                        <p>大型物流センターに最適。処理能力1,400 pcs/時、48口仕分け対応。</p>
-                        <span class="prod-link">詳細を見る →</span>
+            <div class="prod-tabs" id="prodTabs">
+                <button class="prod-tab active" data-cat="sorting">仕分けシステム</button>
+                <button class="prod-tab" data-cat="separation">単品分離システム</button>
+                <button class="prod-tab" data-cat="conveyor">コンベアシステム</button>
+                <button class="prod-tab" data-cat="special">特殊機器</button>
+                <button class="prod-tab" data-cat="warehouse">倉庫機器</button>
+            </div>
+
+            <!-- 仕分けシステム -->
+            <div class="prod-category active" data-cat="sorting">
+                <div class="prod-cat-header">
+                    <h3>仕分けシステム</h3>
+                    <span class="prod-cat-tag">SORTING</span>
+                    <p>高速・高精度の自動仕分けで物流効率を飛躍的に向上</p>
+                </div>
+                <div class="products-grid">
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/product-big.png" alt="まかせ君"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 01</div>
+                            <h3>まかせ君 — 高速3D仕分けシステム</h3>
+                            <p>大型物流センターに最適な高速・大量処理型の3D仕分けシステム。多箇口対応で、一次・二次仕分けに対応。</p>
+                            <div class="prod-specs">
+                                <span class="prod-spec">1,400 pcs/時</span>
+                                <span class="prod-spec">48口</span>
+                                <span class="prod-spec">2.5 m/s</span>
+                                <span class="prod-spec">30g〜5kg</span>
+                            </div>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig6.png" alt="ホイールソーター"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 02</div>
+                            <h3>高速ホイールソーター</h3>
+                            <p>サーボ駆動による迅速な応答と低騒音。片側70度の最大角度仕分けを実現し、エラー率はほぼゼロ。</p>
+                            <div class="prod-specs">
+                                <span class="prod-spec">8,000 pcs/時</span>
+                                <span class="prod-spec">150 m/min</span>
+                                <span class="prod-spec">最大60kg</span>
+                                <span class="prod-spec">L1000×W800×H700mm</span>
+                            </div>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/product7.png" alt="クロスベルトソーター"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 03</div>
+                            <h3>クロスベルトソーター</h3>
+                            <p>環形・直線タイプを搭載。モジュラー設計で据え付け簡便、保守容易。多品種の貨物を多方面へ高速・高精度に仕分け。</p>
+                            <div class="prod-specs">
+                                <span class="prod-spec">2〜2.5 m/s</span>
+                                <span class="prod-spec">2万〜6万件/時</span>
+                                <span class="prod-spec">エラー率 0.01%</span>
+                            </div>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/4.png" alt="つばめちゃん"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 04</div>
+                            <h3>つばめちゃん — コンパクト仕分け</h3>
+                            <p>省スペース設計で柔軟に導入可能。冷蔵・冷凍仕様にも対応。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="立体保管仕分け"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 05</div>
+                            <h3>立体保管・仕分けシステム</h3>
+                            <p>保管・集約・仕分け機能を立体化し、省スペース化を実現。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig3.png" alt="自動計測"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 06</div>
+                            <h3>自動計測システム</h3>
+                            <p>貨物の寸法・重量・バーコード情報を自動取得し、データ化。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
                     </div>
                 </div>
-                <div class="prod-card fade-up">
-                    <div class="prod-img"><img src="images/fig5.png" alt="自動保管システム"></div>
-                    <div class="prod-body">
-                        <div class="prod-num">PRODUCT 02</div>
-                        <h3>立体保管・仕分けシステム</h3>
-                        <p>保管・集約・仕分け機能を立体化し、省スペース化を実現。</p>
-                        <span class="prod-link">詳細を見る →</span>
+            </div>
+
+            <!-- 単品分離システム -->
+            <div class="prod-category" data-cat="separation">
+                <div class="prod-cat-header">
+                    <h3>単品分離システム</h3>
+                    <span class="prod-cat-tag">SEPARATION</span>
+                    <p>3DカメラとAIによる高精度な個別分離</p>
+                </div>
+                <div class="products-grid">
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig3.png" alt="単品分離システム"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 01</div>
+                            <h3>単品分離システム</h3>
+                            <p>散射ベルトコンベア、分離ユニットモジュール、3Dカメラベースの視覚認識システム、AIアルゴリズム、PLC電気制御で構成。バッチ並列・交差物品の左右分離、単列化と自動間隔調整を実現。最小サイズやソフトパックにも対応し、物品適応性が広い。</p>
+                            <div class="prod-specs">
+                                <span class="prod-spec">最大120 m/min</span>
+                                <span class="prod-spec">6,000 pcs/時</span>
+                                <span class="prod-spec">最大60kg</span>
+                            </div>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
                     </div>
                 </div>
-                <div class="prod-card fade-up">
-                    <div class="prod-img"><img src="images/fig3.png" alt="自動倉庫"></div>
-                    <div class="prod-body">
-                        <div class="prod-num">PRODUCT 03</div>
-                        <h3>自動計測システム</h3>
-                        <p>貨物の寸法・重量・バーコード情報を自動取得し、データ化。</p>
-                        <span class="prod-link">詳細を見る →</span>
+            </div>
+
+            <!-- コンベアシステム -->
+            <div class="prod-category" data-cat="conveyor">
+                <div class="prod-cat-header">
+                    <h3>コンベアシステム</h3>
+                    <span class="prod-cat-tag">CONVEYOR</span>
+                    <p>モジュラー設計による柔軟で信頼性の高い搬送ソリューション</p>
+                </div>
+                <div class="products-grid">
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="伸縮ベルトコンベア"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 01</div>
+                            <h3>伸縮ベルトコンベア（3/4/5段）</h3>
+                            <p>長さ方向に自由に伸縮し、輸送長さを隨時制御可能。双向運転対応、操作端の昇降機能で他の搬送設備や仕分けシステムとの連携が容易。倉庫の出入庫や車両積卸の自動化に最適。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="抽斗式ベルトコンベア"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 02</div>
+                            <h3>抽斗式ベルトコンベア</h3>
+                            <p>エンドモジュール、機体モジュール、駆動モジュール、脚部、側板、底部封網で構成。静的最大積載150kg/m²、動的最大60kg/m²の高い積載能力。モジュラー設計で据付・保守が容易。</p>
+                            <div class="prod-specs">
+                                <span class="prod-spec">静的150kg/m²</span>
+                                <span class="prod-spec">動的60kg/m²</span>
+                            </div>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="カーブコンベア"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 03</div>
+                            <h3>カーブコンベア</h3>
+                            <p>モジュラー設計で据付・保守が容易。中間駆動方式により輸送速度は最大132m/minに達し、高速輸送下でも安定動作を保証。</p>
+                            <div class="prod-specs">
+                                <span class="prod-spec">最大132 m/min</span>
+                            </div>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="ローラーコンベア"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 04</div>
+                            <h3>ローラーコンベア</h3>
+                            <p>箱・パレット・バケット等多种貨物の搬送に対応。大型物品や大きな衝擊荷重にも耐える。複数ラインと組み合わせることで复杂的な物流システムを構築可能。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="チェーンコンベア"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 05</div>
+                            <h3>チェーンコンベア</h3>
+                            <p>チェーンを牽引・承载体として物料を搬送。大きな搬送能力を持ち、主にパレットや大型回転箱などの搬送に使用。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
                     </div>
                 </div>
-                <div class="prod-card fade-up">
-                    <div class="prod-img"><img src="images/fig6.png" alt="仕分け装置"></div>
-                    <div class="prod-body">
-                        <div class="prod-num">PRODUCT 04</div>
-                        <h3>ホイールソーター</h3>
-                        <p>貨物を複数方面へ高速かつ正確に仕分け。大量処理に最適。</p>
-                        <span class="prod-link">詳細を見る →</span>
+            </div>
+
+            <!-- 特殊機器 -->
+            <div class="prod-category" data-cat="special">
+                <div class="prod-cat-header">
+                    <h3>特殊機器</h3>
+                    <span class="prod-cat-tag">SPECIAL</span>
+                    <p>物流現場を支える高機能特殊単機設備</p>
+                </div>
+                <div class="products-grid">
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig3.png" alt="スパイラルシュート"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 01</div>
+                            <h3>スパイラルシュート</h3>
+                            <p>物料システムの垂直無動力搬送に使用。貨物の重量・寸法・形状・初期速度・出入方向に基づいて設計され、高い個別対応力を持つ。モジュラー化・金型開発による标准化も実現。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="供給テーブル"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 02</div>
+                            <h3>供給テーブル（大小対応）</h3>
+                            <p>動的読码・秤量機能を搭載。バーコードの高速読取と精密秤量を同時実行し、手作業を排除。コスト管理と生産自動化に貢献。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig3.png" alt="DWS"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 03</div>
+                            <h3>DWS（寸法・重量・読码一体システム）</h3>
+                            <p>先進のオンライン全自動秤量制御を採用。物品の重量データを迅速かつ正確に取得し、データの一括処理を実現。コスト管理と生産自動化を支援。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig3.png" alt="斜帯門式分配機"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 04</div>
+                            <h3>斜帯門式分配機</h3>
+                            <p>クロスベルトソーター前端の供給台に使用。スライドゲートの開閉で物品を供給シュートへ自動分配。最大荷重50kg/m²、供給速度45m/min、故障率が極めて低い。</p>
+                            <div class="prod-specs">
+                                <span class="prod-spec">最大50kg/m²</span>
+                                <span class="prod-spec">45 m/min</span>
+                            </div>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
                     </div>
                 </div>
-                <div class="prod-card fade-up">
-                    <div class="prod-img"><img src="images/4.png" alt="つばめちゃん"></div>
-                    <div class="prod-body">
-                        <div class="prod-num">PRODUCT 05</div>
-                        <h3>つばめちゃん — コンパクト仕分け</h3>
-                        <p>省スペース設計で柔軟に導入可能。冷蔵・冷凍仕様にも対応。</p>
-                        <span class="prod-link">詳細を見る →</span>
-                    </div>
+            </div>
+
+            <!-- 倉庫機器 -->
+            <div class="prod-category" data-cat="warehouse">
+                <div class="prod-cat-header">
+                    <h3>倉庫機器</h3>
+                    <span class="prod-cat-tag">WAREHOUSE</span>
+                    <p>倉庫自動化を支える搬送・昇降・積込システム</p>
                 </div>
-                <div class="prod-card fade-up">
-                    <div class="prod-img"><img src="images/product7.png" alt="製品一覧"></div>
-                    <div class="prod-body">
-                        <div class="prod-num">PRODUCT 06</div>
-                        <h3>クロスベルトソーター</h3>
-                        <p>多品種の貨物を多方面へ高速・高精度に仕分け。</p>
-                        <span class="prod-link">詳細を見る →</span>
+                <div class="products-grid">
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="昇降移載機"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 01</div>
+                            <h3>昇降移載機</h3>
+                            <p>物品の搬送方向を変更するための設備。主搬送線からの分岐・合流に使用。大積載・構造簡単・安定信頼性が特徴。PLC制御により物品の衝突・圧迫を防止。</p>
+                            <div class="prod-specs">
+                                <span class="prod-spec">最大50kg</span>
+                                <span class="prod-spec">30件/分以下</span>
+                            </div>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="リフター"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 02</div>
+                            <h3>リフター</h3>
+                            <p>異なる高さ間の仕分け物品搬送における低効率問題を解決。多階層倉庫や段差のある現場で威力を発揮。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="シャトルカー"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 03</div>
+                            <h3>シャトルカー</h3>
+                            <p>板鏈コンベアは形状不規則な物品の重荷搬送に適する。両側同期チェーン上に板状構造物を接続し、連続的な平板を形成。安定した運行を実現。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig5.png" alt="パレットスタッカー/デスタッカー"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 04</div>
+                            <h3>パレットスタッカー/デスタッカー</h3>
+                            <p>パレット搬送システムで使用。空パレットの自動回収・積み上げ（通常6〜10枚）・再配分を自動化。各種コンベアと組み合わせて使用。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
+                    </div>
+                    <div class="prod-card fade-up">
+                        <div class="prod-img"><img src="images/fig6.png" alt="Oベルト駆動ローラーコンベア"></div>
+                        <div class="prod-body">
+                            <div class="prod-num">PRODUCT 05</div>
+                            <h3>Oベルト駆動ローラーコンベア</h3>
+                            <p>単品重量が大きい物料や较大的な衝撃荷重に耐える搬送機械。小件物品や回転箱類の搬送に適する。</p>
+                            <span class="prod-link">詳細を見る →</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -549,7 +818,7 @@
                     <div class="product-tag">★ FLAGSHIP PRODUCT</div>
                     <h3>まかせ君</h3>
                     <div class="subtitle">高速3D仕分けシステム — 驚異のパフォーマンス</div>
-                    <p class="desc">大型物流センターに最適な高速・大量処理型の3D仕分けシステム。多箇口対応で、一次・二次仕分けに対応しています。</p>
+                    <p class="desc">大型物流センターに最適な高速・大量処理型の3D仕分けシステム。3Dカメラベースの視覚認識とAIアルゴリズムによる精密制御で、多箇口対応の一次・二次仕分けを実現。省人化・効率化・誤仕分け削減に大きく貢献します。</p>
                     <div class="showcase-specs">
                         <div class="spec-box"><div class="spec-label">処理能力</div><div class="spec-value">1,400<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> pcs/時</small></div></div>
                         <div class="spec-box"><div class="spec-label">仕分け間口</div><div class="spec-value">48<small style="font-size:0.65rem;font-weight:400;color:#8899aa"> 口</small></div></div>
@@ -677,7 +946,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>ソリューション</h4>
-                    <a href="#">物流ソリューション</a><a href="#">高速3D仕分け</a><a href="#">コンパクト仕分け</a><a href="#">システム連携</a>
+                    <a href="#">仕分けシステム</a><a href="#">単品分離システム</a><a href="#">コンベアシステム</a><a href="#">特殊機器</a><a href="#">倉庫機器</a>
                 </div>
                 <div class="footer-col">
                     <h4>会社情報</h4>
@@ -699,6 +968,22 @@
         document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
         function switchNews(btn) { document.querySelectorAll('.news-tab').forEach(t => t.classList.remove('active')); btn.classList.add('active'); }
         document.querySelectorAll('.main-nav a').forEach(a => a.addEventListener('click', () => document.getElementById('mainNav').classList.remove('open')));
+        // Product tabs
+        document.querySelectorAll('.prod-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.prod-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                const cat = tab.dataset.cat;
+                document.querySelectorAll('.prod-category').forEach(c => {
+                    c.classList.toggle('active', c.dataset.cat === cat);
+                });
+                // Re-observe fade-up elements in new category
+                document.querySelectorAll('.prod-category.active .fade-up').forEach(el => {
+                    el.classList.remove('visible');
+                    observer.observe(el);
+                });
+            });
+        });
     </script>
 
 </body>
