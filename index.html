@@ -240,6 +240,21 @@
             margin-top: 0.8rem; font-size: 0.78rem; font-weight: 600; color: var(--blueprint); transition: gap 0.3s;
         }
         .prod-card:hover .prod-link { gap: 0.6rem; }
+        .prod-gallery {
+            display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .prod-gallery-item {
+            border-radius: var(--radius); overflow: hidden;
+            border: 1px solid var(--gray-200); background: var(--gray-100);
+            transition: all var(--transition); cursor: pointer;
+        }
+        .prod-gallery-item:hover { border-color: var(--blueprint); box-shadow: var(--shadow-md); transform: translateY(-3px); }
+        .prod-gallery-item img { width: 100%; height: 200px; object-fit: contain; padding: 0.5rem; }
+        .prod-gallery-item .gallery-label {
+            text-align: center; font-size: 0.72rem; color: var(--gray-500);
+            padding: 0.4rem; background: var(--white); border-top: 1px solid var(--gray-200);
+        }
 
         /* ===== SHOWCASE ===== */
         .showcase { padding: 5rem 0; background: var(--gray-100); position: relative; }
@@ -587,6 +602,24 @@
                                 </div>
                                 <span class="prod-link">詳細を見る →</span>
                             </div>
+                        </div>
+                    </div>
+                    <div class="prod-gallery fade-up">
+                        <div class="prod-gallery-item">
+                            <img src="images/omakase-front.png" alt="おまかせくん 正面">
+                            <div class="gallery-label">正面</div>
+                        </div>
+                        <div class="prod-gallery-item">
+                            <img src="images/omakase-45deg.png" alt="おまかせくん 45度">
+                            <div class="gallery-label">45度</div>
+                        </div>
+                        <div class="prod-gallery-item">
+                            <img src="images/omakase-side.png" alt="おまかせくん 側面">
+                            <div class="gallery-label">側面</div>
+                        </div>
+                        <div class="prod-gallery-item">
+                            <img src="images/omakase-top.png" alt="おまかせくん 上面">
+                            <div class="gallery-label">上面</div>
                         </div>
                     </div>
                 </div>
