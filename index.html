@@ -100,13 +100,14 @@
             writing-mode: vertical-rl;
             text-orientation: mixed;
             display: flex;
-            gap: 1.5rem;
-            justify-content: center;
+            flex-direction: row-reverse;
+            gap: 2rem;
+            justify-content: flex-start;
             align-items: center;
         }
         .hero-vertical-text h1 {
             font-size: 2.5rem; font-weight: 900; color: #fff; line-height: 1.4;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
         }
         .hero-vertical-text h1 .line { color: var(--blueprint-light); }
         .hero-badge {
