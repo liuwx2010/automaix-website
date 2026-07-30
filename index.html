@@ -96,6 +96,19 @@
         .hero-overlay { display: none; }
         .hero-content { position: relative; z-index: 2; padding: 4rem 0; }
         .hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: center; }
+        .hero-vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-vertical-text h1 {
+            font-size: 2.5rem; font-weight: 900; color: #fff; line-height: 1.4;
+            letter-spacing: 2px;
+        }
+        .hero-vertical-text h1 .line { color: var(--blueprint-light); }
         .hero-badge {
             display: inline-flex; align-items: center; gap: 0.5rem;
             border: 1px solid rgba(0,119,182,0.4); padding: 5px 16px; border-radius: 50px;
@@ -492,7 +505,6 @@
                 <div class="hero-inner">
                     <div class="hero-text">
                         <div class="hero-badge"><span class="dot"></span>LOGISTICS TECHNOLOGY</div>
-                        <h1>物流の未来を、<br><span class="line">もっと速く、</span><br><span class="line">もっと正確に。</span></h1>
                         <p>EC小物や宅配荷物など、さまざまな荷物の仕分けをスムーズにサポート。高速で正確な仕分けにより作業者の負担を軽減し、省人化・効率化・誤仕分け削減に貢献します。</p>
                         <div class="hero-btns">
                             <a href="#products" class="btn btn-primary">製品を見る <span class="btn-arrow">→</span></a>
@@ -503,6 +515,11 @@
                             <div class="hero-stat"><div class="number">60<span>口</span></div><div class="label">仕分け間口</div></div>
                             <div class="hero-stat"><div class="number">2.5<span>m/s</span></div><div class="label">最大走行速度</div></div>
                         </div>
+                    </div>
+                    <div class="hero-vertical-text">
+                        <h1>物流の未来を、</h1>
+                        <h1><span class="line">もっと速く、</span></h1>
+                        <h1><span class="line">もっと正確に。</span></h1>
                     </div>
                 </div>
             </div>
