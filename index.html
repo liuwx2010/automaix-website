@@ -9,6 +9,10 @@
     <meta property="og:description" content="物流の未来を、もっと速く、もっと正確に。3D仕分けロボット「おまかせくん」「つばめちゃん」で省人化・効率化・誤仕分け削減を実現。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.automaix.co.jp/">
+    <meta property="og:image" content="https://www.automaix.co.jp/images/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/favicon-512.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
@@ -66,6 +70,7 @@
         .header-top a:hover { color: #fff; }
         .header-main .container { display: flex; justify-content: space-between; align-items: center; height: 68px; }
         .logo { display: flex; align-items: center; gap: 0.6rem; }
+        .logo-img { height: 50px; width: auto; display: block; }
         .logo-mark {
             width: 38px; height: 38px;
             background: linear-gradient(135deg, var(--blueprint), var(--blueprint-light));
@@ -425,6 +430,8 @@
         .site-footer { background: var(--dark); color: rgba(255,255,255,0.55); padding: 3.5rem 0 0; }
         .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2.5rem; padding-bottom: 2.5rem; }
         .footer-brand .logo-text { color: #fff; font-size: 1.3rem; margin-bottom: 0.8rem; display: inline-block; }
+        .footer-logo { background: #fff; border-radius: 10px; padding: 10px 16px; display: inline-block; margin-bottom: 0.8rem; }
+        .footer-logo img { height: 42px; width: auto; display: block; }
         .footer-brand .logo-text span { color: var(--accent-light); }
         .footer-brand p { font-size: 0.82rem; line-height: 1.8; margin-bottom: 1.2rem; }
         .footer-social { display: flex; gap: 0.7rem; }
@@ -555,11 +562,7 @@
         <div class="header-main">
             <div class="container">
                 <a href="#" class="logo">
-                    <div class="logo-mark">Ax</div>
-                    <div>
-                        <div class="logo-text">AUTO<span>MAIX</span></div>
-                        <div class="logo-sub">Co., Ltd. | 物流テクノロジー</div>
-                    </div>
+                    <img src="images/logo.png" alt="Automaix" class="logo-img">
                 </a>
                 <ul class="main-nav" id="mainNav">
                     <li><a href="#products">製品</a></li>
@@ -1342,7 +1345,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <div class="logo-text">AUTO<span>MAIX</span></div>
+                    <div class="footer-logo"><img src="images/logo.png" alt="Automaix"></div>
                     <p>物流の未来を、もっと速く、もっと正確に。<br>最先端の3D仕分けテクノロジーで物流業界の革新を推進します。</p>
                     <div class="footer-info">
                         <strong>株式会社Automaix</strong><br>
