@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AUTOMAIX | 3D仕分けシステム - 物流の未来を、もっと速く、もっと正確に</title>
     <meta name="description" content="株式会社Automaixは、日本品質×中国製造×AI技術で物流自動化を実現する3D仕分けシステムのメーカーです。おまかせくん・つばめちゃんなどの高速仕分けロボットを提供。">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <link rel="canonical" href="https://www.automaix.co.jp/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AUTOMAIX | 3D仕分けシステム">
+    <meta name="twitter:description" content="物流の未来を、もっと速く、もっと正確に。3D仕分けロボット「おまかせくん」「つばめちゃん」で省人化・効率化・誤仕分け削減を実現。">
+    <meta name="twitter:image" content="https://www.automaix.co.jp/images/logo.png">
     <meta property="og:title" content="AUTOMAIX | 3D仕分けシステム">
     <meta property="og:description" content="物流の未来を、もっと速く、もっと正確に。3D仕分けロボット「おまかせくん」「つばめちゃん」で省人化・効率化・誤仕分け削減を実現。">
     <meta property="og:type" content="website">
@@ -13,6 +19,61 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="icon" type="image/png" sizes="512x512" href="images/favicon-512.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.automaix.co.jp/#organization",
+          "name": "株式会社Automaix",
+          "alternateName": "Automaix Co., Ltd.",
+          "url": "https://www.automaix.co.jp/",
+          "logo": "https://www.automaix.co.jp/images/logo.png",
+          "foundingDate": "2026-09-18",
+          "description": "日本品質×中国製造×AI技術で物流自動化を実現する3D仕分けシステムのメーカー。おまかせくん・つばめちゃん等の高速仕分けロボット、搬送・仕分け設備を企画・開発・製造・販売。",
+          "address": {
+            "@type": "PostalAddress",
+            "postalCode": "507-0814",
+            "addressRegion": "岐阜県",
+            "addressLocality": "多治見市",
+            "streetAddress": "市之倉町12丁目353番地の307",
+            "addressCountry": "JP"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+81-50-6864-1858",
+            "contactType": "sales",
+            "areaServed": "JP",
+            "availableLanguage": ["ja", "zh", "en"]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.automaix.co.jp/#website",
+          "url": "https://www.automaix.co.jp/",
+          "name": "AUTOMAIX",
+          "publisher": { "@id": "https://www.automaix.co.jp/#organization" }
+        },
+        {
+          "@type": "Product",
+          "name": "おまかせくん（3D仕分けロボット）",
+          "image": "https://www.automaix.co.jp/images/omakase-45deg.webp",
+          "description": "大型物流センター向け高速3D仕分けロボット。処理能力10,800個/時〜、72間口〜、バーコード認証率99.99%以上。",
+          "brand": { "@type": "Brand", "name": "Automaix" },
+          "manufacturer": { "@id": "https://www.automaix.co.jp/#organization" }
+        },
+        {
+          "@type": "Product",
+          "name": "つばめちゃん（コンパクト3D仕分けロボット）",
+          "image": "https://www.automaix.co.jp/images/tsubame-01.webp",
+          "description": "設置面積約12m²の省スペース3D仕分けロボット。処理能力1,000〜1,400個/時、冷蔵・冷凍仕様対応、AC100V対応、現地設置最短半日。",
+          "brand": { "@type": "Brand", "name": "Automaix" },
+          "manufacturer": { "@id": "https://www.automaix.co.jp/#organization" }
+        }
+      ]
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <style>
@@ -116,12 +177,12 @@
             z-index: 2;
         }
         .hero-vertical-text h1 {
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
+            display: flex; flex-direction: row-reverse; gap: 2rem;
             font-size: 2.2rem; font-weight: 900; color: var(--blueprint-light); line-height: 1.6;
             letter-spacing: 4px;
             text-shadow: 0 2px 10px rgba(0,0,0,0.5);
         }
+        .hero-vertical-text .vline { writing-mode: vertical-rl; text-orientation: mixed; }
         .hero-vertical-text h1 .line { color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
         .hero-badge {
             display: inline-flex; align-items: center; gap: 0.5rem;
@@ -581,7 +642,7 @@
 
     <!-- HERO -->
     <section class="hero">
-        <div class="hero-bg-img"><img src="images/kaisha-mirai.png" alt="AUTOMAIX"></div>
+        <div class="hero-bg-img"><img src="images/kaisha-mirai.webp" alt="AUTOMAIX" fetchpriority="high" decoding="async" width="1672" height="941"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="container">
@@ -603,9 +664,11 @@
             </div>
         </div>
         <div class="hero-vertical-text">
-            <h1>物流の未来を、</h1>
-            <h1><span class="line">もっと速く、</span></h1>
-            <h1><span class="line">もっと正確に。</span></h1>
+            <h1>
+                <span class="vline">物流の未来を、</span>
+                <span class="vline"><span class="line">もっと速く、</span></span>
+                <span class="vline"><span class="line">もっと正確に。</span></span>
+            </h1>
         </div>
     </section>
 
@@ -641,7 +704,7 @@
                     </div>
                     <div class="products-grid">
                         <div class="prod-card span2 fade-up">
-                            <div class="prod-img"><img src="images/omakase-45deg.png" alt="おまかせくん"></div>
+                            <div class="prod-img"><img src="images/omakase-45deg.webp" alt="おまかせくん" loading="lazy" decoding="async" width="1536" height="1024"></div>
                             <div class="prod-body">
                                 <div class="prod-num">T-MX-72-J</div>
                                 <h3>おまかせくん — 高速3D仕分けロボット</h3>
@@ -658,19 +721,19 @@
                     </div>
                     <div class="prod-gallery fade-up">
                         <div class="prod-gallery-item">
-                            <img src="images/omakase-front.png" alt="おまかせくん 正面">
+                            <img src="images/omakase-front.webp" alt="おまかせくん 正面" loading="lazy" decoding="async" width="1536" height="1024">
                             <div class="gallery-label">正面</div>
                         </div>
                         <div class="prod-gallery-item">
-                            <img src="images/omakase-45deg.png" alt="おまかせくん 45度">
+                            <img src="images/omakase-45deg.webp" alt="おまかせくん 45度" loading="lazy" decoding="async" width="1536" height="1024">
                             <div class="gallery-label">45度</div>
                         </div>
                         <div class="prod-gallery-item">
-                            <img src="images/omakase-side.png" alt="おまかせくん 側面">
+                            <img src="images/omakase-side.webp" alt="おまかせくん 側面" loading="lazy" decoding="async" width="1536" height="1024">
                             <div class="gallery-label">側面</div>
                         </div>
                         <div class="prod-gallery-item">
-                            <img src="images/omakase-top.png" alt="おまかせくん 上面">
+                            <img src="images/omakase-top.webp" alt="おまかせくん 上面" loading="lazy" decoding="async" width="1536" height="1024">
                             <div class="gallery-label">上面</div>
                         </div>
                     </div>
@@ -683,7 +746,7 @@
                     </div>
                     <div class="products-grid">
                         <div class="prod-card fade-up">
-                            <div class="prod-img"><img src="images/tsubame-01.png" alt="おつばめちゃん"></div>
+                            <div class="prod-img"><img src="images/tsubame-01.webp" alt="おつばめちゃん" loading="lazy" decoding="async" width="1536" height="1024"></div>
                             <div class="prod-body">
                                 <div class="prod-num">T-M-48-J</div>
                                 <h3>つばめちゃん — コンパクト3D仕分けロボット</h3>
@@ -698,7 +761,7 @@
                             </div>
                         </div>
                         <div class="prod-card fade-up">
-                            <div class="prod-img"><img src="images/tsubame-04.png" alt="おつばめちゃん ミニ"></div>
+                            <div class="prod-img"><img src="images/tsubame-04.webp" alt="おつばめちゃん ミニ" loading="lazy" decoding="async" width="1536" height="1024"></div>
                             <div class="prod-body">
                                 <div class="prod-num">T-SL-50-J / T-SL-60-J</div>
                                 <h3>つばめちゃん SLシリーズ — 小型仕分けロボット</h3>
@@ -714,19 +777,19 @@
                     </div>
                     <div class="prod-gallery fade-up">
                         <div class="prod-gallery-item">
-                            <img src="images/tsubame-01.png" alt="おつばめちゃん 斜め">
+                            <img src="images/tsubame-01.webp" alt="おつばめちゃん 斜め" loading="lazy" decoding="async" width="1536" height="1024">
                             <div class="gallery-label">斜め</div>
                         </div>
                         <div class="prod-gallery-item">
-                            <img src="images/tsubame-03.png" alt="おつばめちゃん 正面画面">
+                            <img src="images/tsubame-03.webp" alt="おつばめちゃん 正面画面" loading="lazy" decoding="async" width="1536" height="1024">
                             <div class="gallery-label">正面画面</div>
                         </div>
                         <div class="prod-gallery-item">
-                            <img src="images/tsubame-04.png" alt="つばめちゃん 側面">
+                            <img src="images/tsubame-04.webp" alt="つばめちゃん 側面" loading="lazy" decoding="async" width="1536" height="1024">
                             <div class="gallery-label">側面</div>
                         </div>
                         <div class="prod-gallery-item">
-                            <img src="images/tsubame-05.png" alt="つばめちゃん 上面">
+                            <img src="images/tsubame-05.webp" alt="つばめちゃん 上面" loading="lazy" decoding="async" width="1536" height="1024">
                             <div class="gallery-label">上面</div>
                         </div>
                     </div>
@@ -742,7 +805,7 @@
                 </div>
                 <div class="products-grid">
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="ホイールソーター"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="ホイールソーター" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 01</div>
                             <h3>高速ホイールソーター</h3>
@@ -757,7 +820,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/crossbelt-render.png" alt="クロスベルトソーター"></div>
+                        <div class="prod-img"><img src="images/crossbelt-render.webp" alt="クロスベルトソーター" loading="lazy" decoding="async" width="1024" height="1024"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 02</div>
                             <h3>クロスベルトソーター</h3>
@@ -771,7 +834,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="立体保管仕分け"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="立体保管仕分け" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 03</div>
                             <h3>立体保管・仕分けシステム</h3>
@@ -780,7 +843,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="自動計測"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="自動計測" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 04</div>
                             <h3>自動計測システム</h3>
@@ -789,7 +852,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/slideshoe-photo.jpg" alt="スライドシューソーター"></div>
+                        <div class="prod-img"><img src="images/slideshoe-photo.webp" alt="スライドシューソーター" loading="lazy" decoding="async" width="1824" height="1824"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 05</div>
                             <h3>スライドシューソーター</h3>
@@ -805,7 +868,7 @@
                 </div>
                 <div class="prod-gallery fade-up">
                     <div class="prod-gallery-item">
-                        <img src="images/crossbelt-photo.jpg" alt="クロスベルトソーター 実機">
+                        <img src="images/crossbelt-photo.webp" alt="クロスベルトソーター 実機" loading="lazy" decoding="async" width="1920" height="1920">
                         <div class="gallery-label">クロスベルト 実機写真</div>
                     </div>
                 </div>
@@ -820,7 +883,7 @@
                 </div>
                 <div class="products-grid">
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/single-render.png" alt="単品分離システム"></div>
+                        <div class="prod-img"><img src="images/single-render.webp" alt="単品分離システム" loading="lazy" decoding="async" width="1536" height="1024"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 01</div>
                             <h3>単品分離システム</h3>
@@ -836,11 +899,11 @@
                 </div>
                 <div class="prod-gallery fade-up">
                     <div class="prod-gallery-item">
-                        <img src="images/single-system.jpg" alt="単品分離システム 全景">
+                        <img src="images/single-system.webp" alt="単品分離システム 全景" loading="lazy" decoding="async" width="1920" height="1920">
                         <div class="gallery-label">システム全景</div>
                     </div>
                     <div class="prod-gallery-item">
-                        <img src="images/single-photo.jpg" alt="単品分離システム 実機">
+                        <img src="images/single-photo.webp" alt="単品分離システム 実機" loading="lazy" decoding="async" width="800" height="600">
                         <div class="gallery-label">実機写真</div>
                     </div>
                 </div>
@@ -855,7 +918,7 @@
                 </div>
                 <div class="products-grid">
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="伸縮ベルトコンベア"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="伸縮ベルトコンベア" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 01</div>
                             <h3>伸縮ベルトコンベア（3/4/5段）</h3>
@@ -864,7 +927,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="抽斗式ベルトコンベア"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="抽斗式ベルトコンベア" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 02</div>
                             <h3>抽斗式ベルトコンベア</h3>
@@ -877,7 +940,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="カーブコンベア"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="カーブコンベア" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 03</div>
                             <h3>カーブコンベア</h3>
@@ -889,7 +952,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="ローラーコンベア"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="ローラーコンベア" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 04</div>
                             <h3>ローラーコンベア</h3>
@@ -898,7 +961,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="チェーンコンベア"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="チェーンコンベア" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 05</div>
                             <h3>チェーンコンベア</h3>
@@ -918,7 +981,7 @@
                 </div>
                 <div class="products-grid">
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="スパイラルシュート"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="スパイラルシュート" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 01</div>
                             <h3>スパイラルシュート</h3>
@@ -927,7 +990,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="供給テーブル"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="供給テーブル" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 02</div>
                             <h3>供給テーブル（大小対応）</h3>
@@ -936,7 +999,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="DWS"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="DWS" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 03</div>
                             <h3>DWS（寸法・重量・読码一体システム）</h3>
@@ -945,7 +1008,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="斜帯門式分配機"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="斜帯門式分配機" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 04</div>
                             <h3>斜帯門式分配機</h3>
@@ -969,7 +1032,7 @@
                 </div>
                 <div class="products-grid">
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="昇降移載機"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="昇降移載機" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 01</div>
                             <h3>昇降移載機</h3>
@@ -982,7 +1045,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="リフター"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="リフター" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 02</div>
                             <h3>リフター</h3>
@@ -991,7 +1054,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="シャトルカー"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="シャトルカー" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 03</div>
                             <h3>シャトルカー</h3>
@@ -1000,7 +1063,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="パレットスタッカー/デスタッカー"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="パレットスタッカー/デスタッカー" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 04</div>
                             <h3>パレットスタッカー/デスタッカー</h3>
@@ -1009,7 +1072,7 @@
                         </div>
                     </div>
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/placeholder.png" alt="Oベルト駆動ローラーコンベア"></div>
+                        <div class="prod-img"><img src="images/placeholder.webp" alt="Oベルト駆動ローラーコンベア" loading="lazy" decoding="async" width="1200" height="800"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 05</div>
                             <h3>Oベルト駆動ローラーコンベア</h3>
@@ -1029,7 +1092,7 @@
                 </div>
                 <div class="products-grid">
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/nanobelt-render.png" alt="ナノベルトソーター"></div>
+                        <div class="prod-img"><img src="images/nanobelt-render.webp" alt="ナノベルトソーター" loading="lazy" decoding="async" width="1024" height="1024"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 01</div>
                             <h3>ナノベルトソーター</h3>
@@ -1054,7 +1117,7 @@
                 </div>
                 <div class="products-grid">
                     <div class="prod-card fade-up">
-                        <div class="prod-img"><img src="images/modbelt-photo.jpg" alt="モジュールベルトソーター"></div>
+                        <div class="prod-img"><img src="images/modbelt-photo.webp" alt="モジュールベルトソーター" loading="lazy" decoding="async" width="1824" height="1824"></div>
                         <div class="prod-body">
                             <div class="prod-num">PRODUCT 01</div>
                             <h3>モジュールベルトソーター</h3>
@@ -1079,7 +1142,7 @@
                 <div><div class="en">FLAGSHIP</div><h2>主力製品</h2></div>
             </div>
             <div class="showcase-layout fade-up">
-                <div class="showcase-img"><img src="images/omakase-45deg.png" alt="おまかせくん"></div>
+                <div class="showcase-img"><img src="images/omakase-45deg.webp" alt="おまかせくん" loading="lazy" decoding="async" width="1536" height="1024"></div>
                 <div class="showcase-info">
                     <div class="product-tag">★ FLAGSHIP PRODUCT</div>
                     <h3>おまかせくん</h3>
@@ -1132,7 +1195,7 @@
             <div class="section-header">
                 <div><div class="en">LOGISTICS FLOW</div><h2>物流フロー</h2></div>
             </div>
-            <div class="flow-visual fade-up"><img src="images/product7.png" alt="物流フロー全体図"></div>
+            <div class="flow-visual fade-up"><img src="images/product7.webp" alt="物流フロー全体図" loading="lazy" decoding="async" width="1448" height="1086"></div>
             <div class="flow-track fade-up">
                 <div class="flow-item"><div class="flow-num">1</div><h4>入荷</h4><p>入荷情報の登録</p></div>
                 <div class="flow-item"><div class="flow-num">2</div><h4>検品・計測</h4><p>重量・寸法・読码</p></div>
@@ -1225,7 +1288,7 @@
             </div>
             <div class="download-grid">
                 <a class="download-card fade-up" href="downloads/company-brochure-2026.pdf" target="_blank">
-                    <div class="download-img"><img src="images/doc-brochure-1.png" alt="会社パンフレット 2026"></div>
+                    <div class="download-img"><img src="images/doc-brochure-1.webp" alt="会社パンフレット 2026" loading="lazy" decoding="async" width="525" height="731"></div>
                     <div class="download-body">
                         <h3>会社パンフレット 2026</h3>
                         <p>会社概要・拠点体制・沿革・製品ラインナップ・物流フローを掲載（全8ページ）</p>
@@ -1233,7 +1296,7 @@
                     </div>
                 </a>
                 <a class="download-card fade-up" href="downloads/product-catalog-3d.pdf" target="_blank">
-                    <div class="download-img"><img src="images/doc-catalog-1.png" alt="3D仕分けロボット 製品カタログ"></div>
+                    <div class="download-img"><img src="images/doc-catalog-1.webp" alt="3D仕分けロボット 製品カタログ" loading="lazy" decoding="async" width="993" height="674"></div>
                     <div class="download-body">
                         <h3>3D仕分けロボット 製品カタログ</h3>
                         <p>「おまかせくん」「つばめちゃん」の仕様・構造・モデル選定ガイド（全7ページ）</p>
