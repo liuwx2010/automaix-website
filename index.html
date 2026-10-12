@@ -219,6 +219,7 @@
             letter-spacing: 1px;
         }
         .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+        .products-grid .prod-card.span2 { grid-column: span 2; }
         .prod-card {
             background: var(--white); border-radius: var(--radius); overflow: hidden;
             border: 1px solid var(--gray-200); transition: all var(--transition); cursor: pointer;
@@ -538,6 +539,7 @@
             .hero-text h1 { font-size: 1.7rem; }
             .hero-stats { flex-direction: column; gap: 1rem; }
             .products-grid { grid-template-columns: 1fr; }
+            .products-grid .prod-card.span2 { grid-column: auto; }
             .flow-track { grid-template-columns: repeat(2, 1fr); }
             .locations { grid-template-columns: 1fr; }
             .adv-grid { grid-template-columns: 1fr; }
@@ -568,8 +570,7 @@
                     <li><a href="#products">製品</a></li>
                     <li><a href="#movies">製品動画</a></li>
                     <li><a href="#flow">物流フロー</a></li>
-                    <li><a href="#guide">選定ガイド</a></li>
-                    <li><a href="#company">会社情報</a></li>
+                    <li><a href="#company">会社概要</a></li>
                     <li><a href="#news">ニュース</a></li>
                     <li><a href="#contact">お問い合わせ</a></li>
                 </ul>
@@ -639,7 +640,7 @@
                         <span class="prod-sub-tag">LARGE</span>
                     </div>
                     <div class="products-grid">
-                        <div class="prod-card fade-up">
+                        <div class="prod-card span2 fade-up">
                             <div class="prod-img"><img src="images/omakase-45deg.png" alt="おまかせくん"></div>
                             <div class="prod-body">
                                 <div class="prod-num">T-MX-72-J</div>
@@ -650,19 +651,6 @@
                                     <span class="prod-spec">72間口〜</span>
                                     <span class="prod-spec">2.5 m/s</span>
                                     <span class="prod-spec">30g〜5kg</span>
-                                </div>
-                                <span class="prod-link">詳細を見る →</span>
-                            </div>
-                        </div>
-                        <div class="prod-card fade-up">
-                            <div class="prod-img"><img src="images/omakase-front.png" alt="おまかせくん プロ"></div>
-                            <div class="prod-body">
-                                <div class="prod-num">MULTI-ZONE</div>
-                                <h3>おまかせくん マルチゾーン構成 — 超大量処理ライン</h3>
-                                <p>複数ゾーン・複数供給台を同期運転する大規模構成。モジュール構造により必要に応じて柔軟に拡張でき、投入処理効率も倍増。Goods-to-Person対応のスマート倉庫トータルソリューションも提供します。</p>
-                                <div class="prod-specs">
-                                    <span class="prod-spec">最大21,500 PPH（複数ゾーン合計）</span>
-                                    <span class="prod-spec">モジュール拡張対応</span>
                                 </div>
                                 <span class="prod-link">詳細を見る →</span>
                             </div>
@@ -1158,85 +1146,14 @@
         </div>
     </section>
 
-    <!-- GUIDE -->
-    <section class="guide" id="guide">
-        <div class="container">
-            <div class="section-header">
-                <div><div class="en">HOW TO SELECT</div><h2>モデルの選び方</h2></div>
-            </div>
-            <p class="guide-note">処理量・設置スペース・運用に合わせて選定。両機種とも一次・二次仕分けに対応しています。<br>※型式の数字は仕分け間口数を表します（例：T-MX-72-J＝72間口、T-M-48-J＝48間口）。間口数・走行レール段数・スキャナー仕様・インダクション数などは、ご要望に応じて柔軟にカスタマイズ可能です。</p>
-            <table class="guide-table fade-up">
-                <thead>
-                    <tr><th>項目</th><th>おまかせくん</th><th>つばめちゃん</th></tr>
-                </thead>
-                <tbody>
-                    <tr><th>位置づけ</th><td>大型・高速の3D仕分け設備</td><td>小型〜中型の省スペース仕分け設備</td></tr>
-                    <tr><th>主な特徴</th><td>高速・大量処理向け／高速走行による高効率仕分け／多間口対応で大量処理に最適</td><td>省スペースで柔軟に導入可能／保守しやすい日本向け構成／小口・多品種の仕分けに最適</td></tr>
-                    <tr><th>処理能力</th><td>10,800個/時〜</td><td>1,000〜1,400個/時</td></tr>
-                    <tr><th>設置面積</th><td>約100 m²</td><td>約12 m²</td></tr>
-                    <tr><th>仕分け間口</th><td>多い（72間口〜）</td><td>少ない（40〜60間口）</td></tr>
-                    <tr><th>向いている現場</th><td>大型物流センター、宅配・ECの大量仕分け</td><td>限られたスペース、小規模〜中規模拠点、二次仕分け</td></tr>
-                    <tr><th>イメージ</th><td>現場作業を任せられる、扱いやすい</td><td>速く飛ぶ、たくさん運ぶ</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
     <!-- COMPANY -->
     <section class="company" id="company">
         <div class="container">
             <div class="section-header">
-                <div><div class="en">COMPANY</div><h2>会社情報</h2></div>
+                <div><div class="en">COMPANY PROFILE</div><h2>会社概要</h2></div>
                 <a href="downloads/company-brochure-2026.pdf" target="_blank" class="more">会社パンフレットを見る →</a>
             </div>
-            <div class="company-grid">
-                <div class="company-visual fade-up"><img src="images/placeholder.png" alt="画像準備中"></div>
-                <div class="company-text fade-up">
-                    <h3>日本品質 × 中国製造 × AI技術</h3>
-                    <p>トヨタ生産方式に代表される日本の品質管理・改善思想と、中国製造メーカーの高い生産力・コスト競争力、さらに先進的なAI技術を融合。常州工場・蘇州R&Dセンターと、日本（岐阜・東京・愛知）の各拠点が連携し、企画・設計から製造、導入、アフターサポートまで一貫したソリューションを提供します。</p>
-                    <div class="locations">
-                        <div class="loc-card">
-                            <div class="loc-flag">🇯🇵</div>
-                            <h4>日本本社 岐阜県多治見市</h4>
-                            <p>統括・品質管理・営業・保守・カスタマーサービス／お客様に最適な提案と継続的な改善を推進</p>
-                        </div>
-                        <div class="loc-card">
-                            <div class="loc-flag">🇯🇵</div>
-                            <h4>東京サイト</h4>
-                            <p>営業・マーケティング・保守対応</p>
-                        </div>
-                        <div class="loc-card">
-                            <div class="loc-flag">🇯🇵</div>
-                            <h4>愛知サイト</h4>
-                            <p>品質管理・改善活動</p>
-                        </div>
-                        <div class="loc-card">
-                            <div class="loc-flag">🇨🇳</div>
-                            <h4>中国 常州工場（製造拠点）</h4>
-                            <p>板金加工・溶接・塗装・塗料製造・組立／高品質を短納期・適正価格で安定供給</p>
-                        </div>
-                        <div class="loc-card">
-                            <div class="loc-flag">🇨🇳</div>
-                            <h4>中国 蘇州 設計・研究開発センター</h4>
-                            <p>研究開発・技術設計・試作検証／革新的なソリューションを創出</p>
-                        </div>
-                    </div>
-                    <div class="badge-row">
-                        <span class="badge-item">🏅 品質認定取得</span>
-                        <span class="badge-item">⚙️ TPS導入</span>
-                        <span class="badge-item">🏭 工場面積 東京ドーム1.3個分</span>
-                    </div>
-                    <div class="vision-quote">
-                        <h4>未来を形に、共に進む</h4>
-                        <p>効率だけを追求する自動化ではなく、働く方々の負担を軽減し、安全と安心を支える「ぬくもりのある自動化」の実現を目指しています。— 自動化に、知能を／現場に優しい技術アイデア／未来に、より大きな可能性 —</p>
-                    </div>
-                </div>
-            </div>
-            <div class="fade-up" style="margin-top:3.5rem">
-                <div class="section-header" style="margin-bottom:1.5rem">
-                    <div><div class="en">COMPANY PROFILE</div><h2>会社概要</h2></div>
-                </div>
-                <table class="profile-table fade-up">
+            <table class="profile-table fade-up">
                     <tbody>
                         <tr><th>会社名</th><td>株式会社Automaix</td></tr>
                         <tr><th>英文表記</th><td>Automaix Co., Ltd.</td></tr>
@@ -1251,7 +1168,6 @@
                         <tr><th>ホームページ</th><td>automaix.co.jp</td></tr>
                     </tbody>
                 </table>
-            </div>
             <div class="history fade-up">
                 <div class="section-header" style="margin-bottom:1.5rem">
                     <div><div class="en">HISTORY</div><h2>沿革</h2></div>
@@ -1359,7 +1275,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>会社情報</h4>
-                    <a href="#company">会社概要</a><a href="#company">拠点体制</a><a href="#company">沿革</a><a href="#guide">モデルの選び方</a>
+                    <a href="#company">会社概要</a><a href="#company">沿革</a>
                 </div>
                 <div class="footer-col">
                     <h4>サポート</h4>
