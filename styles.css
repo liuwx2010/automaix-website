@@ -165,3 +165,89 @@ html[lang=en] .spec-table th{width:34%}
 .brochure-specs{margin:3rem 0}.brochure-specs h2{margin-bottom:1rem}.brochure-specs p{margin:1rem 0}.brochure-specs .spec-table{min-width:700px}
 @media(max-width:800px){.brochure-values,.brochure-equipment{grid-template-columns:1fr}.brochure-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.brochure-timeline>div{grid-template-columns:85px 1fr}}
 @media(max-width:450px){.brochure-flow{grid-template-columns:1fr}}
+
+/* Japanese corporate typography: use local Japanese gothic fonts, with no web-font request. */
+html[lang="ja"] {
+  --font-ja: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  line-break: strict;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+html[lang="ja"] body {
+  font-family: var(--font-ja);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: .025em;
+}
+html[lang="ja"] :is(h1,h2,h3,h4,h5,summary) {
+  font-family: var(--font-ja);
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: .035em;
+  word-break: normal;
+}
+html[lang="ja"] :is(p,li,dd,td) {
+  line-break: strict;
+  word-break: normal;
+}
+html[lang="ja"] p + p { margin-top: 1.25em; }
+html[lang="ja"] .hero h1 {
+  font-size: clamp(2rem,3.4vw,2.875rem);
+  font-weight: 700;
+  line-height: 1.6;
+}
+html[lang="ja"] .hero-lead { font-size: 1.0625rem; line-height: 1.95; }
+html[lang="ja"] .page-title h1 { font-size: clamp(1.75rem,3.1vw,2.375rem); }
+html[lang="ja"] :is(.section-heading h2,.brochure-mission h2) { font-size: clamp(1.5rem,2.6vw,2rem); }
+html[lang="ja"] .brochure-mission { max-width: 1060px; }
+html[lang="ja"] .brochure-mission p { max-width: 54em; line-height: 2; }
+html[lang="ja"] .prose { max-width: 50rem; }
+html[lang="ja"] .prose h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+html[lang="ja"] .prose > h2:first-child { margin-top: 0; }
+html[lang="ja"] .prose p { line-height: 2; }
+html[lang="ja"] :is(.product-body > p:not(.product-model),.movie-card p,.movie-card a,.company-summary p,.steps p,.feature-list p,.detail-consult p,.partner-block > p,.partner-locations p,.partner-quality p,.partner-quality li,.partner-history dd,.partner-project-list,.partner-support p,.brochure-flow p,.brochure-equipment dd,.download-card > p:not(.eyebrow),.putwall-detail-body > p,.inquiry-result p) {
+  font-size: .9375rem;
+  line-height: 1.9;
+}
+html[lang="ja"] :is(.small,.catalog-note,.partner-scope,.putwall-note,.case-preview p,.factory-gallery figcaption,.partner-case-grid time,.putwall-variants figcaption) {
+  font-size: .875rem;
+  line-height: 1.85;
+}
+html[lang="ja"] :is(.main-nav a,.company-jump,.company .section-header .more,.product-tabs button,.news-tabs button,.company-summary dl > div,.contact-grid label,.text-link,.product-body > .text-link,.news-item h3) { font-size: .9375rem; }
+html[lang="ja"] :is(.btn,.form-actions .btn) { font-size: .9375rem; line-height: 1.65; letter-spacing: .02em; }
+html[lang="ja"] :is(input,select,textarea) { font-size: 1rem; line-height: 1.7; letter-spacing: normal; }
+html[lang="ja"] :is(.spec-table,.putwall-table,.partner-sales table,.profile-table th,.profile-table td) { font-size: .9375rem; }
+html[lang="ja"] :is(.spec-table th,.spec-table td,.putwall-table th,.putwall-table td,.profile-table th,.profile-table td) {
+  padding: 1rem 1.125rem;
+  vertical-align: top;
+  line-height: 1.85;
+}
+html[lang="ja"] :is(.spec-table thead th,.putwall-table thead th) { text-align: center; width: auto; }
+html[lang="ja"] :is(.spec-table thead th:first-child,.putwall-table thead th:first-child) { text-align: left; }
+html[lang="ja"] :is(.spec-table caption,.putwall-table caption,.partner-sales caption) { font-size: 1rem; line-height: 1.7; }
+html[lang="ja"] :is(.spec-table td,.putwall-table td,.partner-sales td,time,.product-model) { font-variant-numeric: lining-nums tabular-nums; letter-spacing: normal; }
+html[lang="ja"] .partner-sales :is(th:not(:first-child),td) { text-align: right; }
+html[lang="ja"] .partner-metrics :is(dd,dd span),
+html[lang="ja"] .partner-history dt { font-family: var(--font-ja); }
+html[lang="ja"] .partner-metrics dd { line-height: 1.4; letter-spacing: normal; }
+html[lang="ja"] .partner-metrics dt { font-size: .875rem; line-height: 1.7; }
+html[lang="ja"] .partner-metrics dd span { font-size: .875rem; }
+html[lang="ja"] .site-footer :is(p,a) { font-size: .875rem; line-height: 1.85; }
+@media (min-width: 801px) and (max-width: 1200px) {
+  html[lang="ja"] .header-main { gap: 14px; }
+  html[lang="ja"] .main-nav { gap: 12px; }
+  html[lang="ja"] .main-nav a { font-size: .8125rem; }
+}
+@media (max-width: 800px) {
+  html[lang="ja"] .hero h1 { font-size: clamp(1.375rem,5.8vw,2rem); line-height: 1.65; }
+  html[lang="ja"] .hero-lead { font-size: 1rem; }
+  html[lang="ja"] .main-nav a { font-size: 1rem; }
+  html[lang="ja"] .brochure-values h3 { font-size: 1rem; }
+  html[lang="ja"] :is(.spec-table th,.spec-table td,.putwall-table th,.putwall-table td,.company .profile-table tbody th,.company .profile-table td) { padding: .875rem .75rem; font-size: .9375rem; }
+  html[lang="ja"] .company .profile-table tr { grid-template-columns: 112px minmax(0,1fr); }
+}
+@media (max-width: 360px) {
+  html[lang="ja"] :is(.btn,.form-actions .btn,.product-tabs button,.news-tabs button) { font-size: .875rem; }
+  html[lang="ja"] .company .profile-table tr { grid-template-columns: 96px minmax(0,1fr); }
+}
