@@ -297,3 +297,23 @@ html[lang="en"] .concept-circle{font-size:clamp(.9rem,1.45vw,1.2rem)}
 .brand-introduction-heading{margin-bottom:36px}
 .brand-introduction-heading h2{color:var(--text)}
 @media(max-width:800px){.brand-introduction-heading{margin-bottom:28px}}
+
+/* Unified chronology: distinguish factory milestones from the Japanese company. */
+.company-history-section{margin-top:64px;padding-top:40px;border-top:1px solid var(--gray-200)}
+.company-history-heading{margin-bottom:28px}
+.company-history-heading h3{font-size:1.75rem;color:var(--text);line-height:1.5}
+.company-milestones{list-style:none;padding:0;margin:0;max-width:1080px}
+.company-milestone{position:relative;display:grid;grid-template-columns:160px minmax(0,1fr);gap:44px;padding:0 0 22px}
+.company-milestone::before{content:"";position:absolute;left:177px;top:30px;bottom:-30px;width:2px;background:var(--gray-200)}
+.company-milestone::after{content:"";position:absolute;left:172px;top:25px;width:12px;height:12px;background:white;border:3px solid var(--blueprint);border-radius:50%}
+.company-milestone:last-child{padding-bottom:0}.company-milestone:last-child::before{display:none}
+.milestone-date{padding-top:16px;color:var(--blueprint-deep);font-family:Arial,sans-serif;font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:0;line-height:1.5}
+.milestone-content{padding:20px 24px;background:var(--gray-100);border:1px solid var(--gray-200);border-radius:8px}
+.milestone-category{display:inline-block;padding:3px 10px;border-radius:4px;background:#e5edf3;color:#355369;font-size:.8125rem;font-weight:700;line-height:1.6;margin-bottom:9px}
+.milestone-content p{font-size:.9375rem;line-height:1.85;margin:0}
+.company-milestone-japan .milestone-content{background:var(--blueprint-pale);border-color:#a3c7db}
+.company-milestone-japan .milestone-category{background:var(--blueprint-deep);color:white}
+.company-milestone-japan .milestone-content p{font-weight:700;font-size:1.0625rem}
+.company-milestone-japan::after{background:var(--blueprint);box-shadow:0 0 0 4px var(--blueprint-pale)}
+.company-milestone-japan .milestone-date{font-size:1.25rem;padding-top:18px}
+@media(max-width:800px){.company-history-section{margin-top:44px;padding-top:30px}.company-history-heading h3{font-size:1.5rem}.company-milestone{grid-template-columns:minmax(0,1fr);gap:10px;padding-left:28px;padding-bottom:24px}.company-milestone::before{left:5px;top:18px;bottom:-18px}.company-milestone::after{left:0;top:10px}.milestone-date,.company-milestone-japan .milestone-date{font-size:1.25rem;padding-top:0}.milestone-content{padding:18px}.company-milestone-japan .milestone-content p{font-size:1rem}}
