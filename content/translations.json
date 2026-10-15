@@ -1216,7 +1216,7 @@
     "zh": "结合读码相机、立体相机与动态称重设备。"
   },
   "処理能力": {
-    "en": "Processing throughput",
+    "en": "Throughput",
     "zh": "处理能力"
   },
   "寸法測定精度": {
@@ -2222,5 +2222,481 @@
   "Automaix自社工場": {
     "en": "Automaix factories",
     "zh": "Automaix自有工厂"
+  },
+  "未来を形に、共に進む": {
+    "en": "Shaping the future, together",
+    "zh": "携手前行，共塑未来"
+  },
+  "日本品質 × 中国製造 × AI技術": {
+    "en": "Japanese quality × Chinese manufacturing × AI technology",
+    "zh": "日本品质 × 中国制造 × AI技术"
+  },
+  "Automaixは、日本のものづくりが長年培ってきた高い品質意識と現場改善の精神、トヨタ生産方式に代表される無駄の削減・標準化・継続的改善の考え方に、中国の優れた製造技術と生産力、さらに先進的なAI技術を融合した、スマート物流・自動化設備の開発・設計・製造メーカーです。": {
+    "en": "Automaix develops, designs and manufactures smart logistics and automation equipment, combining Japan’s commitment to quality and workplace improvement—including waste reduction, standardization and continuous improvement exemplified by the Toyota Production System—with Chinese manufacturing expertise and capacity, and advanced AI technology.",
+    "zh": "Automaix是一家智能物流及自动化设备的开发、设计与制造企业，将日本制造长期积累的品质意识与现场改善精神、以丰田生产方式为代表的消除浪费、标准化和持续改善理念，与中国的制造技术、生产能力及先进AI技术相融合。"
+  },
+  "物流・製造現場が抱える人手不足、作業負担、安全性、品質、生産性などの課題に対し、企画・設計から製造、導入、アフターサポートまで、一貫したソリューションをご提供します。": {
+    "en": "We provide integrated solutions from planning and design to manufacturing, implementation and after-sales support, addressing labor shortages, workload, safety, quality and productivity challenges in logistics and manufacturing.",
+    "zh": "针对物流与制造现场面临的人手不足、作业负担、安全、品质及生产效率等课题，提供从规划、设计到制造、导入和售后支持的一体化解决方案。"
+  },
+  "私たちは、人に寄り添い、働く方々の負担を軽減するとともに、安全と安心を支える「ぬくもりのある自動化」を目指しています。": {
+    "en": "We aim to create automation with a human touch, reducing the burden on workers and supporting safety and peace of mind.",
+    "zh": "我们致力于实现贴近人的“有温度的自动化”，减轻工作负担，支持安全与安心。"
+  },
+  "自動化に、知能を": {
+    "en": "Intelligence for automation",
+    "zh": "赋予自动化以智能"
+  },
+  "現場に優しい技術アイディア": {
+    "en": "Technology ideas that care for people at work",
+    "zh": "贴近现场的技术创意"
+  },
+  "未来に、より大きな可能性": {
+    "en": "Greater possibilities for the future",
+    "zh": "让未来拥有更大可能"
+  },
+  "Automaixの名に込めた想い：AUTO＝自動化、MAX＝最大限、AI＝人工知能＋愛。": {
+    "en": "The meaning behind Automaix: AUTO for automation, MAX for maximizing potential, and AI for artificial intelligence and care.",
+    "zh": "Automaix名称所承载的理念：AUTO＝自动化、MAX＝最大限度、AI＝人工智能＋爱。"
+  },
+  "私たちの想い": {
+    "en": "Our vision",
+    "zh": "我们的理念"
+  },
+  "会社パンフレットに見る歩み": {
+    "en": "Milestones from our company brochure",
+    "zh": "公司宣传册中的发展历程"
+  },
+  "工場の歩みと日本法人設立を、会社パンフレットの区分に沿ってご紹介します。日本法人の設立日は2026年9月18日です。": {
+    "en": "These milestones follow the periods used in the company brochure and distinguish the factory’s history from the Japanese company, established on September 18, 2026.",
+    "zh": "以下按公司宣传册的阶段划分介绍工厂历程与日本法人设立。日本法人设立日期为2026年9月18日。"
+  },
+  "工場設立、業務開始。": {
+    "en": "Factory established; operations began.",
+    "zh": "工厂成立并开始运营。"
+  },
+  "ZTO ExpressのBランク、BEST Express・STO ExpressのAランクサプライヤーに認定。": {
+    "en": "Recognized as a B-tier supplier to ZTO Express and an A-tier supplier to BEST Express and STO Express.",
+    "zh": "获评ZTO Express B级供应商、BEST Express及STO Express A级供应商。"
+  },
+  "SF Expressのサプライヤー認証を取得。JD Logistics・CainiaoのAランクサプライヤーに認定。": {
+    "en": "Obtained SF Express supplier certification; recognized as an A-tier supplier to JD Logistics and Cainiao.",
+    "zh": "取得SF Express供应商认证，获评JD Logistics及Cainiao A级供应商。"
+  },
+  "SF Expressの物流設備総合サプライヤーに認定。": {
+    "en": "Recognized as an integrated logistics equipment supplier to SF Express.",
+    "zh": "获评SF Express物流设备综合供应商。"
+  },
+  "事業領域を拡大。売上高5億人民元超を達成（会社パンフレット記載）。": {
+    "en": "Expanded business scope and achieved sales exceeding RMB 500 million, as stated in the company brochure.",
+    "zh": "拓展业务领域，销售额超过5亿元人民币（公司宣传册记载）。"
+  },
+  "日本法人・株式会社Automaixを設立。": {
+    "en": "Established Automaix Co., Ltd. in Japan.",
+    "zh": "设立日本法人株式会社Automaix。"
+  },
+  "次世代のスマートオートメーション": {
+    "en": "Next-generation smart automation",
+    "zh": "新一代智能自动化"
+  },
+  "日本の品質管理・改善思想、中国の製造力・コスト競争力、先進的なAI技術を融合。品質・納期・価格のバランスを追求し、現場の業務効率化と持続的な成長を支援します。": {
+    "en": "Combining Japanese quality management and improvement practices, Chinese manufacturing capacity and cost competitiveness, and advanced AI, we pursue balanced quality, delivery times and pricing to support operational efficiency and sustainable growth.",
+    "zh": "融合日本的品质管理与改善理念、中国的制造能力与成本竞争力以及先进AI技术，追求品质、交期与价格的平衡，支持现场效率提升与可持续发展。"
+  },
+  "私たちの想いを知る →": {
+    "en": "Explore our vision →",
+    "zh": "了解我们的理念 →"
+  },
+  "入荷から出荷まで、物流工程をつなぐ": {
+    "en": "Connecting logistics from receiving to shipping",
+    "zh": "贯通从入库到出库的物流流程"
+  },
+  "入荷": {
+    "en": "Receiving",
+    "zh": "到货"
+  },
+  "トラックから荷物を荷降ろしし、入荷情報を登録。": {
+    "en": "Unload goods and register receiving information.",
+    "zh": "从车辆卸货并登记到货信息。"
+  },
+  "検品・計測": {
+    "en": "Inspection and measurement",
+    "zh": "检验与测量"
+  },
+  "荷物の寸法・重量を自動計測し、バーコードを読み取り。": {
+    "en": "Automatically measure dimensions and weight and read barcodes.",
+    "zh": "自动测量货物尺寸与重量，读取条码。"
+  },
+  "一時保管": {
+    "en": "Temporary storage",
+    "zh": "暂存"
+  },
+  "荷物を一時保管し、出荷指示に基づいて在庫を管理。": {
+    "en": "Store goods temporarily and manage inventory according to shipping instructions.",
+    "zh": "暂存货物，根据出库指令管理库存。"
+  },
+  "単品化": {
+    "en": "Singulation",
+    "zh": "单件分离"
+  },
+  "重なった荷物を分離し、1個ずつ整列・搬送。": {
+    "en": "Separate overlapping goods and convey them individually.",
+    "zh": "分离堆叠货物，逐件排列并输送。"
+  },
+  "一次仕分け": {
+    "en": "Primary sorting",
+    "zh": "一次分拣"
+  },
+  "荷物を配送エリア・方面別に大分類。": {
+    "en": "Sort goods into broad delivery areas and destinations.",
+    "zh": "按配送区域与方向进行大类分拣。"
+  },
+  "二次仕分け": {
+    "en": "Secondary sorting",
+    "zh": "二次分拣"
+  },
+  "荷物を配送コース・便別に詳細仕分け。": {
+    "en": "Sort goods by delivery route and service.",
+    "zh": "按配送路线和班次精细分拣。"
+  },
+  "出荷準備": {
+    "en": "Shipping preparation",
+    "zh": "出库准备"
+  },
+  "出荷先別の荷物を集約し、ラベル確認・積み付け。": {
+    "en": "Consolidate goods by destination, check labels and prepare loads.",
+    "zh": "按目的地集货，核对标签并码放。"
+  },
+  "出荷": {
+    "en": "Shipping",
+    "zh": "出库"
+  },
+  "荷物をトラックへ積み込み、出荷。": {
+    "en": "Load goods onto trucks for dispatch.",
+    "zh": "将货物装车并发运。"
+  },
+  "各工程を支える製品ラインナップ": {
+    "en": "Equipment for every stage",
+    "zh": "支持各工序的产品系列"
+  },
+  "カーブコンベヤライン": {
+    "en": "Curved conveyor lines",
+    "zh": "转弯输送线"
+  },
+  "省スペースで搬送方向を転換し、次工程へスムーズに搬送。": {
+    "en": "Change conveying direction within limited space for smooth transfer to the next stage.",
+    "zh": "在有限空间内改变输送方向，平稳衔接下一工序。"
+  },
+  "自動計測システム": {
+    "en": "Automatic measurement systems",
+    "zh": "自动测量系统"
+  },
+  "荷物の寸法・重量・バーコード情報を自動取得し、データ化。": {
+    "en": "Automatically capture and digitize parcel dimensions, weight and barcode data.",
+    "zh": "自动采集货物尺寸、重量及条码信息并形成数据。"
+  },
+  "シングレーター": {
+    "en": "Singulators",
+    "zh": "单件分离设备"
+  },
+  "ホイールソーター": {
+    "en": "Wheel sorters",
+    "zh": "摆轮分拣机"
+  },
+  "荷物を複数方向へ、高速かつ正確に仕分け。": {
+    "en": "Sort goods rapidly and accurately in multiple directions.",
+    "zh": "将货物快速、准确地分拣至多个方向。"
+  },
+  "クロスベルトソーター": {
+    "en": "Cross-belt sorters",
+    "zh": "交叉带分拣机"
+  },
+  "多品種の荷物を多方面へ高速・高精度に仕分け。": {
+    "en": "Sort varied goods to multiple destinations at high speed and precision.",
+    "zh": "将多种货物高速、高精度地分拣至多个目的地。"
+  },
+  "立体保管・仕分けシステム": {
+    "en": "Three-dimensional storage and sorting systems",
+    "zh": "立体存储与分拣系统"
+  },
+  "保管・集約・仕分け機能を立体化し、省スペース化を実現。": {
+    "en": "Arrange storage, consolidation and sorting vertically to save space.",
+    "zh": "将存储、集货与分拣立体化，节约空间。"
+  },
+  "垂直搬送機": {
+    "en": "Vertical conveyors",
+    "zh": "垂直输送设备"
+  },
+  "荷物を上下階へ自動搬送し、フロア間搬送を効率化。": {
+    "en": "Automatically convey goods between floors for efficient vertical transport.",
+    "zh": "自动在楼层间输送货物，提高跨层搬运效率。"
+  },
+  "ローラーコンベヤ": {
+    "en": "Roller conveyors",
+    "zh": "滚筒输送机"
+  },
+  "さまざまな形状の荷物を安定して連続搬送。": {
+    "en": "Provide stable, continuous transport for goods of various shapes.",
+    "zh": "稳定、连续地输送多种形状的货物。"
+  },
+  "シュート": {
+    "en": "Chutes",
+    "zh": "滑槽"
+  },
+  "仕分け後の荷物を所定の位置へ搬送。": {
+    "en": "Transfer sorted goods to their designated positions.",
+    "zh": "将分拣后的货物输送至指定位置。"
+  },
+  "寸法（mm）": {
+    "en": "Dimensions (mm)",
+    "zh": "尺寸（mm）"
+  },
+  "仕分け間口数": {
+    "en": "Sorting destinations",
+    "zh": "分拣格口数"
+  },
+  "対応荷物寸法（最大・mm）": {
+    "en": "Maximum parcel dimensions (mm)",
+    "zh": "最大适用货物尺寸（mm）"
+  },
+  "読取方式": {
+    "en": "Scanning method",
+    "zh": "读取方式"
+  },
+  "対応重量範囲": {
+    "en": "Parcel weight range",
+    "zh": "适用重量范围"
+  },
+  "運転速度": {
+    "en": "Operating speed",
+    "zh": "运行速度"
+  },
+  "上部スキャン／ハンディスキャン": {
+    "en": "Top scanning / handheld scanning",
+    "zh": "顶部扫描／手持扫描"
+  },
+  "仕様値は会社パンフレット記載の標準仕様です。実際の処理能力は荷物寸法・重量、投入条件、仕分け先数、ライン構成によって異なります。寸法には保守・作業スペースを含みません。": {
+    "en": "The figures are standard specifications stated in the company brochure. Actual throughput depends on parcel dimensions and weight, induction conditions, destination count and line configuration. Equipment dimensions exclude maintenance and working space.",
+    "zh": "规格数值为公司宣传册所载标准规格。实际处理能力受货物尺寸、重量、供件条件、格口数量及产线配置影响。设备尺寸不含维护与作业空间。"
+  },
+  "構成のカスタマイズ": {
+    "en": "Configurable design",
+    "zh": "配置定制"
+  },
+  "走行レールの段数、スキャナー仕様、仕分け間口数、インダクション数、点検口の位置など、ご要望に応じて構成を検討します。": {
+    "en": "Rail levels, scanner specifications, sorting destinations, induction count and inspection access positions can be configured to suit project requirements.",
+    "zh": "可按需求研究行走轨道层数、扫描器规格、分拣格口数、供件口数和检修口位置等配置。"
+  },
+  "冷蔵・冷凍環境向け仕様": {
+    "en": "Refrigerated and frozen-environment options",
+    "zh": "冷藏与冷冻环境规格"
+  },
+  "冷蔵・冷凍環境向けの仕様についてご相談いただけます。対応温度帯と機器構成は個別に確認します。": {
+    "en": "Refrigerated and frozen-environment specifications are available for consultation. Temperature range and equipment configuration require project-specific confirmation.",
+    "zh": "可咨询冷藏与冷冻环境规格，适用温度范围及设备配置需按项目确认。"
+  },
+  "モジュール構造と据付": {
+    "en": "Modular design and installation",
+    "zh": "模块化结构与安装"
+  },
+  "モジュール構造を採用。パンフレット記載の「最短半日で設置」は所定条件での目安です。搬入経路、組立範囲、試運転を含む工程は個別に確認します。": {
+    "en": "The modular design supports installation. The brochure’s minimum half-day installation is a guide under specified conditions. Access, assembly scope and commissioning schedules require individual confirmation.",
+    "zh": "采用模块化结构。宣传册中“最快半天安装”是在特定条件下的参考，搬入路线、组装范围及包含调试的工期需单独确认。"
+  },
+  "電源・PL保険": {
+    "en": "Power supply and product liability insurance",
+    "zh": "电源与产品责任保险"
+  },
+  "AC100V電源および日本国内のPL保険への対応についてご相談いただけます。電源容量・接続条件と保険の適用範囲は導入仕様ごとに確認します。": {
+    "en": "AC100V power and Japanese product liability insurance can be discussed. Supply capacity, connection requirements and insurance coverage must be confirmed for the selected configuration.",
+    "zh": "可咨询AC100V电源及日本国内产品责任保险，电源容量、连接条件及保险适用范围需按导入配置确认。"
+  },
+  "1,400個/時間": {
+    "en": "1,400 items/hour",
+    "zh": "1,400件/小时"
+  },
+  "最大 2.5 m/s": {
+    "en": "Up to 2.5 m/s",
+    "zh": "最高 2.5 m/s"
+  },
+  "省スペースで柔軟に導入できる3D仕分け設備。T-M-48-Jは48間口、標準処理能力1,400個/時間。小口・多品種の一次・二次仕分けに対応します。": {
+    "en": "A flexible, space-saving 3D sorter. The T-M-48-J provides 48 destinations and standard throughput of 1,400 items/hour for primary and secondary sorting of small parcels and varied products.",
+    "zh": "可灵活导入的节省空间型3D分拣设备。T-M-48-J配置48个格口，标准处理能力为1,400件/小时，适用于小件、多品种的一次及二次分拣。"
+  },
+  "省スペース仕分け設備のSLシリーズ。T-SL-50-Jは40〜50間口・1,000個/時間、T-SL-60-Jは48〜60間口・1,250個/時間の標準仕様です。": {
+    "en": "The space-saving SL series offers standard configurations of 40–50 destinations and 1,000 items/hour for T-SL-50-J, and 48–60 destinations and 1,250 items/hour for T-SL-60-J.",
+    "zh": "节省空间型SL系列：T-SL-50-J标准规格为40～50格口、1,000件/小时；T-SL-60-J为48～60格口、1,250件/小时。"
+  },
+  "型式": {
+    "en": "Model",
+    "zh": "型号"
+  },
+  "モデル別仕様": {
+    "en": "Model-specific specifications",
+    "zh": "分型号规格"
+  },
+  "下記の標準仕様比較表をご覧ください。": {
+    "en": "See the standard specification comparison below.",
+    "zh": "请参阅下方标准规格对比表。"
+  },
+  "1,000個/時間": {
+    "en": "1,000 items/hour",
+    "zh": "1,000件/小时"
+  },
+  "1,250個/時間": {
+    "en": "1,250 items/hour",
+    "zh": "1,250件/小时"
+  },
+  "最大 2 m/s": {
+    "en": "Up to 2 m/s",
+    "zh": "最高 2 m/s"
+  },
+  "つばめちゃん家族｜3モデルの標準仕様": {
+    "en": "Tsubame family: standard specifications for three models",
+    "zh": "つばめちゃん系列｜三款型号标准规格"
+  },
+  "つばめちゃん 標準仕様比較": {
+    "en": "Tsubame standard specification comparison",
+    "zh": "つばめちゃん标准规格对比"
+  },
+  "大型物流センターや宅配・ECの大量仕分けに向けた3D仕分け設備。T-MX-72-Jの標準仕様は72間口、処理能力10,800個/時間。一次・二次仕分けに対応します。": {
+    "en": "A 3D sorter for high-volume parcel and e-commerce operations at large logistics centers. Standard T-MX-72-J specifications provide 72 destinations and throughput of 10,800 items/hour for primary and secondary sorting.",
+    "zh": "面向大型物流中心、快递及电商大批量分拣的3D设备。T-MX-72-J标准规格为72格口、10,800件/小时，可用于一次及二次分拣。"
+  },
+  "10,800個/時間": {
+    "en": "10,800 items/hour",
+    "zh": "10,800件/小时"
+  },
+  "対応荷物寸法（mm）": {
+    "en": "Parcel dimensions (mm)",
+    "zh": "适用货物尺寸（mm）"
+  },
+  "高速・大量処理向け": {
+    "en": "High-volume sorting",
+    "zh": "高速、大批量处理"
+  },
+  "高速走行による効率的な仕分けと多間口構成で、大量の荷物を処理する現場に対応します。": {
+    "en": "High-speed transport and multiple destinations support operations handling large parcel volumes.",
+    "zh": "通过高速运行与多格口配置，支持大批量货物分拣现场。"
+  },
+  "一次・二次仕分けに対応": {
+    "en": "Primary and secondary sorting",
+    "zh": "支持一次与二次分拣"
+  },
+  "物流センター、宅配・ECの仕分け工程に合わせて、搬送・投入設備との連携を検討します。": {
+    "en": "Integration with conveying and induction equipment is planned for logistics-center, parcel and e-commerce workflows.",
+    "zh": "可按物流中心、快递及电商分拣工序，研究与输送、供件设备的联动。"
+  },
+  "モデルの選び方": {
+    "en": "Choosing a model",
+    "zh": "如何选择型号"
+  },
+  "処理量・設置スペース・運用に合わせて選定。おまかせくん・つばめちゃんは、いずれも一次・二次仕分けに対応します。": {
+    "en": "Choose according to throughput, available space and operations. Both Omakase and Tsubame support primary and secondary sorting.",
+    "zh": "根据处理量、安装空间与运营方式选型。おまかせくん与つばめちゃん均支持一次及二次分拣。"
+  },
+  "おまかせくん・つばめちゃん 選定比較": {
+    "en": "Omakase and Tsubame selection comparison",
+    "zh": "おまかせくん与つばめちゃん选型对比"
+  },
+  "位置づけ": {
+    "en": "Positioning",
+    "zh": "定位"
+  },
+  "大型・高速の3D仕分け設備": {
+    "en": "Large, high-speed 3D sorter",
+    "zh": "大型、高速3D分拣设备"
+  },
+  "小型〜中型の省スペース仕分け設備": {
+    "en": "Small to medium, space-saving sorter",
+    "zh": "小型至中型节省空间型分拣设备"
+  },
+  "1,000〜1,400個/時間（モデルによる）": {
+    "en": "1,000–1,400 items/hour, depending on model",
+    "zh": "1,000～1,400件/小时（因型号而异）"
+  },
+  "設置面積の参考値": {
+    "en": "Indicative footprint",
+    "zh": "安装面积参考"
+  },
+  "約100 m²（パンフレット比較表の目安）": {
+    "en": "Approx. 100 m², indicative brochure comparison",
+    "zh": "约100 m²（宣传册对比表参考值）"
+  },
+  "約12 m²（パンフレット比較表の目安）": {
+    "en": "Approx. 12 m², indicative brochure comparison",
+    "zh": "约12 m²（宣传册对比表参考值）"
+  },
+  "向いている現場": {
+    "en": "Suitable operations",
+    "zh": "适用现场"
+  },
+  "大型物流センター、宅配・ECの大量仕分け": {
+    "en": "Large logistics centers and high-volume parcel/e-commerce sorting",
+    "zh": "大型物流中心、快递与电商大批量分拣"
+  },
+  "限られたスペース、小規模〜中規模拠点、二次仕分け": {
+    "en": "Limited space, small to medium facilities and secondary sorting",
+    "zh": "有限空间、中小型网点及二次分拣"
+  },
+  "設置面積はモデル共通の保証値ではありません。機器寸法に加え、作業動線・保守スペース・周辺設備を含めてレイアウトを確認します。": {
+    "en": "The indicative footprint is not a guaranteed value for every model. Layouts must allow for equipment dimensions, workflows, maintenance access and peripheral equipment.",
+    "zh": "安装面积并非各型号通用的保证值。布局需结合设备尺寸、作业动线、维护空间及周边设备确认。"
+  },
+  "処理能力は型式別の標準仕様に統一しています。会社パンフレットの比較ページには、おまかせくんを「10,000個/時間から」とする別表記があります。": {
+    "en": "Throughput here follows the model-specific standard specification. The brochure comparison page separately describes Omakase as starting from 10,000 items/hour.",
+    "zh": "此处处理能力统一采用具体型号的标准规格。公司宣传册对比页另有おまかせくん“10,000件/小时起”的表述。"
+  },
+  "10,800個/時間 (T-MX-72-J)": {
+    "en": "10,800 items/hour (T-MX-72-J)",
+    "zh": "10,800件/小时 (T-MX-72-J)"
+  },
+  "3拠点の連携で、技術・製造・販売・品質をつなぐ": {
+    "en": "Three connected sites: technology, manufacturing, sales and quality",
+    "zh": "三地协同，贯通技术、制造、销售与品质"
+  },
+  "中国の製造・開発拠点と日本本社が連携し、企画から導入・サポートまでを一体で進めます。": {
+    "en": "Our Chinese manufacturing and development sites work with our Japanese headquarters to coordinate planning, implementation and support.",
+    "zh": "中国的制造、研发据点与日本总部协作，一体推进从规划到导入及支持的工作。"
+  },
+  "中国常州工場｜製造拠点": {
+    "en": "Changzhou factory, China | Manufacturing",
+    "zh": "中国常州工厂｜制造据点"
+  },
+  "板金加工、溶接・塗装、組立、検査・出荷を担当。製造力・コスト競争力・生産スピードを強みとしています。": {
+    "en": "Handles sheet-metal processing, welding and coating, assembly, inspection and shipping, with strengths in manufacturing capacity, cost competitiveness and production speed.",
+    "zh": "负责钣金加工、焊接与喷涂、组装、检验及出货，以制造能力、成本竞争力和生产速度为优势。"
+  },
+  "中国蘇州 設計・研究開発センター｜開発拠点": {
+    "en": "Suzhou design and R&D center, China | Development",
+    "zh": "中国苏州设计与研发中心｜研发据点"
+  },
+  "研究開発、技術設計、試作・検証、性能検証を担当。技術力・開発スピード・イノベーションを支えます。": {
+    "en": "Handles research and development, engineering design, prototyping, validation and performance testing, supporting technical capability, development speed and innovation.",
+    "zh": "负责研究开发、技术设计、试制验证和性能验证，支持技术能力、研发速度与创新。"
+  },
+  "日本本社（岐阜県多治見市）｜統括拠点": {
+    "en": "Japanese headquarters, Tajimi, Gifu | Coordination",
+    "zh": "日本总部（岐阜县多治见市）｜统筹据点"
+  },
+  "営業・提案、マーケティング、保守サポート、品質管理を担当。お客様のご要望を伺い、改善活動とソリューションのご提案を進めます。": {
+    "en": "Handles sales and proposals, marketing, maintenance support and quality management, translating customer requirements into improvement activities and solution proposals.",
+    "zh": "负责销售与提案、市场推广、维护支持及品质管理，听取客户需求，推进改善活动与解决方案提案。"
+  },
+  "グローバル連携と迅速な対応、品質管理を通じた安定供給を目指し、お客様のビジネスを支えます。": {
+    "en": "We support our customers through global collaboration, responsive service and stable supply backed by quality management.",
+    "zh": "通过全球协同、迅速响应及品质管理，追求稳定供应，支持客户业务。"
+  },
+  "工場面積は62,000 m²（東京ドーム約1.3個分）。会社パンフレットでは、品質認定の取得とTPS導入による改善の取り組みを紹介しています。": {
+    "en": "Factory area totals 62,000 m², approximately 1.3 Tokyo Domes. The company brochure describes quality certification and improvement initiatives through adoption of TPS.",
+    "zh": "工厂面积为62,000 m²（约相当于1.3个东京巨蛋）。公司宣传册介绍了品质认证取得及导入TPS的改善举措。"
+  },
+  "つばめちゃんの製品構造": {
+    "en": "Tsubame structure",
+    "zh": "つばめちゃん产品结构"
+  },
+  "仕分け本体、スキャナー、仕分け間口、インダクションで構成。投入から読取、搬送、仕分けまでの動きを、現場の作業に合わせて設計します。": {
+    "en": "The system comprises the sorter body, scanner, sorting destinations and induction. Induction, scanning, transport and sorting are designed around site operations.",
+    "zh": "由分拣主体、扫描器、分拣格口及供件口组成，按现场作业设计供件、读取、输送与分拣流程。"
   }
 }
