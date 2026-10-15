@@ -317,3 +317,21 @@ html[lang="en"] .concept-circle{font-size:clamp(.9rem,1.45vw,1.2rem)}
 .company-milestone-japan::after{background:var(--blueprint);box-shadow:0 0 0 4px var(--blueprint-pale)}
 .company-milestone-japan .milestone-date{font-size:1.25rem;padding-top:18px}
 @media(max-width:800px){.company-history-section{margin-top:44px;padding-top:30px}.company-history-heading h3{font-size:1.5rem}.company-milestone{grid-template-columns:minmax(0,1fr);gap:10px;padding-left:28px;padding-bottom:24px}.company-milestone::before{left:5px;top:18px;bottom:-18px}.company-milestone::after{left:0;top:10px}.milestone-date,.company-milestone-japan .milestone-date{font-size:1.25rem;padding-top:0}.milestone-content{padding:18px}.company-milestone-japan .milestone-content p{font-size:1rem}}
+
+/* Annual sales: a compact numeric table with proportional comparison bars. */
+.partner-sales{max-width:760px;margin-top:24px;border:1px solid var(--gray-200);padding:28px 32px;background:#fff}
+.partner-sales-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.partner-sales-heading h5{font-size:1.1rem;color:var(--blueprint-deep);margin:0}
+.partner-sales-heading p{font-size:.875rem;color:var(--text-light);margin:0}
+.partner-sales table{table-layout:fixed;font-variant-numeric:tabular-nums}
+.partner-sales table th:first-child{width:100px}
+.partner-sales thead th{background:var(--gray-100);color:var(--text-light);font-weight:500}
+.partner-sales th,.partner-sales td{padding:16px 18px}
+.partner-sales tbody th{vertical-align:middle;font-size:1rem;color:var(--blueprint-deep)}
+.partner-sales td{position:relative}
+.sales-value{display:block;font-size:1.45rem;line-height:1.4;font-weight:700;color:var(--blueprint-deep);text-align:right}
+.sales-bar{display:block;width:var(--sales-share);height:5px;margin-top:10px;background:var(--blueprint);opacity:.65}
+.partner-sales tbody tr:last-child .sales-bar{opacity:1}
+.partner-sales tbody tr:last-child{background:var(--blueprint-pale)}
+.partner-sales tbody tr:last-child th,.partner-sales tbody tr:last-child td{border-bottom:0}
+@media(max-width:600px){.partner-sales{padding:20px 16px}.partner-sales table th:first-child{width:76px}.partner-sales th,.partner-sales td{padding:14px 12px}.partner-sales-heading h5{font-size:1rem}}
