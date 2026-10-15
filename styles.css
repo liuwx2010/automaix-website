@@ -265,8 +265,8 @@ html[lang="ja"] .site-footer :is(p,a) { font-size: .875rem; line-height: 1.85; }
 /* Brand introduction: editable HTML text and a three-circle concept diagram. */
 .brand-introduction{--brand-ink:#244d90;color:var(--brand-ink);background:#fff}
 .brand-introduction-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:56px;align-items:center}
-.brand-introduction-copy h2{font-size:clamp(1.15rem,2vw,1.75rem);font-weight:700;line-height:1.55;margin:0 0 30px;letter-spacing:.04em}
-.brand-introduction-copy h2>span{display:block}
+.brand-introduction-copy h3{font-size:clamp(1.15rem,2vw,1.75rem);font-weight:700;line-height:1.55;margin:0 0 30px;letter-spacing:.04em}
+.brand-introduction-copy h3>span{display:block}
 .brand-introduction-copy p{font-size:1rem;line-height:1.65;letter-spacing:.04em}
 .brand-introduction-copy p+p{margin-top:1.4em}
 .brand-concept{position:relative;width:100%;max-width:360px;aspect-ratio:440/430;margin-inline:auto;color:var(--brand-ink)}
@@ -276,15 +276,15 @@ html[lang="ja"] .site-footer :is(p,a) { font-size: .875rem; line-height: 1.85; }
 .concept-circle span{padding-inline:5px}
 .concept-ai{top:2%;left:50%;transform:translateX(-50%)}
 .concept-auto{bottom:2%;left:2%}.concept-max{bottom:2%;right:2%}
-html[lang="ja"] .brand-introduction-copy h2{font-size:clamp(1.15rem,2vw,1.75rem);line-height:1.55}
+html[lang="ja"] .brand-introduction-copy h3{font-size:clamp(1.15rem,2vw,1.75rem);line-height:1.55}
 html[lang="ja"] .brand-introduction-copy p{line-height:1.65}
 html[lang="en"] .concept-circle{font-size:clamp(.9rem,1.45vw,1.2rem)}
 @media(max-width:950px){.brand-introduction-grid{grid-template-columns:minmax(0,1fr);gap:40px}.brand-introduction-copy{max-width:720px;margin-inline:auto}.brand-concept{max-width:320px}.concept-circle{font-size:clamp(1rem,4.8vw,1.25rem)}html[lang="en"] .concept-circle{font-size:clamp(.85rem,3.8vw,1.125rem)}}
-@media(max-width:450px){.brand-introduction-copy h2,html[lang="ja"] .brand-introduction-copy h2{font-size:1.125rem;line-height:1.7}.brand-introduction-copy p{font-size:.9375rem;line-height:1.85}html[lang="ja"] .brand-introduction-copy p{line-height:1.85}.concept-circle{border-width:3px;outline-width:4px;outline-offset:2px}.brand-introduction-grid{gap:32px}}
+@media(max-width:450px){.brand-introduction-copy h3,html[lang="ja"] .brand-introduction-copy h3{font-size:1.125rem;line-height:1.7}.brand-introduction-copy p{font-size:.9375rem;line-height:1.85}html[lang="ja"] .brand-introduction-copy p{line-height:1.85}.concept-circle{border-width:3px;outline-width:4px;outline-offset:2px}.brand-introduction-grid{gap:32px}}
 @media (min-width: 951px) {
   .brand-introduction-grid { align-items: center; }
   .brand-concept { margin-top: 0; }
-  .brand-introduction-copy h2 > span + span { padding-left: 1.5em; }
+  .brand-introduction-copy h3 > span + span { padding-left: 1.5em; }
 }
 
 /* Manufacturing and development descriptions in the factory section. */
@@ -293,3 +293,7 @@ html[lang="en"] .concept-circle{font-size:clamp(.9rem,1.45vw,1.2rem)}
 .factory-function-grid h4{font-size:1.125rem;line-height:1.7;margin:0 0 12px;color:var(--blueprint-deep)}
 .factory-function-grid p{color:var(--text-light);line-height:1.9;font-size:.9375rem}
 @media(max-width:800px){.factory-function-grid{grid-template-columns:1fr;gap:20px}.factory-function-grid>section{padding:20px}}
+
+.brand-introduction-heading{margin-bottom:36px}
+.brand-introduction-heading h2{color:var(--text)}
+@media(max-width:800px){.brand-introduction-heading{margin-bottom:28px}}
