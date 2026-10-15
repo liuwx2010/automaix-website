@@ -187,3 +187,57 @@
     finally{clearTimeout(timeout);button.disabled=false;form.removeAttribute('aria-busy');}
   });
 })();
+
+// Decorative mascots never receive pointer input or move the page layout.
+(() => {
+  'use strict';
+  const lang = document.documentElement.lang;
+  const labels = lang === 'ja' ? ['アニメーションを停止','アニメーションを再生'] : lang.startsWith('zh') ? ['暂停动画','播放动画'] : ['Pause animation','Play animation'];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const assetBase = new URL('.', document.currentScript.src);
+  const layer = document.createElement('div');
+  layer.className = 'site-mascots'; layer.setAttribute('aria-hidden','true');
+  const toggle = document.createElement('button');
+  toggle.type = 'button'; toggle.className = 'motion-toggle';
+  let paused = false;
+  try { paused = localStorage.getItem('automaix-motion-paused') === 'true'; } catch {}
+  const mascots = ['mascot-worker.png','mascot-penguin.png'].map((file,index) => {
+    const element = document.createElement('div'); element.className = 'site-mascot';
+    const img = document.createElement('img'); img.src = new URL('images/' + file,assetBase).href; img.alt = ''; img.width = 132; img.height = 156; img.decoding = 'async';
+    element.append(img); layer.append(element);
+    return {element,index,x:0,y:0,animation:null};
+  });
+  document.body.append(layer,toggle);
+  function bounds(item) {
+    const width = document.documentElement.clientWidth, height = innerHeight;
+    return {maxX:Math.max(8,width-item.element.offsetWidth-8),minY:Math.min(130,height*.3),maxY:Math.max(140,height-item.element.offsetHeight-60)};
+  }
+  function place(item) {
+    const b = bounds(item); item.x = item.index ? b.maxX : 8; item.y = b.maxY;
+    item.element.style.transform = `translate3d(${item.x}px,${item.y}px,0)`;
+  }
+  function travel(item) {
+    if (paused || reduced.matches || document.hidden) return;
+    const b = bounds(item), nextX = 8+Math.random()*Math.max(0,b.maxX-8), nextY = b.minY+Math.random()*Math.max(0,b.maxY-b.minY);
+    const startX = item.x, startY = item.y, distance = Math.hypot(nextX-startX,nextY-startY);
+    const animation = item.element.animate([{transform:`translate3d(${startX}px,${startY}px,0)`},{transform:`translate3d(${nextX}px,${nextY}px,0)`}],{duration:Math.max(4500,distance/35*1000),easing:'ease-in-out',fill:'forwards'});
+    item.animation = animation;
+    animation.onfinish = () => { item.x=nextX; item.y=nextY; item.element.style.transform=`translate3d(${nextX}px,${nextY}px,0)`; animation.cancel(); item.animation=null; travel(item); };
+  }
+  function update() {
+    const stopped = paused || reduced.matches || document.hidden;
+    document.documentElement.classList.toggle('motion-paused',stopped);
+    toggle.textContent = paused ? '▶ ' + labels[1] : 'Ⅱ ' + labels[0];
+    toggle.setAttribute('aria-pressed',String(paused));
+    for (const item of mascots) {
+      if (item.animation) { if(stopped)item.animation.pause(); else item.animation.play(); }
+      else if(!stopped) travel(item);
+    }
+  }
+  toggle.addEventListener('click',() => { paused=!paused;try{localStorage.setItem('automaix-motion-paused',String(paused));}catch{}update(); });
+  document.addEventListener('visibilitychange',update);
+  reduced.addEventListener('change',update);
+  let resizeFrame;
+  addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(()=>{for(const item of mascots){if(item.animation)item.animation.cancel();item.animation=null;place(item);}update();});});
+  mascots.forEach(place); update();
+})();
