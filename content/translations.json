@@ -35,13 +35,13 @@
     "en": "Home",
     "zh": "首页"
   },
-  "会社概要・製造パートナー": {
-    "en": "Company & manufacturing partner",
-    "zh": "公司与制造合作伙伴"
+  "会社概要・自社工場": {
+    "en": "Company & our factories",
+    "zh": "公司与自有工厂"
   },
-  "日本法人の窓口と、中国の製造・技術体制をご紹介します。": {
-    "en": "Meet our Japan-based business and our manufacturing and engineering partner in China.",
-    "zh": "了解日本法人及中国制造与技术合作体系。"
+  "日本法人の窓口と、自社工場の製造・技術体制をご紹介します。": {
+    "en": "Meet our Japan-based business and the manufacturing and engineering capabilities of our own factories.",
+    "zh": "了解日本法人，以及自有工厂的制造与技术体系。"
   },
   "日本法人の会社概要": {
     "en": "Company profile in Japan",
@@ -55,13 +55,13 @@
     "en": "Japan company",
     "zh": "日本法人"
   },
-  "中国製造パートナー": {
-    "en": "Manufacturing partner in China",
-    "zh": "中国制造合作伙伴"
+  "自社工場": {
+    "en": "Our factories",
+    "zh": "自有工厂"
   },
-  "パートナーの導入事例": {
-    "en": "Partner projects",
-    "zh": "合作伙伴项目案例"
+  "自社工場の導入事例": {
+    "en": "In-house manufacturing projects",
+    "zh": "自有工厂项目案例"
   },
   "サポート体制": {
     "en": "Service & support",
@@ -111,17 +111,13 @@
     "en": "JPY 9.9 million",
     "zh": "990万日元"
   },
-  "江苏勒捷特自控科技有限公司": {
-    "en": "江苏勒捷特自控科技有限公司",
-    "zh": "江苏勒捷特自控科技有限公司"
-  },
   "江蘇省常州市武進区・鎮江市丹陽市に2つの生産拠点": {
     "en": "Two production sites in Wujin, Changzhou and Danyang, Zhenjiang, Jiangsu",
     "zh": "位于江苏常州武进、镇江丹阳的两大生产基地"
   },
-  "パートナーの製造設備": {
-    "en": "Partner manufacturing equipment",
-    "zh": "合作伙伴生产设备"
+  "自社工場の製造設備": {
+    "en": "Factory manufacturing equipment",
+    "zh": "自有工厂生产设备"
   },
   "レーザー切断機6台・曲げ加工機4台・ロボット溶接2ステーション／手動溶接11ステーション・自動塗装ライン1基": {
     "en": "6 laser cutters; 4 bending machines; 2 robotic and 11 manual welding stations; 1 automated coating line",
@@ -167,13 +163,13 @@
     "en": "Automaix Co., Ltd. established",
     "zh": "株式会社Automaix成立"
   },
-  "Automaixは、中国の製造パートナーである江苏勒捷特自控科技有限公司と連携しています。同社は江蘇省常州市武進区を拠点に、物流搬送設備・自動化ラインの製造と販売を手がけ、常州武進と鎮江丹陽の2つの生産拠点に加え、蘇州にも法人を置いています。": {
-    "en": "Automaix works with its Chinese manufacturing partner, 江苏勒捷特自控科技有限公司. Based in Wujin, Changzhou, Jiangsu, the company manufactures and sells logistics conveyors and automated lines. It has production sites in Wujin and Danyang, and a company in Suzhou.",
-    "zh": "Automaix与中国制造合作伙伴江苏勒捷特自控科技有限公司合作。该公司位于江苏常州武进，从事物流输送设备及自动化流水线的制造与销售，拥有常州武进、镇江丹阳两大生产基地，并在苏州设有公司。"
+  "Automaixの自社工場では、物流搬送設備・自動化ラインの製造を手がけています。中国・江蘇省の常州武進と鎮江丹陽に2つの生産拠点を構えています。": {
+    "en": "Our factories manufacture logistics conveyors and automated lines at two production sites in Wujin, Changzhou and Danyang, Zhenjiang, Jiangsu, China.",
+    "zh": "我们的自有工厂从事物流输送设备及自动化流水线制造，在中国江苏常州武进、镇江丹阳设有两大生产基地。"
   },
-  "以下の規模・技術実績・沿革・プロジェクトは、中国製造パートナーの情報です。規模データは2026年9月30日時点の同社資料に基づきます。": {
-    "en": "The scale, technical achievements, history and projects below relate to the Chinese manufacturing partner. Scale figures are based on its materials as of September 30, 2026.",
-    "zh": "以下规模、技术成果、发展历程与项目均属于中国制造合作伙伴。规模数据依据该公司截至2026年9月30日的资料。"
+  "以下では自社工場の規模・技術実績・沿革・プロジェクトをご紹介します。規模データは2026年9月30日時点の工場資料に基づきます。": {
+    "en": "Explore the scale, technical achievements, history and projects of our factories. Scale figures are based on factory records as of September 30, 2026.",
+    "zh": "以下介绍自有工厂的规模、技术成果、发展历程与项目。规模数据依据截至2026年9月30日的工厂资料。"
   },
   "2拠点の生産面積": {
     "en": "Production area across two sites",
@@ -256,8 +252,8 @@
     "zh": "质量管理与培训"
   },
   "ISO9001品質マネジメントシステムに基づく管理を実施。品質検査と検査報告に加え、顧客基準の研修・評価、実技訓練、課題の振り返りを通じて作業標準を整備しています。": {
-    "en": "The partner manages quality in accordance with ISO 9001. Quality inspections and reports are supported by training and assessment against customer standards, practical exercises and reviews that inform work procedures.",
-    "zh": "合作伙伴依据ISO9001质量管理体系开展管理。除质量检验和报告外，还通过客户标准培训与考核、实操演练及问题复盘完善作业标准。"
+    "en": "Our factories manage quality in accordance with ISO 9001. Quality inspections and reports are supported by training and assessment against customer standards, practical exercises and reviews that inform work procedures.",
+    "zh": "自有工厂依据ISO9001质量管理体系开展管理。除质量检验和报告外，还通过客户标准培训与考核、实操演练及问题复盘完善作业标准。"
   },
   "技術認定・評価": {
     "en": "Technical recognition",
@@ -279,9 +275,9 @@
     "en": "2018: OEM strategic partner of Schneider Electric China",
     "zh": "2018年：成为施耐德电气（中国）OEM战略合作伙伴"
   },
-  "中国製造パートナーの沿革・売上高": {
-    "en": "Manufacturing partner history & sales",
-    "zh": "中国制造合作伙伴的发展历程与销售额"
+  "自社工場の沿革・売上高": {
+    "en": "In-house manufacturing history & sales",
+    "zh": "自有工厂的发展历程与销售额"
   },
   "会社設立。ZTO ExpressのB類サプライヤー、BEST Express・STO ExpressのA類サプライヤー。": {
     "en": "Company established. B-class supplier to ZTO Express; A-class supplier to BEST Express and STO Express.",
@@ -315,9 +311,9 @@
     "en": "Became a supplier to Meituan and an SF Express framework procurement supplier.",
     "zh": "成为美团供应商及顺丰框采供应商。"
   },
-  "中国製造パートナーの年間売上高（単位：百万米ドル）": {
-    "en": "Manufacturing partner annual sales (USD millions)",
-    "zh": "中国制造合作伙伴年度销售额（单位：百万美元）"
+  "自社工場の年間売上高（単位：百万米ドル）": {
+    "en": "In-house manufacturing annual sales (USD millions)",
+    "zh": "自有工厂年度销售额（单位：百万美元）"
   },
   "年度": {
     "en": "Year",
@@ -327,13 +323,13 @@
     "en": "Sales",
     "zh": "销售额"
   },
-  "中国製造パートナーのシステム導入事例": {
-    "en": "Manufacturing partner integration projects",
-    "zh": "中国制造合作伙伴系统集成案例"
+  "自社工場のシステム導入事例": {
+    "en": "In-house manufacturing integration projects",
+    "zh": "自有工厂系统集成案例"
   },
-  "物流拠点の搬送・仕分け設備を組み合わせたシステム構築事例です。以下の実績は江苏勒捷特自控科技有限公司によるものです。": {
-    "en": "Examples of integrated conveying and sorting systems at logistics facilities. These projects were delivered by 江苏勒捷特自控科技有限公司.",
-    "zh": "以下为江苏勒捷特自控科技有限公司实施的物流场地输送与分拣系统集成案例。"
+  "自社工場が手がけた、物流拠点の搬送・仕分け設備を組み合わせたシステム構築事例です。": {
+    "en": "Integrated conveying and sorting system projects delivered by our factories for logistics facilities.",
+    "zh": "以下为自有工厂实施的物流场地输送与分拣系统集成案例。"
   },
   "ベトナム BEST Express": {
     "en": "BEST Express, Vietnam",
@@ -383,13 +379,13 @@
     "en": "Huai'an and Hefei, as listed in the 2026 company presentation.",
     "zh": "淮安、合肥项目（状态依据2026年版公司介绍资料）。"
   },
-  "製造パートナーのアフターサービス体制": {
-    "en": "Manufacturing partner after-sales support",
-    "zh": "制造合作伙伴售后服务体系"
+  "自社工場のアフターサービス体制": {
+    "en": "In-house manufacturing after-sales support",
+    "zh": "自有工厂售后服务体系"
   },
   "中国国内では、江蘇省常州・広東省虎門・貴州省貴陽・河南省鄭州・河北省廊坊にサービス拠点を配置。2022年には鄭州のアフターサービス事務所を開設しています。": {
-    "en": "In China, the partner has service locations in Changzhou, Jiangsu; Humen, Guangdong; Guiyang, Guizhou; Zhengzhou, Henan; and Langfang, Hebei. The Zhengzhou after-sales office opened in 2022.",
-    "zh": "合作伙伴在中国江苏常州、广东虎门、贵州贵阳、河南郑州、河北廊坊设有服务网点，并于2022年设立郑州售后办事处。"
+    "en": "In China, our factories have service locations in Changzhou, Jiangsu; Humen, Guangdong; Guiyang, Guizhou; Zhengzhou, Henan; and Langfang, Hebei. The Zhengzhou after-sales office opened in 2022.",
+    "zh": "自有工厂在中国江苏常州、广东虎门、贵州贵阳、河南郑州、河北廊坊设有服务网点，并于2022年设立郑州售后办事处。"
   },
   "海外案件では、契約で定める現地常駐サービス期間の終了後も、継続してリモート技術サポートを提供します。": {
     "en": "For overseas projects, remote technical support continues after the contractual on-site service period ends.",
@@ -447,9 +443,9 @@
     "en": "Site policy",
     "zh": "网站使用说明"
   },
-  "株式会社Automaixの日本法人情報と、中国製造パートナー江苏勒捷特自控科技有限公司の製造体制・実績を分けてご案内します。": {
-    "en": "Learn about Automaix's Japan company and the manufacturing capabilities and projects of its Chinese partner, 江苏勒捷特自控科技有限公司.",
-    "zh": "分别介绍株式会社Automaix日本法人信息，以及中国制造合作伙伴江苏勒捷特自控科技有限公司的制造体系与项目业绩。"
+  "株式会社Automaixの日本法人情報と、自社工場の製造体制・実績をご紹介します。": {
+    "en": "Learn about Automaix's Japan company and the manufacturing capabilities and projects of our factories.",
+    "zh": "介绍株式会社Automaix日本法人信息，以及自有工厂的制造体系与项目业绩。"
   },
   "Automaix ホーム": {
     "en": "Automaix home",
@@ -467,21 +463,21 @@
     "en": "Company page navigation",
     "zh": "公司信息页内导航"
   },
-  "中国製造パートナーのレーザー切断設備": {
-    "en": "Manufacturing partner laser cutting equipment",
-    "zh": "中国制造合作伙伴激光切割设备"
+  "自社工場のレーザー切断設備": {
+    "en": "In-house manufacturing laser cutting equipment",
+    "zh": "自有工厂激光切割设备"
   },
-  "中国製造パートナーの曲げ加工設備": {
-    "en": "Manufacturing partner bending equipment",
-    "zh": "中国制造合作伙伴折弯设备"
+  "自社工場の曲げ加工設備": {
+    "en": "In-house manufacturing bending equipment",
+    "zh": "自有工厂折弯设备"
   },
-  "中国製造パートナーの溶接工程": {
-    "en": "Manufacturing partner welding process",
-    "zh": "中国制造合作伙伴焊接工序"
+  "自社工場の溶接工程": {
+    "en": "In-house manufacturing welding process",
+    "zh": "自有工厂焊接工序"
   },
-  "中国製造パートナーの自動塗装ライン": {
-    "en": "Manufacturing partner automated coating line",
-    "zh": "中国制造合作伙伴自动喷涂线"
+  "自社工場の自動塗装ライン": {
+    "en": "In-house manufacturing automated coating line",
+    "zh": "自有工厂自动喷涂线"
   },
   "ベトナム BEST Express向け物流仕分け設備": {
     "en": "Logistics sorting equipment for BEST Express in Vietnam",
@@ -531,9 +527,9 @@
     "en": "Conveying & measurement integration",
     "zh": "输送与测量设备联动"
   },
-  "中国製造パートナーとの協業": {
-    "en": "Cooperation with our Chinese manufacturing partner",
-    "zh": "与中国制造合作伙伴协作"
+  "自社工場の一貫した製造体制": {
+    "en": "Integrated in-house manufacturing",
+    "zh": "自有工厂一体化制造"
   },
   "製品ラインナップ": {
     "en": "Product range",
@@ -543,9 +539,9 @@
     "en": "Choose equipment based on your parcels and workflow.",
     "zh": "根据货物特征和作业流程选择设备。"
   },
-  "SorterMX-5・SorterMN-3は製造パートナーのシリーズ名、おまかせくん・つばめちゃんは国内取扱モデル名です。仕様は各製品ページで個別にご案内します。": {
-    "en": "SorterMX-5 and SorterMN-3 are manufacturing partner series names. Omakase-kun and Tsubame-chan are models offered in Japan. Specifications are explained separately on each product page.",
-    "zh": "SorterMX-5、SorterMN-3为制造合作伙伴系列名；Omakase-kun、Tsubame-chan为日本市场销售型号。各产品的规格分别在详情页说明。"
+  "SorterMX-5・SorterMN-3は自社工場のシリーズ名、おまかせくん・つばめちゃんは国内取扱モデル名です。仕様は各製品ページで個別にご案内します。": {
+    "en": "SorterMX-5 and SorterMN-3 are in-house manufacturing series names. Omakase-kun and Tsubame-chan are models offered in Japan. Specifications are explained separately on each product page.",
+    "zh": "SorterMX-5、SorterMN-3为自有工厂系列名；Omakase-kun、Tsubame-chan为日本市场销售型号。各产品的规格分别在详情页说明。"
   },
   "多段の仕分け間口へ荷物を振り分け、注文や出荷先ごとに集約。キャリッジ構成と投入方式で選べる5モデル。": {
     "en": "Sort parcels into multi-level destinations and consolidate by order or shipping destination. Five models offer different carriage configurations and induction methods.",
@@ -787,13 +783,9 @@
     "en": "An illustration of sorting and operation in limited installation space.",
     "zh": "有限安装空间内的分拣作业与运行示例。"
   },
-  "製造パートナーの導入事例": {
-    "en": "Manufacturing partner projects",
-    "zh": "制造合作伙伴项目案例"
-  },
-  "江苏勒捷特自控科技有限公司が手がけた搬送・仕分けシステムの事例です。": {
-    "en": "Conveying and sorting system projects delivered by 江苏勒捷特自控科技有限公司.",
-    "zh": "由江苏勒捷特自控科技有限公司实施的输送与分拣系统项目。"
+  "自社工場が手がけた搬送・仕分けシステムの事例です。": {
+    "en": "Conveying and sorting system projects delivered by our factories.",
+    "zh": "由自有工厂实施的输送与分拣系统项目。"
   },
   "ベトナム通信事業者向け": {
     "en": "Vietnam telecom operator",
@@ -827,9 +819,9 @@
     "en": "View Japan company profile →",
     "zh": "查看日本法人概要 →"
   },
-  "江苏勒捷特自控科技有限公司。常州武進・鎮江丹陽の2生産拠点を持つ、物流搬送設備・自動化ラインの製造企業です。": {
-    "en": "江苏勒捷特自控科技有限公司 manufactures logistics conveyors and automated lines, with two production sites in Wujin, Changzhou and Danyang, Zhenjiang.",
-    "zh": "江苏勒捷特自控科技有限公司从事物流输送设备及自动化流水线制造，拥有常州武进、镇江丹阳两大生产基地。"
+  "常州武進・鎮江丹陽の2生産拠点で、物流搬送設備・自動化ラインを製造しています。": {
+    "en": "Our factories manufacture logistics conveyors and automated lines at two production sites in Wujin, Changzhou and Danyang, Zhenjiang.",
+    "zh": "自有工厂在常州武进、镇江丹阳两大生产基地制造物流输送设备及自动化流水线。"
   },
   "1,000件以上": {
     "en": "1,000+",
@@ -839,9 +831,9 @@
     "en": "110+",
     "zh": "110项以上"
   },
-  "パートナーの規模データ：2026年9月30日時点。": {
-    "en": "Partner scale figures: as of September 30, 2026.",
-    "zh": "合作伙伴规模数据：截至2026年9月30日。"
+  "自社工場の規模データ：2026年9月30日時点。": {
+    "en": "Factory figures: as of September 30, 2026.",
+    "zh": "自有工厂规模数据：截至2026年9月30日。"
   },
   "製造設備・技術実績を詳しく →": {
     "en": "Explore manufacturing & technical capabilities →",
@@ -883,9 +875,9 @@
     "en": "Installation, commissioning and operating support are agreed for each project.",
     "zh": "按项目约定安装、调试及运行支持内容。"
   },
-  "製造パートナーのサポート体制 →": {
-    "en": "View partner service capabilities →",
-    "zh": "查看制造合作伙伴服务体系 →"
+  "自社工場のサポート体制 →": {
+    "en": "View factory service capabilities →",
+    "zh": "查看自有工厂服务体系 →"
   },
   "ニュース・お知らせ": {
     "en": "News & announcements",
@@ -931,9 +923,9 @@
     "en": "Company introduction",
     "zh": "公司介绍"
   },
-  "日本法人と中国製造パートナーの会社概要・製造体制・実績をご紹介します。": {
-    "en": "An introduction to the Japan company and the Chinese manufacturing partner, including manufacturing capabilities and project experience.",
-    "zh": "介绍日本法人及中国制造合作伙伴的公司概要、制造体系和项目业绩。"
+  "日本法人の会社概要と、自社工場の製造体制・実績をご紹介します。": {
+    "en": "An introduction to our Japan company and our factories, including manufacturing capabilities and project experience.",
+    "zh": "介绍日本法人公司概要，以及自有工厂的制造体系和项目业绩。"
   },
   "日本語PDFを開く →": {
     "en": "Open English PDF →",
@@ -1019,9 +1011,9 @@
     "en": "This action does not complete sending. Review the draft and send it from your email app.",
     "zh": "此操作不代表已经发送，请在邮件应用中确认内容并发送。"
   },
-  "株式会社Automaix。3D仕分け、搬送、投入・計測設備の製品選定と導入を支援。中国製造パートナーとの連携体制、製品仕様、導入事例をご案内します。": {
-    "en": "Automaix Co., Ltd. supports the selection and implementation of 3D sorting, conveying and measurement equipment. Explore product specifications, partner capabilities and project examples.",
-    "zh": "株式会社Automaix提供3D分拣、输送及测量设备的选型与导入支持，介绍产品规格、中国制造合作体系及项目案例。"
+  "株式会社Automaix。3D仕分け、搬送、投入・計測設備の製品選定と導入を支援。自社工場の製造体制、製品仕様、導入事例をご案内します。": {
+    "en": "Automaix Co., Ltd. supports the selection and implementation of 3D sorting, conveying and measurement equipment. Explore our in-house manufacturing capabilities, product specifications and project examples.",
+    "zh": "株式会社Automaix提供3D分拣、输送及测量设备的选型与导入支持，介绍自有工厂制造体系、产品规格及项目案例。"
   },
   "製品カテゴリー": {
     "en": "Product categories",
@@ -1111,9 +1103,9 @@
     "en": "Privacy information and contact details.",
     "zh": "隐私信息及联系窗口说明。"
   },
-  "数値は製造パートナーの2026年10月版製品資料に基づきます。実際の能力は荷物寸法・重量、投入条件、仕分け先数、ライン構成によって異なります。": {
-    "en": "Figures are based on the manufacturing partner's October 2026 product materials. Actual capacity varies with parcel dimensions and weights, induction conditions, destination count and line configuration.",
-    "zh": "数值依据制造合作伙伴2026年10月版产品资料。实际能力会因货物尺寸与重量、供包条件、格口数量及产线配置而变化。"
+  "数値は自社工場の2026年10月版製品資料に基づきます。実際の能力は荷物寸法・重量、投入条件、仕分け先数、ライン構成によって異なります。": {
+    "en": "Figures are based on the factories' October 2026 product materials. Actual capacity varies with parcel dimensions and weights, induction conditions, destination count and line configuration.",
+    "zh": "数值依据自有工厂2026年10月版产品资料。实际能力会因货物尺寸与重量、供包条件、格口数量及产线配置而变化。"
   },
   "この製品について相談する": {
     "en": "Ask about this product",
@@ -1635,25 +1627,25 @@
     "en": "Company information & project attribution",
     "zh": "公司信息与业绩归属"
   },
-  "株式会社Automaixの日本法人情報と、中国製造パートナーの情報は区分して表示しています。製造パートナーの規模、特許、沿革、事例は、掲載した資料時点の同社情報です。": {
-    "en": "Information about Automaix's Japan company is distinguished from information about the Chinese manufacturing partner. Partner scale, patents, history and projects reflect its materials at the stated date.",
-    "zh": "网站区分展示株式会社Automaix日本法人及中国制造合作伙伴的信息；合作伙伴规模、专利、发展历程及项目均以标注资料时点为准。"
+  "株式会社Automaixの日本法人情報と、自社工場の製造情報をご案内しています。工場の規模、特許、沿革、事例は、掲載した資料時点の情報です。": {
+    "en": "This website presents Automaix's Japan company and our in-house manufacturing operations. Factory scale, patents, history and projects reflect the records at the stated date.",
+    "zh": "网站介绍株式会社Automaix日本法人及自有工厂的制造信息；工厂规模、专利、发展历程及项目均以标注资料时点为准。"
   },
   "製品名について": {
     "en": "Product names",
     "zh": "关于产品名称"
   },
-  "国内取扱モデル名と製造パートナーのシリーズ名は、それぞれの製品ページでご案内しています。名称が似ている製品でも、同じ構成・性能とは限りません。用途に合う製品の選定はお問い合わせください。": {
-    "en": "Models offered in Japan and the manufacturing partner's series are described separately on their product pages. Similar names do not necessarily mean identical configurations or performance. Contact us for product selection.",
-    "zh": "日本市场销售型号名与制造合作伙伴系列名分别在各产品页说明。名称相近不代表配置或性能相同，具体选型请咨询确认。"
+  "国内取扱モデル名と自社工場のシリーズ名は、それぞれの製品ページでご案内しています。名称が似ている製品でも、同じ構成・性能とは限りません。用途に合う製品の選定はお問い合わせください。": {
+    "en": "Models offered in Japan and the factories' series are described separately on their product pages. Similar names do not necessarily mean identical configurations or performance. Contact us for product selection.",
+    "zh": "日本市场销售型号名与自有工厂系列名分别在各产品页说明。名称相近不代表配置或性能相同，具体选型请咨询确认。"
   },
   "画像・動画・商標": {
     "en": "Images, videos & trademarks",
     "zh": "图片、视频及商标"
   },
-  "掲載する写真・動画・製品名には、Automaixおよび製造パートナー等に関係するものが含まれます。お取引先の名称や商標は、それぞれの権利者に帰属します。転載・二次利用については事前にお問い合わせください。": {
-    "en": "Photographs, videos and product names on this website include materials related to Automaix and its manufacturing partner. Customer names and trademarks belong to their respective owners. Please contact us before reproducing or reusing materials.",
-    "zh": "本网站的照片、视频及产品名称包含与Automaix和制造合作伙伴等相关的资料。客户名称及商标归各权利人所有，转载或二次使用前请先联系我们。"
+  "掲載する写真・動画・製品名には、Automaixおよび自社工場等に関係するものが含まれます。お取引先の名称や商標は、それぞれの権利者に帰属します。転載・二次利用については事前にお問い合わせください。": {
+    "en": "Photographs, videos and product names on this website include materials related to Automaix and its in-house manufacturing. Customer names and trademarks belong to their respective owners. Please contact us before reproducing or reusing materials.",
+    "zh": "本网站的照片、视频及产品名称包含与Automaix和自有工厂等相关的资料。客户名称及商标归各权利人所有，转载或二次使用前请先联系我们。"
   },
   "ご利用環境": {
     "en": "Browser requirements",
@@ -1667,17 +1659,13 @@
     "en": "Site usage information and contact details.",
     "zh": "网站使用说明及联系窗口信息。"
   },
-  "会社概要・中国製造パートナー": {
-    "en": "Company & manufacturing partner in China",
-    "zh": "公司与中国制造合作伙伴"
-  },
   "物流自動化・3D仕分けシステム": {
     "en": "Logistics automation & 3D sorting systems",
     "zh": "物流自动化与3D分拣系统"
   },
-  "会社概要・中国製造パートナー | AUTOMAIX": {
-    "en": "Company & manufacturing partner in China | AUTOMAIX",
-    "zh": "公司与中国制造合作伙伴 | AUTOMAIX"
+  "会社概要・自社工場 | AUTOMAIX": {
+    "en": "Company & our factories | AUTOMAIX",
+    "zh": "公司与自有工厂 | AUTOMAIX"
   },
   "物流自動化・3D仕分けシステム | AUTOMAIX": {
     "en": "Logistics automation & 3D sorting systems | AUTOMAIX",
@@ -2171,9 +2159,9 @@
     "en": "About the company brochure",
     "zh": "资料包含什么"
   },
-  "日本法人の会社概要、中国製造パートナーの製造体制・技術・導入事例をまとめています。": {
-    "en": "An overview of Automaix in Japan and our Chinese manufacturing partner’s facilities, technology and projects.",
-    "zh": "包含 Automaix 日本公司概况，以及中国制造合作伙伴的生产能力、技术与项目案例。"
+  "日本法人の会社概要と、自社工場の製造体制・技術・導入事例をまとめています。": {
+    "en": "An overview of Automaix in Japan and our own factories’ facilities, technology and projects.",
+    "zh": "包含Automaix日本公司概况，以及自有工厂的生产能力、技术与项目案例。"
   },
   "登録内容はinfo@automaix.co.jpに送信されます。資料の提供と関連する業務上のご連絡に利用します。": {
     "en": "Your details will be sent to info@automaix.co.jp to provide the brochure and follow up on relevant business enquiries.",
@@ -2238,5 +2226,9 @@
   "会社資料ダウンロード | AUTOMAIX": {
     "en": "Company brochure download | AUTOMAIX",
     "zh": "公司资料下载 | AUTOMAIX"
+  },
+  "Automaix自社工場": {
+    "en": "Automaix factories",
+    "zh": "Automaix自有工厂"
   }
 }

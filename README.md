@@ -19,7 +19,7 @@ pnpm start
 - `content/pages.json`: 固定ページのタイトル、説明、構造化データ。
 - `templates/page.html`: 共通ヘッダー・フッターとHTMLの外枠。
 - `templates/index.html`: ホーム本文。製品一覧と相談フォームの選択肢はビルド時に挿入。
-- `templates/company.html`: 日本法人と中国製造パートナーの会社紹介。
+- `templates/company.html`: 日本法人と自社工場の会社紹介。
 - `templates/privacy.html`, `templates/site-policy.html`: サイト上の案内文。
 - `styles.css`, `app.js`: 全ページで共有する見た目・動作。
 
@@ -93,5 +93,5 @@ private/はGit管理から除外しています。PDFを公開GitHubリポジト
 
 ## 内容の取り扱い
 
-日本法人は株式会社Automaix、中国製造パートナーは江苏勒捷特自控科技有限公司です。製造パートナーの沿革・施工実績・規模を日本法人の実績に置き換えないでください。
+日本法人は株式会社Automaixです。製造体制は自社工場として紹介し、中国の法人名は掲載しません。日本法人と自社工場それぞれの沿革・設立年は資料に従って表示してください。
 SorterMX-5／SorterMN-3と国内取扱モデルの対応関係は未確定のため、同一モデルと表示していません。未確認の性能・電源・温度帯・保険・据付日数などは、一律の保証として掲載していません。

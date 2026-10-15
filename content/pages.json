@@ -1,8 +1,8 @@
 [
   {
     "file": "company.html",
-    "title": "会社概要・中国製造パートナー",
-    "description": "株式会社Automaixの日本法人情報と、中国製造パートナー江苏勒捷特自控科技有限公司の製造体制・実績を分けてご案内します。",
+    "title": "会社概要・自社工場",
+    "description": "株式会社Automaixの日本法人情報と、自社工場の製造体制・実績をご紹介します。",
     "schema": {
       "@context": "https://schema.org",
       "@type": "Organization",
@@ -26,7 +26,7 @@
   {
     "file": "index.html",
     "title": "物流自動化・3D仕分けシステム",
-    "description": "株式会社Automaix。3D仕分け、搬送、投入・計測設備の製品選定と導入を支援。中国製造パートナーとの連携体制、製品仕様、導入事例をご案内します。",
+    "description": "株式会社Automaix。3D仕分け、搬送、投入・計測設備の製品選定と導入を支援。自社工場の製造体制、製品仕様、導入事例をご案内します。",
     "schema": {
       "@context": "https://schema.org",
       "@type": "Organization",

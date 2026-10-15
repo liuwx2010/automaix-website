@@ -58,7 +58,7 @@ for(const file of files){
   html=html.replace('<html lang="ja">',`<html lang="${code[locale]}">`);
   html=html.replace(/<link rel="canonical" href="[^"]+">/,`<link rel="canonical" href="${url(file,locale)}">${alternates(file)}<meta property="og:locale" content="${og[locale]}">`);
   html=html.replace(/<meta property="og:url" content="[^"]+">/,`<meta property="og:url" content="${url(file,locale)}">`);
-  html=html.replace(/(<\/a>)(<nav aria-label="(?:メインナビゲーション|Main navigation|主导航)">)/,`$1${switcher(file,locale)}$2`);
+  html=html.replace("</ul></nav></div></header>",`</ul></nav>${switcher(file,locale)}</div></header>`);
   if(!html.includes('data-language-link'))throw new Error(`Language switch missing: ${file} / ${locale}`);
   if(locale!=='ja'){
    html=html.replaceAll('tel:05068641858','tel:+815068641858').replaceAll('050-6864-1858','+81-50-6864-1858');
@@ -66,7 +66,7 @@ for(const file of files){
     ? '<p class="small">Please review our <a href="privacy.html">privacy information</a> before sending your email. Preparing a draft does not send your information to this website’s server.</p>'
     : '<p class="small">请阅读<a href="privacy.html">个人信息处理说明</a>后发送邮件。这里输入的内容不会提交至本网站服务器。</p>');
    if(locale==='en')html=html.replaceAll('>、<','>, <');
-   html=html.replace(/\b(src|href|poster|srcset)="((?:images|videos|downloads)\/[^\"]+|styles\.css|app\.js)"/g,'$1="../$2"');
+   html=html.replace(/\b(src|href|poster|srcset)="((?:images|videos|downloads)\/[^\"]+|(?:styles\.css|app\.js)(?:\?v=[a-f0-9]+)?)"/g,'$1="../$2"');
    html=html.replace(/downloads\/(company-brochure-2026|product-catalog-3d)\.pdf/g,`downloads/$1-${locale}.pdf`);
    html=html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g,(_,json)=>{
     const schema=JSON.parse(json);if(schema['@type']==='Product')schema.url=url(file,locale);

@@ -39,7 +39,7 @@ for locale in ['en','zh']:
         if english:value=str(value).replace('〜','–').replace('※','*')
         value=escape(str(value)).replace('\n','<br/>')
         if english:
-            for name in ['江苏勒捷特自控科技有限公司','安田 純']:value=value.replace(name,f'<font name="CN">{name}</font>')
+            for name in ['安田 純']:value=value.replace(name,f'<font name="CN">{name}</font>')
         return Paragraph(value,style[kind])
     def table(data,widths,header=False):
         t=Table([[p(c,'white' if header and j==0 else 'cell') for c in row] for j,row in enumerate(data)],colWidths=widths,repeatRows=1 if header else 0,hAlign='LEFT')
@@ -56,12 +56,12 @@ for locale in ['en','zh']:
     company=load(locale,'company.html')
     partner=first(company,'//*[@id="manufacturing-partner"]')
     story=[p('Company introduction' if english else '公司介绍','title'),p(text(first(company,'//table[contains(@class,"profile-table")]/preceding::h2[1]')),'h2'),table(rows(first(company,'//table[contains(@class,"profile-table")]')),[44*mm,130*mm]),Spacer(1,7*mm),p(text(first(company,'//*[@id="company-history"]')),'small'),PageBreak()]
-    story += [p('Manufacturing capabilities' if english else '制造合作伙伴体系','title'),p(text(first(partner,'.//*[@id="partner-title"]')),'h2'),p(text(first(partner,'.//p[@class="partner-lead"]')))]
+    story += [p('Manufacturing capabilities' if english else '自有工厂体系','title'),p(text(first(partner,'.//*[@id="partner-title"]')),'h2'),p(text(first(partner,'.//p[@class="partner-lead"]')))]
     metrics=[[text(first(div,'./dt')),text(first(div,'./dd'))] for div in partner.xpath('.//dl[@class="partner-metrics"]/div')]
     story += [table(metrics,[104*mm,70*mm]),p(text(first(partner,'.//p[@class="partner-scope"]')),'small'),Spacer(1,4*mm),image('factory-coating.webp',height=52*mm),Spacer(1,4*mm),p('; '.join(text(f) for f in partner.xpath('.//div[@class="factory-gallery"]//figcaption')),'small'),PageBreak()]
     history=first(partner,'.//details[@class="partner-history"]')
     historyrows=[[text(first(row,'./dt')),text(first(row,'./dd'))] for row in history.xpath('./dl/div')]
-    story += [p('History & technical recognition' if english else '发展历程与技术资质','title'),p('Chinese manufacturing partner' if english else '以下为中国制造合作伙伴信息','small'),table(historyrows,[22*mm,152*mm]),Spacer(1,5*mm)]
+    story += [p('History & technical recognition' if english else '发展历程与技术资质','title'),p('our factories in China' if english else '以下为自有工厂信息','small'),table(historyrows,[22*mm,152*mm]),Spacer(1,5*mm)]
     sales=first(history,'.//table');story += [p(text(first(sales,'./caption')),'h2'),table(rows(sales),[85*mm,89*mm],True),p(text(first(partner,'.//div[@class="partner-quality"]/div[2]/h5')),'h2')]
     story += [p(text(li),'small') for li in partner.xpath('.//div[@class="partner-quality"]/div[2]//li')]
     story += [PageBreak()]
@@ -74,9 +74,9 @@ for locale in ['en','zh']:
 
     mx=load(locale,'product-sortermx5.html');mn=load(locale,'product-sortermn3.html')
     titles=['Series / model','Selection guidance'] if english else ['系列／型号','选型说明']
-    modelrows=[titles,['SorterMX-5','Manufacturing partner series: S01 / S02 / S03 / D01 / D02. Choose the carriage and induction configuration.' if english else '制造合作伙伴系列，包含S01／S02／S03／D01／D02五款型号，按小车结构和供包方式选择。'],['SorterMN-3','Compact integrated partner series. C01 with semi-automatic induction.' if english else '制造合作伙伴紧凑一体式系列，C01采用半自动供包。'],['Omakase-kun','Japan-offered model: T-MX-72-J. Specifications confirmed for each project.' if english else '日本市场销售型号T-MX-72-J，规格按项目单独确认。'],['Tsubame-chan / SL','Japan-offered models: T-M-48-J, T-SL-50-J / T-SL-60-J. Specifications confirmed for each project.' if english else '日本市场销售型号T-M-48-J、T-SL-50-J／T-SL-60-J，规格按项目单独确认。']]
+    modelrows=[titles,['SorterMX-5','In-house manufacturing series: S01 / S02 / S03 / D01 / D02. Choose the carriage and induction configuration.' if english else '自有工厂系列，包含S01／S02／S03／D01／D02五款型号，按小车结构和供包方式选择。'],['SorterMN-3','Compact integrated in-house series. C01 with semi-automatic induction.' if english else '自有工厂紧凑一体式系列，C01采用半自动供包。'],['Omakase-kun','Japan-offered model: T-MX-72-J. Specifications confirmed for each project.' if english else '日本市场销售型号T-MX-72-J，规格按项目单独确认。'],['Tsubame-chan / SL','Japan-offered models: T-M-48-J, T-SL-50-J / T-SL-60-J. Specifications confirmed for each project.' if english else '日本市场销售型号T-M-48-J、T-SL-50-J／T-SL-60-J，规格按项目单独确认。']]
     condition=text(first(mx,'//div[@class="detail-intro"]//p[@class="small"]'))
-    story=[p('3D sorting product guide' if english else '3D分拣产品指南','title'),p('Partner series and models offered in Japan' if english else '制造合作伙伴系列及日本市场销售型号','small'),image('sortermx5-system.webp',height=70*mm),Spacer(1,5*mm),table(modelrows,[53*mm,121*mm],True),Spacer(1,5*mm),p('The models offered in Japan and the manufacturing partner series are described separately. Similar names do not establish identical configurations or performance. Contact us for selection support.' if english else '日本市场销售型号与制造合作伙伴系列分别介绍，名称相近不代表配置或性能相同。具体选型请咨询确认。','small'),PageBreak()]
+    story=[p('3D sorting product guide' if english else '3D分拣产品指南','title'),p('In-house series and models offered in Japan' if english else '自有工厂系列及日本市场销售型号','small'),image('sortermx5-system.webp',height=70*mm),Spacer(1,5*mm),table(modelrows,[53*mm,121*mm],True),Spacer(1,5*mm),p('The models offered in Japan and the in-house manufacturing series are described separately. Similar names do not establish identical configurations or performance. Contact us for selection support.' if english else '日本市场销售型号与自有工厂系列分别介绍，名称相近不代表配置或性能相同。具体选型请咨询确认。','small'),PageBreak()]
     for index,t in enumerate(mx.xpath('//table[@class="putwall-table"]')):
         data=rows(t);widths=[48*mm]+[126*mm/(len(data[0])-1)]*(len(data[0])-1)
         story += [p('SorterMX-5 / '+('S series' if index==0 else 'D series') if english else 'SorterMX-5／'+('S系列' if index==0 else 'D系列'),'title'),p('One carriage per mast.' if english and index==0 else 'Two carriages per mast.' if english else '一杆单车。' if index==0 else '一杆双车。','small'),table(data,widths,True),Spacer(1,5*mm),p(text(first(mx,'//p[@class="putwall-note"]')),'small'),p(text(first(mx,'//*[@id="sortermx5-specs"]//h3[last()]')),'h2'),p(text(first(mx,'//*[@id="sortermx5-specs"]//h3[last()]/following-sibling::p[1]')),'small'),PageBreak()]
