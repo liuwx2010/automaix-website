@@ -269,9 +269,9 @@ html[lang="ja"] .site-footer :is(p,a) { font-size: .875rem; line-height: 1.85; }
 .brand-introduction-copy h2>span{display:block}
 .brand-introduction-copy p{font-size:1rem;line-height:1.65;letter-spacing:.04em}
 .brand-introduction-copy p+p{margin-top:1.4em}
-.brand-concept{position:relative;width:100%;max-width:440px;aspect-ratio:440/430;margin-inline:auto;color:var(--brand-ink)}
+.brand-concept{position:relative;width:100%;max-width:360px;aspect-ratio:440/430;margin-inline:auto;color:var(--brand-ink)}
 .brand-concept-links{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:5;stroke-dasharray:3 6}
-.concept-circle{position:absolute;width:44%;aspect-ratio:1;border:4px solid currentColor;outline:5px dotted currentColor;outline-offset:3px;border-radius:50%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:0;line-height:1.45;font-size:clamp(1rem,2.15vw,1.65rem);font-weight:700;letter-spacing:.01em}
+.concept-circle{position:absolute;width:44%;aspect-ratio:1;border:4px solid currentColor;outline:5px dotted currentColor;outline-offset:3px;border-radius:50%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:0;line-height:1.45;font-size:clamp(1rem,1.7vw,1.375rem);font-weight:700;letter-spacing:.01em}
 .concept-circle strong{font-family:Arial,sans-serif;font-size:1em;line-height:1.45}
 .concept-circle span{padding-inline:5px}
 .concept-ai{top:2%;left:50%;transform:translateX(-50%)}
@@ -279,11 +279,11 @@ html[lang="ja"] .site-footer :is(p,a) { font-size: .875rem; line-height: 1.85; }
 html[lang="ja"] .brand-introduction-copy h2{font-size:clamp(1.15rem,2vw,1.75rem);line-height:1.55}
 html[lang="ja"] .brand-introduction-copy p{line-height:1.65}
 html[lang="en"] .concept-circle{font-size:clamp(.9rem,1.45vw,1.2rem)}
-@media(max-width:950px){.brand-introduction-grid{grid-template-columns:minmax(0,1fr);gap:40px}.brand-introduction-copy{max-width:720px;margin-inline:auto}.brand-concept{max-width:400px}.concept-circle{font-size:clamp(1rem,4.8vw,1.5rem)}html[lang="en"] .concept-circle{font-size:clamp(.85rem,3.8vw,1.125rem)}}
+@media(max-width:950px){.brand-introduction-grid{grid-template-columns:minmax(0,1fr);gap:40px}.brand-introduction-copy{max-width:720px;margin-inline:auto}.brand-concept{max-width:320px}.concept-circle{font-size:clamp(1rem,4.8vw,1.25rem)}html[lang="en"] .concept-circle{font-size:clamp(.85rem,3.8vw,1.125rem)}}
 @media(max-width:450px){.brand-introduction-copy h2,html[lang="ja"] .brand-introduction-copy h2{font-size:1.125rem;line-height:1.7}.brand-introduction-copy p{font-size:.9375rem;line-height:1.85}html[lang="ja"] .brand-introduction-copy p{line-height:1.85}.concept-circle{border-width:3px;outline-width:4px;outline-offset:2px}.brand-introduction-grid{gap:32px}}
 @media (min-width: 951px) {
-  .brand-introduction-grid { align-items: start; }
-  .brand-concept { margin-top: 44px; }
+  .brand-introduction-grid { align-items: center; }
+  .brand-concept { margin-top: 0; }
   .brand-introduction-copy h2 > span + span { padding-left: 1.5em; }
 }
 
