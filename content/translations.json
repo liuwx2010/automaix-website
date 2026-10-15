@@ -16,8 +16,8 @@
     "zh": "产品视频"
   },
   "会社概要": {
-    "en": "Company",
-    "zh": "公司介绍"
+    "en": "Company profile",
+    "zh": "公司概要"
   },
   "導入事例": {
     "en": "Projects",
@@ -39,7 +39,7 @@
     "en": "Company & our factories",
     "zh": "公司与自有工厂"
   },
-  "日本法人の窓口と、自社工場の製造・技術体制をご紹介します。": {
+  "株式会社Automaixの会社概要と、自社工場の生産・開発体制をご紹介します。": {
     "en": "Meet our Japan-based business and the manufacturing and engineering capabilities of our own factories.",
     "zh": "了解日本法人，以及自有工厂的制造与技术体系。"
   },
@@ -163,19 +163,19 @@
     "en": "Automaix Co., Ltd. established",
     "zh": "株式会社Automaix成立"
   },
-  "Automaixの自社工場では、物流搬送設備・自動化ラインの製造を手がけています。中国・江蘇省の常州武進と鎮江丹陽に2つの生産拠点を構えています。": {
+  "中国・江蘇省の常州武進および鎮江丹陽に2つの生産拠点を構え、物流搬送設備・自動化ラインの製造を行っています。": {
     "en": "Our factories manufacture logistics conveyors and automated lines at two production sites in Wujin, Changzhou and Danyang, Zhenjiang, Jiangsu, China.",
     "zh": "我们的自有工厂从事物流输送设备及自动化流水线制造，在中国江苏常州武进、镇江丹阳设有两大生产基地。"
   },
-  "以下では自社工場の規模・技術実績・沿革・プロジェクトをご紹介します。規模データは2026年9月30日時点の工場資料に基づきます。": {
+  "自社工場の生産規模、技術実績、沿革、システム導入実績をご紹介します。生産規模等の数値は、2026年9月30日時点の工場資料に基づきます。": {
     "en": "Explore the scale, technical achievements, history and projects of our factories. Scale figures are based on factory records as of September 30, 2026.",
     "zh": "以下介绍自有工厂的规模、技术成果、发展历程与项目。规模数据依据截至2026年9月30日的工厂资料。"
   },
-  "2拠点の生産面積": {
+  "総生産面積（2拠点）": {
     "en": "Production area across two sites",
     "zh": "两大生产基地面积"
   },
-  "施工プロジェクト数": {
+  "施工実績": {
     "en": "Construction projects",
     "zh": "施工项目数量"
   },
@@ -183,7 +183,7 @@
     "en": "+",
     "zh": "项以上"
   },
-  "主要顧客との取引": {
+  "主要取引先数": {
     "en": "Major customer relationships",
     "zh": "头部客户合作"
   },
@@ -191,11 +191,11 @@
     "en": "+",
     "zh": "家以上"
   },
-  "累計特許数": {
+  "累計特許件数": {
     "en": "Total patents",
     "zh": "累计专利"
   },
-  "研究開発・技術人材比率": {
+  "研究開発・技術職の人員比率": {
     "en": "R&D and technical staff share",
     "zh": "研发技术人员占比"
   },
@@ -251,11 +251,11 @@
     "en": "Quality management & training",
     "zh": "质量管理与培训"
   },
-  "ISO9001品質マネジメントシステムに基づく管理を実施。品質検査と検査報告に加え、顧客基準の研修・評価、実技訓練、課題の振り返りを通じて作業標準を整備しています。": {
+  "ISO 9001に基づく品質マネジメントシステムを運用しています。品質検査・検査報告に加え、お客様の要求基準に応じた教育・評価、実技訓練、不具合・課題の検証を通じて、作業の標準化と品質の安定化を図っています。": {
     "en": "Our factories manage quality in accordance with ISO 9001. Quality inspections and reports are supported by training and assessment against customer standards, practical exercises and reviews that inform work procedures.",
     "zh": "自有工厂依据ISO9001质量管理体系开展管理。除质量检验和报告外，还通过客户标准培训与考核、实操演练及问题复盘完善作业标准。"
   },
-  "技術認定・評価": {
+  "技術認定・対外評価": {
     "en": "Technical recognition",
     "zh": "技术资质与荣誉"
   },
@@ -279,19 +279,19 @@
     "en": "In-house manufacturing history & sales",
     "zh": "自有工厂的发展历程与销售额"
   },
-  "会社設立。ZTO ExpressのB類サプライヤー、BEST Express・STO ExpressのA類サプライヤー。": {
+  "会社設立。ZTO ExpressのBランクサプライヤー、BEST Express・STO ExpressのAランクサプライヤー。": {
     "en": "Company established. B-class supplier to ZTO Express; A-class supplier to BEST Express and STO Express.",
     "zh": "公司成立，成为中通B类供应商、百世及申通A类供应商。"
   },
-  "YTO ExpressのA類サプライヤー。": {
+  "YTO ExpressのAランクサプライヤー。": {
     "en": "A-class supplier to YTO Express.",
     "zh": "成为圆通A类供应商。"
   },
-  "Yunda Expressのサプライヤーに。": {
+  "Yunda Expressへの供給を開始。": {
     "en": "Became a supplier to Yunda Express.",
     "zh": "成为韵达供应商。"
   },
-  "中国郵政・J&T Expressのサプライヤーに。": {
+  "中国郵政・J&T Expressへの供給を開始。": {
     "en": "Became a supplier to China Post and J&T Express.",
     "zh": "成为中国邮政及极兔供应商。"
   },
@@ -299,15 +299,15 @@
     "en": "Passed SF Express supplier assessment.",
     "zh": "通过顺丰供应商考核。"
   },
-  "菜鳥（Cainiao）のA類サプライヤー。": {
+  "菜鳥（Cainiao）のAランクサプライヤー。": {
     "en": "A-class supplier to Cainiao.",
     "zh": "成为菜鸟A类供应商。"
   },
-  "SF Expressの自動化設備サプライヤーに。": {
+  "SF Expressの自動化設備サプライヤーとなる。": {
     "en": "Became an automation equipment supplier to SF Express.",
     "zh": "成为顺丰自动化设备供应商。"
   },
-  "美団（Meituan）のサプライヤー、SF Expressの包括調達サプライヤーに。": {
+  "美団（Meituan）のサプライヤーおよびSF Expressの包括調達サプライヤーとなる。": {
     "en": "Became a supplier to Meituan and an SF Express framework procurement supplier.",
     "zh": "成为美团供应商及顺丰框采供应商。"
   },
@@ -327,7 +327,7 @@
     "en": "In-house manufacturing integration projects",
     "zh": "自有工厂系统集成案例"
   },
-  "自社工場が手がけた、物流拠点の搬送・仕分け設備を組み合わせたシステム構築事例です。": {
+  "自社工場が手がけた、搬送設備と自動仕分け設備による物流システムの構築事例をご紹介します。": {
     "en": "Integrated conveying and sorting system projects delivered by our factories for logistics facilities.",
     "zh": "以下为自有工厂实施的物流场地输送与分拣系统集成案例。"
   },
@@ -335,7 +335,7 @@
     "en": "BEST Express, Vietnam",
     "zh": "越南百世"
   },
-  "2020年12月21日 完工": {
+  "2020年12月21日 完成": {
     "en": "Completed December 21, 2020",
     "zh": "2020年12月21日完工"
   },
@@ -343,7 +343,7 @@
     "en": "Cainiao, Spain",
     "zh": "西班牙菜鸟"
   },
-  "2025年8月1日 完工": {
+  "2025年8月1日 完成": {
     "en": "Completed August 1, 2025",
     "zh": "2025年8月1日完工"
   },
@@ -351,7 +351,7 @@
     "en": "Cainiao, Israel",
     "zh": "以色列菜鸟"
   },
-  "2025年9月5日 完工": {
+  "2025年9月5日 完成": {
     "en": "Completed September 5, 2025",
     "zh": "2025年9月5日完工"
   },
@@ -359,11 +359,11 @@
     "en": "Vietnam telecom operator project",
     "zh": "越南电信项目"
   },
-  "2025年5月10日 完工": {
+  "2025年5月10日 完成": {
     "en": "Completed May 10, 2025",
     "zh": "2025年5月10日完工"
   },
-  "中国国内の完工事例：": {
+  "中国国内の完成実績：": {
     "en": "Completed projects in China:",
     "zh": "中国国内完工案例："
   },
@@ -371,7 +371,7 @@
     "en": "Wuhan (November 1, 2025), Wuhu (October 30, 2025) and Panjin (May 30, 2026).",
     "zh": "武汉（2025年11月1日）、芜湖（2025年10月30日）、盘锦（2026年5月30日）。"
   },
-  "建設中：": {
+  "工事中の案件：": {
     "en": "Under construction:",
     "zh": "在建项目："
   },
@@ -379,11 +379,11 @@
     "en": "Huai'an and Hefei, as listed in the 2026 company presentation.",
     "zh": "淮安、合肥项目（状态依据2026年版公司介绍资料）。"
   },
-  "自社工場のアフターサービス体制": {
+  "導入後の保守・技術支援": {
     "en": "In-house manufacturing after-sales support",
     "zh": "自有工厂售后服务体系"
   },
-  "日本での導入・保守に関するご相談は、株式会社Automaixまでお問い合わせください。": {
+  "日本国内での設備導入、保守・点検、技術支援に関するご相談は、株式会社Automaixが承ります。": {
     "en": "For implementation and maintenance inquiries in Japan, contact Automaix Co., Ltd.",
     "zh": "日本地区的导入及维护咨询，请联系株式会社Automaix。"
   },
@@ -407,9 +407,9 @@
     "en": "Conveyors",
     "zh": "输送设备"
   },
-  "投入・計測": {
-    "en": "Induction & measurement",
-    "zh": "供件与测量"
+  "投入・計測・識別": {
+    "en": "Induction, measurement & identification",
+    "zh": "供件、测量与识别"
   },
   "周辺機器": {
     "en": "Auxiliary equipment",
@@ -435,7 +435,7 @@
     "en": "Site policy",
     "zh": "网站使用说明"
   },
-  "株式会社Automaixの日本法人情報と、自社工場の製造体制・実績をご紹介します。": {
+  "株式会社Automaixの会社概要と、自社工場の生産・開発体制、技術実績、システム導入事例をご紹介します。": {
     "en": "Learn about Automaix's Japan company and the manufacturing capabilities and projects of our factories.",
     "zh": "介绍株式会社Automaix日本法人信息，以及自有工厂的制造体系与项目业绩。"
   },
@@ -511,15 +511,15 @@
     "en": "Discuss your project",
     "zh": "咨询导入方案"
   },
-  "注文別の仕分け・集約": {
+  "オーダー別仕分け・集約": {
     "en": "Order sorting & consolidation",
     "zh": "按订单分拣与归集"
   },
-  "搬送・計測設備との連携": {
+  "搬送・計測・識別設備との連携": {
     "en": "Conveying & measurement integration",
     "zh": "输送与测量设备联动"
   },
-  "自社工場の一貫した製造体制": {
+  "自社工場による一貫生産体制": {
     "en": "Integrated in-house manufacturing",
     "zh": "自有工厂一体化制造"
   },
@@ -527,15 +527,15 @@
     "en": "Product range",
     "zh": "产品系列"
   },
-  "扱う荷物と作業工程から、導入する設備を選べます。": {
+  "対象荷物の特性と物流工程に応じて、適切な設備をご検討いただけます。": {
     "en": "Choose equipment based on your parcels and workflow.",
     "zh": "根据货物特征和作业流程选择设备。"
   },
-  "SorterMX-5・SorterMN-3は自社工場のシリーズ名、おまかせくん・つばめちゃんは国内取扱モデル名です。仕様は各製品ページで個別にご案内します。": {
+  "SorterMX-5・SorterMN-3は自社工場のシリーズ名、おまかせくん・つばめちゃんは国内取扱モデル名です。各製品の仕様・構成は、それぞれの製品ページをご参照ください。": {
     "en": "SorterMX-5 and SorterMN-3 are in-house manufacturing series names. Omakase-kun and Tsubame-chan are models offered in Japan. Specifications are explained separately on each product page.",
     "zh": "SorterMX-5、SorterMN-3为自有工厂系列名；Omakase-kun、Tsubame-chan为日本市场销售型号。各产品的规格分别在详情页说明。"
   },
-  "多段の仕分け間口へ荷物を振り分け、注文や出荷先ごとに集約。キャリッジ構成と投入方式で選べる5モデル。": {
+  "多段式の仕分け間口へ荷物を搬送し、オーダー別・出荷先別に集約する3D仕分けシステムです。キャリッジ構成と投入方式に応じて、5モデルから選定できます。": {
     "en": "Sort parcels into multi-level destinations and consolidate by order or shipping destination. Five models offer different carriage configurations and induction methods.",
     "zh": "将货物分拣至多层格口，按订单或发货目的地归集。五款型号可按小车结构和供包方式选择。"
   },
@@ -543,7 +543,7 @@
     "en": "View product & specifications",
     "zh": "查看产品详情与规格"
   },
-  "限られたスペースに配置しやすい一体型。作業者が投入した荷物を、注文別の間口へ自動で仕分けます。": {
+  "省スペースで導入できる一体型の3D仕分けシステムです。作業者が投入した荷物を、オーダー別の仕分け間口へ自動で振り分けます。": {
     "en": "A compact integrated system for limited floor space. Parcels inducted by an operator are automatically sorted into order destinations.",
     "zh": "适合有限空间的一体式设备。操作人员供包后，自动将货物分拣至订单格口。"
   },
@@ -579,7 +579,7 @@
     "en": "Loop cross-belt sorter",
     "zh": "环形交叉带分拣机"
   },
-  "環状に配置したキャリッジ上のベルトで荷物を横方向へ排出。宅配便・EC・郵便など、多方面へ仕分ける物流拠点向け。": {
+  "環状に走行するキャリッジ上のベルトを駆動し、荷物を横方向へ排出するソーターです。宅配便・EC物流・郵便など、多方面への仕分けを行う物流拠点に適しています。": {
     "en": "Belts on carriers arranged in a loop discharge parcels sideways. Designed for parcel, e-commerce and postal hubs serving many destinations.",
     "zh": "通过环形排列小车上的皮带将货物横向卸出，适用于快递、电商、邮政等多流向物流场地。"
   },
@@ -591,11 +591,11 @@
     "en": "Narrow-belt sorter",
     "zh": "窄带分拣机"
   },
-  "細幅ベルトを並べたモジュールで搬送と分岐を実行。ライン長や必要な間口数に合わせて構成を検討できます。": {
+  "細幅ベルトを配列したモジュールで、荷物の搬送と分岐を行うソーターです。ライン長と必要な仕分け間口数に応じて、システム構成を検討できます。": {
     "en": "Parallel narrow-belt modules convey and divert parcels. Configuration can be planned around line length and the required number of destinations.",
     "zh": "通过并列窄皮带模组完成输送和分流，可根据产线长度及格口数量规划配置。"
   },
-  "高密度駆動ローラー式": {
+  "高密度駆動ローラ式": {
     "en": "High-density driven rollers",
     "zh": "高密度驱动滚轮式"
   },
@@ -603,7 +603,7 @@
     "en": "High-density wheel sorter",
     "zh": "高密度摆轮分拣机"
   },
-  "駆動ローラーの向きを制御し、直進・左右分岐・斜め方向への仕分けを実行。袋類や軟包装、段ボール箱に対応します。": {
+  "駆動ローラの向きを制御し、直進搬送、左右分岐、斜め方向への仕分けを行います。袋物、軟包装品、段ボール箱などに対応します。": {
     "en": "Controlled roller orientation enables straight travel, left/right diversion and angled sorting. Suitable for bags, flexible packs and cartons.",
     "zh": "通过控制滚轮朝向，实现直行、左右分流及斜向分拣，适用于袋类、软包装和纸箱。"
   },
@@ -615,7 +615,7 @@
     "en": "Linear cross-belt sorter",
     "zh": "直线交叉带分拣机"
   },
-  "垂直循環機構と小型ベルトキャリッジで仕分け。軟包装、薄物、集配袋、段ボール箱などに対応します。": {
+  "垂直循環機構と小型ベルトキャリッジを用いる仕分けシステムです。軟包装品、薄物、集配袋、段ボール箱などに対応します。": {
     "en": "A vertical circulation mechanism and compact belt carriers sort flexible packs, flat items, collection bags and cartons.",
     "zh": "采用垂直循环机构与小型皮带小车，可分拣软包、扁平件、集包袋及纸箱。"
   },
@@ -627,7 +627,7 @@
     "en": "Sliding-shoe sorter",
     "zh": "滑块分拣机"
   },
-  "荷物を搬送しながら仕分け先へ分岐するソーター。対象荷物、仕分け先数、搬送条件を確認して構成をご案内します。": {
+  "荷物を連続搬送しながら、指定された仕分け先へ分岐させるソーターです。対象荷物の荷姿、仕分け先数、搬送条件を確認し、適切な設備構成をご提案します。": {
     "en": "A sorter that diverts parcels to destinations during conveying. Configuration is proposed after reviewing parcel types, destination count and conveying conditions.",
     "zh": "在输送过程中将货物分流至目的地的分拣设备，按照货物特征、流向数量及输送条件提供配置建议。"
   },
@@ -639,7 +639,7 @@
     "en": "Nano-belt sorter",
     "zh": "纳米皮带分拣机"
   },
-  "小型荷物の仕分け設備として取り扱う製品です。具体的な対応寸法、処理能力、ライン構成はお問い合わせください。": {
+  "小型荷物を対象とする仕分け設備です。対応荷物寸法、処理能力、ライン構成は、対象荷物と導入条件に応じて個別に確認します。": {
     "en": "Equipment offered for small-parcel sorting. Contact us to confirm supported dimensions, throughput and line configuration.",
     "zh": "用于小件货物分拣的销售设备，具体适用尺寸、处理能力和产线配置请咨询确认。"
   },
@@ -647,7 +647,7 @@
     "en": "Modular belt sorter",
     "zh": "模块皮带分拣机"
   },
-  "モジュール式ベルトを用いた仕分け設備。荷姿、必要な仕分け先数、ライン配置に合わせて構成を検討します。": {
+  "モジュール式ベルトを用いる仕分け設備です。対象荷物の荷姿、仕分け先数、ラインレイアウトに応じて構成を検討します。": {
     "en": "Sorting equipment using modular belts. Configuration is reviewed against parcel types, required destinations and line layout.",
     "zh": "采用模块式皮带的分拣设备，根据货物特征、所需流向数量和产线布局规划配置。"
   },
@@ -655,27 +655,27 @@
     "en": "Continuous conveying",
     "zh": "连续输送"
   },
-  "ベルトコンベア": {
+  "ベルトコンベヤ": {
     "en": "Belt conveyor",
     "zh": "皮带输送机"
   },
-  "連続したベルト面で小物、袋類、薄物などを搬送。DWSや仕分け設備の前後段を接続します。": {
+  "連続したベルト搬送面で、小物、袋物、薄物などを搬送します。DWS（寸法計測・計量・識別システム）や自動仕分け設備の前後工程を接続します。": {
     "en": "A continuous belt surface carries small items, bags and flat parcels, connecting DWS and sorting equipment with upstream and downstream processes.",
     "zh": "以连续皮带面输送小件、袋类及扁平货物，用于连接DWS、分拣设备与前后工序。"
   },
-  "箱物の搬送・滞留": {
+  "ケース搬送・アキュムレーション": {
     "en": "Carton conveying & accumulation",
     "zh": "箱件输送与缓存"
   },
-  "ローラーコンベア": {
+  "ローラコンベヤ": {
     "en": "Roller conveyor",
     "zh": "滚筒输送机"
   },
-  "段ボール箱や通い箱などを搬送。区間ごとの走行・停止・一時滞留を制御し、合流や分岐に接続します。": {
+  "段ボール箱や通い箱などのケース搬送に適した設備です。区間ごとの搬送・停止・一時滞留を制御し、合流・分岐工程へ接続します。": {
     "en": "Conveys cartons and reusable containers. Section-level movement, stopping and accumulation can connect with merges and diversions.",
     "zh": "输送纸箱、周转箱等货物，可按区段控制运行、停止和缓存，并与合流、分流工序衔接。"
   },
-  "ばら荷物の整列": {
+  "単品分離・整列搬送": {
     "en": "Loose-parcel singulation",
     "zh": "散件分离与整列"
   },
@@ -683,23 +683,23 @@
     "en": "Parcel singulation system",
     "zh": "单件分离系统"
   },
-  "複数の搬送ユニットを連携し、混在した荷物を分離、姿勢調整、等間隔での整列へ。読取・計測・仕分け工程へ供給します。": {
+  "複数の搬送ユニットを連携させ、混在した荷物の単品分離・姿勢調整・整列と、搬送間隔の調整を行います。後工程の読取り・計測・仕分け設備へ荷物を供給します。": {
     "en": "Coordinated conveying modules separate mixed parcels, adjust orientation and establish spacing before reading, measurement and sorting.",
     "zh": "通过多组输送单元联动，将混杂货物分离、调整姿态并定距整列，供给读码、测量与分拣工序。"
   },
-  "寸法・重量・バーコード読取": {
-    "en": "Dimensioning, weighing & barcode reading",
-    "zh": "尺寸、重量与条码读取"
+  "寸法計測・計量・バーコード読取り": {
+    "en": "Dimensioning, weighing and barcode scanning",
+    "zh": "尺寸测量、称重与条码读取"
   },
-  "動的DWS": {
-    "en": "Dynamic DWS",
-    "zh": "动态DWS"
+  "動的DWS（寸法計測・計量・識別）": {
+    "en": "Dynamic DWS (dimensioning, weighing and scanning)",
+    "zh": "动态DWS（尺寸测量、称重与识别）"
   },
-  "荷物を停止させずにバーコード、寸法、重量、画像を取得。入出庫の計測、追跡、運賃計算に必要なデータを収集します。": {
+  "搬送中の荷物からバーコード、寸法、重量、画像を取得するDWS（寸法計測・計量・識別）システムです。入出荷管理、トレーサビリティ、運賃算定に必要なデータを収集します。": {
     "en": "Acquires barcodes, dimensions, weight and images without stopping parcels. Collects data for inbound/outbound measurement, tracking and freight calculations.",
     "zh": "无需停件即可采集条码、尺寸、重量和图像，为出入库计量、货物追踪与运费核算提供数据。"
   },
-  "タグの非接触識別": {
+  "RFIDタグの非接触識別": {
     "en": "Contactless tag identification",
     "zh": "标签非接触识别"
   },
@@ -707,7 +707,7 @@
     "en": "RFID reading system",
     "zh": "RFID读取系统"
   },
-  "アンテナ、リーダー、通過フレームでRFIDタグを識別。バーコードが見えない工程や複数タグの読み取りを検討できます。": {
+  "アンテナ、リーダ、通過フレームを用いてRFIDタグを非接触で識別します。バーコードを視認できない工程や、複数タグの読取りへの適用を検討できます。": {
     "en": "Antennas, readers and a pass-through frame identify RFID tags. Suitable configurations can be considered for hidden barcodes or multiple-tag reading.",
     "zh": "通过天线、读写器及通行框架识别RFID标签，可用于条码不可见或需读取多个标签的工序。"
   },
@@ -719,7 +719,7 @@
     "en": "Diamond-pattern chute",
     "zh": "钻石纹滑槽"
   },
-  "表面のパターンと柔軟なシュート形状で荷物を滑らかに搬送。末端の緩衝ローラーと組み合わせて衝撃を抑えます。": {
+  "表面パターンと荷物に応じたシュート形状により、仕分け後の荷物を円滑に搬送します。末端の緩衝ローラとの組合せにより、荷物への衝撃の軽減を図ります。": {
     "en": "The patterned surface and flexible chute geometry guide parcels smoothly. Buffer rollers at the outlet help reduce impact.",
     "zh": "通过表面纹路与柔性滑槽结构平稳引导货物，末端缓冲滚筒有助于降低冲击。"
   },
@@ -727,23 +727,23 @@
     "en": "Line merging",
     "zh": "产线合流"
   },
-  "合流コンベア": {
+  "合流コンベヤ": {
     "en": "Merge conveyor",
     "zh": "合流输送机"
   },
-  "搬送ライン同士を接続する補助設備。合流位置、荷物の流量、既存設備との接続条件に合わせて構成します。": {
+  "複数の搬送ラインを合流させる補助設備です。合流位置、搬送量、既存設備との接続条件に応じて構成します。": {
     "en": "Auxiliary equipment for connecting conveying lines. Configuration is based on the merge location, flow rate and existing line connections.",
     "zh": "用于输送线连接的辅助设备，根据合流位置、货物流量及既有设备接驳条件配置。"
   },
-  "荷物の位置調整": {
+  "荷物のセンタリング": {
     "en": "Parcel position adjustment",
     "zh": "货物位置调整"
   },
-  "センタリングコンベア": {
+  "センタリングコンベヤ": {
     "en": "Centering conveyor",
     "zh": "居中输送机"
   },
-  "後工程へ向けて搬送中の荷物の位置を調整する補助設備。ライン条件と対象荷物に合わせてご案内します。": {
+  "搬送中の荷物の位置を調整し、後工程へ受け渡す補助設備です。対象荷物の寸法・姿勢とライン条件に応じて、適用を検討します。": {
     "en": "Auxiliary equipment that adjusts parcel position before downstream processing. Configuration is reviewed against line conditions and parcel types.",
     "zh": "在后续工序前调整货物输送位置的辅助设备，根据产线条件及货物特征进行配置。"
   },
@@ -751,7 +751,7 @@
     "en": "Applications & product videos",
     "zh": "作业场景与产品视频"
   },
-  "注文別集約や小型荷物の仕分けを動画でご覧いただけます。導入時の仕様・構成は、対象荷物と運用条件に合わせて確認します。": {
+  "オーダー別集約や小型荷物の仕分け動作を動画でご紹介します。実際の設備仕様・システム構成は、対象荷物の条件と運用要件に基づいて確認します。": {
     "en": "See order consolidation and small-parcel sorting in operation. Implementation specifications are reviewed against the actual parcels and operating conditions.",
     "zh": "通过视频了解订单归集和小件分拣作业，实际导入规格与配置根据货物及运行条件确认。"
   },
@@ -763,7 +763,7 @@
     "en": "Open video file",
     "zh": "打开视频文件"
   },
-  "複数の仕分け間口を用いた、荷物の搬送と注文別集約のイメージ。": {
+  "多間口構成による荷物の搬送とオーダー別集約の動作イメージです。": {
     "en": "An illustration of parcel conveying and order consolidation across multiple sorting destinations.",
     "zh": "多格口货物输送与订单归集的作业示例。"
   },
@@ -771,11 +771,11 @@
     "en": "View product configuration →",
     "zh": "查看产品配置 →"
   },
-  "限られた設置スペースでの仕分け作業と運用のイメージ。": {
+  "限られた設置スペースでの仕分け動作と運用イメージです。": {
     "en": "An illustration of sorting and operation in limited installation space.",
     "zh": "有限安装空间内的分拣作业与运行示例。"
   },
-  "自社工場が手がけた搬送・仕分けシステムの事例です。": {
+  "自社工場による搬送・自動仕分けシステムの導入事例をご紹介します。": {
     "en": "Conveying and sorting system projects delivered by our factories.",
     "zh": "由自有工厂实施的输送与分拣系统项目。"
   },
@@ -787,11 +787,11 @@
     "en": "Explore project details →",
     "zh": "查看项目详情 →"
   },
-  "日本の窓口と、中国の製造体制": {
+  "日本の技術・営業窓口と中国の生産体制": {
     "en": "A Japan-based contact. Manufacturing capabilities in China.",
     "zh": "日本服务窗口，中国制造体系"
   },
-  "物流自動化設備の企画・販売からシステム設計、導入支援、保守・技術相談まで。日本法人の窓口として、お客様の現場条件と課題を伺います。": {
+  "物流自動化設備の企画・販売、システム設計、導入支援、保守・技術支援を行います。日本国内の窓口として、お客様の現場条件と運用要件を確認し、適切な設備構成をご提案します。": {
     "en": "From planning and sales to system design, implementation, maintenance and technical consultation. Our Japan company discusses your facility conditions and operational challenges with you.",
     "zh": "从物流自动化设备规划与销售，到系统设计、导入支持、维护及技术咨询，日本法人窗口将与您沟通现场条件和实际需求。"
   },
@@ -811,7 +811,7 @@
     "en": "View Japan company profile →",
     "zh": "查看日本法人概要 →"
   },
-  "常州武進・鎮江丹陽の2生産拠点で、物流搬送設備・自動化ラインを製造しています。": {
+  "常州武進・鎮江丹陽の2生産拠点で、物流搬送設備および自動化ラインを製造しています。": {
     "en": "Our factories manufacture logistics conveyors and automated lines at two production sites in Wujin, Changzhou and Danyang, Zhenjiang.",
     "zh": "自有工厂在常州武进、镇江丹阳两大生产基地制造物流输送设备及自动化流水线。"
   },
@@ -831,7 +831,7 @@
     "en": "Explore manufacturing & technical capabilities →",
     "zh": "了解制造设备与技术成果 →"
   },
-  "導入までの流れ": {
+  "設備導入の流れ": {
     "en": "Implementation process",
     "zh": "项目导入流程"
   },
@@ -839,35 +839,35 @@
     "en": "Consultation",
     "zh": "需求咨询"
   },
-  "荷物の寸法・重量、必要処理量、現状の課題を伺います。": {
+  "荷物の寸法・重量、必要処理能力、現状の運用と課題を確認します。": {
     "en": "We review parcel dimensions and weights, required throughput and current challenges.",
     "zh": "沟通货物尺寸、重量、所需处理量及当前问题。"
   },
-  "構成の検討": {
+  "システム構成の検討": {
     "en": "Configuration planning",
     "zh": "配置规划"
   },
-  "設置寸法、仕分け先数、既存設備との接続条件から選定します。": {
+  "設置スペース、仕分け先数、既存設備との接続条件に基づいて、設備構成とレイアウトを検討します。": {
     "en": "Equipment is selected around available space, destination count and existing line connections.",
     "zh": "依据安装空间、流向数量及既有设备接驳条件选型。"
   },
-  "仕様・お見積り": {
+  "仕様確認・お見積り": {
     "en": "Specifications & quotation",
     "zh": "规格与报价"
   },
-  "処理条件、電源、温度帯、据付工程、保守範囲を確認します。": {
+  "処理条件、電源仕様、使用温度範囲、据付工程、保守範囲を確認し、お見積りをご提示します。": {
     "en": "We confirm operating conditions, power supply, temperature range, installation steps and maintenance scope.",
     "zh": "确认运行条件、电源、温度范围、安装工序及维护范围。"
   },
-  "導入・サポート": {
+  "据付・試運転・運用支援": {
     "en": "Implementation & support",
     "zh": "导入与支持"
   },
-  "設置・試運転と運用支援の内容を、案件ごとに取り決めます。": {
+  "据付・試運転、運用支援の実施内容と工程を、案件ごとに確認・調整します。": {
     "en": "Installation, commissioning and operating support are agreed for each project.",
     "zh": "按项目约定安装、调试及运行支持内容。"
   },
-  "自社工場のサポート体制 →": {
+  "保守・技術支援について →": {
     "en": "View factory service capabilities →",
     "zh": "查看自有工厂服务体系 →"
   },
@@ -891,7 +891,7 @@
     "en": "Events",
     "zh": "活动"
   },
-  "3D種まき仕分けシステムの製品情報": {
+  "3D仕分けシステム（種まき方式）の製品情報": {
     "en": "3D put-wall sorting system information",
     "zh": "3D播种墙产品信息"
   },
@@ -915,7 +915,7 @@
     "en": "Company introduction",
     "zh": "公司介绍"
   },
-  "日本法人の会社概要と、自社工場の製造体制・実績をご紹介します。": {
+  "株式会社Automaixの会社概要と、自社工場の生産体制・導入実績をご紹介します。": {
     "en": "An introduction to our Japan company and our factories, including manufacturing capabilities and project experience.",
     "zh": "介绍日本法人公司概要，以及自有工厂的制造体系和项目业绩。"
   },
@@ -927,7 +927,7 @@
     "en": "3D sorting product guide",
     "zh": "3D分拣产品指南"
   },
-  "SorterMX-5・SorterMN-3の仕様と、国内取扱モデルの選定・相談項目をまとめています。": {
+  "SorterMX-5・SorterMN-3の仕様、および国内取扱モデルの選定条件・導入検討項目をまとめています。": {
     "en": "Specifications for SorterMX-5 and SorterMN-3, plus selection and consultation points for models offered in Japan.",
     "zh": "汇总SorterMX-5、SorterMN-3的规格，以及日本市场销售型号的选型与咨询要点。"
   },
@@ -935,7 +935,7 @@
     "en": "Discuss implementation & quotations",
     "zh": "导入与报价咨询"
   },
-  "対象荷物と現場条件をお知らせください。製品選定や構成についてご案内します。": {
+  "対象荷物の仕様と現場条件をお知らせください。必要処理能力と運用要件に応じて、機種選定・システム構成をご提案します。": {
     "en": "Tell us about your parcels and facility conditions. We will help you review product selection and configuration.",
     "zh": "请告知货物特征与现场条件，我们将为您提供选型和配置建议。"
   },
@@ -943,19 +943,19 @@
     "en": "Copy email address",
     "zh": "复制邮箱地址"
   },
-  "フォームは相談内容をメール文面に整えます。送信はご利用のメールアプリで行ってください。アプリが開かない場合は、文面をコピーまたはダウンロードして上記宛先にお送りください。": {
+  "入力内容をもとに、お問い合わせメールの下書きを作成します。内容をご確認のうえ、ご利用のメールアプリから送信してください。メールアプリが起動しない場合は、下書きをコピーまたは保存し、上記アドレス宛てにお送りください。": {
     "en": "This form prepares an email draft. Send it using your own email app. If the app does not open, copy or download the draft and send it to the address above.",
     "zh": "此表单用于整理咨询邮件草稿，请在您自己的邮件应用中发送。若邮件应用未打开，可复制或下载文案后发送至上述邮箱。"
   },
-  "フォームの補助機能にはJavaScriptが必要です。上記メールまたは電話からお問い合わせください。": {
+  "本フォームの下書き作成機能にはJavaScriptが必要です。ご利用いただけない場合は、上記メールアドレスまたは電話番号までお問い合わせください。": {
     "en": "The form helper requires JavaScript. Please contact us by email or telephone above.",
     "zh": "表单辅助功能需要JavaScript，请通过上述邮箱或电话联系我们。"
   },
-  "ご相談の製品": {
+  "ご検討中の製品": {
     "en": "Product of interest",
     "zh": "咨询产品"
   },
-  "未定・製品選定から相談": {
+  "未定（機種選定から相談）": {
     "en": "Not sure yet / help with selection",
     "zh": "尚未确定／咨询选型"
   },
@@ -975,35 +975,35 @@
     "en": "Your inquiry",
     "zh": "咨询内容"
   },
-  "個人情報の取り扱い": {
+  "個人情報の取扱い": {
     "en": "Privacy information",
     "zh": "个人信息处理说明"
   },
-  "をご確認のうえ、メールをご送信ください。ここで入力した内容は、当サイトのサーバーへ送信されません。": {
+  "をご確認のうえ、メールを送信してください。下書きの作成操作では、入力内容は当サイトのサーバーへ送信されません。": {
     "en": "Please review this before sending your email. Preparing a draft does not send the entered information to this website's server.",
     "zh": "请阅读相关说明后发送邮件。这里输入的内容不会提交至本网站服务器。"
   },
-  "メール文面を準備する": {
+  "メールの下書きを作成する": {
     "en": "Prepare email draft",
     "zh": "生成邮件草稿"
   },
-  "文面をコピー": {
+  "下書きをコピー": {
     "en": "Copy draft",
     "zh": "复制文案"
   },
-  "文面を保存": {
+  "下書きを保存": {
     "en": "Save draft",
     "zh": "保存文案"
   },
-  "メールアプリを開く": {
+  "メールアプリで確認・送信する": {
     "en": "Open email app",
     "zh": "打开邮件应用"
   },
-  "この操作だけでは送信は完了しません。メールアプリで内容を確認して送信してください。": {
+  "メールアプリが開いた後、内容をご確認のうえ送信してください。下書きの作成だけでは送信されません。": {
     "en": "This action does not complete sending. Review the draft and send it from your email app.",
     "zh": "此操作不代表已经发送，请在邮件应用中确认内容并发送。"
   },
-  "株式会社Automaix。3D仕分け、搬送、投入・計測設備の製品選定と導入を支援。自社工場の製造体制、製品仕様、導入事例をご案内します。": {
+  "株式会社Automaixは、3D仕分け・搬送・投入・計測・識別設備の選定と導入を支援します。自社工場の生産体制、製品仕様、システム導入事例をご紹介します。": {
     "en": "Automaix Co., Ltd. supports the selection and implementation of 3D sorting, conveying and measurement equipment. Explore our in-house manufacturing capabilities, product specifications and project examples.",
     "zh": "株式会社Automaix提供3D分拣、输送及测量设备的选型与导入支持，介绍自有工厂制造体系、产品规格及项目案例。"
   },
@@ -1019,15 +1019,15 @@
     "en": "Filter news",
     "zh": "筛选新闻"
   },
-  "荷物の寸法・重量、必要処理量、設置スペースなどをご記入ください。": {
+  "対象荷物の寸法・重量、必要処理能力、仕分け先数、設置スペースなどをご記入ください。": {
     "en": "Please include parcel dimensions and weights, required throughput and available installation space.",
     "zh": "请填写货物尺寸与重量、所需处理量、安装空间等信息。"
   },
-  "作成したメール文面": {
+  "作成したメールの下書き": {
     "en": "Prepared email draft",
     "zh": "已生成的邮件草稿"
   },
-  "SorterMX-5・SorterMN-3の製品紹介とモデル別仕様をご案内します。詳細な条件は各製品ページをご覧ください。": {
+  "種まき方式によるオーダー別集約に対応したSorterMX-5・SorterMN-3をご紹介します。モデル別の仕様、投入方式、設備構成は、各製品ページをご参照ください。": {
     "en": "Product introductions and model specifications for SorterMX-5 and SorterMN-3. See each product page for detailed conditions.",
     "zh": "介绍SorterMX-5、SorterMN-3及各型号规格，详细适用条件请参阅各产品页面。"
   },
@@ -1039,43 +1039,43 @@
     "en": "Back to news",
     "zh": "返回新闻列表"
   },
-  "株式会社Automaixの製品・会社情報をご案内する公式サイトです。製品に関するご相談はお問い合わせ窓口へご連絡ください。": {
+  "株式会社Automaixの公式サイトを開設しました。物流自動化設備の製品情報、会社概要、導入事例をご案内しています。設備導入・仕様・お見積りに関するご相談は、お問い合わせ窓口で承ります。": {
     "en": "The official website for Automaix Co., Ltd. provides product and company information. Please contact us with product inquiries.",
     "zh": "株式会社Automaix官方网站提供产品与公司信息，产品相关问题请联系咨询窗口。"
   },
-  "2026年9月18日に株式会社Automaixを設立しました。所在地、代表者、事業内容は会社概要でご案内しています。": {
+  "2026年9月18日、株式会社Automaixを設立しました。所在地、代表者、事業内容等の詳細は、会社概要をご参照ください。": {
     "en": "Automaix Co., Ltd. was established on September 18, 2026. See our company profile for our address, representative and business activities.",
     "zh": "株式会社Automaix于2026年9月18日成立，地址、代表人与业务范围请参阅公司概要。"
   },
-  "お問い合わせ情報の利用": {
+  "お問い合わせ情報の利用目的": {
     "en": "Use of inquiry information",
     "zh": "咨询信息的使用"
   },
-  "株式会社Automaixは、お問い合わせでお知らせいただく氏名、会社名、メールアドレス、ご相談内容を、ご相談への回答、製品選定、仕様・お見積りのご案内、関連する連絡のために利用します。": {
+  "株式会社Automaixは、お問い合わせの際にご提供いただく氏名、会社名、メールアドレス、ご相談内容を、お問い合わせへの回答、機種選定、仕様・お見積りのご案内、およびこれらに関連する連絡のために利用します。": {
     "en": "Automaix Co., Ltd. uses the name, company, email address and inquiry details you provide to respond to your inquiry, assist with product selection, provide specifications and quotations, and communicate about related matters.",
     "zh": "株式会社Automaix将您通过咨询提供的姓名、公司名称、邮箱地址及咨询内容，用于回复咨询、产品选型、规格与报价说明以及相关联系。"
   },
-  "フォームの仕組み": {
+  "お問い合わせフォームの送信方法": {
     "en": "How the form works",
     "zh": "表单工作方式"
   },
-  "当サイトの相談フォームは、入力内容をお使いのブラウザー内でメール文面に整える機能です。フォームの準備・コピー・保存の操作では、入力内容を当サイトのサーバーへ送信しません。メールアプリから送信する際は、ご利用のメールサービスを経由してinfo@automaix.co.jpに送られます。": {
+  "当サイトのお問い合わせフォームは、入力内容をブラウザー内でメールの下書きに整える機能です。下書きの作成・コピー・保存の操作では、入力内容は当サイトのサーバーへ送信されません。お客様がメールアプリから送信すると、ご利用のメールサービスを経由してinfo@automaix.co.jp宛てに送信されます。": {
     "en": "The inquiry form prepares an email draft in your browser. Preparing, copying or saving a draft does not send the entered information to our website server. If you send the draft from your email app, it is delivered to info@automaix.co.jp through your email service.",
     "zh": "咨询表单在浏览器中整理邮件草稿。生成、复制或保存草稿不会将输入内容提交至本网站服务器。通过邮件应用发送时，内容会经由您使用的邮件服务发送至info@automaix.co.jp。"
   },
-  "入力内容と端末への保存": {
+  "入力内容の保存について": {
     "en": "Input and local storage",
     "zh": "输入内容与本地保存"
   },
-  "フォームの入力内容をCookieやブラウザーの保存領域へ自動保存する機能は設けていません。文面のコピーやファイル保存は、お客様の操作によって端末上で行われます。共有端末ではコピーした内容や保存ファイルの取り扱いにご注意ください。": {
+  "フォームの入力内容をCookieやブラウザーの保存領域へ自動保存する機能は設けていません。下書きのコピーやファイル保存は、お客様の操作により端末上で行われます。共有端末をご利用の場合は、コピーした内容や保存ファイルの取扱いにご注意ください。": {
     "en": "The form does not automatically save its contents in cookies or browser storage. Copying text or saving a file occurs on your device at your request. Take care with copied text and saved files when using a shared device.",
     "zh": "表单不会自动将输入内容存入Cookie或浏览器存储区。复制文案或保存文件由您主动操作并在终端完成。使用共用设备时，请注意剪贴板内容及已保存文件的处理。"
   },
-  "アクセスに関する情報": {
+  "アクセス情報の取扱い": {
     "en": "Access information",
     "zh": "访问信息"
   },
-  "当サイトには広告配信やアクセス解析のためのスクリプトを組み込んでいません。サイト配信やメールサービスの提供者が、通信に必要な情報を処理する場合があります。": {
+  "当サイトでは、広告配信・アクセス解析を目的とするスクリプトを使用していません。ウェブサイトの配信事業者やメールサービスの提供事業者が、通信に必要な情報を処理する場合があります。": {
     "en": "This website does not include advertising or analytics scripts. Website hosting and email service providers may process information needed to deliver their services.",
     "zh": "本网站未嵌入广告或访问分析脚本。网站托管及邮件服务提供商可能处理提供通信服务所需的信息。"
   },
@@ -1083,23 +1083,23 @@
     "en": "Contact point",
     "zh": "联系窗口"
   },
-  "個人情報の取り扱いに関するご相談は、株式会社Automaix（": {
+  "個人情報の取扱いに関するお問い合わせは、株式会社Automaix（": {
     "en": "For inquiries about personal information, please contact Automaix Co., Ltd. (",
     "zh": "关于个人信息处理的咨询，请联系株式会社Automaix（"
   },
-  "）へご連絡ください。": {
+  "）までご連絡ください。": {
     "en": ").",
     "zh": "）。"
   },
-  "プライバシーポリシーとお問い合わせ窓口をご案内します。": {
+  "お問い合わせ・資料ダウンロード時の個人情報の取扱いと、お問い合わせ窓口をご案内します。": {
     "en": "Privacy information and contact details.",
     "zh": "隐私信息及联系窗口说明。"
   },
-  "数値は自社工場の2026年10月版製品資料に基づきます。実際の能力は荷物寸法・重量、投入条件、仕分け先数、ライン構成によって異なります。": {
+  "掲載値は、自社工場の2026年10月版製品資料に基づきます。実際の処理能力は、荷物の寸法・重量、投入条件、仕分け先数、ライン構成により異なります。": {
     "en": "Figures are based on the factories' October 2026 product materials. Actual capacity varies with parcel dimensions and weights, induction conditions, destination count and line configuration.",
     "zh": "数值依据自有工厂2026年10月版产品资料。实际能力会因货物尺寸与重量、供包条件、格口数量及产线配置而变化。"
   },
-  "この製品について相談する": {
+  "この製品の導入について相談する": {
     "en": "Ask about this product",
     "zh": "咨询此产品"
   },
@@ -1115,15 +1115,15 @@
     "en": "A stable conveying surface",
     "zh": "稳定的输送面"
   },
-  "底面が安定しにくい荷物にも、対象条件を確認して対応します。": {
+  "底面形状が不安定な荷物についても、対象荷物の条件を確認したうえで適用を検討します。": {
     "en": "Parcels with less stable bases can be considered after checking their specific handling conditions.",
     "zh": "对于底部稳定性较差的货物，将在确认具体输送条件后评估适用性。"
   },
-  "仕様と選定条件": {
+  "主要仕様・選定条件": {
     "en": "Specifications & selection",
     "zh": "规格与选型条件"
   },
-  "動的負荷": {
+  "搬送負荷（単位面積当たり）": {
     "en": "Dynamic load",
     "zh": "动态负载"
   },
@@ -1139,15 +1139,15 @@
     "en": "72 dB or less",
     "zh": "不超过72 dB"
   },
-  "導入前に確認する項目": {
+  "導入検討時の確認事項": {
     "en": "What to confirm before implementation",
     "zh": "导入前需确认的事项"
   },
-  "荷物の最小・最大寸法と重量、必要処理量、仕分け先数、設置スペース、電源・温度帯、既存設備との接続条件をお知らせください。保守範囲や据付工程も個別に確認します。": {
+  "対象荷物の最小・最大寸法および重量、必要処理能力、仕分け先数、設置スペース、電源仕様、使用温度範囲、既存設備との接続条件をお知らせください。保守範囲と据付・試運転工程についても、案件ごとに確認します。": {
     "en": "Please provide minimum and maximum parcel dimensions and weights, required throughput, destination count, available space, power supply, temperature range and existing equipment interfaces. Maintenance scope and installation steps are also confirmed individually.",
     "zh": "请告知货物最小及最大尺寸与重量、所需处理量、格口数量、安装空间、电源、温度范围及既有设备接驳条件；维护范围和安装工序也将逐项确认。"
   },
-  "仕様・お見積りを相談する": {
+  "仕様・お見積りについて相談する": {
     "en": "Request specifications & quotation",
     "zh": "咨询规格与报价"
   },
@@ -1159,7 +1159,7 @@
     "en": "Alignment before measurement & sorting",
     "zh": "测量与分拣前的整列"
   },
-  "接続する設備と位置決め条件を確認します。": {
+  "後工程の設備仕様と位置決め要件を確認し、搬送中の整列条件を検討します。": {
     "en": "We review the connected equipment and positioning requirements.",
     "zh": "确认接驳设备及定位要求。"
   },
@@ -1175,7 +1175,7 @@
     "en": "Reducing impact on parcels",
     "zh": "降低货物冲击"
   },
-  "搬送条件に合わせてシュート形状と末端構成を検討します。": {
+  "荷姿、重量、落差、排出先の条件に応じて、シュート形状と末端部の構成を検討します。": {
     "en": "Chute geometry and outlet configuration are selected for the conveying conditions.",
     "zh": "按照输送条件规划滑槽形状与末端配置。"
   },
@@ -1199,7 +1199,7 @@
     "en": "Continuous sorting",
     "zh": "连续分拣"
   },
-  "中小型荷物を複数の仕分け先へ振り分けます。": {
+  "中小型の荷物を連続搬送しながら、指定された仕分け先へ振り分けます。": {
     "en": "Diverts small and medium parcels to multiple destinations.",
     "zh": "将中小型货物分拣至多个目的地。"
   },
@@ -1211,19 +1211,19 @@
     "en": "Integrated data acquisition",
     "zh": "一体式数据采集"
   },
-  "読取カメラ、立体カメラ、動的計量器を組み合わせます。": {
+  "バーコード読取りカメラ、3Dカメラ、動的計量器を組み合わせ、識別・寸法計測・計量を一体的に行います。": {
     "en": "Combines reading cameras, 3D cameras and dynamic weighing equipment.",
     "zh": "结合读码相机、立体相机与动态称重设备。"
   },
   "処理能力": {
-    "en": "Processing throughput",
+    "en": "Throughput",
     "zh": "处理能力"
   },
-  "寸法測定精度": {
+  "寸法計測精度": {
     "en": "Dimension measurement accuracy",
     "zh": "尺寸测量精度"
   },
-  "重量測定精度": {
+  "計量精度": {
     "en": "Weight measurement accuracy",
     "zh": "重量测量精度"
   },
@@ -1231,7 +1231,7 @@
     "en": "Line configuration",
     "zh": "产线配置调整"
   },
-  "必要なレイアウト、ユニット数、搬送速度に合わせて検討します。": {
+  "必要なレイアウト、ユニット数、搬送速度に応じて、ライン構成を検討します。": {
     "en": "Reviewed for the required layout, unit count and conveying speed.",
     "zh": "根据所需布局、单元数量及输送速度进行规划。"
   },
@@ -1243,7 +1243,7 @@
     "en": "Line connections",
     "zh": "产线接驳"
   },
-  "前後工程の処理量と荷物間隔を確認します。": {
+  "前後工程の処理能力と荷物の搬送間隔を確認し、合流条件を検討します。": {
     "en": "We confirm upstream and downstream capacity and parcel spacing.",
     "zh": "确认前后工序处理量与货物间距。"
   },
@@ -1251,7 +1251,7 @@
     "en": "Designed individually for line width, speed and parcel type",
     "zh": "根据线体宽度、速度和货物特征单独设计"
   },
-  "国内取扱モデルの構成・性能・電源・温度帯・据付条件は、案件ごとに確認してご案内します。": {
+  "国内取扱モデルの設備構成、性能、電源仕様、使用温度範囲、据付条件は、案件ごとに確認のうえご案内します。": {
     "en": "Configuration, performance, power supply, temperature range and installation conditions for models offered in Japan are confirmed for each project.",
     "zh": "日本市场销售型号的配置、性能、电源、温度范围及安装条件，均按具体项目确认。"
   },
@@ -1259,7 +1259,7 @@
     "en": "Layout planning",
     "zh": "布局规划"
   },
-  "現場寸法や前後工程の条件から選定します。": {
+  "設置スペースと前後工程の接続条件に基づいて、設備構成を選定します。": {
     "en": "Selected around the facility dimensions and upstream/downstream conditions.",
     "zh": "根据现场尺寸与前后工序条件选型。"
   },
@@ -1275,7 +1275,7 @@
     "en": "Application-specific configuration",
     "zh": "按用途配置"
   },
-  "既存設備との接続条件を確認してご案内します。": {
+  "既存設備との接続仕様と運用条件を確認し、適切な設備構成をご提案します。": {
     "en": "We review connections to existing equipment before proposing a configuration.",
     "zh": "确认既有设备接驳条件后提供配置建议。"
   },
@@ -1283,7 +1283,7 @@
     "en": "Modular configuration",
     "zh": "模块化配置"
   },
-  "中小規模の配送拠点や仕分け工程に合わせて配置できます。": {
+  "中小規模の配送拠点や既存の仕分け工程に応じて、モジュールを配置できます。": {
     "en": "Can be arranged for small and medium distribution facilities and sorting processes.",
     "zh": "可按中小型配送场地及分拣工序需求布置。"
   },
@@ -1315,7 +1315,7 @@
     "en": "Identification during conveying",
     "zh": "输送中识别"
   },
-  "タグの種類、貼付位置、荷物の条件に合わせて読取構成を確認します。": {
+  "タグの種類・貼付位置、対象荷物の条件に応じて、アンテナ配置と読取り条件を確認します。": {
     "en": "Tag type, placement and parcel conditions determine the reading configuration.",
     "zh": "根据标签类型、粘贴位置和货物条件确认读取配置。"
   },
@@ -1327,7 +1327,7 @@
     "en": "Section control",
     "zh": "区段控制"
   },
-  "必要な構成に応じてゼロプレッシャーアキュームを検討できます。": {
+  "設備構成に応じて、荷物同士の接触圧を抑えるゼロプレッシャーアキュムレーション（無圧滞留）の適用を検討できます。": {
     "en": "Zero-pressure accumulation can be considered for the required configuration.",
     "zh": "可根据所需配置评估零压积放功能。"
   },
@@ -1339,7 +1339,7 @@
     "en": "Feeding downstream equipment",
     "zh": "后续设备供件"
   },
-  "DWSやバーコードリーダー、ソーターへの投入状態を整えます。": {
+  "DWS、バーコードリーダ、ソーターの投入条件に合わせて、荷物の姿勢と搬送間隔を調整します。": {
     "en": "Prepares parcel flow for DWS, barcode readers and sorters.",
     "zh": "为DWS、条码读取器和分拣机整理供件状态。"
   },
@@ -1351,7 +1351,7 @@
     "en": "Selection for your application",
     "zh": "按用途选型"
   },
-  "周辺設備や運用条件を確認してご案内します。": {
+  "前後工程の設備仕様と運用条件を確認し、適切な機種・構成をご提案します。": {
     "en": "We review peripheral equipment and operating conditions before making a proposal.",
     "zh": "确认周边设备及运行条件后提供建议。"
   },
@@ -1359,19 +1359,19 @@
     "en": "Confirmed individually for parcel shape, weight, throughput and destination count",
     "zh": "根据货物形态、重量、处理量及分流数量单独确认"
   },
-  "省スペースの一体型": {
+  "省スペース一体型構造": {
     "en": "Compact integrated design",
     "zh": "紧凑一体式结构"
   },
-  "設置場所に合わせてレイアウトと間口構成を検討できます。": {
+  "設置スペースと運用要件に応じて、レイアウトと仕分け間口の構成を検討できます。": {
     "en": "Layout and destination configuration can be planned around the installation space.",
     "zh": "可根据安装场地规划布局及格口配置。"
   },
-  "キャリッジの選択": {
+  "キャリッジ仕様の選定": {
     "en": "Carriage selection",
     "zh": "小车选型"
   },
-  "通常タイプ・横桟付きから選択できます。": {
+  "対象荷物の荷姿に応じて、標準タイプまたは横桟付きキャリッジを選定できます。": {
     "en": "Standard and crossbar-equipped carriages are available.",
     "zh": "可选择常规小车或横条小车。"
   },
@@ -1391,11 +1391,11 @@
     "en": "SorterMN-3 | Compact integrated C01",
     "zh": "SorterMN-3｜紧凑一体式C01"
   },
-  "省スペースで柔軟にレイアウト": {
+  "省スペースでのレイアウトに対応": {
     "en": "Space-saving, flexible layout",
     "zh": "节省空间，灵活布局"
   },
-  "一体型のプラグアンドプレイ設計。設置場所や取り扱う商品に合わせて間口構成を選べます。": {
+  "一体型のプラグアンドプレイ設計を採用しています。設置条件と対象荷物に応じて、仕分け間口の構成を選定できます。": {
     "en": "An integrated plug-and-play design. Destination configurations can be selected for the site and product types.",
     "zh": "采用一体式即插即用设计，可根据场地及商品类型选择格口配置。"
   },
@@ -1407,15 +1407,15 @@
     "en": "Item",
     "zh": "项目"
   },
-  "半自動投入（作業者による投入・自動仕分け）": {
+  "半自動投入（手動投入・自動仕分け）": {
     "en": "Semi-automatic induction (operator feeding, automatic sorting)",
     "zh": "半自动供包（人工上包、自动分拣）"
   },
-  "キャリッジの選択肢": {
+  "キャリッジ仕様の選定肢": {
     "en": "Carriage options",
     "zh": "小车选项"
   },
-  "通常タイプ / 横桟付き": {
+  "標準タイプ / 横桟付き": {
     "en": "Standard / crossbar-equipped",
     "zh": "常规／横条小车"
   },
@@ -1435,11 +1435,11 @@
     "en": "Multiple configurations available",
     "zh": "支持多种配置"
   },
-  "注文別の集約": {
+  "オーダー別集約": {
     "en": "Order consolidation",
     "zh": "订单归集"
   },
-  "ECの複数商品注文や店舗別出荷に対応します。": {
+  "ECにおける複数商品のオーダー別集約や、店舗別出荷の仕分けに対応します。": {
     "en": "Supports multi-item e-commerce orders and store-based shipping.",
     "zh": "支持电商多件订单及分门店发货。"
   },
@@ -1447,19 +1447,19 @@
     "en": "Choice of induction methods",
     "zh": "供包方式选择"
   },
-  "半自動・直角・手動投入からモデルを選択できます。": {
+  "半自動投入・直角投入・手動投入の各方式から、運用条件に応じたモデルを選定できます。": {
     "en": "Choose models with semi-automatic, right-angle or manual induction.",
     "zh": "可选择半自动、直角或手动供包型号。"
   },
-  "単一ゾーン最大能力": {
+  "単一ゾーンの最大仕分け能力": {
     "en": "Maximum single-zone throughput",
     "zh": "单区最大分拣能力"
   },
-  "S01：8,640 / S02・S03：7,200 / D01：17,280 / D02：14,400 個/時": {
+  "S01：8,640 / S02・S03：7,200 / D01：17,280 / D02：14,400個/時": {
     "en": "S01: 8,640 / S02 & S03: 7,200 / D01: 17,280 / D02: 14,400 items/hour",
     "zh": "S01：8,640／S02、S03：7,200／D01：17,280／D02：14,400件/小时"
   },
-  "対応重量": {
+  "対応荷物重量": {
     "en": "Supported weight",
     "zh": "适用重量"
   },
@@ -1475,11 +1475,11 @@
     "en": "SorterMX-5 | S & D models and specifications",
     "zh": "SorterMX-5｜S、D系列型号与规格"
   },
-  "処理量と投入方式で選べる5モデル": {
+  "必要処理能力と投入方式で選定する5モデル": {
     "en": "Five models selected by throughput and induction method",
     "zh": "按处理量及供包方式选择五款型号"
   },
-  "半自動投入は底面が安定した中小型荷物に、直角投入はさまざまな荷姿への対応に適しています。S03は作業者による手動投入に対応します。キャリッジは通常タイプ・横桟付き・サイドガード付きから、荷物に合わせて選択・カスタマイズできます。": {
+  "半自動投入は底面が安定した中小型荷物に、直角投入は多様な荷姿に適しています。S03は作業者による手動投入方式です。キャリッジは標準タイプ・横桟付き・サイドガード付きから選定し、対象荷物に応じた仕様調整を検討できます。": {
     "en": "Semi-automatic induction suits small and medium parcels with stable bases; right-angle induction accommodates varied parcel types. S03 supports manual induction. Standard, crossbar-equipped and side-guard carriages can be selected or customized for the parcels.",
     "zh": "半自动供包适合底部平稳的中小型货物；直角供包适应多种货物形态。S03支持手动供包。可按货物需求选配或定制常规、横条及挡边小车。"
   },
@@ -1503,7 +1503,7 @@
     "en": "S series specification comparison",
     "zh": "S系列规格对比"
   },
-  "1本の支柱に1台": {
+  "支柱1本当たり1台": {
     "en": "1 carriage per mast",
     "zh": "一杆单车"
   },
@@ -1514,10 +1514,6 @@
   "手動投入": {
     "en": "Manual induction",
     "zh": "手动供包"
-  },
-  "単一ゾーンの最大仕分け能力": {
-    "en": "Maximum single-zone sorting throughput",
-    "zh": "单区最大分拣能力"
   },
   "推奨速度 1.2 m/s": {
     "en": "Recommended speed: 1.2 m/s",
@@ -1543,11 +1539,11 @@
     "en": "D series specification comparison",
     "zh": "D系列规格对比"
   },
-  "1本の支柱に2台": {
+  "支柱1本当たり2台": {
     "en": "2 carriages per mast",
     "zh": "一杆双车"
   },
-  "※ 最大荷物高さは仕分け間口の段数によって異なります。実際の寸法・レイアウトは現場条件に合わせて設計します。処理能力は単一ゾーンの最大値です。S01・D01の推奨走行速度は1.2 m/sです。": {
+  "※ 対応可能な荷物の最大高さは、仕分け間口の段数によって異なります。設備寸法・レイアウトは現場条件に応じて設計します。掲載する処理能力は単一ゾーンにおける最大値です。S01・D01の推奨走行速度は1.2 m/sです。": {
     "en": "* Maximum parcel height depends on the number of destination levels. Actual dimensions and layout are designed for site conditions. Throughput figures are single-zone maximums. Recommended running speed for S01 and D01 is 1.2 m/s.",
     "zh": "※ 最大货物高度与格口层数有关，实际尺寸和布局按现场条件设计。处理能力为单区最大值，S01、D01建议运行速度为1.2 m/s。"
   },
@@ -1555,7 +1551,7 @@
     "en": "Drive & control",
     "zh": "驱动与控制"
   },
-  "昇降ストロークは1,900 / 2,900 mm。昇降には一体型サーボモーター、仕分けにはサーボ電動ローラーを採用。DC48Vの接触給電または非接触給電、赤外線通信または漏洩同軸ケーブルに対応します。": {
+  "昇降ストロークは1,900 / 2,900 mmです。昇降駆動には一体型サーボモータ、仕分け駆動にはサーボ電動ローラを採用しています。給電方式はDC48Vの接触給電または非接触給電、通信方式は赤外線通信または漏洩同軸ケーブルに対応します。": {
     "en": "Lift travel: 1,900 / 2,900 mm. Integrated servo motors drive lifting, and servo motorized rollers drive sorting. Supports DC 48 V contact or contactless power supply, with infrared communication or leaky coaxial cable.",
     "zh": "升降行程为1,900／2,900 mm。采用一体式伺服电机升降、伺服电动滚筒分拣，支持DC48V滑触线或非接触供电，以及红外通信或漏波电缆。"
   },
@@ -1603,7 +1599,7 @@
     "en": "Connections to existing lines",
     "zh": "与既有产线接驳"
   },
-  "独立モジュールとしても搬送ライン内でも構成できます。": {
+  "単独ユニットとしての設置に加え、既存搬送ラインへの組込みにも対応します。": {
     "en": "Can be configured as a standalone module or within a conveying line.",
     "zh": "可配置为独立模组，也可安装在输送线内。"
   },
@@ -1611,15 +1607,15 @@
     "en": "About published information",
     "zh": "关于网站信息"
   },
-  "製品情報は対象モデルと資料の条件に基づくものです。処理能力、寸法、電源、温度帯、据付・保守の条件は、導入構成や対象荷物によって異なります。正式な仕様と提供範囲は、お見積り時にご確認ください。": {
+  "掲載する製品情報は、各モデルの資料に記載された条件に基づきます。処理能力、設備寸法、電源仕様、使用温度範囲、据付・保守の条件は、設備構成や対象荷物によって異なります。正式な仕様および当社の対応範囲は、お見積り時にご確認ください。": {
     "en": "Product information relates to the stated models and source conditions. Throughput, dimensions, power supply, temperature range, installation and maintenance conditions vary by system configuration and parcel type. Confirm formal specifications and scope with your quotation.",
     "zh": "产品信息依据所列型号及资料条件。处理能力、尺寸、电源、温度范围、安装与维护条件会因系统配置和货物而异，正式规格与供货范围请以报价时确认为准。"
   },
-  "会社と実績の表示": {
+  "会社情報・導入実績の掲載について": {
     "en": "Company information & project attribution",
     "zh": "公司信息与业绩归属"
   },
-  "株式会社Automaixの日本法人情報と、自社工場の製造情報をご案内しています。工場の規模、特許、沿革、事例は、掲載した資料時点の情報です。": {
+  "株式会社Automaixの会社概要と、自社工場の生産・技術情報を掲載しています。工場規模、特許、沿革、導入実績は、各項目に記載した資料の基準日時点の情報です。": {
     "en": "This website presents Automaix's Japan company and our in-house manufacturing operations. Factory scale, patents, history and projects reflect the records at the stated date.",
     "zh": "网站介绍株式会社Automaix日本法人及自有工厂的制造信息；工厂规模、专利、发展历程及项目均以标注资料时点为准。"
   },
@@ -1627,7 +1623,7 @@
     "en": "Product names",
     "zh": "关于产品名称"
   },
-  "国内取扱モデル名と自社工場のシリーズ名は、それぞれの製品ページでご案内しています。名称が似ている製品でも、同じ構成・性能とは限りません。用途に合う製品の選定はお問い合わせください。": {
+  "国内取扱モデル名と自社工場のシリーズ名は、各製品ページに記載しています。類似する名称であっても、設備構成・性能が同一とは限りません。用途・運用要件に適した機種の選定は、当社までご相談ください。": {
     "en": "Models offered in Japan and the factories' series are described separately on their product pages. Similar names do not necessarily mean identical configurations or performance. Contact us for product selection.",
     "zh": "日本市场销售型号名与自有工厂系列名分别在各产品页说明。名称相近不代表配置或性能相同，具体选型请咨询确认。"
   },
@@ -1635,7 +1631,7 @@
     "en": "Images, videos & trademarks",
     "zh": "图片、视频及商标"
   },
-  "掲載する写真・動画・製品名には、Automaixおよび自社工場等に関係するものが含まれます。お取引先の名称や商標は、それぞれの権利者に帰属します。転載・二次利用については事前にお問い合わせください。": {
+  "掲載する写真・動画・製品名には、Automaixおよび自社工場等に関するものが含まれます。お取引先の名称・商標に関する権利は、各権利者に帰属します。掲載内容の転載・二次利用をご希望の場合は、事前にお問い合わせください。": {
     "en": "Photographs, videos and product names on this website include materials related to Automaix and its in-house manufacturing. Customer names and trademarks belong to their respective owners. Please contact us before reproducing or reusing materials.",
     "zh": "本网站的照片、视频及产品名称包含与Automaix和自有工厂等相关的资料。客户名称及商标归各权利人所有，转载或二次使用前请先联系我们。"
   },
@@ -1643,11 +1639,11 @@
     "en": "Browser requirements",
     "zh": "浏览环境"
   },
-  "新しいバージョンの主要ブラウザーでの閲覧を推奨します。製品の絞り込みやお問い合わせ文面の作成にはJavaScriptを使用します。メールの送信には、お使いのメールアプリまたはメールサービスが必要です。": {
+  "最新バージョンの主要ウェブブラウザーでの閲覧を推奨します。製品の絞込み、お問い合わせメールの下書き作成、会社資料のダウンロード登録にはJavaScriptを使用します。お問い合わせメールの送信には、メールアプリまたはメールサービスが必要です。": {
     "en": "We recommend a recent version of a major browser. JavaScript is used for product filtering and email draft preparation. Sending email requires your own email app or email service.",
     "zh": "建议使用较新版本的主流浏览器。产品筛选与邮件草稿辅助功能需要JavaScript；邮件发送需要使用您自己的邮件应用或邮件服务。"
   },
-  "サイトポリシーとお問い合わせ窓口をご案内します。": {
+  "製品情報・導入実績の掲載条件、画像・商標の取扱い、推奨閲覧環境をご案内します。": {
     "en": "Site usage information and contact details.",
     "zh": "网站使用说明及联系窗口信息。"
   },
@@ -1683,7 +1679,7 @@
     "en": "Narrow-belt sorter / Narrow-belt configuration",
     "zh": "窄带分拣机 / 窄带式"
   },
-  "高密度ホイールソーター / 高密度駆動ローラー式": {
+  "高密度ホイールソーター / 高密度駆動ローラ式": {
     "en": "High-density wheel sorter / High-density driven rollers",
     "zh": "高密度摆轮分拣机 / 高密度驱动滚轮式"
   },
@@ -1695,23 +1691,23 @@
     "en": "Sliding-shoe sorter / Equipment offered",
     "zh": "滑块分拣机 / 销售设备"
   },
-  "ベルトコンベア / 連続搬送": {
+  "ベルトコンベヤ / 連続搬送": {
     "en": "Belt conveyor / Continuous conveying",
     "zh": "皮带输送机 / 连续输送"
   },
-  "ローラーコンベア / 箱物の搬送・滞留": {
+  "ローラコンベヤ / ケース搬送・アキュムレーション": {
     "en": "Roller conveyor / Carton conveying & accumulation",
     "zh": "滚筒输送机 / 箱件输送与缓存"
   },
-  "単品分離システム / ばら荷物の整列": {
+  "単品分離システム / 単品分離・整列搬送": {
     "en": "Parcel singulation system / Loose-parcel singulation",
     "zh": "单件分离系统 / 散件分离与整列"
   },
-  "動的DWS / 寸法・重量・バーコード読取": {
+  "動的DWS（寸法計測・計量・識別） / 寸法計測・計量・バーコード読取り": {
     "en": "Dynamic DWS / Dimensioning, weighing & barcode reading",
     "zh": "动态DWS / 尺寸、重量与条码读取"
   },
-  "RFID読取システム / タグの非接触識別": {
+  "RFID読取システム / RFIDタグの非接触識別": {
     "en": "RFID reading system / Contactless tag identification",
     "zh": "RFID读取系统 / 标签非接触识别"
   },
@@ -1719,11 +1715,11 @@
     "en": "Diamond-pattern chute / Single-side / double-side configuration",
     "zh": "钻石纹滑槽 / 单侧／双侧结构"
   },
-  "合流コンベア / ライン合流": {
+  "合流コンベヤ / ライン合流": {
     "en": "Merge conveyor / Line merging",
     "zh": "合流输送机 / 产线合流"
   },
-  "センタリングコンベア / 荷物の位置調整": {
+  "センタリングコンベヤ / 荷物のセンタリング": {
     "en": "Centering conveyor / Parcel position adjustment",
     "zh": "居中输送机 / 货物位置调整"
   },
@@ -1783,11 +1779,11 @@
     "en": "Modular belt sorter details",
     "zh": "模块皮带分拣机 详情"
   },
-  "ベルトコンベアの詳細": {
+  "ベルトコンベヤの詳細": {
     "en": "Belt conveyor details",
     "zh": "皮带输送机 详情"
   },
-  "ローラーコンベアの詳細": {
+  "ローラコンベヤの詳細": {
     "en": "Roller conveyor details",
     "zh": "滚筒输送机 详情"
   },
@@ -1795,7 +1791,7 @@
     "en": "Parcel singulation system details",
     "zh": "单件分离系统 详情"
   },
-  "動的DWSの詳細": {
+  "動的DWS（寸法計測・計量・識別）の詳細": {
     "en": "Dynamic DWS details",
     "zh": "动态DWS 详情"
   },
@@ -1807,11 +1803,11 @@
     "en": "Diamond-pattern chute details",
     "zh": "钻石纹滑槽 详情"
   },
-  "合流コンベアの詳細": {
+  "合流コンベヤの詳細": {
     "en": "Merge conveyor details",
     "zh": "合流输送机 详情"
   },
-  "センタリングコンベアの詳細": {
+  "センタリングコンベヤの詳細": {
     "en": "Centering conveyor details",
     "zh": "居中输送机 详情"
   },
@@ -1823,7 +1819,7 @@
     "en": "Tsubame-chan product video",
     "zh": "Tsubame-chan 产品视频"
   },
-  "3D種まき仕分けシステムの製品情報 | AUTOMAIX": {
+  "3D仕分けシステム（種まき方式）の製品情報 | AUTOMAIX": {
     "en": "3D put-wall sorting system information | AUTOMAIX",
     "zh": "3D播种墙产品信息 | AUTOMAIX"
   },
@@ -1839,27 +1835,27 @@
     "en": "Privacy policy | AUTOMAIX",
     "zh": "隐私政策 | AUTOMAIX"
   },
-  "ベルトコンベア 製品仕様 | AUTOMAIX": {
+  "ベルトコンベヤ 製品仕様 | AUTOMAIX": {
     "en": "Belt conveyor — Specifications | AUTOMAIX",
     "zh": "皮带输送机 产品规格 | AUTOMAIX"
   },
-  "ベルトコンベア 主な仕様": {
+  "ベルトコンベヤ 主な仕様": {
     "en": "Belt conveyor — Key specifications",
     "zh": "皮带输送机 主要规格"
   },
-  "ベルトコンベアの製品写真・全体図": {
+  "ベルトコンベヤの製品写真・全体図": {
     "en": "Belt conveyor — product view",
     "zh": "皮带输送机 产品照片与全景"
   },
-  "センタリングコンベア 製品仕様 | AUTOMAIX": {
+  "センタリングコンベヤ 製品仕様 | AUTOMAIX": {
     "en": "Centering conveyor — Specifications | AUTOMAIX",
     "zh": "居中输送机 产品规格 | AUTOMAIX"
   },
-  "センタリングコンベア 主な仕様": {
+  "センタリングコンベヤ 主な仕様": {
     "en": "Centering conveyor — Key specifications",
     "zh": "居中输送机 主要规格"
   },
-  "センタリングコンベアの製品写真・全体図": {
+  "センタリングコンベヤの製品写真・全体図": {
     "en": "Centering conveyor — product view",
     "zh": "居中输送机 产品照片与全景"
   },
@@ -1883,7 +1879,7 @@
     "en": "Loop cross-belt sorter — Key specifications",
     "zh": "环形交叉带分拣机 主要规格"
   },
-  "21,000 個/時": {
+  "21,000個/時": {
     "en": "21,000  items/hour",
     "zh": "21,000 件/小时"
   },
@@ -1891,19 +1887,19 @@
     "en": "Loop cross-belt sorter — product view",
     "zh": "环形交叉带分拣机 产品照片与全景"
   },
-  "動的DWS 製品仕様 | AUTOMAIX": {
+  "動的DWS（寸法計測・計量・識別） 製品仕様 | AUTOMAIX": {
     "en": "Dynamic DWS — Specifications | AUTOMAIX",
     "zh": "动态DWS 产品规格 | AUTOMAIX"
   },
-  "動的DWS 主な仕様": {
+  "動的DWS（寸法計測・計量・識別） 主な仕様": {
     "en": "Dynamic DWS — Key specifications",
     "zh": "动态DWS 主要规格"
   },
-  "4,000 個/時": {
+  "4,000個/時": {
     "en": "4,000  items/hour",
     "zh": "4,000 件/小时"
   },
-  "動的DWSの製品写真・全体図": {
+  "動的DWS（寸法計測・計量・識別）の製品写真・全体図": {
     "en": "Dynamic DWS — product view",
     "zh": "动态DWS 产品照片与全景"
   },
@@ -1915,7 +1911,7 @@
     "en": "Linear cross-belt sorter — Key specifications",
     "zh": "直线交叉带分拣机 主要规格"
   },
-  "9,000 個/時": {
+  "9,000個/時": {
     "en": "9,000  items/hour",
     "zh": "9,000 件/小时"
   },
@@ -1923,15 +1919,15 @@
     "en": "Linear cross-belt sorter — product view",
     "zh": "直线交叉带分拣机 产品照片与全景"
   },
-  "合流コンベア 製品仕様 | AUTOMAIX": {
+  "合流コンベヤ 製品仕様 | AUTOMAIX": {
     "en": "Merge conveyor — Specifications | AUTOMAIX",
     "zh": "合流输送机 产品规格 | AUTOMAIX"
   },
-  "合流コンベア 主な仕様": {
+  "合流コンベヤ 主な仕様": {
     "en": "Merge conveyor — Key specifications",
     "zh": "合流输送机 主要规格"
   },
-  "合流コンベアの製品写真・全体図": {
+  "合流コンベヤの製品写真・全体図": {
     "en": "Merge conveyor — product view",
     "zh": "合流输送机 产品照片与全景"
   },
@@ -1967,7 +1963,7 @@
     "en": "Narrow-belt sorter — Key specifications",
     "zh": "窄带分拣机 主要规格"
   },
-  "10,000 個/時": {
+  "10,000個/時": {
     "en": "10,000  items/hour",
     "zh": "10,000 件/小时"
   },
@@ -1999,15 +1995,15 @@
     "en": "RFID reading system — product view",
     "zh": "RFID读取系统 产品照片与全景"
   },
-  "ローラーコンベア 製品仕様 | AUTOMAIX": {
+  "ローラコンベヤ 製品仕様 | AUTOMAIX": {
     "en": "Roller conveyor — Specifications | AUTOMAIX",
     "zh": "滚筒输送机 产品规格 | AUTOMAIX"
   },
-  "ローラーコンベア 主な仕様": {
+  "ローラコンベヤ 主な仕様": {
     "en": "Roller conveyor — Key specifications",
     "zh": "滚筒输送机 主要规格"
   },
-  "ローラーコンベアの製品写真・全体図": {
+  "ローラコンベヤの製品写真・全体図": {
     "en": "Roller conveyor — product view",
     "zh": "滚筒输送机 产品照片与全景"
   },
@@ -2043,13 +2039,9 @@
     "en": "SorterMN-3 — Key specifications",
     "zh": "SorterMN-3 主要规格"
   },
-  "1,600 個/時": {
+  "1,600個/時": {
     "en": "1,600  items/hour",
     "zh": "1,600 件/小时"
-  },
-  "1,600個/時": {
-    "en": "1,600 items/hour",
-    "zh": "1,600件/小时"
   },
   "SorterMN-3の製品写真・全体図": {
     "en": "SorterMN-3 — product view",
@@ -2115,10 +2107,6 @@
     "en": "High-density wheel sorter — Key specifications",
     "zh": "高密度摆轮分拣机 主要规格"
   },
-  "7,200 個/時": {
-    "en": "7,200  items/hour",
-    "zh": "7,200 件/小时"
-  },
   "高密度ホイールソーターの製品写真・全体図": {
     "en": "High-density wheel sorter — product view",
     "zh": "高密度摆轮分拣机 产品照片与全景"
@@ -2143,7 +2131,7 @@
     "en": "Company brochure download",
     "zh": "公司资料下载"
   },
-  "必要事項をご入力いただくと、会社紹介PDFをダウンロードできます。": {
+  "必要事項をご入力・ご登録のうえ、会社紹介PDFをダウンロードいただけます。": {
     "en": "Complete the required information to download our company brochure PDF.",
     "zh": "填写必填资料后，即可下载公司介绍 PDF。"
   },
@@ -2151,15 +2139,15 @@
     "en": "About the company brochure",
     "zh": "资料包含什么"
   },
-  "日本法人の会社概要と、自社工場の製造体制・技術・導入事例をまとめています。": {
+  "株式会社Automaixの会社概要と、自社工場の生産体制、保有技術、システム導入事例をまとめています。": {
     "en": "An overview of Automaix in Japan and our own factories’ facilities, technology and projects.",
     "zh": "包含Automaix日本公司概况，以及自有工厂的生产能力、技术与项目案例。"
   },
-  "登録内容はinfo@automaix.co.jpに送信されます。資料の提供と関連する業務上のご連絡に利用します。": {
+  "ご登録内容はinfo@automaix.co.jp宛てに送信され、資料の提供および関連する業務連絡に利用します。": {
     "en": "Your details will be sent to info@automaix.co.jp to provide the brochure and follow up on relevant business enquiries.",
     "zh": "登记资料将发送至 info@automaix.co.jp，用于资料提供及相关业务联系。"
   },
-  "入力内容はブラウザーに自動保存されません。": {
+  "当サイトには、入力内容をブラウザーの保存領域へ自動保存する機能はありません。": {
     "en": "Your entries are not automatically saved in browser storage.",
     "zh": "填写内容不会自动存入浏览器本地存储。"
   },
@@ -2183,11 +2171,11 @@
     "en": "Phone (optional)",
     "zh": "电话（选填）"
   },
-  "個人情報の取り扱いを確認し、資料提供と関連する業務連絡のための情報利用に同意します。": {
+  "個人情報の取扱いを確認し、資料の提供および関連する業務連絡を目的とする情報の利用に同意します。": {
     "en": "I have read the privacy information and agree to the use of my details to provide the brochure and for related business contact.",
     "zh": "我已阅读个人信息处理说明，同意将填写资料用于资料提供及相关业务联系。"
   },
-  "個人情報の取り扱いを読む": {
+  "個人情報の取扱いを確認する": {
     "en": "Read privacy information",
     "zh": "阅读个人信息处理说明"
   },
@@ -2203,7 +2191,7 @@
     "en": "Register for the company brochure →",
     "zh": "登记并获取公司资料 →"
   },
-  "このフォームにはJavaScriptが必要です。資料のご希望はinfo@automaix.co.jpへお問い合わせください。": {
+  "本フォームのご利用にはJavaScriptが必要です。資料をご希望の方は、info@automaix.co.jpまでお問い合わせください。": {
     "en": "This form requires JavaScript. Please contact info@automaix.co.jp to request the brochure.",
     "zh": "此表单需要 JavaScript。如需资料，请联系 info@automaix.co.jp。"
   },
@@ -2211,7 +2199,7 @@
     "en": "Company brochure registration",
     "zh": "公司资料下载登记"
   },
-  "会社資料のダウンロード登録では、会社名、氏名、メールアドレス、任意の電話番号と選択言語を、当社メール宛先info@automaix.co.jpに送信します。資料の提供と関連する業務連絡に利用します。メールサーバーが登録メールを受け付けた後、10分間有効なダウンロード権限を発行します。この権限には個人情報を含まないCookieを使用します。": {
+  "会社資料のダウンロード登録では、会社名、氏名、メールアドレス、任意で入力された電話番号、および選択言語を、当社のメールアドレスinfo@automaix.co.jp宛てに送信します。これらの情報は、資料の提供および関連する業務連絡に利用します。登録メールがメールサーバーに受け付けられた後、10分間有効なダウンロード権限を付与します。権限の管理には、個人情報を含まないCookieを使用します。": {
     "en": "Brochure registration sends your company, name, email, optional phone number and selected language to info@automaix.co.jp for brochure provision and related business contact. Once our mail server accepts the registration, a download permission valid for 10 minutes is issued using an essential cookie containing no personal details.",
     "zh": "公司资料下载登记会将公司名称、姓名、邮箱、选填的电话和所选语言发送至 info@automaix.co.jp，用于资料提供和相关业务联系。邮件服务器接受登记邮件后，发放有效期为 10 分钟的下载权限。此权限使用不包含个人资料的必要 Cookie。"
   },
@@ -2222,5 +2210,601 @@
   "Automaix自社工場": {
     "en": "Automaix factories",
     "zh": "Automaix自有工厂"
+  },
+  "未来を形に、共に進む": {
+    "en": "Shaping the future, together",
+    "zh": "携手前行，共塑未来"
+  },
+  "日本の品質思想 × 中国の製造力 × AI技術": {
+    "en": "Japanese quality × Chinese manufacturing × AI technology",
+    "zh": "日本品质 × 中国制造 × AI技术"
+  },
+  "Automaixは、物流自動化システムおよびマテリアルハンドリング機器の開発・設計・製造を手がけています。日本のものづくりに根ざした品質管理と現場改善の思想に、中国の製造技術・生産能力、先進的なAI技術を融合。トヨタ生産方式（TPS）に代表されるムダの排除、標準化、継続的改善の考え方を大切にし、現場に適した自動化を追求しています。": {
+    "en": "Automaix develops, designs and manufactures smart logistics and automation equipment, combining Japan’s commitment to quality and workplace improvement—including waste reduction, standardization and continuous improvement exemplified by the Toyota Production System—with Chinese manufacturing expertise and capacity, and advanced AI technology.",
+    "zh": "Automaix是一家智能物流及自动化设备的开发、设计与制造企业，将日本制造长期积累的品质意识与现场改善精神、以丰田生产方式为代表的消除浪费、标准化和持续改善理念，与中国的制造技术、生产能力及先进AI技术相融合。"
+  },
+  "物流・製造現場における省人化、作業負荷の軽減、安全性・品質・生産性の向上を支援します。企画・システム設計から製造、据付・試運転、保守・技術支援まで、一貫して対応します。": {
+    "en": "We provide integrated solutions from planning and design to manufacturing, implementation and after-sales support, addressing labor shortages, workload, safety, quality and productivity challenges in logistics and manufacturing.",
+    "zh": "针对物流与制造现场面临的人手不足、作业负担、安全、品质及生产效率等课题，提供从规划、设计到制造、导入和售后支持的一体化解决方案。"
+  },
+  "私たちは、現場で働く方々の作業負荷を軽減し、安全で安心して働ける環境づくりに貢献する「ぬくもりのある自動化」を目指しています。": {
+    "en": "We aim to create automation with a human touch, reducing the burden on workers and supporting safety and peace of mind.",
+    "zh": "我们致力于实现贴近人的“有温度的自动化”，减轻工作负担，支持安全与安心。"
+  },
+  "自動化に、知能を": {
+    "en": "Intelligence for automation",
+    "zh": "赋予自动化以智能"
+  },
+  "現場に寄り添う技術と発想": {
+    "en": "Technology ideas that care for people at work",
+    "zh": "贴近现场的技术创意"
+  },
+  "未来に、より大きな可能性": {
+    "en": "Greater possibilities for the future",
+    "zh": "让未来拥有更大可能"
+  },
+  "Automaixの名称には、AUTO（自動化）、MAX（可能性の最大化）、AI（人工知能と人を想う心）への想いを込めています。": {
+    "en": "The meaning behind Automaix: AUTO for automation, MAX for maximizing potential, and AI for artificial intelligence and care.",
+    "zh": "Automaix名称所承载的理念：AUTO＝自动化、MAX＝最大限度、AI＝人工智能＋爱。"
+  },
+  "私たちの想い": {
+    "en": "Our vision",
+    "zh": "我们的理念"
+  },
+  "事業の歩み（会社パンフレットより）": {
+    "en": "Milestones from our company brochure",
+    "zh": "公司宣传册中的发展历程"
+  },
+  "自社工場の事業展開と日本法人の設立を、会社パンフレットの年次区分に沿ってご紹介します。日本法人は2026年9月18日に設立しました。": {
+    "en": "These milestones follow the periods used in the company brochure and distinguish the factory’s history from the Japanese company, established on September 18, 2026.",
+    "zh": "以下按公司宣传册的阶段划分介绍工厂历程与日本法人设立。日本法人设立日期为2026年9月18日。"
+  },
+  "工場設立、業務開始。": {
+    "en": "Factory established; operations began.",
+    "zh": "工厂成立并开始运营。"
+  },
+  "ZTO ExpressのBランク、BEST Express・STO ExpressのAランクサプライヤーに認定。": {
+    "en": "Recognized as a B-tier supplier to ZTO Express and an A-tier supplier to BEST Express and STO Express.",
+    "zh": "获评ZTO Express B级供应商、BEST Express及STO Express A级供应商。"
+  },
+  "SF Expressのサプライヤー認証を取得。JD Logistics・CainiaoのAランクサプライヤーに認定。": {
+    "en": "Obtained SF Express supplier certification; recognized as an A-tier supplier to JD Logistics and Cainiao.",
+    "zh": "取得SF Express供应商认证，获评JD Logistics及Cainiao A级供应商。"
+  },
+  "SF Expressの物流設備総合サプライヤーに認定。": {
+    "en": "Recognized as an integrated logistics equipment supplier to SF Express.",
+    "zh": "获评SF Express物流设备综合供应商。"
+  },
+  "事業領域を拡大。売上高5億人民元超を達成（会社パンフレット記載）。": {
+    "en": "Expanded business scope and achieved sales exceeding RMB 500 million, as stated in the company brochure.",
+    "zh": "拓展业务领域，销售额超过5亿元人民币（公司宣传册记载）。"
+  },
+  "日本法人・株式会社Automaixを設立。": {
+    "en": "Established Automaix Co., Ltd. in Japan.",
+    "zh": "设立日本法人株式会社Automaix。"
+  },
+  "次世代のスマートオートメーション": {
+    "en": "Next-generation smart automation",
+    "zh": "新一代智能自动化"
+  },
+  "日本の品質管理・現場改善の思想、中国の製造力・コスト競争力、先進的なAI技術を融合し、物流・製造現場の自動化を支援します。品質・納期・コストの最適化を図り、生産性の向上と持続的な成長に貢献します。": {
+    "en": "Combining Japanese quality management and improvement practices, Chinese manufacturing capacity and cost competitiveness, and advanced AI, we pursue balanced quality, delivery times and pricing to support operational efficiency and sustainable growth.",
+    "zh": "融合日本的品质管理与改善理念、中国的制造能力与成本竞争力以及先进AI技术，追求品质、交期与价格的平衡，支持现场效率提升与可持续发展。"
+  },
+  "私たちの想いを知る →": {
+    "en": "Explore our vision →",
+    "zh": "了解我们的理念 →"
+  },
+  "入荷から出荷までの物流プロセスを統合": {
+    "en": "Connecting logistics from receiving to shipping",
+    "zh": "贯通从入库到出库的物流流程"
+  },
+  "入荷": {
+    "en": "Receiving",
+    "zh": "到货"
+  },
+  "トラックから荷卸しを行い、入荷情報を登録します。": {
+    "en": "Unload goods and register receiving information.",
+    "zh": "从车辆卸货并登记到货信息。"
+  },
+  "検品・寸法計測・計量": {
+    "en": "Inspection and measurement",
+    "zh": "检验与测量"
+  },
+  "荷物の寸法計測・計量とバーコード読取りを自動で行います。": {
+    "en": "Automatically measure dimensions and weight and read barcodes.",
+    "zh": "自动测量货物尺寸与重量，读取条码。"
+  },
+  "一時保管": {
+    "en": "Temporary storage",
+    "zh": "暂存"
+  },
+  "荷物を一時保管し、出荷指示に基づいて在庫を管理します。": {
+    "en": "Store goods temporarily and manage inventory according to shipping instructions.",
+    "zh": "暂存货物，根据出库指令管理库存。"
+  },
+  "単品分離（シングレーション）": {
+    "en": "Singulation",
+    "zh": "单件分离"
+  },
+  "重なった荷物を単品に分離し、1個ずつ整列させて搬送します。": {
+    "en": "Separate overlapping goods and convey them individually.",
+    "zh": "分离堆叠货物，逐件排列并输送。"
+  },
+  "一次仕分け": {
+    "en": "Primary sorting",
+    "zh": "一次分拣"
+  },
+  "配送エリア・方面別に荷物を仕分けます。": {
+    "en": "Sort goods into broad delivery areas and destinations.",
+    "zh": "按配送区域与方向进行大类分拣。"
+  },
+  "二次仕分け": {
+    "en": "Secondary sorting",
+    "zh": "二次分拣"
+  },
+  "配送コース・便別に荷物を仕分けます。": {
+    "en": "Sort goods by delivery route and service.",
+    "zh": "按配送路线和班次精细分拣。"
+  },
+  "出荷準備": {
+    "en": "Shipping preparation",
+    "zh": "出库准备"
+  },
+  "出荷先別に荷物を集約し、ラベルの照合と積付けを行います。": {
+    "en": "Consolidate goods by destination, check labels and prepare loads.",
+    "zh": "按目的地集货，核对标签并码放。"
+  },
+  "出荷": {
+    "en": "Shipping",
+    "zh": "出库"
+  },
+  "トラックへの積込みを行い、荷物を出荷します。": {
+    "en": "Load goods onto trucks for dispatch.",
+    "zh": "将货物装车并发运。"
+  },
+  "各工程を支える製品ラインナップ": {
+    "en": "Equipment for every stage",
+    "zh": "支持各工序的产品系列"
+  },
+  "カーブコンベヤ": {
+    "en": "Curved conveyor lines",
+    "zh": "转弯输送线"
+  },
+  "省スペースで搬送方向を転換し、後工程へ円滑に接続します。": {
+    "en": "Change conveying direction within limited space for smooth transfer to the next stage.",
+    "zh": "在有限空间内改变输送方向，平稳衔接下一工序。"
+  },
+  "自動寸法計測・計量システム": {
+    "en": "Automatic measurement systems",
+    "zh": "自动测量系统"
+  },
+  "寸法・重量・バーコード情報を自動取得し、搬送管理に必要なデータを生成します。": {
+    "en": "Automatically capture and digitize parcel dimensions, weight and barcode data.",
+    "zh": "自动采集货物尺寸、重量及条码信息并形成数据。"
+  },
+  "シングレータ（単品分離装置）": {
+    "en": "Singulators",
+    "zh": "单件分离设备"
+  },
+  "ホイールソーター": {
+    "en": "Wheel sorters",
+    "zh": "摆轮分拣机"
+  },
+  "荷物の搬送方向を制御し、複数の分岐先へ仕分けます。": {
+    "en": "Sort goods rapidly and accurately in multiple directions.",
+    "zh": "将货物快速、准确地分拣至多个方向。"
+  },
+  "クロスベルトソーター": {
+    "en": "Cross-belt sorters",
+    "zh": "交叉带分拣机"
+  },
+  "多品種の荷物を、指定された仕分け先へ高速・高精度に仕分けます。": {
+    "en": "Sort varied goods to multiple destinations at high speed and precision.",
+    "zh": "将多种货物高速、高精度地分拣至多个目的地。"
+  },
+  "立体保管・仕分けシステム": {
+    "en": "Three-dimensional storage and sorting systems",
+    "zh": "立体存储与分拣系统"
+  },
+  "保管・集約・仕分け機能を多段化し、空間利用効率を高めます。": {
+    "en": "Arrange storage, consolidation and sorting vertically to save space.",
+    "zh": "将存储、集货与分拣立体化，节约空间。"
+  },
+  "垂直搬送機": {
+    "en": "Vertical conveyors",
+    "zh": "垂直输送设备"
+  },
+  "荷物を上下階へ自動搬送し、階間搬送の効率化を図ります。": {
+    "en": "Automatically convey goods between floors for efficient vertical transport.",
+    "zh": "自动在楼层间输送货物，提高跨层搬运效率。"
+  },
+  "対象荷物の形状・底面条件に応じて、安定した連続搬送を行います。": {
+    "en": "Provide stable, continuous transport for goods of various shapes.",
+    "zh": "稳定、连续地输送多种形状的货物。"
+  },
+  "シュート": {
+    "en": "Chutes",
+    "zh": "滑槽"
+  },
+  "仕分け後の荷物を、指定された排出位置へ搬送します。": {
+    "en": "Transfer sorted goods to their designated positions.",
+    "zh": "将分拣后的货物输送至指定位置。"
+  },
+  "寸法（mm）": {
+    "en": "Dimensions (mm)",
+    "zh": "尺寸（mm）"
+  },
+  "仕分け間口数": {
+    "en": "Sorting destinations",
+    "zh": "分拣格口数"
+  },
+  "最大対応荷物寸法（mm）": {
+    "en": "Maximum parcel dimensions (mm)",
+    "zh": "最大适用货物尺寸（mm）"
+  },
+  "読取方式": {
+    "en": "Scanning method",
+    "zh": "读取方式"
+  },
+  "対応荷物重量範囲": {
+    "en": "Parcel weight range",
+    "zh": "适用重量范围"
+  },
+  "運転速度": {
+    "en": "Operating speed",
+    "zh": "运行速度"
+  },
+  "上部スキャン／ハンディスキャン": {
+    "en": "Top scanning / handheld scanning",
+    "zh": "顶部扫描／手持扫描"
+  },
+  "掲載値は会社パンフレットに記載された標準仕様です。実際の処理能力は、荷物の寸法・重量、投入条件、仕分け先数、ライン構成により異なります。設備寸法には、保守点検・作業に必要なスペースを含みません。": {
+    "en": "The figures are standard specifications stated in the company brochure. Actual throughput depends on parcel dimensions and weight, induction conditions, destination count and line configuration. Equipment dimensions exclude maintenance and working space.",
+    "zh": "规格数值为公司宣传册所载标准规格。实际处理能力受货物尺寸、重量、供件条件、格口数量及产线配置影响。设备尺寸不含维护与作业空间。"
+  },
+  "構成のカスタマイズ": {
+    "en": "Configurable design",
+    "zh": "配置定制"
+  },
+  "走行レールの段数、スキャナ仕様、仕分け間口数、インダクション（投入部）数、点検口の配置などを、運用要件に応じて検討します。": {
+    "en": "Rail levels, scanner specifications, sorting destinations, induction count and inspection access positions can be configured to suit project requirements.",
+    "zh": "可按需求研究行走轨道层数、扫描器规格、分拣格口数、供件口数和检修口位置等配置。"
+  },
+  "冷蔵・冷凍環境向け仕様": {
+    "en": "Refrigerated and frozen-environment options",
+    "zh": "冷藏与冷冻环境规格"
+  },
+  "冷蔵・冷凍環境に対応する仕様をご相談いただけます。使用温度範囲と必要な機器構成は、案件ごとに確認します。": {
+    "en": "Refrigerated and frozen-environment specifications are available for consultation. Temperature range and equipment configuration require project-specific confirmation.",
+    "zh": "可咨询冷藏与冷冻环境规格，适用温度范围及设备配置需按项目确认。"
+  },
+  "モジュール構造と据付": {
+    "en": "Modular design and installation",
+    "zh": "模块化结构与安装"
+  },
+  "モジュール構造を採用しています。会社パンフレットに記載された「最短半日で設置」は、所定の条件下における据付時間の目安です。搬入条件、現地組立の範囲、試運転を含む全体工程は、案件ごとに確認します。": {
+    "en": "The modular design supports installation. The brochure’s minimum half-day installation is a guide under specified conditions. Access, assembly scope and commissioning schedules require individual confirmation.",
+    "zh": "采用模块化结构。宣传册中“最快半天安装”是在特定条件下的参考，搬入路线、组装范围及包含调试的工期需单独确认。"
+  },
+  "電源・PL保険": {
+    "en": "Power supply and product liability insurance",
+    "zh": "电源与产品责任保险"
+  },
+  "AC100V電源仕様および日本国内のPL保険（生産物賠償責任保険）への対応をご相談いただけます。必要電源容量、接続条件、保険の適用範囲は、導入仕様ごとに確認します。": {
+    "en": "AC100V power and Japanese product liability insurance can be discussed. Supply capacity, connection requirements and insurance coverage must be confirmed for the selected configuration.",
+    "zh": "可咨询AC100V电源及日本国内产品责任保险，电源容量、连接条件及保险适用范围需按导入配置确认。"
+  },
+  "1,400個/時": {
+    "en": "1,400 items/hour",
+    "zh": "1,400件/小时"
+  },
+  "最大 2.5 m/s": {
+    "en": "Up to 2.5 m/s",
+    "zh": "最高 2.5 m/s"
+  },
+  "小口・多品種の仕分けに適した、省スペース型の3D仕分けシステムです。T-M-48-Jの標準仕様は48間口、処理能力1,400個/時で、一次仕分け・二次仕分けに対応します。": {
+    "en": "A flexible, space-saving 3D sorter. The T-M-48-J provides 48 destinations and standard throughput of 1,400 items/hour for primary and secondary sorting of small parcels and varied products.",
+    "zh": "可灵活导入的节省空间型3D分拣设备。T-M-48-J配置48个格口，标准处理能力为1,400件/小时，适用于小件、多品种的一次及二次分拣。"
+  },
+  "設置スペースに応じて選定できる、省スペース型仕分けシステムのSLシリーズです。標準仕様は、T-SL-50-Jが40〜50間口・1,000個/時、T-SL-60-Jが48〜60間口・1,250個/時です。": {
+    "en": "The space-saving SL series offers standard configurations of 40–50 destinations and 1,000 items/hour for T-SL-50-J, and 48–60 destinations and 1,250 items/hour for T-SL-60-J.",
+    "zh": "节省空间型SL系列：T-SL-50-J标准规格为40～50格口、1,000件/小时；T-SL-60-J为48～60格口、1,250件/小时。"
+  },
+  "型式": {
+    "en": "Model",
+    "zh": "型号"
+  },
+  "モデル別仕様": {
+    "en": "Model-specific specifications",
+    "zh": "分型号规格"
+  },
+  "モデル別の仕様は、下記の標準仕様比較表をご参照ください。": {
+    "en": "See the standard specification comparison below.",
+    "zh": "请参阅下方标准规格对比表。"
+  },
+  "1,000個/時": {
+    "en": "1,000 items/hour",
+    "zh": "1,000件/小时"
+  },
+  "1,250個/時": {
+    "en": "1,250 items/hour",
+    "zh": "1,250件/小时"
+  },
+  "最大 2 m/s": {
+    "en": "Up to 2 m/s",
+    "zh": "最高 2 m/s"
+  },
+  "つばめちゃん家族｜3モデルの標準仕様": {
+    "en": "Tsubame family: standard specifications for three models",
+    "zh": "つばめちゃん系列｜三款型号标准规格"
+  },
+  "つばめちゃん 標準仕様比較": {
+    "en": "Tsubame standard specification comparison",
+    "zh": "つばめちゃん标准规格对比"
+  },
+  "大型物流センター、宅配便・EC物流の大量仕分けに適した3D仕分けシステムです。T-MX-72-Jの標準仕様は72間口、処理能力10,800個/時で、一次仕分け・二次仕分けに対応します。": {
+    "en": "A 3D sorter for high-volume parcel and e-commerce operations at large logistics centers. Standard T-MX-72-J specifications provide 72 destinations and throughput of 10,800 items/hour for primary and secondary sorting.",
+    "zh": "面向大型物流中心、快递及电商大批量分拣的3D设备。T-MX-72-J标准规格为72格口、10,800件/小时，可用于一次及二次分拣。"
+  },
+  "10,800個/時": {
+    "en": "10,800 items/hour",
+    "zh": "10,800件/小时"
+  },
+  "対応荷物寸法（mm）": {
+    "en": "Parcel dimensions (mm)",
+    "zh": "适用货物尺寸（mm）"
+  },
+  "高速・大量処理向け": {
+    "en": "High-volume sorting",
+    "zh": "高速、大批量处理"
+  },
+  "高速走行と多間口構成により、大量処理を必要とする仕分け工程に対応します。": {
+    "en": "High-speed transport and multiple destinations support operations handling large parcel volumes.",
+    "zh": "通过高速运行与多格口配置，支持大批量货物分拣现场。"
+  },
+  "一次・二次仕分けに対応": {
+    "en": "Primary and secondary sorting",
+    "zh": "支持一次与二次分拣"
+  },
+  "物流センター、宅配便・EC物流の仕分け工程に応じて、搬送設備・投入設備との接続構成を検討します。": {
+    "en": "Integration with conveying and induction equipment is planned for logistics-center, parcel and e-commerce workflows.",
+    "zh": "可按物流中心、快递及电商分拣工序，研究与输送、供件设备的联动。"
+  },
+  "モデルの選び方": {
+    "en": "Choosing a model",
+    "zh": "如何选择型号"
+  },
+  "必要処理能力、設置スペース、運用要件に基づいて機種を選定します。おまかせくん・つばめちゃんは、いずれも一次仕分け・二次仕分けに対応します。": {
+    "en": "Choose according to throughput, available space and operations. Both Omakase and Tsubame support primary and secondary sorting.",
+    "zh": "根据处理量、安装空间与运营方式选型。おまかせくん与つばめちゃん均支持一次及二次分拣。"
+  },
+  "おまかせくん・つばめちゃん 選定比較": {
+    "en": "Omakase and Tsubame selection comparison",
+    "zh": "おまかせくん与つばめちゃん选型对比"
+  },
+  "位置づけ": {
+    "en": "Positioning",
+    "zh": "定位"
+  },
+  "大型・高速型3D仕分けシステム": {
+    "en": "Large, high-speed 3D sorter",
+    "zh": "大型、高速3D分拣设备"
+  },
+  "小型・中型の省スペース仕分けシステム": {
+    "en": "Small to medium, space-saving sorter",
+    "zh": "小型至中型节省空间型分拣设备"
+  },
+  "1,000〜1,400個/時（モデルによる）": {
+    "en": "1,000–1,400 items/hour, depending on model",
+    "zh": "1,000～1,400件/小时（因型号而异）"
+  },
+  "参考設置面積": {
+    "en": "Indicative footprint",
+    "zh": "安装面积参考"
+  },
+  "約100 m²（パンフレット比較表の目安）": {
+    "en": "Approx. 100 m², indicative brochure comparison",
+    "zh": "约100 m²（宣传册对比表参考值）"
+  },
+  "約12 m²（パンフレット比較表の目安）": {
+    "en": "Approx. 12 m², indicative brochure comparison",
+    "zh": "约12 m²（宣传册对比表参考值）"
+  },
+  "主な適用現場": {
+    "en": "Suitable operations",
+    "zh": "适用现场"
+  },
+  "大型物流センター、宅配・ECの大量仕分け": {
+    "en": "Large logistics centers and high-volume parcel/e-commerce sorting",
+    "zh": "大型物流中心、快递与电商大批量分拣"
+  },
+  "設置スペースが限られる小規模・中規模拠点、二次仕分け工程": {
+    "en": "Limited space, small to medium facilities and secondary sorting",
+    "zh": "有限空间、中小型网点及二次分拣"
+  },
+  "参考設置面積は、全モデルに共通する保証値ではありません。設備寸法に加え、作業動線、保守点検スペース、周辺設備を考慮して、必要な設置面積を確認します。": {
+    "en": "The indicative footprint is not a guaranteed value for every model. Layouts must allow for equipment dimensions, workflows, maintenance access and peripheral equipment.",
+    "zh": "安装面积并非各型号通用的保证值。布局需结合设备尺寸、作业动线、维护空间及周边设备确认。"
+  },
+  "本ページの処理能力は、型式別の標準仕様に基づきます。なお、会社パンフレットの機種比較ページには、おまかせくんを「10,000個/時から」とする別表記があります。": {
+    "en": "Throughput here follows the model-specific standard specification. The brochure comparison page separately describes Omakase as starting from 10,000 items/hour.",
+    "zh": "此处处理能力统一采用具体型号的标准规格。公司宣传册对比页另有おまかせくん“10,000件/小时起”的表述。"
+  },
+  "10,800個/時 (T-MX-72-J)": {
+    "en": "10,800 items/hour (T-MX-72-J)",
+    "zh": "10,800件/小时 (T-MX-72-J)"
+  },
+  "製造・開発・統括の3拠点が連携する事業体制": {
+    "en": "Three connected sites: technology, manufacturing, sales and quality",
+    "zh": "三地协同，贯通技术、制造、销售与品质"
+  },
+  "中国の製造・研究開発拠点と日本本社が連携し、企画・設計から導入・保守までを一貫して推進します。": {
+    "en": "Our Chinese manufacturing and development sites work with our Japanese headquarters to coordinate planning, implementation and support.",
+    "zh": "中国的制造、研发据点与日本总部协作，一体推进从规划到导入及支持的工作。"
+  },
+  "中国常州工場｜製造拠点": {
+    "en": "Changzhou factory, China | Manufacturing",
+    "zh": "中国常州工厂｜制造据点"
+  },
+  "板金加工、溶接、塗装、組立、検査・出荷を担う製造拠点です。生産能力、コスト競争力、製造リードタイムを強みに、製品の安定供給を支えます。": {
+    "en": "Handles sheet-metal processing, welding and coating, assembly, inspection and shipping, with strengths in manufacturing capacity, cost competitiveness and production speed.",
+    "zh": "负责钣金加工、焊接与喷涂、组装、检验及出货，以制造能力、成本竞争力和生产速度为优势。"
+  },
+  "中国蘇州 設計・研究開発センター｜開発拠点": {
+    "en": "Suzhou design and R&D center, China | Development",
+    "zh": "中国苏州设计与研发中心｜研发据点"
+  },
+  "研究開発、技術設計、試作・評価、性能検証を担う開発拠点です。技術力の向上と開発の迅速化を図り、製品・システムの高度化を推進します。": {
+    "en": "Handles research and development, engineering design, prototyping, validation and performance testing, supporting technical capability, development speed and innovation.",
+    "zh": "负责研究开发、技术设计、试制验证和性能验证，支持技术能力、研发速度与创新。"
+  },
+  "日本本社（岐阜県多治見市）｜統括拠点": {
+    "en": "Japanese headquarters, Tajimi, Gifu | Coordination",
+    "zh": "日本总部（岐阜县多治见市）｜统筹据点"
+  },
+  "営業・技術提案、マーケティング、保守・技術支援、品質管理を担う統括拠点です。お客様の運用要件と現場課題を把握し、設備構成の提案と継続的な改善を推進します。": {
+    "en": "Handles sales and proposals, marketing, maintenance support and quality management, translating customer requirements into improvement activities and solution proposals.",
+    "zh": "负责销售与提案、市场推广、维护支持及品质管理，听取客户需求，推进改善活动与解决方案提案。"
+  },
+  "各拠点の専門機能を連携させ、開発・製造・品質管理・顧客対応を一体的に進めることで、お客様の事業を支えます。": {
+    "en": "We support our customers through global collaboration, responsive service and stable supply backed by quality management.",
+    "zh": "通过全球协同、迅速响应及品质管理，追求稳定供应，支持客户业务。"
+  },
+  "2生産拠点の総生産面積は62,000 m²（東京ドーム約1.3個分）です。会社パンフレットでは、品質認定の取得とトヨタ生産方式（TPS）の導入による改善活動を紹介しています。": {
+    "en": "Factory area totals 62,000 m², approximately 1.3 Tokyo Domes. The company brochure describes quality certification and improvement initiatives through adoption of TPS.",
+    "zh": "工厂面积为62,000 m²（约相当于1.3个东京巨蛋）。公司宣传册介绍了品质认证取得及导入TPS的改善举措。"
+  },
+  "つばめちゃんの製品構造": {
+    "en": "Tsubame structure",
+    "zh": "つばめちゃん产品结构"
+  },
+  "仕分け本体、スキャナ、仕分け間口、インダクション（投入部）で構成します。投入・読取り・搬送・仕分けの各工程を、現場の運用条件に応じて設計します。": {
+    "en": "The system comprises the sorter body, scanner, sorting destinations and induction. Induction, scanning, transport and sorting are designed around site operations.",
+    "zh": "由分拣主体、扫描器、分拣格口及供件口组成，按现场作业设计供件、读取、输送与分拣流程。"
+  },
+  "最大搬送速度": {
+    "en": "Maximum conveying speed",
+    "zh": "最大输送速度"
+  },
+  "SorterMX-5の製品仕様を見る →": {
+    "en": "View SorterMX-5 specifications →",
+    "zh": "查看SorterMX-5产品规格 →"
+  },
+  "設備導入について相談する →": {
+    "en": "Discuss equipment implementation →",
+    "zh": "咨询设备导入 →"
+  },
+  "会社概要を見る →": {
+    "en": "View company profile →",
+    "zh": "查看公司概要 →"
+  },
+  "― 日本品質 × 中国製造 × AI技術が創る―": {
+    "en": "― Created through Japanese quality × Chinese manufacturing × AI technology ―",
+    "zh": "― 日本品质 × 中国制造 × AI技术共同创造 ―"
+  },
+  "現場に優しい技術アイディア": {
+    "en": "Technology ideas that care for people at work",
+    "zh": "贴近现场的技术创意"
+  },
+  "江蘇省常州市": {
+    "en": "Changzhou, Jiangsu, China",
+    "zh": "江苏省常州市"
+  },
+  "会社概要 | AUTOMAIX": {
+    "en": "Company profile | AUTOMAIX",
+    "zh": "公司概要 | AUTOMAIX"
+  },
+  "― 日本品質 × 中国製造 × AI技術が創る ―": {
+    "en": "― Japanese quality × Chinese manufacturing × AI technology ―",
+    "zh": "― 日本品质 × 中国制造 × AI技术共同创造 ―"
+  },
+  "Automaixは、日本のものづくりが長年培ってきた高い品質意識と現場改善の精神、ならびにトヨタ生産方式に代表される無駄の削減・標準化・継続的改善の考え方に、中国の優れた製造技術と生産力、さらに先進的なAI技術を融合した、スマート物流・自動化設備の開発・設計・製造メーカーです。": {
+    "en": "Automaix develops, designs and manufactures smart logistics and automation equipment. We combine Japan’s long-standing commitment to quality and workplace improvement, including the waste reduction, standardization and continuous improvement exemplified by the Toyota Production System, with China’s manufacturing expertise and capacity and advanced AI technology.",
+    "zh": "Automaix是一家智能物流及自动化设备的开发、设计与制造企业。我们将日本制造长期积累的品质意识与现场改善精神、以丰田生产方式为代表的消除浪费、标准化和持续改善理念，与中国的制造技术、生产能力及先进AI技术相融合。"
+  },
+  "物流・製造現場が抱える人手不足、作業負担、安全性、品質、生産性などのさまざまな課題に対し、企画・設計から製造、導入、アフターサポートに至るまで、一貫したソリューションをご提供いたします。私たちが目指しているのは、効率だけを追求する自動化ではありません。人に寄り添い、働く方々の負担を軽減するとともに、安全と安心を支える「ぬくもりのある自動化」の実現を目指しています。": {
+    "en": "We provide integrated solutions from planning and design through manufacturing, implementation and after-sales support, addressing labor shortages, workload, safety, quality and productivity challenges in logistics and manufacturing. Our goal extends beyond efficiency: we aim to create automation with a human touch, reducing the burden on workers and supporting safety and peace of mind.",
+    "zh": "针对物流与制造现场面临的人手不足、作业负担、安全、品质及生产效率等课题，提供从规划、设计到制造、导入和售后支持的一体化解决方案。我们不仅追求效率，更致力于实现贴近人的“有温度的自动化”，减轻工作负担，支持安全与安心。"
+  },
+  "Automaixの理念：AI＝人工知能＋愛、AUTO＝自動化、MAX＝最大限": {
+    "en": "The Automaix concept: AI means artificial intelligence and care; AUTO means automation; MAX means maximizing potential.",
+    "zh": "Automaix理念：AI＝人工智能＋爱、AUTO＝自动化、MAX＝最大限度"
+  },
+  "人工知能＋愛": {
+    "en": "Intelligence + Care",
+    "zh": "人工智能＋爱"
+  },
+  "自動化": {
+    "en": "Automation",
+    "zh": "自动化"
+  },
+  "最大限": {
+    "en": "Maximum",
+    "zh": "最大限度"
+  },
+  "私たちの思い": {
+    "en": "Our vision",
+    "zh": "我们的理念"
+  },
+  "沿革": {
+    "en": "Our history",
+    "zh": "发展历程"
+  },
+  "自社工場の年間売上高": {
+    "en": "Annual sales of our factories",
+    "zh": "自有工厂年度销售额"
+  },
+  "単位：百万米ドル": {
+    "en": "Unit: USD millions",
+    "zh": "单位：百万美元"
+  },
+  "海外導入事例": {
+    "en": "Overseas installations",
+    "zh": "海外应用案例"
+  },
+  "中国国内事例：": {
+    "en": "Projects in China:",
+    "zh": "中国国内案例："
+  },
+  "淮安・合肥（2026年10月時点）。": {
+    "en": "Huai’an and Hefei (as of October 2026).",
+    "zh": "淮安、合肥（截至2026年10月）。"
+  },
+  "OUR VISION": {
+    "en": "OUR VISION",
+    "zh": "OUR VISION"
+  },
+  "OVERSEAS PROJECTS": {
+    "en": "OVERSEAS PROJECTS",
+    "zh": "OVERSEAS PROJECTS"
+  },
+  "SALES PERFORMANCE": {
+    "en": "SALES PERFORMANCE",
+    "zh": "SALES PERFORMANCE"
+  },
+  "ベトナム": {
+    "en": "Vietnam",
+    "zh": "越南"
+  },
+  "スペイン": {
+    "en": "Spain",
+    "zh": "西班牙"
+  },
+  "イスラエル": {
+    "en": "Israel",
+    "zh": "以色列"
+  },
+  "BEST Express": {
+    "en": "BEST Express",
+    "zh": "百世快递"
+  },
+  "菜鳥（Cainiao）": {
+    "en": "Cainiao",
+    "zh": "菜鸟（Cainiao）"
+  },
+  "通信事業者向けプロジェクト": {
+    "en": "Telecom operator project",
+    "zh": "电信运营商项目"
   }
 }

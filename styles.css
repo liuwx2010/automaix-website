@@ -149,3 +149,239 @@ html[lang=en] .spec-table th{width:34%}
 
 #form-validation-message:not(:empty){color:#7d2317;background:#fff5f3;border-left:3px solid #a33c28;padding:10px 14px;margin-top:14px;font-size:.85rem}
 [hidden]{display:none!important}.registration-layout{max-width:1000px}.registration-layout h2{margin-bottom:18px}.registration-layout>div>.small{margin-top:20px}#download-form{padding:28px;border:1px solid var(--gray-300);border-radius:8px;background:var(--blueprint-pale)}#download-form>.small{margin-bottom:20px}#download-form .consent-row{display:flex;align-items:flex-start;gap:10px;font-weight:400;line-height:1.7}#download-form .consent-row input{width:20px;height:20px;flex:0 0 20px;margin:3px 0 0}#download-status{margin:16px 0;font-size:.9rem;overflow-wrap:anywhere}#download-file{margin-top:16px}.btn:disabled{opacity:.65;cursor:wait}@media(max-width:600px){#download-form{padding:20px}#download-form>.btn{width:100%}}
+
+/* Text content from the company brochure; uses the existing site palette. */
+.brochure-mission{margin:2rem 0 3rem;padding:clamp(1.2rem,3vw,2.5rem);background:var(--gray-100);border-left:4px solid var(--blueprint)}
+.brochure-mission h2{font-size:clamp(1.5rem,3vw,2rem);color:var(--blueprint-deep);margin-bottom:1rem}
+.brochure-mission h3{margin-bottom:1rem}.brochure-mission p+p{margin-top:1rem}
+.brochure-values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.5rem 0}.brochure-values h3{font-size:1rem}
+.brochure-timeline>div{display:grid;grid-template-columns:110px 1fr;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--gray-200)}
+.brochure-timeline dt,.brochure-equipment dt{font-weight:700;color:var(--blueprint-deep)}
+.brochure-flow{list-style:none;counter-reset:workflow;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;padding:0;margin:2rem 0}
+.brochure-flow li{counter-increment:workflow;background:white;padding:1.2rem;border-top:3px solid var(--blueprint)}
+.brochure-flow li:before{content:counter(workflow,decimal-leading-zero);color:var(--blueprint);font-weight:700}
+.brochure-flow h3{font-size:1rem;margin:.6rem 0}.brochure-flow p{font-size:.88rem}
+.brochure-equipment{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.3rem;margin-top:1.5rem}.brochure-equipment dd{margin:.5rem 0 0;font-size:.9rem}
+.brochure-specs{margin:3rem 0}.brochure-specs h2{margin-bottom:1rem}.brochure-specs p{margin:1rem 0}.brochure-specs .spec-table{min-width:700px}
+@media(max-width:800px){.brochure-values,.brochure-equipment{grid-template-columns:1fr}.brochure-flow{grid-template-columns:repeat(2,minmax(0,1fr))}.brochure-timeline>div{grid-template-columns:85px 1fr}}
+@media(max-width:450px){.brochure-flow{grid-template-columns:1fr}}
+
+/* Japanese corporate typography: use local Japanese gothic fonts, with no web-font request. */
+html[lang="ja"] {
+  --font-ja: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, Meiryo, sans-serif;
+  line-break: strict;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+html[lang="ja"] body {
+  font-family: var(--font-ja);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: .025em;
+}
+html[lang="ja"] :is(h1,h2,h3,h4,h5,summary) {
+  font-family: var(--font-ja);
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: .035em;
+  word-break: normal;
+}
+html[lang="ja"] :is(p,li,dd,td) {
+  line-break: strict;
+  word-break: normal;
+}
+html[lang="ja"] p + p { margin-top: 1.25em; }
+html[lang="ja"] .hero h1 {
+  font-size: clamp(2rem,3.4vw,2.875rem);
+  font-weight: 700;
+  line-height: 1.6;
+}
+html[lang="ja"] .hero-lead { font-size: 1.0625rem; line-height: 1.95; }
+html[lang="ja"] .page-title h1 { font-size: clamp(1.75rem,3.1vw,2.375rem); }
+html[lang="ja"] :is(.section-heading h2,.brochure-mission h2) { font-size: clamp(1.5rem,2.6vw,2rem); }
+html[lang="ja"] .brochure-mission { max-width: 1060px; }
+html[lang="ja"] .brochure-mission p { max-width: 54em; line-height: 2; }
+html[lang="ja"] .prose { max-width: 50rem; }
+html[lang="ja"] .prose h2 { margin-top: 2.5rem; margin-bottom: 1rem; }
+html[lang="ja"] .prose > h2:first-child { margin-top: 0; }
+html[lang="ja"] .prose p { line-height: 2; }
+html[lang="ja"] :is(.product-body > p:not(.product-model),.movie-card p,.movie-card a,.company-summary p,.steps p,.feature-list p,.detail-consult p,.partner-block > p,.partner-locations p,.partner-quality p,.partner-quality li,.partner-history dd,.partner-project-list,.partner-support p,.brochure-flow p,.brochure-equipment dd,.download-card > p:not(.eyebrow),.putwall-detail-body > p,.inquiry-result p) {
+  font-size: .9375rem;
+  line-height: 1.9;
+}
+html[lang="ja"] :is(.small,.catalog-note,.partner-scope,.putwall-note,.case-preview p,.factory-gallery figcaption,.partner-case-grid time,.putwall-variants figcaption) {
+  font-size: .875rem;
+  line-height: 1.85;
+}
+html[lang="ja"] :is(.main-nav a,.company-jump,.company .section-header .more,.product-tabs button,.news-tabs button,.company-summary dl > div,.contact-grid label,.text-link,.product-body > .text-link,.news-item h3) { font-size: .9375rem; }
+html[lang="ja"] :is(.btn,.form-actions .btn) { font-size: .9375rem; line-height: 1.65; letter-spacing: .02em; }
+html[lang="ja"] :is(input,select,textarea) { font-size: 1rem; line-height: 1.7; letter-spacing: normal; }
+html[lang="ja"] :is(.spec-table,.putwall-table,.partner-sales table,.profile-table th,.profile-table td) { font-size: .9375rem; }
+html[lang="ja"] :is(.spec-table th,.spec-table td,.putwall-table th,.putwall-table td,.profile-table th,.profile-table td) {
+  padding: 1rem 1.125rem;
+  vertical-align: top;
+  line-height: 1.85;
+}
+html[lang="ja"] :is(.spec-table thead th,.putwall-table thead th) { text-align: center; width: auto; }
+html[lang="ja"] :is(.spec-table thead th:first-child,.putwall-table thead th:first-child) { text-align: left; }
+html[lang="ja"] :is(.spec-table caption,.putwall-table caption,.partner-sales caption) { font-size: 1rem; line-height: 1.7; }
+html[lang="ja"] :is(.spec-table td,.putwall-table td,.partner-sales td,time,.product-model) { font-variant-numeric: lining-nums tabular-nums; letter-spacing: normal; }
+html[lang="ja"] .partner-sales :is(th:not(:first-child),td) { text-align: right; }
+html[lang="ja"] .partner-metrics :is(dd,dd span),
+html[lang="ja"] .partner-history dt { font-family: var(--font-ja); }
+html[lang="ja"] .partner-metrics dd { line-height: 1.4; letter-spacing: normal; }
+html[lang="ja"] .partner-metrics dt { font-size: .875rem; line-height: 1.7; }
+html[lang="ja"] .partner-metrics dd span { font-size: .875rem; }
+html[lang="ja"] .site-footer :is(p,a) { font-size: .875rem; line-height: 1.85; }
+@media (min-width: 801px) and (max-width: 1200px) {
+  html[lang="ja"] .header-main { gap: 14px; }
+  html[lang="ja"] .main-nav { gap: 12px; }
+  html[lang="ja"] .main-nav a { font-size: .8125rem; }
+}
+@media (max-width: 800px) {
+  html[lang="ja"] .hero h1 { font-size: clamp(1.375rem,5.8vw,2rem); line-height: 1.65; }
+  html[lang="ja"] .hero-lead { font-size: 1rem; }
+  html[lang="ja"] .main-nav a { font-size: 1rem; }
+  html[lang="ja"] .brochure-values h3 { font-size: 1rem; }
+  html[lang="ja"] :is(.spec-table th,.spec-table td,.putwall-table th,.putwall-table td,.company .profile-table tbody th,.company .profile-table td) { padding: .875rem .75rem; font-size: .9375rem; }
+  html[lang="ja"] .company .profile-table tr { grid-template-columns: 112px minmax(0,1fr); }
+}
+@media (max-width: 360px) {
+  html[lang="ja"] :is(.btn,.form-actions .btn,.product-tabs button,.news-tabs button) { font-size: .875rem; }
+  html[lang="ja"] .company .profile-table tr { grid-template-columns: 96px minmax(0,1fr); }
+}
+
+/* Requested hero message: three lines, with the English label positioned higher. */
+.hero-content > .eyebrow { position: relative; top: -24px; }
+@media (max-width: 800px) {
+  .hero-content > .eyebrow { top: -16px; }
+  html[lang="ja"] .hero h1 { font-size: clamp(1.125rem,5.3vw,2rem); }
+}
+@media (max-width: 800px) {
+  html[lang="ja"] .hero-lead { font-size: clamp(.8125rem,3.7vw,1rem); }
+}
+
+/* Brand introduction: editable HTML text and a three-circle concept diagram. */
+.brand-introduction{--brand-ink:#244d90;color:var(--brand-ink);background:#fff}
+.brand-introduction-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:56px;align-items:center}
+.brand-introduction-copy h3{font-size:clamp(1.15rem,2vw,1.75rem);font-weight:700;line-height:1.55;margin:0 0 30px;letter-spacing:.04em}
+.brand-introduction-copy h3>span{display:block}
+.brand-introduction-copy p{font-size:1rem;line-height:1.65;letter-spacing:.04em}
+.brand-introduction-copy p+p{margin-top:1.4em}
+.brand-concept{position:relative;width:100%;max-width:360px;aspect-ratio:440/430;margin-inline:auto;color:var(--brand-ink)}
+.brand-concept-links{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:5;stroke-dasharray:3 6}
+.concept-circle{position:absolute;width:44%;aspect-ratio:1;border:4px solid currentColor;outline:5px dotted currentColor;outline-offset:3px;border-radius:50%;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:0;line-height:1.45;font-size:clamp(1rem,1.7vw,1.375rem);font-weight:700;letter-spacing:.01em}
+.concept-circle strong{font-family:Arial,sans-serif;font-size:1em;line-height:1.45}
+.concept-circle span{padding-inline:5px}
+.concept-ai{top:2%;left:50%;transform:translateX(-50%)}
+.concept-auto{bottom:2%;left:2%}.concept-max{bottom:2%;right:2%}
+html[lang="ja"] .brand-introduction-copy h3{font-size:clamp(1.15rem,2vw,1.75rem);line-height:1.55}
+html[lang="ja"] .brand-introduction-copy p{line-height:1.65}
+html[lang="en"] .concept-circle{font-size:clamp(.9rem,1.45vw,1.2rem)}
+@media(max-width:950px){.brand-introduction-grid{grid-template-columns:minmax(0,1fr);gap:40px}.brand-introduction-copy{max-width:720px;margin-inline:auto}.brand-concept{max-width:320px}.concept-circle{font-size:clamp(1rem,4.8vw,1.25rem)}html[lang="en"] .concept-circle{font-size:clamp(.85rem,3.8vw,1.125rem)}}
+@media(max-width:450px){.brand-introduction-copy h3,html[lang="ja"] .brand-introduction-copy h3{font-size:1.125rem;line-height:1.7}.brand-introduction-copy p{font-size:.9375rem;line-height:1.85}html[lang="ja"] .brand-introduction-copy p{line-height:1.85}.concept-circle{border-width:3px;outline-width:4px;outline-offset:2px}.brand-introduction-grid{gap:32px}}
+@media (min-width: 951px) {
+  .brand-introduction-grid { align-items: center; }
+  .brand-concept { margin-top: 0; }
+  .brand-introduction-copy h3 > span + span { padding-left: 1.5em; }
+}
+
+/* Manufacturing and development descriptions in the factory section. */
+.factory-function-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin:24px 0 32px}
+.factory-function-grid>section{padding:24px;background:var(--gray-100);border-top:2px solid var(--blueprint)}
+.factory-function-grid h4{font-size:1.125rem;line-height:1.7;margin:0 0 12px;color:var(--blueprint-deep)}
+.factory-function-grid p{color:var(--text-light);line-height:1.9;font-size:.9375rem}
+@media(max-width:800px){.factory-function-grid{grid-template-columns:1fr;gap:20px}.factory-function-grid>section{padding:20px}}
+
+.brand-introduction-heading{margin-bottom:36px}
+.brand-introduction-heading h2{color:var(--text)}
+@media(max-width:800px){.brand-introduction-heading{margin-bottom:28px}}
+
+/* Unified chronology: distinguish factory milestones from the Japanese company. */
+.company-history-section{margin-top:64px;padding-top:40px;border-top:1px solid var(--gray-200)}
+.company-history-heading{margin-bottom:28px}
+.company-history-heading h3{font-size:1.75rem;color:var(--text);line-height:1.5}
+.company-milestones{list-style:none;padding:0;margin:0;max-width:1080px}
+.company-milestone{position:relative;display:grid;grid-template-columns:160px minmax(0,1fr);gap:44px;padding:0 0 22px}
+.company-milestone::before{content:"";position:absolute;left:177px;top:30px;bottom:-30px;width:2px;background:var(--gray-200)}
+.company-milestone::after{content:"";position:absolute;left:172px;top:25px;width:12px;height:12px;background:white;border:3px solid var(--blueprint);border-radius:50%}
+.company-milestone:last-child{padding-bottom:0}.company-milestone:last-child::before{display:none}
+.milestone-date{padding-top:16px;color:var(--blueprint-deep);font-family:Arial,sans-serif;font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:0;line-height:1.5}
+.milestone-content{padding:20px 24px;background:var(--gray-100);border:1px solid var(--gray-200);border-radius:8px}
+.milestone-category{display:inline-block;padding:3px 10px;border-radius:4px;background:#e5edf3;color:#355369;font-size:.8125rem;font-weight:700;line-height:1.6;margin-bottom:9px}
+.milestone-content p{font-size:.9375rem;line-height:1.85;margin:0}
+.company-milestone-japan .milestone-content{background:var(--blueprint-pale);border-color:#a3c7db}
+.company-milestone-japan .milestone-category{background:var(--blueprint-deep);color:white}
+.company-milestone-japan .milestone-content p{font-weight:700;font-size:1.0625rem}
+.company-milestone-japan::after{background:var(--blueprint);box-shadow:0 0 0 4px var(--blueprint-pale)}
+.company-milestone-japan .milestone-date{font-size:1.25rem;padding-top:18px}
+@media(max-width:800px){.company-history-section{margin-top:44px;padding-top:30px}.company-history-heading h3{font-size:1.5rem}.company-milestone{grid-template-columns:minmax(0,1fr);gap:10px;padding-left:28px;padding-bottom:24px}.company-milestone::before{left:5px;top:18px;bottom:-18px}.company-milestone::after{left:0;top:10px}.milestone-date,.company-milestone-japan .milestone-date{font-size:1.25rem;padding-top:0}.milestone-content{padding:18px}.company-milestone-japan .milestone-content p{font-size:1rem}}
+
+/* Consistent reading hierarchy across the site. */
+:root{--type-body:1rem;--type-note:.875rem;--type-card:1.125rem;--type-section:clamp(1.5rem,2.3vw,2rem)}
+body{font-size:var(--type-body);line-height:1.85}
+:is(h1,h2,h3,h4,h5){text-wrap:pretty}
+:is(.section-heading h2,.company .section-header h2,.partner-heading h3){font-size:var(--type-section);line-height:1.5}
+:is(.product-body h4,.movie-card h3,.company-summary h3,.steps h3,.case-preview h3,.feature-list h3,.download-card h3){font-size:var(--type-card);line-height:1.6}
+html[lang="ja"] :is(.product-body>p:not(.product-model),.movie-card p,.company-summary p,.steps p,.feature-list p,.detail-consult p,.partner-quality p,.partner-quality li,.partner-project-list,.partner-support p,.download-card>p:not(.eyebrow),.factory-function-grid p,.milestone-content p){font-size:1rem;line-height:1.9}
+.eyebrow{font-size:.75rem;line-height:1.6;letter-spacing:.14em;font-weight:700}
+html[lang="ja"] .brand-introduction-copy p{font-size:1rem;line-height:1.9}
+.partner-block>h4,.partner-support h4{font-size:1.25rem;line-height:1.6}
+.partner-section-heading{margin-bottom:28px}
+.partner-section-heading .eyebrow{margin-bottom:8px;color:var(--blueprint)}
+.partner-section-heading h4{margin:0;font-size:clamp(1.5rem,2.3vw,1.875rem);line-height:1.5;color:var(--blueprint-deep)}
+/* One visible heading and one unit label; exact figures remain accessible as a table. */
+.factory-sales-section{margin-top:56px;padding-top:36px;border-top:1px solid var(--gray-200)}
+.partner-sales{max-width:960px;margin:0;padding:28px 32px;border:1px solid var(--gray-200);background:#fff}
+.partner-sales-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.partner-sales-heading h5{font-size:1rem;line-height:1.6;color:var(--blueprint-deep);margin:0}
+.partner-sales-heading p{font-size:.875rem;color:var(--text-light);margin:0}
+.partner-sales table{table-layout:fixed;font-variant-numeric:tabular-nums}
+.partner-sales table th:first-child{width:100px}
+.partner-sales thead th{font-size:.875rem;background:var(--gray-100);color:var(--text-light);font-weight:500}
+.partner-sales th,.partner-sales td{padding:20px 18px}
+.partner-sales tbody th{vertical-align:middle;font-size:1rem;color:var(--blueprint-deep)}
+.partner-sales td{position:relative}
+.sales-value{display:block;position:relative;z-index:1;font-size:1.625rem;line-height:1.4;font-weight:700;color:var(--blueprint-deep);text-align:right;letter-spacing:0}
+.sales-track{position:absolute;left:18px;right:112px;top:calc(50% - 5px);height:10px;background:var(--gray-100)}
+.sales-bar{display:block;width:var(--sales-share);height:100%;background:var(--blueprint);opacity:.7}
+.partner-sales tbody tr:last-child .sales-bar{opacity:1}
+.partner-sales tbody tr:last-child{background:var(--blueprint-pale)}
+.partner-sales tbody tr:last-child th,.partner-sales tbody tr:last-child td{border-bottom:0}
+#partner-projects{margin-top:64px;padding-top:36px;border-top:1px solid var(--gray-200)}
+.partner-case-grid{gap:32px;margin-top:0}
+.partner-case-grid figure{margin:0;background:#fff;border:1px solid var(--gray-200);overflow:hidden;border-radius:6px}
+.partner-case-grid img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center}
+.partner-case-grid figure:first-child img{object-position:center 60%}
+.partner-case-grid figcaption{padding:24px 26px;display:flex;flex-direction:column;align-items:flex-start}
+.project-country{font-size:.875rem;color:var(--blueprint);line-height:1.6;margin-bottom:8px;font-weight:700}
+.partner-case-grid strong{font-size:1.1875rem;line-height:1.6;margin:0 0 12px}
+.partner-case-grid time{display:block;color:var(--text-light);font-size:.875rem;line-height:1.7;padding-top:12px;border-top:1px solid var(--gray-200);width:100%}
+@media(max-width:800px){
+ .factory-sales-section,#partner-projects{margin-top:40px;padding-top:28px}
+ .partner-section-heading{margin-bottom:22px}
+ .partner-sales{padding:20px 16px}
+ .partner-sales table th:first-child{width:68px}
+ .partner-sales th,.partner-sales td{padding:18px 10px}
+ .sales-value{font-size:1.375rem}
+ .sales-track{left:10px;right:88px;height:8px;top:calc(50% - 4px)}
+ .partner-case-grid{gap:24px}
+ .partner-case-grid figcaption{padding:20px}
+ .partner-case-grid strong{font-size:1.125rem}
+ html[lang="ja"] .brand-introduction-copy h3{font-size:1.125rem;line-height:1.7}
+ html[lang="ja"] .brand-introduction-copy p{font-size:1rem;line-height:1.9}
+}
+
+/* Decorative motion: separate foreground people and two non-interactive mascots. */
+.hero-scene{position:absolute;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none}
+.hero-people{transform-box:fill-box;transform-origin:50% 98%;animation:hero-conversation 4.6s ease-in-out infinite}
+@keyframes hero-conversation{0%,100%{transform:rotate(-.8deg) translateY(0)}45%{transform:rotate(.8deg) translateY(-5px)}70%{transform:rotate(.1deg) translateY(-1px)}}
+.site-mascots{position:fixed;inset:0;z-index:35;pointer-events:none;overflow:hidden;contain:strict}
+.site-mascot{position:absolute;top:0;left:0;width:66px;height:78px;will-change:transform;pointer-events:none}
+.site-mascot img{width:100%;height:100%;object-fit:contain;animation:mascot-step .48s ease-in-out infinite alternate;transform-origin:50% 95%;filter:drop-shadow(0 3px 2px #163c551a)}
+@keyframes mascot-step{from{transform:translateY(0) rotate(-3deg)}to{transform:translateY(-5px) rotate(3deg)}}
+.motion-toggle{position:fixed;right:16px;bottom:16px;z-index:36;display:flex;align-items:center;gap:6px;padding:7px 11px;background:#ffffffed;border:1px solid #c6d6e1;border-radius:5px;color:#35566c;font-size:12px;line-height:1.6;box-shadow:0 2px 8px #183c5510;cursor:pointer}
+.motion-paused .site-mascot img,.motion-paused .hero-people{animation-play-state:paused}
+@media(max-width:800px){.site-mascot{width:48px;height:58px}.motion-toggle{right:10px;bottom:10px;font-size:11px;padding:6px 9px}}
+@media(prefers-reduced-motion:reduce){.site-mascots{display:none}.hero-people{animation:none}.motion-toggle{display:none}}

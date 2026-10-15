@@ -3,11 +3,11 @@
   const language = document.documentElement.lang;
   const messages = {
     ja: {
-      menuOpen: 'メニューを開く', menuClose: 'メニューを閉じる', newsCount: '{count}件のお知らせを表示しています。', required: 'この項目を入力してください。', validEmail: '有効なメールアドレスを入力してください。',
-      copied: 'コピーしました。', copyFailed: '自動コピーができませんでした。表示された文面またはメールアドレスを選択してコピーしてください。',
-      subject: '製品の導入相談：{product}', greeting: '株式会社Automaix ご担当者様', intro: '下記の内容について相談します。',
+      menuOpen: 'メニューを開く', menuClose: 'メニューを閉じる', newsCount: '{count}件のお知らせを表示しています。', required: 'この項目を入力してください。', validEmail: 'メールアドレスの形式をご確認ください。',
+      copied: 'コピーしました。', copyFailed: 'コピーできませんでした。表示された下書きまたはメールアドレスを選択し、手動でコピーしてください。',
+      subject: '設備導入に関するお問い合わせ：{product}', greeting: '株式会社Automaix ご担当者様', intro: '下記のとおり、設備導入についてご相談いたします。',
       product: '製品', company: '会社名', name: 'お名前', email: 'メール', message: 'ご相談内容', notSpecified: '未記入', to: '宛先', subjectLabel: '件名',
-      ready: '文面を準備しました。まだ送信していません。メールアプリで確認して送信してください。', saved: '文面の保存を開始しました。メールはまだ送信していません。'
+      ready: 'メールの下書きを作成しました。内容をご確認のうえ、メールアプリから送信してください。この時点では送信されていません。', saved: 'メールの下書きの保存を開始しました。メールは送信されていません。'
     },
     en: {
       menuOpen: 'Open menu', menuClose: 'Close menu', newsCount: 'Showing {count} announcements.', required: 'Please complete this field.', validEmail: 'Please enter a valid email address.',
@@ -159,13 +159,13 @@
   const form=document.getElementById('download-form');if(!form)return;
   const locale=document.documentElement.lang==='zh-CN'?'zh':document.documentElement.lang;
   const labels={
-    ja:{busy:'登録内容を送信しています…',ready:'登録が完了しました。下のボタンから会社資料をダウンロードできます（10分間有効）。',download:'会社紹介PDFをダウンロード',failed:'送信できませんでした。入力内容は保持されています。しばらくして再度お試しください。',unavailable:'現在、登録サービスの準備中です。info@automaix.co.jpへお問い合わせください。',rate:'送信回数が上限に達しました。15分後に再度お試しください。',invalid:'必須項目とメールアドレス、同意欄をご確認ください。'},
+    ja:{busy:'登録内容を送信しています…',ready:'登録が完了しました。下のボタンから会社紹介PDFをダウンロードしてください（ダウンロード権限は10分間有効です）。',download:'会社紹介PDFをダウンロード',failed:'登録内容を送信できませんでした。入力内容は画面上に保持されています。時間をおいて、再度お試しください。',unavailable:'現在、資料のダウンロード登録をご利用いただけません。info@automaix.co.jpまでお問い合わせください。',rate:'送信回数が上限に達しました。15分後に、再度お試しください。',invalid:'必須項目、メールアドレスの形式、および個人情報の利用に関する同意欄をご確認ください。'},
     en:{busy:'Sending your registration…',ready:'Registration complete. Download the brochure below within 10 minutes.',download:'Download company brochure PDF',failed:'We could not send your registration. Your entries are still here. Please try again shortly.',unavailable:'The registration service is being set up. Please contact info@automaix.co.jp.',rate:'Too many attempts. Please try again in 15 minutes.',invalid:'Please check required fields, your email and the consent checkbox.'},
     zh:{busy:'正在提交登记…',ready:'登记成功，请点击下方按钮下载公司资料（10 分钟内有效）。',download:'下载公司介绍 PDF',failed:'登记发送失败，填写内容已保留，请稍后重试。',unavailable:'登记服务正在配置中，请联系 info@automaix.co.jp 获取资料。',rate:'提交过于频繁，请 15 分钟后再试。',invalid:'请检查必填资料、邮箱格式，并勾选个人信息使用同意项。'}
   }[locale];
   const status=document.getElementById('download-status'),file=document.getElementById('download-file'),button=form.querySelector('button[type="submit"]');
   let grantTimer;
-  const expired={ja:'ダウンロード期限が切れました。もう一度登録してください。',en:'Your download permission has expired. Please submit the form again.',zh:'下载权限已过期，请重新提交登记。'}[locale];
+  const expired={ja:'ダウンロード権限の有効期限が切れました。お手数ですが、再度ご登録ください。',en:'Your download permission has expired. Please submit the form again.',zh:'下载权限已过期，请重新提交登记。'}[locale];
   form.method='dialog';
   form.addEventListener('invalid',()=>{status.textContent=labels.invalid;},true);
   form.addEventListener('input',()=>{clearTimeout(grantTimer);if(!button.disabled)status.textContent='';file.hidden=true;});
@@ -186,4 +186,58 @@
     }catch{status.textContent=labels.failed;}
     finally{clearTimeout(timeout);button.disabled=false;form.removeAttribute('aria-busy');}
   });
+})();
+
+// Decorative mascots never receive pointer input or move the page layout.
+(() => {
+  'use strict';
+  const lang = document.documentElement.lang;
+  const labels = lang === 'ja' ? ['アニメーションを停止','アニメーションを再生'] : lang.startsWith('zh') ? ['暂停动画','播放动画'] : ['Pause animation','Play animation'];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+  const assetBase = new URL('.', document.currentScript.src);
+  const layer = document.createElement('div');
+  layer.className = 'site-mascots'; layer.setAttribute('aria-hidden','true');
+  const toggle = document.createElement('button');
+  toggle.type = 'button'; toggle.className = 'motion-toggle';
+  let paused = false;
+  try { paused = localStorage.getItem('automaix-motion-paused') === 'true'; } catch {}
+  const mascots = ['mascot-worker.png','mascot-penguin.png'].map((file,index) => {
+    const element = document.createElement('div'); element.className = 'site-mascot';
+    const img = document.createElement('img'); img.src = new URL('images/' + file,assetBase).href; img.alt = ''; img.width = 132; img.height = 156; img.decoding = 'async';
+    element.append(img); layer.append(element);
+    return {element,index,x:0,y:0,animation:null};
+  });
+  document.body.append(layer,toggle);
+  function bounds(item) {
+    const width = document.documentElement.clientWidth, height = innerHeight;
+    return {maxX:Math.max(8,width-item.element.offsetWidth-8),minY:Math.min(130,height*.3),maxY:Math.max(140,height-item.element.offsetHeight-60)};
+  }
+  function place(item) {
+    const b = bounds(item); item.x = item.index ? b.maxX : 8; item.y = b.maxY;
+    item.element.style.transform = `translate3d(${item.x}px,${item.y}px,0)`;
+  }
+  function travel(item) {
+    if (paused || reduced.matches || document.hidden) return;
+    const b = bounds(item), nextX = 8+Math.random()*Math.max(0,b.maxX-8), nextY = b.minY+Math.random()*Math.max(0,b.maxY-b.minY);
+    const startX = item.x, startY = item.y, distance = Math.hypot(nextX-startX,nextY-startY);
+    const animation = item.element.animate([{transform:`translate3d(${startX}px,${startY}px,0)`},{transform:`translate3d(${nextX}px,${nextY}px,0)`}],{duration:Math.max(4500,distance/35*1000),easing:'ease-in-out',fill:'forwards'});
+    item.animation = animation;
+    animation.onfinish = () => { item.x=nextX; item.y=nextY; item.element.style.transform=`translate3d(${nextX}px,${nextY}px,0)`; animation.cancel(); item.animation=null; travel(item); };
+  }
+  function update() {
+    const stopped = paused || reduced.matches || document.hidden;
+    document.documentElement.classList.toggle('motion-paused',stopped);
+    toggle.textContent = paused ? '▶ ' + labels[1] : 'Ⅱ ' + labels[0];
+    toggle.setAttribute('aria-pressed',String(paused));
+    for (const item of mascots) {
+      if (item.animation) { if(stopped)item.animation.pause(); else item.animation.play(); }
+      else if(!stopped) travel(item);
+    }
+  }
+  toggle.addEventListener('click',() => { paused=!paused;try{localStorage.setItem('automaix-motion-paused',String(paused));}catch{}update(); });
+  document.addEventListener('visibilitychange',update);
+  reduced.addEventListener('change',update);
+  let resizeFrame;
+  addEventListener('resize',()=>{cancelAnimationFrame(resizeFrame);resizeFrame=requestAnimationFrame(()=>{for(const item of mascots){if(item.animation)item.animation.cancel();item.animation=null;place(item);}update();});});
+  mascots.forEach(place); update();
 })();
