@@ -1,0 +1,590 @@
+[
+  {
+    "id": "sortermx5",
+    "category": "robot",
+    "name": "SorterMX-5",
+    "model": "S01 / S02 / S03 / D01 / D02",
+    "image": "sortermx5-system.webp",
+    "description": "多段の仕分け間口へ荷物を振り分け、注文や出荷先ごとに集約。キャリッジ構成と投入方式で選べる5モデル。",
+    "specs": [
+      [
+        "単一ゾーン最大能力",
+        "S01：8,640 / S02・S03：7,200 / D01：17,280 / D02：14,400 個/時"
+      ],
+      [
+        "対応重量",
+        "0.1〜10 kg"
+      ],
+      [
+        "キャリッジ構成",
+        "S：支柱1本に1台 / D：支柱1本に2台"
+      ]
+    ],
+    "features": [
+      [
+        "注文別の集約",
+        "ECの複数商品注文や店舗別出荷に対応します。"
+      ],
+      [
+        "投入方式の選択",
+        "半自動・直角・手動投入からモデルを選択できます。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "<details class=\"putwall-detail\" id=\"sortermx5-specs\" open>\n                    <summary>SorterMX-5｜S・Dシリーズのモデル・仕様</summary>\n                    <div class=\"putwall-detail-body\">\n                        <h3>処理量と投入方式で選べる5モデル</h3>\n                        <p>半自動投入は底面が安定した中小型荷物に、直角投入はさまざまな荷姿への対応に適しています。S03は作業者による手動投入に対応します。キャリッジは通常タイプ・横桟付き・サイドガード付きから、荷物に合わせて選択・カスタマイズできます。</p>\n                        <div class=\"putwall-variants\">\n                            <figure><img src=\"images/sortermx5-single-carriage.webp\" alt=\"Sシリーズ 支柱1本につきキャリッジ1台の構成\" loading=\"lazy\" decoding=\"async\" width=\"1384\" height=\"1125\"><figcaption><strong>Sシリーズ</strong>　支柱1本にキャリッジ1台。S01・S02・S03の3モデル。</figcaption></figure>\n                            <figure><img src=\"images/sortermx5-double-carriage.webp\" alt=\"Dシリーズ 支柱1本につきキャリッジ2台の構成\" loading=\"lazy\" decoding=\"async\" width=\"1384\" height=\"1125\"><figcaption><strong>Dシリーズ</strong>　支柱1本にキャリッジ2台。D01・D02の2モデル。</figcaption></figure>\n                        </div>\n                        <div class=\"putwall-table-wrap\" role=\"region\" aria-label=\"Sシリーズ 仕様比較\" tabindex=\"0\"><table class=\"putwall-table\"><caption>Sシリーズ 仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">S01</th><th scope=\"col\">S02</th><th scope=\"col\">S03</th></tr></thead><tbody><tr><th scope=\"row\">キャリッジ構成</th><td>1本の支柱に1台</td><td>1本の支柱に1台</td><td>1本の支柱に1台</td></tr><tr><th scope=\"row\">投入方式</th><td>半自動投入</td><td>直角投入</td><td>手動投入</td></tr><tr><th scope=\"row\">単一ゾーンの最大仕分け能力</th><td>8,640個/時<br>推奨速度 1.2 m/s</td><td>7,200個/時</td><td>7,200個/時</td></tr><tr><th scope=\"row\">最大走行速度</th><td>1.5 m/s</td><td>1.0 m/s</td><td>1.0 m/s</td></tr><tr><th scope=\"row\">対応重量</th><td>0.1〜10 kg</td><td>0.1〜10 kg</td><td>0.1〜10 kg</td></tr><tr><th scope=\"row\">最小荷物寸法</th><td>100 × 100 × 20 mm</td><td>50 × 50 × 5 mm</td><td>50 × 50 × 5 mm</td></tr><tr><th scope=\"row\">最大荷物寸法</th><td>450 × 320 × 200 mm ※</td><td>450 × 320 × 200 mm ※</td><td>450 × 320 × 200 mm ※</td></tr><tr><th scope=\"row\">キャリッジピッチ</th><td>500 mm</td><td>500 mm</td><td>500 mm</td></tr><tr><th scope=\"row\">キャリッジ寸法</th><td>430 × 700 mm</td><td>430 × 700 mm</td><td>430 × 700 mm</td></tr><tr><th scope=\"row\">騒音レベル</th><td>72 dB以下</td><td>72 dB以下</td><td>72 dB以下</td></tr></tbody></table></div>\n                        <div class=\"putwall-table-wrap\" role=\"region\" aria-label=\"Dシリーズ 仕様比較\" tabindex=\"0\"><table class=\"putwall-table\"><caption>Dシリーズ 仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">D01</th><th scope=\"col\">D02</th></tr></thead><tbody><tr><th scope=\"row\">キャリッジ構成</th><td>1本の支柱に2台</td><td>1本の支柱に2台</td></tr><tr><th scope=\"row\">投入方式</th><td>半自動投入</td><td>直角投入</td></tr><tr><th scope=\"row\">単一ゾーンの最大仕分け能力</th><td>17,280個/時<br>推奨速度 1.2 m/s</td><td>14,400個/時</td></tr><tr><th scope=\"row\">最大走行速度</th><td>1.5 m/s</td><td>1.0 m/s</td></tr><tr><th scope=\"row\">対応重量</th><td>0.1〜10 kg</td><td>0.1〜10 kg</td></tr><tr><th scope=\"row\">最小荷物寸法</th><td>100 × 100 × 20 mm</td><td>50 × 50 × 5 mm</td></tr><tr><th scope=\"row\">最大荷物寸法</th><td>450 × 320 × 200 mm ※</td><td>450 × 320 × 200 mm ※</td></tr><tr><th scope=\"row\">キャリッジピッチ</th><td>500 mm</td><td>500 mm</td></tr><tr><th scope=\"row\">キャリッジ寸法</th><td>430 × 700 mm</td><td>430 × 700 mm</td></tr><tr><th scope=\"row\">騒音レベル</th><td>72 dB以下</td><td>72 dB以下</td></tr></tbody></table></div>\n                        <p class=\"putwall-note\">※ 最大荷物高さは仕分け間口の段数によって異なります。実際の寸法・レイアウトは現場条件に合わせて設計します。処理能力は単一ゾーンの最大値です。S01・D01の推奨走行速度は1.2 m/sです。</p>\n                        <h3>駆動・制御</h3>\n                        <p>昇降ストロークは1,900 / 2,900 mm。昇降には一体型サーボモーター、仕分けにはサーボ電動ローラーを採用。DC48Vの接触給電または非接触給電、赤外線通信または漏洩同軸ケーブルに対応します。</p>\n                    </div>\n                </details>\n                ",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "id": "sortermn3",
+    "category": "robot",
+    "name": "SorterMN-3",
+    "model": "C01",
+    "image": "sortermn3-system.webp",
+    "description": "限られたスペースに配置しやすい一体型。作業者が投入した荷物を、注文別の間口へ自動で仕分けます。",
+    "specs": [
+      [
+        "最大仕分け能力",
+        "1,600 個/時"
+      ],
+      [
+        "最大走行速度",
+        "2.5 m/s"
+      ],
+      [
+        "投入方式",
+        "半自動投入"
+      ]
+    ],
+    "features": [
+      [
+        "省スペースの一体型",
+        "設置場所に合わせてレイアウトと間口構成を検討できます。"
+      ],
+      [
+        "キャリッジの選択",
+        "通常タイプ・横桟付きから選択できます。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "<details class=\"putwall-detail\" id=\"sortermn3-specs\" open>\n                    <summary>SorterMN-3｜コンパクトな一体型 C01</summary>\n                    <div class=\"putwall-detail-body\">\n                        <h3>省スペースで柔軟にレイアウト</h3>\n                        <p>一体型のプラグアンドプレイ設計。設置場所や取り扱う商品に合わせて間口構成を選べます。</p>\n                        <div class=\"putwall-table-wrap\" role=\"region\" aria-label=\"SorterMN-3 C01 仕様\" tabindex=\"0\"><table class=\"putwall-table\"><caption>SorterMN-3 C01 仕様</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">C01</th></tr></thead><tbody><tr><th scope=\"row\">投入方式</th><td>半自動投入（作業者による投入・自動仕分け）</td></tr><tr><th scope=\"row\">最大仕分け能力</th><td>1,600個/時</td></tr><tr><th scope=\"row\">最大走行速度</th><td>2.5 m/s</td></tr><tr><th scope=\"row\">キャリッジの選択肢</th><td>通常タイプ / 横桟付き</td></tr><tr><th scope=\"row\">構造</th><td>省スペース一体型・プラグアンドプレイ</td></tr><tr><th scope=\"row\">仕分け間口</th><td>複数の構成に対応</td></tr></tbody></table></div>\n                    </div>\n                </details>\n                ",
+    "width": 1600,
+    "height": 727
+  },
+  {
+    "id": "omakase",
+    "category": "robot",
+    "name": "おまかせくん",
+    "model": "T-MX-72-J",
+    "image": "omakase-45deg.webp",
+    "description": "大型物流拠点向けの国内取扱モデル。多間口への搬送・仕分けと周辺設備との連携を検討できます。",
+    "specs": [
+      [
+        "取扱区分",
+        "日本向け取扱モデル"
+      ],
+      [
+        "仕様・構成",
+        "処理量、間口数、対象荷物に合わせて個別確認"
+      ]
+    ],
+    "features": [
+      [
+        "導入条件に合わせた選定",
+        "荷物の寸法・重量、処理量、既存ラインとの接続条件を確認します。"
+      ]
+    ],
+    "legacy": true,
+    "extra": "",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "tsubame",
+    "category": "robot",
+    "name": "つばめちゃん",
+    "model": "T-M-48-J",
+    "image": "tsubame-01.webp",
+    "description": "中小規模拠点向けの国内取扱モデル。設置スペースと必要な仕分け先数に合わせて導入構成を検討します。",
+    "specs": [
+      [
+        "取扱区分",
+        "日本向け取扱モデル"
+      ],
+      [
+        "電源・温度帯・据付条件",
+        "導入仕様ごとに個別確認"
+      ]
+    ],
+    "features": [
+      [
+        "現場条件から構成を検討",
+        "必要な処理量、設置寸法、運用条件を確認してご案内します。"
+      ]
+    ],
+    "legacy": true,
+    "extra": "",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "tsubame-sl",
+    "category": "robot",
+    "name": "つばめちゃん SLシリーズ",
+    "model": "T-SL-50-J / T-SL-60-J",
+    "image": "tsubame-04.webp",
+    "description": "小型拠点や既存ラインへの組み込みを検討する国内取扱モデル。対象荷物と作業手順に合わせて仕様を確認します。",
+    "specs": [
+      [
+        "取扱区分",
+        "日本向け取扱モデル"
+      ],
+      [
+        "処理能力・間口数",
+        "選定モデルと運用条件に応じて個別確認"
+      ]
+    ],
+    "features": [
+      [
+        "既存設備との組み合わせ",
+        "搬送経路や作業動線を確認し、組み込み条件を整理します。"
+      ]
+    ],
+    "legacy": true,
+    "extra": "",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "crossbelt",
+    "category": "sorters",
+    "name": "環状クロスベルトソーター",
+    "model": "環状タイプ",
+    "image": "crossbelt-system.webp",
+    "description": "環状に配置したキャリッジ上のベルトで荷物を横方向へ排出。宅配便・EC・郵便など、多方面へ仕分ける物流拠点向け。",
+    "specs": [
+      [
+        "単一ゾーンの仕分け能力",
+        "21,000 個/時"
+      ],
+      [
+        "最大走行速度",
+        "3.5 m/s"
+      ],
+      [
+        "騒音レベル",
+        "72 dB以下"
+      ]
+    ],
+    "features": [
+      [
+        "連続仕分け",
+        "中小型荷物を複数の仕分け先へ振り分けます。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1400,
+    "height": 858
+  },
+  {
+    "id": "narrowbelt",
+    "category": "sorters",
+    "name": "ナローベルトソーター",
+    "model": "細幅ベルト式",
+    "image": "narrowbelt-system.webp",
+    "description": "細幅ベルトを並べたモジュールで搬送と分岐を実行。ライン長や必要な間口数に合わせて構成を検討できます。",
+    "specs": [
+      [
+        "仕分け能力",
+        "10,000 個/時"
+      ],
+      [
+        "最大走行速度",
+        "2.5 m/s"
+      ],
+      [
+        "騒音レベル",
+        "72 dB以下"
+      ]
+    ],
+    "features": [
+      [
+        "モジュール構成",
+        "中小規模の配送拠点や仕分け工程に合わせて配置できます。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "id": "wheel",
+    "category": "sorters",
+    "name": "高密度ホイールソーター",
+    "model": "高密度駆動ローラー式",
+    "image": "wheel-system.webp",
+    "description": "駆動ローラーの向きを制御し、直進・左右分岐・斜め方向への仕分けを実行。袋類や軟包装、段ボール箱に対応します。",
+    "specs": [
+      [
+        "仕分け能力",
+        "7,200 個/時"
+      ],
+      [
+        "最大走行速度",
+        "2.5 m/s"
+      ],
+      [
+        "騒音レベル",
+        "72 dB以下"
+      ]
+    ],
+    "features": [
+      [
+        "既存ラインとの接続",
+        "独立モジュールとしても搬送ライン内でも構成できます。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1400,
+    "height": 934
+  },
+  {
+    "id": "linear-crossbelt",
+    "category": "sorters",
+    "name": "直線クロスベルトソーター",
+    "model": "垂直循環タイプ",
+    "image": "linear-crossbelt.webp",
+    "description": "垂直循環機構と小型ベルトキャリッジで仕分け。軟包装、薄物、集配袋、段ボール箱などに対応します。",
+    "specs": [
+      [
+        "仕分け能力",
+        "9,000 個/時"
+      ],
+      [
+        "最大走行速度",
+        "1.5 m/s"
+      ],
+      [
+        "騒音レベル",
+        "72 dB以下"
+      ]
+    ],
+    "features": [
+      [
+        "ライン構成の調整",
+        "必要なレイアウト、ユニット数、搬送速度に合わせて検討します。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1400,
+    "height": 789
+  },
+  {
+    "id": "slideshoe",
+    "category": "sorters",
+    "name": "スライドシューソーター",
+    "model": "取扱設備",
+    "image": "slideshoe-photo.webp",
+    "description": "荷物を搬送しながら仕分け先へ分岐するソーター。対象荷物、仕分け先数、搬送条件を確認して構成をご案内します。",
+    "specs": [
+      [
+        "選定条件",
+        "荷姿・重量・処理量・分岐数に応じて個別確認"
+      ]
+    ],
+    "features": [
+      [
+        "用途に合わせた選定",
+        "周辺設備や運用条件を確認してご案内します。"
+      ]
+    ],
+    "legacy": true,
+    "extra": "",
+    "width": 1824,
+    "height": 1824
+  },
+  {
+    "id": "belt",
+    "category": "conveyors",
+    "name": "ベルトコンベア",
+    "model": "連続搬送",
+    "image": "belt-conveyor.webp",
+    "description": "連続したベルト面で小物、袋類、薄物などを搬送。DWSや仕分け設備の前後段を接続します。",
+    "specs": [
+      [
+        "動的負荷",
+        "50 kg/m²"
+      ],
+      [
+        "最大走行速度",
+        "2.5 m/s"
+      ],
+      [
+        "騒音レベル",
+        "72 dB以下"
+      ]
+    ],
+    "features": [
+      [
+        "安定した搬送面",
+        "底面が安定しにくい荷物にも、対象条件を確認して対応します。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "id": "roller",
+    "category": "conveyors",
+    "name": "ローラーコンベア",
+    "model": "箱物の搬送・滞留",
+    "image": "roller-conveyor.webp",
+    "description": "段ボール箱や通い箱などを搬送。区間ごとの走行・停止・一時滞留を制御し、合流や分岐に接続します。",
+    "specs": [
+      [
+        "負荷",
+        "60 kg"
+      ],
+      [
+        "最大走行速度",
+        "1.2 m/s"
+      ],
+      [
+        "騒音レベル",
+        "72 dB以下"
+      ]
+    ],
+    "features": [
+      [
+        "区間制御",
+        "必要な構成に応じてゼロプレッシャーアキュームを検討できます。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1228,
+    "height": 1000
+  },
+  {
+    "id": "singulation",
+    "category": "identification",
+    "name": "単品分離システム",
+    "model": "ばら荷物の整列",
+    "image": "singulation-system.webp",
+    "description": "複数の搬送ユニットを連携し、混在した荷物を分離、姿勢調整、等間隔での整列へ。読取・計測・仕分け工程へ供給します。",
+    "specs": [
+      [
+        "分離能力",
+        "10,000 個/時"
+      ],
+      [
+        "最大走行速度",
+        "2.5 m/s"
+      ],
+      [
+        "騒音レベル",
+        "72 dB以下"
+      ]
+    ],
+    "features": [
+      [
+        "後工程への供給",
+        "DWSやバーコードリーダー、ソーターへの投入状態を整えます。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1400,
+    "height": 852
+  },
+  {
+    "id": "dws",
+    "category": "identification",
+    "name": "動的DWS",
+    "model": "寸法・重量・バーコード読取",
+    "image": "dws-system.webp",
+    "description": "荷物を停止させずにバーコード、寸法、重量、画像を取得。入出庫の計測、追跡、運賃計算に必要なデータを収集します。",
+    "specs": [
+      [
+        "処理能力",
+        "4,000 個/時"
+      ],
+      [
+        "寸法測定精度",
+        "±5〜10 mm"
+      ],
+      [
+        "重量測定精度",
+        "±0.05 kg"
+      ]
+    ],
+    "features": [
+      [
+        "一体型データ取得",
+        "読取カメラ、立体カメラ、動的計量器を組み合わせます。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1400,
+    "height": 933
+  },
+  {
+    "id": "rfid",
+    "category": "identification",
+    "name": "RFID読取システム",
+    "model": "タグの非接触識別",
+    "image": "rfid-system.webp",
+    "description": "アンテナ、リーダー、通過フレームでRFIDタグを識別。バーコードが見えない工程や複数タグの読み取りを検討できます。",
+    "specs": [
+      [
+        "読取角度",
+        "360°"
+      ],
+      [
+        "最大走行速度",
+        "2.5 m/s"
+      ]
+    ],
+    "features": [
+      [
+        "搬送中の識別",
+        "タグの種類、貼付位置、荷物の条件に合わせて読取構成を確認します。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1303,
+    "height": 1000
+  },
+  {
+    "id": "chute",
+    "category": "peripherals",
+    "name": "ダイヤモンドパターンシュート",
+    "model": "片側・両側タイプ",
+    "image": "chute-system.webp",
+    "description": "表面のパターンと柔軟なシュート形状で荷物を滑らかに搬送。末端の緩衝ローラーと組み合わせて衝撃を抑えます。",
+    "specs": [
+      [
+        "構成",
+        "片側 / 両側タイプ"
+      ],
+      [
+        "設計条件",
+        "荷物寸法・重量、落差、排出先に合わせて確認"
+      ]
+    ],
+    "features": [
+      [
+        "荷物への衝撃を軽減",
+        "搬送条件に合わせてシュート形状と末端構成を検討します。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 603,
+    "height": 386
+  },
+  {
+    "id": "merge",
+    "category": "peripherals",
+    "name": "合流コンベア",
+    "model": "ライン合流",
+    "image": "merge-conveyor.webp",
+    "description": "搬送ライン同士を接続する補助設備。合流位置、荷物の流量、既存設備との接続条件に合わせて構成します。",
+    "specs": [
+      [
+        "選定条件",
+        "ライン幅・速度・荷姿に応じて個別設計"
+      ]
+    ],
+    "features": [
+      [
+        "ライン接続",
+        "前後工程の処理量と荷物間隔を確認します。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 734,
+    "height": 531
+  },
+  {
+    "id": "centering",
+    "category": "peripherals",
+    "name": "センタリングコンベア",
+    "model": "荷物の位置調整",
+    "image": "centering-conveyor.webp",
+    "description": "後工程へ向けて搬送中の荷物の位置を調整する補助設備。ライン条件と対象荷物に合わせてご案内します。",
+    "specs": [
+      [
+        "選定条件",
+        "荷物寸法・姿勢・搬送速度に応じて個別確認"
+      ]
+    ],
+    "features": [
+      [
+        "計測・仕分け前の整列",
+        "接続する設備と位置決め条件を確認します。"
+      ]
+    ],
+    "legacy": false,
+    "extra": "",
+    "width": 1069,
+    "height": 1000
+  },
+  {
+    "id": "nanobelt",
+    "category": "sorters",
+    "name": "ナノベルトソーター",
+    "model": "国内取扱設備",
+    "image": "nanobelt-render.webp",
+    "description": "小型荷物の仕分け設備として取り扱う製品です。具体的な対応寸法、処理能力、ライン構成はお問い合わせください。",
+    "specs": [
+      [
+        "仕様",
+        "対象荷物と導入条件に応じて個別確認"
+      ]
+    ],
+    "features": [
+      [
+        "用途に合わせた構成",
+        "既存設備との接続条件を確認してご案内します。"
+      ]
+    ],
+    "legacy": true,
+    "extra": "",
+    "width": 1024,
+    "height": 1024
+  },
+  {
+    "id": "modbelt",
+    "category": "sorters",
+    "name": "モジュールベルトソーター",
+    "model": "国内取扱設備",
+    "image": "modbelt-photo.webp",
+    "description": "モジュール式ベルトを用いた仕分け設備。荷姿、必要な仕分け先数、ライン配置に合わせて構成を検討します。",
+    "specs": [
+      [
+        "仕様",
+        "対象荷物と導入条件に応じて個別確認"
+      ]
+    ],
+    "features": [
+      [
+        "レイアウトの検討",
+        "現場寸法や前後工程の条件から選定します。"
+      ]
+    ],
+    "legacy": true,
+    "extra": "",
+    "width": 1824,
+    "height": 1824
+  }
+]

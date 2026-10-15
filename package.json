@@ -1,0 +1,14 @@
+{
+  "name": "automaix-website",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check app.js",
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "test": "node --test scripts/download.test.mjs"
+  },
+  "dependencies": {
+    "nodemailer": "^10.1.1"
+  }
+}

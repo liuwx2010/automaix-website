@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Disallow: /templates/
+Disallow: /content/
+Disallow: /scripts/
+Disallow: /api/
+Disallow: /private/
 
 Sitemap: https://www.automaix.co.jp/sitemap.xml

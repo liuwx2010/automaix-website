@@ -1,21 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.automaix.co.jp/</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.automaix.co.jp/downloads/company-brochure-2026.pdf</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.automaix.co.jp/downloads/product-catalog-3d.pdf</loc>
-    <lastmod>2026-10-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+<url><loc>https://www.automaix.co.jp/company.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/company.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/company.html</loc></url>
+<url><loc>https://www.automaix.co.jp/</loc></url>
+<url><loc>https://www.automaix.co.jp/en/</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/</loc></url>
+<url><loc>https://www.automaix.co.jp/news-1.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/news-1.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/news-1.html</loc></url>
+<url><loc>https://www.automaix.co.jp/news-2.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/news-2.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/news-2.html</loc></url>
+<url><loc>https://www.automaix.co.jp/news-3.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/news-3.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/news-3.html</loc></url>
+<url><loc>https://www.automaix.co.jp/privacy.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/privacy.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/privacy.html</loc></url>
+<url><loc>https://www.automaix.co.jp/site-policy.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/site-policy.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/site-policy.html</loc></url>
+<url><loc>https://www.automaix.co.jp/download.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/download.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/download.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-sortermx5.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-sortermx5.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-sortermx5.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-sortermn3.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-sortermn3.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-sortermn3.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-omakase.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-omakase.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-omakase.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-tsubame.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-tsubame.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-tsubame.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-tsubame-sl.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-tsubame-sl.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-tsubame-sl.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-crossbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-crossbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-crossbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-narrowbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-narrowbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-narrowbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-wheel.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-wheel.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-wheel.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-linear-crossbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-linear-crossbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-linear-crossbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-slideshoe.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-slideshoe.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-slideshoe.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-belt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-belt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-belt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-roller.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-roller.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-roller.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-singulation.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-singulation.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-singulation.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-dws.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-dws.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-dws.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-rfid.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-rfid.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-rfid.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-chute.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-chute.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-chute.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-merge.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-merge.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-merge.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-centering.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-centering.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-centering.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-nanobelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-nanobelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-nanobelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/product-modbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/en/product-modbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/zh/product-modbelt.html</loc></url>
+<url><loc>https://www.automaix.co.jp/downloads/product-catalog-3d.pdf</loc></url>
+<url><loc>https://www.automaix.co.jp/downloads/product-catalog-3d-en.pdf</loc></url>
+<url><loc>https://www.automaix.co.jp/downloads/product-catalog-3d-zh.pdf</loc></url>
 </urlset>
