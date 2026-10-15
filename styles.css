@@ -286,3 +286,10 @@ html[lang="en"] .concept-circle{font-size:clamp(.9rem,1.45vw,1.2rem)}
   .brand-concept { margin-top: 44px; }
   .brand-introduction-copy h2 > span + span { padding-left: 1.5em; }
 }
+
+/* Manufacturing and development descriptions in the factory section. */
+.factory-function-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;margin:24px 0 32px}
+.factory-function-grid>section{padding:24px;background:var(--gray-100);border-top:2px solid var(--blueprint)}
+.factory-function-grid h4{font-size:1.125rem;line-height:1.7;margin:0 0 12px;color:var(--blueprint-deep)}
+.factory-function-grid p{color:var(--text-light);line-height:1.9;font-size:.9375rem}
+@media(max-width:800px){.factory-function-grid{grid-template-columns:1fr;gap:20px}.factory-function-grid>section{padding:20px}}
