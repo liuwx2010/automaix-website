@@ -318,20 +318,57 @@ html[lang="en"] .concept-circle{font-size:clamp(.9rem,1.45vw,1.2rem)}
 .company-milestone-japan .milestone-date{font-size:1.25rem;padding-top:18px}
 @media(max-width:800px){.company-history-section{margin-top:44px;padding-top:30px}.company-history-heading h3{font-size:1.5rem}.company-milestone{grid-template-columns:minmax(0,1fr);gap:10px;padding-left:28px;padding-bottom:24px}.company-milestone::before{left:5px;top:18px;bottom:-18px}.company-milestone::after{left:0;top:10px}.milestone-date,.company-milestone-japan .milestone-date{font-size:1.25rem;padding-top:0}.milestone-content{padding:18px}.company-milestone-japan .milestone-content p{font-size:1rem}}
 
-/* Annual sales: a compact numeric table with proportional comparison bars. */
-.partner-sales{max-width:760px;margin-top:24px;border:1px solid var(--gray-200);padding:28px 32px;background:#fff}
-.partner-sales-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:20px;flex-wrap:wrap}
-.partner-sales-heading h5{font-size:1.1rem;color:var(--blueprint-deep);margin:0}
+/* Consistent reading hierarchy across the site. */
+:root{--type-body:1rem;--type-note:.875rem;--type-card:1.125rem;--type-section:clamp(1.5rem,2.3vw,2rem)}
+body{font-size:var(--type-body);line-height:1.85}
+:is(h1,h2,h3,h4,h5){text-wrap:pretty}
+:is(.section-heading h2,.company .section-header h2,.partner-heading h3){font-size:var(--type-section);line-height:1.5}
+:is(.product-body h4,.movie-card h3,.company-summary h3,.steps h3,.case-preview h3,.feature-list h3,.download-card h3){font-size:var(--type-card);line-height:1.6}
+html[lang="ja"] :is(.product-body>p:not(.product-model),.movie-card p,.company-summary p,.steps p,.feature-list p,.detail-consult p,.partner-quality p,.partner-quality li,.partner-project-list,.partner-support p,.download-card>p:not(.eyebrow),.factory-function-grid p,.milestone-content p){font-size:1rem;line-height:1.9}
+.eyebrow{font-size:.75rem;line-height:1.6;letter-spacing:.14em;font-weight:700}
+html[lang="ja"] .brand-introduction-copy p{font-size:1rem;line-height:1.9}
+.partner-block>h4,.partner-support h4{font-size:1.25rem;line-height:1.6}
+.partner-section-heading{margin-bottom:28px}
+.partner-section-heading .eyebrow{margin-bottom:8px;color:var(--blueprint)}
+.partner-section-heading h4{margin:0;font-size:clamp(1.5rem,2.3vw,1.875rem);line-height:1.5;color:var(--blueprint-deep)}
+/* One visible heading and one unit label; exact figures remain accessible as a table. */
+.factory-sales-section{margin-top:56px;padding-top:36px;border-top:1px solid var(--gray-200)}
+.partner-sales{max-width:960px;margin:0;padding:28px 32px;border:1px solid var(--gray-200);background:#fff}
+.partner-sales-heading{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.partner-sales-heading h5{font-size:1rem;line-height:1.6;color:var(--blueprint-deep);margin:0}
 .partner-sales-heading p{font-size:.875rem;color:var(--text-light);margin:0}
 .partner-sales table{table-layout:fixed;font-variant-numeric:tabular-nums}
 .partner-sales table th:first-child{width:100px}
-.partner-sales thead th{background:var(--gray-100);color:var(--text-light);font-weight:500}
-.partner-sales th,.partner-sales td{padding:16px 18px}
+.partner-sales thead th{font-size:.875rem;background:var(--gray-100);color:var(--text-light);font-weight:500}
+.partner-sales th,.partner-sales td{padding:20px 18px}
 .partner-sales tbody th{vertical-align:middle;font-size:1rem;color:var(--blueprint-deep)}
 .partner-sales td{position:relative}
-.sales-value{display:block;font-size:1.45rem;line-height:1.4;font-weight:700;color:var(--blueprint-deep);text-align:right}
-.sales-bar{display:block;width:var(--sales-share);height:5px;margin-top:10px;background:var(--blueprint);opacity:.65}
+.sales-value{display:block;position:relative;z-index:1;font-size:1.625rem;line-height:1.4;font-weight:700;color:var(--blueprint-deep);text-align:right;letter-spacing:0}
+.sales-track{position:absolute;left:18px;right:112px;top:calc(50% - 5px);height:10px;background:var(--gray-100)}
+.sales-bar{display:block;width:var(--sales-share);height:100%;background:var(--blueprint);opacity:.7}
 .partner-sales tbody tr:last-child .sales-bar{opacity:1}
 .partner-sales tbody tr:last-child{background:var(--blueprint-pale)}
 .partner-sales tbody tr:last-child th,.partner-sales tbody tr:last-child td{border-bottom:0}
-@media(max-width:600px){.partner-sales{padding:20px 16px}.partner-sales table th:first-child{width:76px}.partner-sales th,.partner-sales td{padding:14px 12px}.partner-sales-heading h5{font-size:1rem}}
+#partner-projects{margin-top:64px;padding-top:36px;border-top:1px solid var(--gray-200)}
+.partner-case-grid{gap:32px;margin-top:0}
+.partner-case-grid figure{margin:0;background:#fff;border:1px solid var(--gray-200);overflow:hidden;border-radius:6px}
+.partner-case-grid img{width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:center}
+.partner-case-grid figure:first-child img{object-position:center 60%}
+.partner-case-grid figcaption{padding:24px 26px;display:flex;flex-direction:column;align-items:flex-start}
+.project-country{font-size:.875rem;color:var(--blueprint);line-height:1.6;margin-bottom:8px;font-weight:700}
+.partner-case-grid strong{font-size:1.1875rem;line-height:1.6;margin:0 0 12px}
+.partner-case-grid time{display:block;color:var(--text-light);font-size:.875rem;line-height:1.7;padding-top:12px;border-top:1px solid var(--gray-200);width:100%}
+@media(max-width:800px){
+ .factory-sales-section,#partner-projects{margin-top:40px;padding-top:28px}
+ .partner-section-heading{margin-bottom:22px}
+ .partner-sales{padding:20px 16px}
+ .partner-sales table th:first-child{width:68px}
+ .partner-sales th,.partner-sales td{padding:18px 10px}
+ .sales-value{font-size:1.375rem}
+ .sales-track{left:10px;right:88px;height:8px;top:calc(50% - 4px)}
+ .partner-case-grid{gap:24px}
+ .partner-case-grid figcaption{padding:20px}
+ .partner-case-grid strong{font-size:1.125rem}
+ html[lang="ja"] .brand-introduction-copy h3{font-size:1.125rem;line-height:1.7}
+ html[lang="ja"] .brand-introduction-copy p{font-size:1rem;line-height:1.9}
+}

@@ -335,7 +335,7 @@
     "en": "BEST Express, Vietnam",
     "zh": "越南百世"
   },
-  "2020年12月21日 竣工": {
+  "2020年12月21日 完成": {
     "en": "Completed December 21, 2020",
     "zh": "2020年12月21日完工"
   },
@@ -343,7 +343,7 @@
     "en": "Cainiao, Spain",
     "zh": "西班牙菜鸟"
   },
-  "2025年8月1日 竣工": {
+  "2025年8月1日 完成": {
     "en": "Completed August 1, 2025",
     "zh": "2025年8月1日完工"
   },
@@ -351,7 +351,7 @@
     "en": "Cainiao, Israel",
     "zh": "以色列菜鸟"
   },
-  "2025年9月5日 竣工": {
+  "2025年9月5日 完成": {
     "en": "Completed September 5, 2025",
     "zh": "2025年9月5日完工"
   },
@@ -359,11 +359,11 @@
     "en": "Vietnam telecom operator project",
     "zh": "越南电信项目"
   },
-  "2025年5月10日 竣工": {
+  "2025年5月10日 完成": {
     "en": "Completed May 10, 2025",
     "zh": "2025年5月10日完工"
   },
-  "中国国内の竣工実績：": {
+  "中国国内の完成実績：": {
     "en": "Completed projects in China:",
     "zh": "中国国内完工案例："
   },
@@ -2770,5 +2770,41 @@
   "淮安・合肥（2026年10月時点）。": {
     "en": "Huai’an and Hefei (as of October 2026).",
     "zh": "淮安、合肥（截至2026年10月）。"
+  },
+  "OUR VISION": {
+    "en": "OUR VISION",
+    "zh": "OUR VISION"
+  },
+  "OVERSEAS PROJECTS": {
+    "en": "OVERSEAS PROJECTS",
+    "zh": "OVERSEAS PROJECTS"
+  },
+  "SALES PERFORMANCE": {
+    "en": "SALES PERFORMANCE",
+    "zh": "SALES PERFORMANCE"
+  },
+  "ベトナム": {
+    "en": "Vietnam",
+    "zh": "越南"
+  },
+  "スペイン": {
+    "en": "Spain",
+    "zh": "西班牙"
+  },
+  "イスラエル": {
+    "en": "Israel",
+    "zh": "以色列"
+  },
+  "BEST Express": {
+    "en": "BEST Express",
+    "zh": "百世快递"
+  },
+  "菜鳥（Cainiao）": {
+    "en": "Cainiao",
+    "zh": "菜鸟（Cainiao）"
+  },
+  "通信事業者向けプロジェクト": {
+    "en": "Telecom operator project",
+    "zh": "电信运营商项目"
   }
 }
