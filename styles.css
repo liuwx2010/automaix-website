@@ -251,3 +251,13 @@ html[lang="ja"] .site-footer :is(p,a) { font-size: .875rem; line-height: 1.85; }
   html[lang="ja"] :is(.btn,.form-actions .btn,.product-tabs button,.news-tabs button) { font-size: .875rem; }
   html[lang="ja"] .company .profile-table tr { grid-template-columns: 96px minmax(0,1fr); }
 }
+
+/* Requested hero message: three lines, with the English label positioned higher. */
+.hero-content > .eyebrow { position: relative; top: -24px; }
+@media (max-width: 800px) {
+  .hero-content > .eyebrow { top: -16px; }
+  html[lang="ja"] .hero h1 { font-size: clamp(1.125rem,5.3vw,2rem); }
+}
+@media (max-width: 800px) {
+  html[lang="ja"] .hero-lead { font-size: clamp(.8125rem,3.7vw,1rem); }
+}

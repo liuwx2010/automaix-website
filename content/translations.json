@@ -16,8 +16,8 @@
     "zh": "产品视频"
   },
   "会社概要": {
-    "en": "Company",
-    "zh": "公司介绍"
+    "en": "Company profile",
+    "zh": "公司概要"
   },
   "導入事例": {
     "en": "Projects",
@@ -2698,5 +2698,21 @@
   "会社概要を見る →": {
     "en": "View company profile →",
     "zh": "查看公司概要 →"
+  },
+  "― 日本品質 × 中国製造 × AI技術が創る―": {
+    "en": "― Created through Japanese quality × Chinese manufacturing × AI technology ―",
+    "zh": "― 日本品质 × 中国制造 × AI技术共同创造 ―"
+  },
+  "現場に優しい技術アイディア": {
+    "en": "Technology ideas that care for people at work",
+    "zh": "贴近现场的技术创意"
+  },
+  "江蘇省常州市": {
+    "en": "Changzhou, Jiangsu, China",
+    "zh": "江苏省常州市"
+  },
+  "会社概要 | AUTOMAIX": {
+    "en": "Company profile | AUTOMAIX",
+    "zh": "公司概要 | AUTOMAIX"
   }
 }

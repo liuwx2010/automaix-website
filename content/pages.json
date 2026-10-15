@@ -1,7 +1,7 @@
 [
   {
     "file": "company.html",
-    "title": "会社概要・自社工場",
+    "title": "会社概要",
     "description": "株式会社Automaixの会社概要と、自社工場の生産・開発体制、技術実績、システム導入事例をご紹介します。",
     "schema": {
       "@context": "https://schema.org",
