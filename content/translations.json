@@ -2714,5 +2714,33 @@
   "会社概要 | AUTOMAIX": {
     "en": "Company profile | AUTOMAIX",
     "zh": "公司概要 | AUTOMAIX"
+  },
+  "― 日本品質 × 中国製造 × AI技術が創る ―": {
+    "en": "― Japanese quality × Chinese manufacturing × AI technology ―",
+    "zh": "― 日本品质 × 中国制造 × AI技术共同创造 ―"
+  },
+  "Automaixは、日本のものづくりが長年培ってきた高い品質意識と現場改善の精神、ならびにトヨタ生産方式に代表される無駄の削減・標準化・継続的改善の考え方に、中国の優れた製造技術と生産力、さらに先進的なAI技術を融合した、スマート物流・自動化設備の開発・設計・製造メーカーです。": {
+    "en": "Automaix develops, designs and manufactures smart logistics and automation equipment. We combine Japan’s long-standing commitment to quality and workplace improvement, including the waste reduction, standardization and continuous improvement exemplified by the Toyota Production System, with China’s manufacturing expertise and capacity and advanced AI technology.",
+    "zh": "Automaix是一家智能物流及自动化设备的开发、设计与制造企业。我们将日本制造长期积累的品质意识与现场改善精神、以丰田生产方式为代表的消除浪费、标准化和持续改善理念，与中国的制造技术、生产能力及先进AI技术相融合。"
+  },
+  "物流・製造現場が抱える人手不足、作業負担、安全性、品質、生産性などのさまざまな課題に対し、企画・設計から製造、導入、アフターサポートに至るまで、一貫したソリューションをご提供いたします。私たちが目指しているのは、効率だけを追求する自動化ではありません。人に寄り添い、働く方々の負担を軽減するとともに、安全と安心を支える「ぬくもりのある自動化」の実現を目指しています。": {
+    "en": "We provide integrated solutions from planning and design through manufacturing, implementation and after-sales support, addressing labor shortages, workload, safety, quality and productivity challenges in logistics and manufacturing. Our goal extends beyond efficiency: we aim to create automation with a human touch, reducing the burden on workers and supporting safety and peace of mind.",
+    "zh": "针对物流与制造现场面临的人手不足、作业负担、安全、品质及生产效率等课题，提供从规划、设计到制造、导入和售后支持的一体化解决方案。我们不仅追求效率，更致力于实现贴近人的“有温度的自动化”，减轻工作负担，支持安全与安心。"
+  },
+  "Automaixの理念：AI＝人工知能＋愛、AUTO＝自動化、MAX＝最大限": {
+    "en": "The Automaix concept: AI means artificial intelligence and care; AUTO means automation; MAX means maximizing potential.",
+    "zh": "Automaix理念：AI＝人工智能＋爱、AUTO＝自动化、MAX＝最大限度"
+  },
+  "人工知能＋愛": {
+    "en": "Intelligence + Care",
+    "zh": "人工智能＋爱"
+  },
+  "自動化": {
+    "en": "Automation",
+    "zh": "自动化"
+  },
+  "最大限": {
+    "en": "Maximum",
+    "zh": "最大限度"
   }
 }
