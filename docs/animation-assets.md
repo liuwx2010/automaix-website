@@ -30,3 +30,7 @@ Precise background-plate edit for website animation. Preserve this exact panoram
 
 Create a faithful transparent cutout of ONLY the three large helmeted workers grouped in the very front bottom center of the supplied blue architectural line drawing: left worker seen from back, middle worker facing us holding plan, right worker in side view. Preserve their exact blue line-art style, poses, proportions, interaction and clothing from reference. Exclude all buildings, trees, ground, forklift, other people and all other objects. True alpha background including all spaces between their bodies and arms. Keep light white fills inside their clothing as in original. Full-body three-worker group, small transparent margin, no text or new elements. This will be layered back over the unchanged factory illustration.
 
+
+## Product movie interaction
+
+Mascot links navigate to the corresponding product movie on the home page and open a native dialog player. Close, Escape and backdrop clicks stop playback. The same dialog serves both products; inline players pause before modal playback. Cross-page autoplay retries muted when required by browser policy. Closing restores focus to the triggering mascot for same-page navigation.

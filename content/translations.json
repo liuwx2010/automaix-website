@@ -16,8 +16,8 @@
     "zh": "产品视频"
   },
   "会社概要": {
-    "en": "Company profile",
-    "zh": "公司概要"
+    "en": "Company profile in Japan",
+    "zh": "日本法人概要"
   },
   "導入事例": {
     "en": "Projects",
@@ -2884,8 +2884,8 @@
     "zh": "准备中"
   },
   "導入実績": {
-    "en": "Project experience",
-    "zh": "应用实绩"
+    "en": "In-house manufacturing projects",
+    "zh": "自有工厂项目案例"
   },
   "日本品質・サービス × 中国製造力": {
     "en": "Japanese quality & service × Chinese manufacturing capabilities",
@@ -3150,5 +3150,165 @@
   "試運転と動作確認を行い、操作・点検方法をご案内します。導入後も、保守・点検や改善に関するご相談を承ります。": {
     "en": "We conduct commissioning and operation checks and explain operation and inspection procedures. After implementation, we also welcome maintenance, inspection and improvement inquiries.",
     "zh": "开展调试及动作确认，介绍操作与检查方法。导入后也继续受理维护、检查和改善咨询。"
+  },
+  "ヒアリング・現地調査": {
+    "en": "Requirements review & site survey",
+    "zh": "需求沟通与现场调查"
+  },
+  "課題分析・基本構想の検討": {
+    "en": "Process analysis & concept planning",
+    "zh": "课题分析与方案构想"
+  },
+  "システム提案・お見積り": {
+    "en": "System proposal & quotation",
+    "zh": "系统方案与报价"
+  },
+  "詳細設計・製造・据付": {
+    "en": "Detailed design, manufacture & installation",
+    "zh": "详细设计、制造与安装"
+  },
+  "試運転・操作説明・運用支援": {
+    "en": "Commissioning, training & operational support",
+    "zh": "调试、操作说明与运行支持"
+  },
+  "現状の把握と課題の整理から、機器選定・レイアウト設計、製造・据付、稼働後の運用支援まで。現場の作業と設備を一体で捉え、お客様の運用要件に沿って導入計画を具体化します。": {
+    "en": "From reviewing current operations and identifying challenges to equipment selection, layout design, manufacturing, installation and operational support, we develop an implementation plan around your processes and operating requirements.",
+    "zh": "从现状调查、课题梳理，到设备选型、布局设计、制造安装及投产后的运行支持，结合现场作业与设备条件，制定符合运行需求的导入计划。"
+  },
+  "省人化や作業負荷の軽減、仕分け・搬送工程の見直しなど、ご検討内容をお聞かせください。対象業務とご希望の導入時期を確認します。": {
+    "en": "Tell us about your plans to reduce manual work, ease workloads or improve sorting and conveying. We review the target operations and desired implementation schedule.",
+    "zh": "请告知省人化、减轻作业负荷或优化分拣搬运流程等需求。我们将确认目标业务与预期导入时间。"
+  },
+  "荷姿・寸法・重量、時間帯別の物量、作業動線、設置条件を確認します。必要に応じて現地調査を行い、自動化の対象範囲と既存設備との接続条件を整理します。": {
+    "en": "We review parcel characteristics, dimensions, weight, hourly volumes, work routes and installation conditions. Site surveys, where needed, establish the scope of automation and interfaces with existing equipment.",
+    "zh": "确认货物形态、尺寸、重量、各时段货量、作业动线与安装条件，必要时开展现场调查，梳理自动化范围和现有设备的衔接条件。"
+  },
+  "現行の作業工程と物量データを分析し、必要処理能力、仕分け先数、運用方法を検討します。搬送フローと設備レイアウトの整合性を確認し、基本構想をまとめます。": {
+    "en": "We analyze existing processes and volume data to determine required throughput, sorting destinations and operating methods, then develop a concept aligned with material flow and equipment layout.",
+    "zh": "分析现有作业流程与货量数据，研究所需处理能力、分拣目的地数量及运行方式，确认搬运流程与设备布局的协调性，形成基本构想。"
+  },
+  "基本構想に基づき、機器構成、仕分け間口、前後工程との接続、保守スペースをご提案します。仕様・費用・導入工程を整理し、ご検討に必要な条件をご説明します。": {
+    "en": "We propose equipment, sorting outlets, upstream and downstream interfaces, and maintenance space. Specifications, costs and implementation stages are presented to support your evaluation.",
+    "zh": "根据基本构想，提出设备配置、分拣格口、前后工序衔接及维护空间方案，并说明规格、费用与导入步骤。"
+  },
+  "合意した仕様に基づいて詳細設計・製造・出荷前検査を進めます。搬入経路、工事区分、既存設備への影響を確認し、据付・調整の工程を協議します。": {
+    "en": "Detailed design, manufacturing and pre-shipment inspection follow the agreed specifications. We review delivery access, work responsibilities and impacts on existing equipment, and coordinate installation and adjustment.",
+    "zh": "按商定规格开展详细设计、制造及出厂检验，确认搬入路径、施工分工和对现有设备的影响，协商安装调试计划。"
+  },
+  "試運転で設備の動作と運用手順を確認し、操作方法と日常点検の要点をご説明します。稼働後も、保守・点検、技術支援、運用改善に関するご相談を承ります。": {
+    "en": "Commissioning verifies equipment operation and procedures, followed by guidance on operation and routine inspections. We also welcome enquiries about maintenance, technical support and operational improvement after startup.",
+    "zh": "通过试运行确认设备动作与运行步骤，说明操作方法和日常点检要点。投产后也接受维护、检修、技术支持及运行改善方面的咨询。"
+  },
+  "基本構成": {
+    "en": "Tsubame structure",
+    "zh": "つばめちゃん产品结构"
+  },
+  "運用要件に応じた設備構成": {
+    "en": "Configurable design",
+    "zh": "配置定制"
+  },
+  "モジュール構造による据付": {
+    "en": "Modular design and installation",
+    "zh": "模块化结构与安装"
+  },
+  "電源仕様・PL保険": {
+    "en": "Power supply and product liability insurance",
+    "zh": "电源与产品责任保险"
+  },
+  "識別・計測データの一括取得": {
+    "en": "Integrated data acquisition",
+    "zh": "一体式数据采集"
+  },
+  "工場を設立し、事業を開始。": {
+    "en": "Factory established; operations began.",
+    "zh": "工厂成立并开始运营。"
+  },
+  "ご検討中の製品・サービス": {
+    "en": "Product or service of interest",
+    "zh": "意向产品或服务"
+  },
+  "カタログ・資料ダウンロード": {
+    "en": "Catalogs & downloads",
+    "zh": "产品目录与资料下载"
+  },
+  "設備導入・保守に関するご相談": {
+    "en": "Equipment & maintenance enquiries",
+    "zh": "设备导入与维护咨询"
+  },
+  "会社概要 →": {
+    "en": "View Japan company profile →",
+    "zh": "查看日本法人概要 →"
+  },
+  "対象荷物の最小・最大寸法および重量、必要処理能力、仕分け先数、設置スペース、電源仕様、使用温度範囲、既存設備との接続条件をお知らせください。保守範囲と据付・試運転工程についても、導入条件に応じて確認します。": {
+    "en": "Please provide minimum and maximum parcel dimensions and weights, required throughput, destination count, available space, power supply, temperature range and existing equipment interfaces. Maintenance scope and installation steps are also confirmed individually.",
+    "zh": "请告知货物最小及最大尺寸与重量、所需处理量、格口数量、安装空间、电源、温度范围及既有设备接驳条件；维护范围和安装工序也将逐项确认。"
+  },
+  "冷蔵・冷凍環境に対応する仕様をご相談いただけます。使用温度範囲と必要な機器構成は、導入条件に応じて確認します。": {
+    "en": "Refrigerated and frozen-environment specifications are available for consultation. Temperature range and equipment configuration require project-specific confirmation.",
+    "zh": "可咨询冷藏与冷冻环境规格，适用温度范围及设备配置需按项目确认。"
+  },
+  "モジュール構造を採用しています。会社パンフレットに記載された「最短半日で設置」は、所定の条件下における据付時間の目安です。搬入条件、現地組立の範囲、試運転を含む全体工程は、導入条件に応じて確認します。": {
+    "en": "The modular design supports installation. The brochure’s minimum half-day installation is a guide under specified conditions. Access, assembly scope and commissioning schedules require individual confirmation.",
+    "zh": "采用模块化结构。宣传册中“最快半天安装”是在特定条件下的参考，搬入路线、组装范围及包含调试的工期需单独确认。"
+  },
+  "ご検討中の製品・サービス・サービス": {
+    "en": "Product or service of interest",
+    "zh": "意向产品或服务"
+  },
+  "現場の課題から、物流の未来を考える。": {
+    "en": "Shaping the future of logistics around your operations.",
+    "zh": "从现场课题出发，共创物流未来。"
+  },
+  "設備の導入・更新から保守・技術支援まで、お気軽にご相談ください。": {
+    "en": "Contact us about equipment installation, upgrades, maintenance and technical support.",
+    "zh": "欢迎咨询设备导入、更新、维护及技术支持。"
+  },
+  "ご相談・お問い合わせ": {
+    "en": "Consultation & enquiries",
+    "zh": "咨询联系"
+  },
+  "サイト案内": {
+    "en": "Explore Automaix",
+    "zh": "网站导航"
+  },
+  "製品ラインアップ": {
+    "en": "Product range",
+    "zh": "产品系列"
+  },
+  "ご相談・資料": {
+    "en": "Enquiries & resources",
+    "zh": "咨询与资料"
+  },
+  "製造・開発体制": {
+    "en": "Manufacturing & development",
+    "zh": "制造与研发体系"
+  },
+  "岐阜県多治見市市之倉町12丁目353番地の307": {
+    "en": "12-353-307 Ichinokura-cho, Tajimi, Gifu, Japan",
+    "zh": "日本岐阜县多治见市市之仓町12丁目353番地307号"
+  },
+  "環状に走行するキャリッジ上のベルトを駆動し、荷物を搬送方向に対して直角に排出するソーターです。宅配便・EC物流・郵便など、多方面への仕分けを行う物流拠点に適しています。": {
+    "en": "Belts on carriers arranged in a loop discharge parcels sideways. Designed for parcel, e-commerce and postal hubs serving many destinations.",
+    "zh": "通过环形排列小车上的皮带将货物横向卸出，适用于快递、电商、邮政等多流向物流场地。"
+  },
+  "中国・江蘇省常州市の自社工場で、物流搬送設備および自動化ラインを製造しています。": {
+    "en": "Our factory in Changzhou, Jiangsu, China manufactures logistics conveying equipment and automation lines.",
+    "zh": "中国江苏省常州市的自有工厂制造物流输送设备及自动化产线。"
+  },
+  "生産体制・実績に関する数値は、2026年9月30日時点のものです。": {
+    "en": "Production and performance figures are as of September 30, 2026.",
+    "zh": "生产体系及业绩相关数据截至2026年9月30日。"
+  },
+  "各工程を支える製品ラインアップ": {
+    "en": "Equipment for every stage",
+    "zh": "支持各工序的产品系列"
+  },
+  "Automaixは、スマート物流・自動化設備の開発・設計・製造を手がけるメーカーです。日本のものづくりに根ざした品質管理と現場改善の考え方に、中国の製造技術・生産力、AI技術を融合し、現場に適したシステムを追求しています。トヨタ生産方式に代表されるムダの削減、標準化、継続的改善の考え方を大切にしています。": {
+    "en": "Automaix develops, designs and manufactures smart logistics and automation equipment. We combine Japanese approaches to quality management and workplace improvement with Chinese manufacturing capabilities and AI technology to build systems suited to each operation. Our approach values waste reduction, standardization and continuous improvement, as exemplified by the Toyota Production System.",
+    "zh": "Automaix是一家从事智能物流与自动化设备开发、设计及制造的企业。融合日本制造的质量管理与现场改善理念、中国制造技术与生产能力，以及AI技术，致力于打造符合现场需求的系统。我们重视以丰田生产方式为代表的减少浪费、标准化与持续改善理念。"
+  },
+  "物流・製造現場における人手不足や作業負荷の軽減、安全性・品質・生産性の向上に向け、企画・設計から製造、据付・試運転、保守・技術支援まで一貫して対応します。働く方々の負担を軽減し、安全で安心して働ける環境づくりを支える「ぬくもりのある自動化」の実現を目指しています。": {
+    "en": "We support logistics and manufacturing operations in addressing labor shortages, easing workloads, and improving safety, quality and productivity, from planning and design through manufacturing, installation, commissioning, maintenance and technical support. We aim for automation with a human touch that reduces the burden on people and supports safe, reassuring workplaces.",
+    "zh": "针对物流及制造现场的人手不足、作业负荷及安全、质量、生产效率等课题，提供从规划设计、制造、安装调试到维护与技术支持的一体化服务。我们致力于减轻现场人员负担，营造安全安心的工作环境，实现“有温度的自动化”。"
   }
 }
