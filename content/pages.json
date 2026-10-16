@@ -50,7 +50,7 @@
   {
     "file": "news-1.html",
     "title": "3D仕分けシステム（種まき方式）の製品情報",
-    "description": "種まき方式によるオーダー別集約に対応したSorterMX-5・SorterMN-3をご紹介します。モデル別の仕様、投入方式、設備構成は、各製品ページをご参照ください。",
+    "description": "種まき方式によるオーダー別集約に対応したおまかせくんをご紹介します。モデル別の仕様、投入方式、設備構成は、各製品ページをご参照ください。",
     "schema": {
       "@context": "https://schema.org",
       "@type": "Organization",

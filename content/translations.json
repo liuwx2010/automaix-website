@@ -2850,5 +2850,73 @@
   "資料ダウンロード | AUTOMAIX": {
     "en": "Document downloads | AUTOMAIX",
     "zh": "资料下载 | AUTOMAIX"
+  },
+  "おまかせくんは自社工場のシリーズ名、おまかせくん・つばめちゃんは国内取扱モデル名です。各製品の仕様・構成は、それぞれの製品ページをご参照ください。": {
+    "en": "Omakase-kun are in-house manufacturing series names. Omakase-kun and Tsubame-chan are models offered in Japan. Specifications are explained separately on each product page.",
+    "zh": "Omakase-kun为自有工厂系列名；Omakase-kun、Tsubame-chan为日本市场销售型号。各产品的规格分别在详情页说明。"
+  },
+  "おまかせくんの仕様、および国内取扱モデルの選定条件・導入検討項目をまとめています。": {
+    "en": "Specifications for Omakase-kun, plus selection and consultation points for models offered in Japan.",
+    "zh": "汇总Omakase-kun的规格，以及日本市场销售型号的选型与咨询要点。"
+  },
+  "種まき方式によるオーダー別集約に対応したおまかせくんをご紹介します。モデル別の仕様、投入方式、設備構成は、各製品ページをご参照ください。": {
+    "en": "Product introductions and model specifications for Omakase-kun. See each product page for detailed conditions.",
+    "zh": "介绍Omakase-kun及各型号规格，详细适用条件请参阅各产品页面。"
+  },
+  "おまかせくん｜S・Dシリーズのモデル・仕様": {
+    "en": "Omakase-kun | S & D models and specifications",
+    "zh": "Omakase-kun｜S、D系列型号与规格"
+  },
+  "おまかせくんの製品仕様を見る →": {
+    "en": "View Omakase-kun specifications →",
+    "zh": "查看Omakase-kun产品规格 →"
+  },
+  "会社紹介PDFと、おまかせくんの仕様を掲載した3D仕分け製品ガイドをご用意しています。": {
+    "en": "Choose our company introduction or the 3D sorting product guide with Omakase-kun specifications.",
+    "zh": "可选择公司介绍PDF，或介绍Omakase-kun规格的3D分拣产品指南。"
+  },
+  "製品写真は準備中です": {
+    "en": "Product image coming soon",
+    "zh": "产品照片准备中"
+  },
+  "準備中": {
+    "en": "Coming soon",
+    "zh": "准备中"
+  },
+  "導入実績": {
+    "en": "Project experience",
+    "zh": "应用实绩"
+  },
+  "日本品質・サービス × 中国製造力": {
+    "en": "Japanese quality & service × Chinese manufacturing capabilities",
+    "zh": "日本品质与服务 × 中国制造实力"
+  },
+  "お知らせ・最新情報": {
+    "en": "News & updates",
+    "zh": "新闻与动态"
+  },
+  "ご相談から導入・運用支援まで": {
+    "en": "From consultation to implementation & operational support",
+    "zh": "从咨询到实施与运营支持"
+  },
+  "現場ヒアリング": {
+    "en": "Site consultation",
+    "zh": "现场需求沟通"
+  },
+  "構想設計・ご提案": {
+    "en": "Concept design & proposal",
+    "zh": "方案设计与提案"
+  },
+  "3D仕分けシステムの仕様、機種選定の条件、導入検討項目をまとめています。": {
+    "en": "3D sorting system specifications, selection criteria and implementation considerations.",
+    "zh": "汇总3D分拣系统规格、设备选型条件及导入评估要点。"
+  },
+  "会社紹介PDFと、3D仕分けシステムの仕様を掲載した製品ガイドをご用意しています。": {
+    "en": "Choose our company introduction or a product guide covering 3D sorting system specifications.",
+    "zh": "提供公司介绍PDF及介绍3D分拣系统规格的产品指南。"
+  },
+  "おまかせくん / S01 / S02 / S03 / D01 / D02": {
+    "en": "Omakase-kun / S01 / S02 / S03 / D01 / D02",
+    "zh": "Omakase-kun / S01 / S02 / S03 / D01 / D02"
   }
 }
