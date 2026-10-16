@@ -67,7 +67,7 @@ for i,t in enumerate(tabs):
  widths=[48*mm]+[126*mm/(len(rows[0])-1)]*(len(rows[0])-1)
  story += [table(rows,widths,True),Spacer(1,5*mm),para('最大荷物高さは仕分け間口の段数によって異なります。実際の寸法・レイアウトは現場条件に合わせて設計します。処理能力は単一ゾーンの最大値です。S01・D01の推奨走行速度は1.2 m/sです。','small'),para('構成・駆動','h2'),para('キャリッジは通常・横桟付き・サイドガード付きから選択・カスタマイズ。昇降ストローク1,900 / 2,900 mm。サーボモーター、サーボ電動ローラーによる昇降・仕分け制御に対応します。'),PageBreak()]
 story += [para('SorterMN-3 / C01','title'),para('省スペースの一体型。作業者による投入後、注文別の間口へ自動仕分け。','sub'),picture('sortermn3-system.webp',height=68*mm),Spacer(1,5*mm),table([['項目','C01'],['最大仕分け能力','1,600 個/時'],['最大走行速度','2.5 m/s'],['投入方式','半自動投入'],['キャリッジ','通常タイプ / 横桟付き'],['構造','省スペース一体型、複数の間口構成に対応']],[58*mm,116*mm],True),para('選定・仕様確認のために','h2'),para('最小・最大荷物寸法と重量、必要処理量、仕分け先数、設置スペース、電源、温度帯、既存設備との接続条件をお知らせください。'),para('数値は自社工場の2026年10月版製品資料に基づきます。実際の能力は対象荷物や投入・運転条件、設備構成によって異なります。国内取扱モデルの詳細仕様と、保守・据付範囲は案件ごとにご確認ください。','small'),para('050-6864-1858  /  info@automaix.co.jp','h2')]
-build(repo/'downloads/product-catalog-3d.pdf',story,'AUTOMAIX 3D仕分け 製品ガイド 2026.10')
+build(repo/'private/brochures/product-catalog-3d.pdf',story,'AUTOMAIX 3D仕分け 製品ガイド 2026.10')
 print('Built company and 3D sorting PDFs.')
 import runpy
 runpy.run_path(str(repo/'scripts/build_localized_pdfs.py'),run_name='__main__')

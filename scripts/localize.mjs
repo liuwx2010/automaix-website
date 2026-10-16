@@ -76,7 +76,7 @@ for(const file of files){
   await write(`${locale==='ja'?'':locale+'/'}${file}`,html);
  }
 }
-const pdfs=['product-catalog-3d'];
+const pdfs=[];
 const entries=[];
 for(const file of files)for(const locale of ['ja','en','zh'])entries.push(`<url><loc>${url(file,locale)}</loc></url>`);
 for(const name of pdfs)for(const locale of ['ja','en','zh'])entries.push(`<url><loc>https://www.automaix.co.jp/downloads/${name}${locale==='ja'?'':'-'+locale}.pdf</loc></url>`);

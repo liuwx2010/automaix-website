@@ -33,7 +33,7 @@ for (const p of products) {
   if (!p.legacy) schema.manufacturer={'@type':'Organization',name:'Automaix自社工場'};
   await render(`product-${p.id}.html`,`${p.name} 製品仕様`,p.description,body,schema);
 }
-const all=[...pages.map(p=>p.file),...products.map(p=>`product-${p.id}.html`),'downloads/product-catalog-3d.pdf'];
+const all=[...pages.map(p=>p.file),...products.map(p=>`product-${p.id}.html`)];
 await write('sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${all.map(file=>`<url><loc>${escape(url(file))}</loc></url>`).join('\n')}\n</urlset>\n`);
 console.log(`Built ${pages.length+products.length} HTML pages from shared templates.`);
 await import('./localize.mjs');

@@ -169,12 +169,12 @@
   },
   {
     "file": "download.html",
-    "title": "会社資料ダウンロード",
-    "description": "必要事項をご入力・ご登録のうえ、会社紹介PDFをダウンロードいただけます。",
+    "title": "資料ダウンロード",
+    "description": "必要事項をご入力・ご登録のうえ、ご希望の資料をダウンロードいただけます。",
     "schema": {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "会社資料ダウンロード"
+      "name": "資料ダウンロード"
     }
   }
 ]
