@@ -28,8 +28,8 @@
     "zh": "新闻"
   },
   "お問い合わせ": {
-    "en": "Contact",
-    "zh": "联系我们"
+    "en": "Initial inquiry",
+    "zh": "初步咨询"
   },
   "ホーム": {
     "en": "Home",
@@ -3022,5 +3022,133 @@
   "Dシリーズ 1支柱あたりキャリッジ2台搭載構造": {
     "en": "D series: structure with two carriages per column",
     "zh": "D系列：每根立柱搭载两台载具的结构"
+  },
+  "S01：8,640 / S02・S03：7,200 / D01：17,280 / D02：14,400個/時間": {
+    "en": "S01: 8,640 / S02 & S03: 7,200 / D01: 17,280 / D02: 14,400 items/hour",
+    "zh": "S01：8,640／S02、S03：7,200／D01：17,280／D02：14,400件/小时"
+  },
+  "21,000個/時間": {
+    "en": "21,000  items/hour",
+    "zh": "21,000 件/小时"
+  },
+  "4,000個/時間": {
+    "en": "4,000  items/hour",
+    "zh": "4,000 件/小时"
+  },
+  "9,000個/時間": {
+    "en": "9,000  items/hour",
+    "zh": "9,000 件/小时"
+  },
+  "10,000個/時間": {
+    "en": "10,000  items/hour",
+    "zh": "10,000 件/小时"
+  },
+  "1,600個/時間": {
+    "en": "1,600 items/hour",
+    "zh": "1,600件/小时"
+  },
+  "8,640個/時間": {
+    "en": "8,640 items/hour",
+    "zh": "8,640件/小时"
+  },
+  "7,200個/時間": {
+    "en": "7,200 items/hour",
+    "zh": "7,200件/小时"
+  },
+  "17,280個/時間": {
+    "en": "17,280 items/hour",
+    "zh": "17,280件/小时"
+  },
+  "14,400個/時間": {
+    "en": "14,400 items/hour",
+    "zh": "14,400件/小时"
+  },
+  "小口・多品種の仕分けに適した、省スペース型の3D仕分けシステムです。T-M-48-Jの標準仕様は48間口、処理能力1,600個/時間で、一次仕分け・二次仕分けに対応します。": {
+    "en": "A flexible, space-saving 3D sorter. The T-M-48-J provides 48 destinations and standard throughput of 1,600 items/hour for primary and secondary sorting of small parcels and varied products.",
+    "zh": "可灵活导入的节省空间型3D分拣设备。T-M-48-J配置48个格口，标准处理能力为1,600件/小时，适用于小件、多品种的一次及二次分拣。"
+  },
+  "設置スペースに応じて選定できる、省スペース型仕分けシステムのSLシリーズです。標準仕様は、T-SL-50-Jが40〜50間口・1,000個/時間、T-SL-60-Jが48〜60間口・1,250個/時間です。": {
+    "en": "The space-saving SL series offers standard configurations of 40–50 destinations and 1,000 items/hour for T-SL-50-J, and 48–60 destinations and 1,250 items/hour for T-SL-60-J.",
+    "zh": "节省空间型SL系列：T-SL-50-J标准规格为40～50格口、1,000件/小时；T-SL-60-J为48～60格口、1,250件/小时。"
+  },
+  "1,000個/時間": {
+    "en": "1,000 items/hour",
+    "zh": "1,000件/小时"
+  },
+  "1,250個/時間": {
+    "en": "1,250 items/hour",
+    "zh": "1,250件/小时"
+  },
+  "大型物流センター、宅配便・EC物流の大量仕分けに適した3D仕分けシステムです。T-MX-72-Jの標準仕様は72間口、処理能力10,800個/時間で、一次仕分け・二次仕分けに対応します。": {
+    "en": "A 3D sorter for high-volume parcel and e-commerce operations at large logistics centers. Standard T-MX-72-J specifications provide 72 destinations and throughput of 10,800 items/hour for primary and secondary sorting.",
+    "zh": "面向大型物流中心、快递及电商大批量分拣的3D设备。T-MX-72-J标准规格为72格口、10,800件/小时，可用于一次及二次分拣。"
+  },
+  "10,800個/時間": {
+    "en": "10,800 items/hour",
+    "zh": "10,800件/小时"
+  },
+  "1,000〜1,600個/時間（モデルによる）": {
+    "en": "1,000–1,600 items/hour, depending on model",
+    "zh": "1,000～1,600件/小时（因型号而异）"
+  },
+  "本ページの処理能力は、型式別の標準仕様に基づきます。なお、会社パンフレットの機種比較ページには、おまかせくんを「10,000個/時間から」とする別表記があります。": {
+    "en": "Throughput here follows the model-specific standard specification. The brochure comparison page separately describes Omakase as starting from 10,000 items/hour.",
+    "zh": "此处处理能力统一采用具体型号的标准规格。公司宣传册对比页另有おまかせくん“10,000件/小时起”的表述。"
+  },
+  "10,800個/時間 (T-MX-72-J)": {
+    "en": "10,800 items/hour (T-MX-72-J)",
+    "zh": "10,800件/小时 (T-MX-72-J)"
+  },
+  "Sシリーズは1支柱あたりキャリッジ1台、Dシリーズは2台を搭載。単一ゾーンの最大仕分け能力は、機種により7,200〜17,280個/時間です。": {
+    "en": "The S series has one carriage per column, while the D series has two. Maximum single-zone throughput ranges from 7,200 to 17,280 items/hour, depending on the model.",
+    "zh": "S系列每根立柱搭载一台载具，D系列搭载两台。单区域最大分拣能力因机型而异，为每小时7,200至17,280件。"
+  },
+  "現場の課題整理から設備構成の検討、製造・導入、運用支援まで。各段階で条件を確認し、お客様とともに計画を具体化します。": {
+    "en": "From understanding site challenges to system planning, manufacturing, implementation and operational support, we confirm requirements at each stage and develop the plan together with you.",
+    "zh": "从梳理现场课题，到设备方案、制造导入及运营支持，我们在各阶段确认条件，与客户共同细化实施计划。"
+  },
+  "ご検討中の設備や現場の課題、ご希望の導入時期をお知らせください。担当者がご相談内容を確認します。": {
+    "en": "Tell us about the equipment you are considering, your site challenges and your preferred implementation timing. Our team will review your needs.",
+    "zh": "请告知拟导入设备、现场课题及期望导入时间，我司人员将确认您的咨询内容。"
+  },
+  "ヒアリング・現地確認": {
+    "en": "Consultation & site assessment",
+    "zh": "需求沟通与现场确认"
+  },
+  "荷姿・寸法・重量、物量、仕分け先数、設置スペースを確認し、自動化の対象範囲を整理します。必要に応じて現地確認を行います。": {
+    "en": "We review parcel dimensions, weight, volumes, sorting destinations and available space to define the scope of automation. A site assessment is arranged where needed.",
+    "zh": "确认货物形态、尺寸、重量、物量、分拣目的地及安装空间，梳理自动化范围，并按需进行现场确认。"
+  },
+  "データ分析・構想検討": {
+    "en": "Data analysis & concept planning",
+    "zh": "数据分析与方案构想"
+  },
+  "物量の変動や現行作業を分析し、必要処理能力と設備構成を検討します。処理能力・レイアウト・運用手順の妥当性を確認します。": {
+    "en": "We analyze volume fluctuations and current operations to plan throughput and equipment configuration, then review the suitability of the layout and operating procedures.",
+    "zh": "分析物量变化和现有作业，评估处理能力与设备配置，并确认处理能力、布局及作业流程的合理性。"
+  },
+  "設備構成・お見積りのご提案": {
+    "en": "System proposal & quotation",
+    "zh": "设备方案与报价"
+  },
+  "機種、仕分け間口、前後工程との接続、保守動線を含むレイアウトをご提案します。仕様・費用・導入工程をご説明します。": {
+    "en": "We propose models, sorting destinations and a layout covering upstream and downstream interfaces and maintenance access, and explain specifications, costs and implementation stages.",
+    "zh": "提出包括机型、分拣格口、前后工序衔接及维护动线的布局方案，并说明规格、费用和实施流程。"
+  },
+  "仕様確認・製造・据付": {
+    "en": "Specifications, manufacturing & installation",
+    "zh": "规格确认、制造与安装"
+  },
+  "合意した仕様に基づいて製造・検査を進め、搬入条件や工事範囲を確認のうえ、据付工程を調整します。": {
+    "en": "Manufacturing and inspection follow the agreed specifications. We coordinate installation after confirming delivery access and the scope of site work.",
+    "zh": "按照商定规格开展制造和检验，确认搬入条件与现场施工范围后，协调安装流程。"
+  },
+  "試運転・運用サポート": {
+    "en": "Commissioning & operational support",
+    "zh": "调试与运营支持"
+  },
+  "試運転と動作確認を行い、操作・点検方法をご案内します。導入後も、保守・点検や改善に関するご相談を承ります。": {
+    "en": "We conduct commissioning and operation checks and explain operation and inspection procedures. After implementation, we also welcome maintenance, inspection and improvement inquiries.",
+    "zh": "开展调试及动作确认，介绍操作与检查方法。导入后也继续受理维护、检查和改善咨询。"
   }
 }

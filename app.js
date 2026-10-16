@@ -104,6 +104,26 @@
     document.getElementById('news-count').textContent = message('newsCount', { count });
   }));
   document.querySelectorAll('video').forEach(video => video.addEventListener('play', () => document.querySelectorAll('video').forEach(other => { if (other !== video) other.pause(); })));
+  const playProductMovie = id => {
+    if (!['omakase','tsubame'].includes(id)) return;
+    const video = document.querySelector(`[data-product-movie="${id}"]`);
+    if (!video) return;
+    video.scrollIntoView({behavior:'instant',block:'center'});
+    video.focus({preventScroll:true});
+    // Navigation can lose browser media permission; retry muted if necessary.
+    video.play().catch(() => { video.muted=true; return video.play(); }).catch(() => {});
+  };
+  document.addEventListener('click', event => {
+    const link=event.target.closest('a[data-movie-link]');
+    if(!link||event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+    const destination=new URL(link.href);
+    const currentPath=location.pathname.endsWith('/')?location.pathname+'index.html':location.pathname;
+    if(destination.origin===location.origin&&destination.pathname===currentPath){
+      event.preventDefault();history.pushState(null,'',destination.href);playProductMovie(link.dataset.movieLink);
+    }
+  });
+  playProductMovie(new URLSearchParams(location.search).get('movie'));
+
 
   const writeClipboard = async (value, status) => {
     try { if (!navigator.clipboard?.writeText) throw new Error('clipboard unavailable'); await navigator.clipboard.writeText(value); status.textContent = message('copied'); }
@@ -198,7 +218,7 @@
   });
 })();
 
-// Decorative mascots never receive pointer input or move the page layout.
+// Mascots link to their product videos while the surrounding layer passes through clicks.
 (() => {
   'use strict';
   const lang = document.documentElement.lang;
@@ -206,16 +226,23 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const assetBase = new URL('.', document.currentScript.src);
   const layer = document.createElement('div');
-  layer.className = 'site-mascots'; layer.setAttribute('aria-hidden','true');
+  layer.className = 'site-mascots';
   const toggle = document.createElement('button');
   toggle.type = 'button'; toggle.className = 'motion-toggle';
   let paused = false;
   try { paused = localStorage.getItem('automaix-motion-paused') === 'true'; } catch {}
+  const movieNames=lang==='ja'?['おまかせくんの動画を再生','つばめちゃんの動画を再生']:lang.startsWith('zh')?['播放おまかせくん产品视频','播放つばめちゃん产品视频']:['Play Omakase-kun video','Play Tsubame-chan video'];
+  const localePrefix=lang==='ja'?'':lang.startsWith('zh')?'zh/':'en/';
   const mascots = ['mascot-worker.png','mascot-penguin.png'].map((file,index) => {
-    const element = document.createElement('div'); element.className = 'site-mascot';
+    const element = document.createElement('a'); element.className = 'site-mascot';
+    const movie=index?'tsubame':'omakase';
+    element.dataset.movieLink=movie; element.href=new URL(`${localePrefix}index.html?movie=${movie}#movie-${movie}`,assetBase).href;
+    element.setAttribute('aria-label',movieNames[index]);
     const img = document.createElement('img'); img.src = new URL('images/' + file,assetBase).href; img.alt = ''; img.width = 132; img.height = 156; img.decoding = 'async';
     element.append(img); layer.append(element);
-    return {element,index,x:0,y:0,animation:null};
+    const item={element,index,x:0,y:0,animation:null,hovered:false,focused:false};
+    for(const [event,key,value] of [['pointerenter','hovered',true],['pointerleave','hovered',false],['focus','focused',true],['blur','focused',false]])element.addEventListener(event,()=>{item[key]=value;update();});
+    return item;
   });
   document.body.append(layer,toggle);
   function bounds(item) {
@@ -227,7 +254,7 @@
     item.element.style.transform = `translate3d(${item.x}px,${item.y}px,0)`;
   }
   function travel(item) {
-    if (paused || reduced.matches || document.hidden) return;
+    if (paused || reduced.matches || document.hidden || item.hovered || item.focused) return;
     const b = bounds(item), nextX = 8+Math.random()*Math.max(0,b.maxX-8), nextY = b.minY+Math.random()*Math.max(0,b.maxY-b.minY);
     const startX = item.x, startY = item.y, distance = Math.hypot(nextX-startX,nextY-startY);
     const animation = item.element.animate([{transform:`translate3d(${startX}px,${startY}px,0)`},{transform:`translate3d(${nextX}px,${nextY}px,0)`}],{duration:Math.max(4500,distance/35*1000),easing:'ease-in-out',fill:'forwards'});
@@ -240,7 +267,7 @@
     toggle.textContent = paused ? '▶ ' + labels[1] : 'Ⅱ ' + labels[0];
     toggle.setAttribute('aria-pressed',String(paused));
     for (const item of mascots) {
-      if (item.animation) { if(stopped)item.animation.pause(); else item.animation.play(); }
+      if (item.animation) { if(stopped||item.hovered||item.focused)item.animation.pause(); else item.animation.play(); }
       else if(!stopped) travel(item);
     }
   }

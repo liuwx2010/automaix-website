@@ -505,3 +505,38 @@ html[lang="ja"] .brand-introduction-copy p{font-size:1rem;line-height:1.9}
  .company .profile-table td{padding-top:4px}
  #news .news-item{padding:18px 42px 18px 16px;gap:8px 10px}
 }
+
+/* Right-aligned vertical slogans retain Japanese reading order from right to left. */
+.hero-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.75fr);gap:64px;align-items:center;width:min(var(--max),calc(100% - 80px))}
+.hero-message{grid-column:2;grid-row:1;min-width:0;justify-self:end;width:100%}
+.hero-message>.eyebrow{text-align:right;position:static;margin-bottom:24px}
+.hero-info{grid-column:1;grid-row:1;min-width:0}
+html[lang] .hero .hero-title{display:flex;flex-direction:row-reverse;align-items:flex-start;justify-content:flex-start;gap:26px;margin:0;max-width:none;font-size:clamp(1.3rem,2.1vw,1.9rem);line-height:1.5;letter-spacing:.1em}
+.hero-title>span{display:block;writing-mode:vertical-rl;text-orientation:upright;white-space:nowrap}
+.hero::before{background:linear-gradient(90deg,#fffffff5 0%,#ffffffdf 30%,#ffffff55 56%,#ffffffde 100%)}
+html[lang=en] .hero .hero-title{display:block;font-size:clamp(1.5rem,2.4vw,2.4rem);letter-spacing:0;line-height:1.45;text-align:right}
+html[lang=en] .hero-title>span{writing-mode:horizontal-tb;text-orientation:mixed;white-space:normal;margin-bottom:.35em}
+.brand-introduction{--brand-ink:var(--blueprint-deep);color:var(--text)}
+.brand-introduction-copy h3{color:var(--text)}
+.brand-introduction-copy p{color:var(--text-light)}
+.support-intro{max-width:58em;color:var(--text-light);margin:-8px 0 32px;line-height:1.9}
+.steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(min-width:1101px){.steps li:nth-child(3n)::after{display:none}}
+.site-mascot{pointer-events:auto;display:block;cursor:pointer;text-decoration:none;border:0;background:transparent}
+.site-mascot img{pointer-events:none}
+.site-mascot:hover img,.site-mascot:focus-visible img{animation-play-state:paused}
+.site-mascot:focus-visible{outline:3px solid #ed8a39;outline-offset:4px;border-radius:6px}
+.site-footer .footer-logo{background:transparent;padding:0;border-radius:0}
+.site-footer .footer-logo img{filter:brightness(0) invert(1)}
+@media(max-width:1100px){.hero-content{width:calc(100% - 48px);gap:40px}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li:nth-child(2n)::after{display:none}}
+@media(max-width:800px){
+ .hero-content{grid-template-columns:minmax(0,1fr);gap:32px;width:calc(100% - 32px)}
+ .hero-message{grid-column:1;grid-row:1;max-width:100%}
+ .hero-info{grid-column:1;grid-row:2}
+ html[lang] .hero .hero-title{font-size:clamp(1rem,4.5vw,1.35rem);gap:22px}
+ html[lang=en] .hero .hero-title{font-size:clamp(1.35rem,5vw,1.8rem)}
+ .hero-message>.eyebrow{margin-bottom:20px}
+ .hero::before{background:linear-gradient(110deg,#ffffffdf,#fffffff0 100%)}
+}
+@media(max-width:600px){.steps{grid-template-columns:minmax(0,1fr)}.steps li:not(:last-child)::after{display:none}}
+.site-mascot{min-width:44px;min-height:48px}
