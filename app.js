@@ -104,14 +104,45 @@
     document.getElementById('news-count').textContent = message('newsCount', { count });
   }));
   document.querySelectorAll('video').forEach(video => video.addEventListener('play', () => document.querySelectorAll('video').forEach(other => { if (other !== video) other.pause(); })));
-  const playProductMovie = id => {
+  let movieDialog, modalVideo, modalTitle, movieReturnFocus, previousOverflow;
+  const movieLabels = language === 'en' ? {close:'Close video',omakase:'Omakase-kun',tsubame:'Tsubame-chan'} : language.startsWith('zh') ? {close:'关闭视频',omakase:'おまかせくん',tsubame:'つばめちゃん'} : {close:'動画を閉じる',omakase:'おまかせくん',tsubame:'つばめちゃん'};
+  const ensureMovieDialog = () => {
+    if (movieDialog) return;
+    movieDialog = document.createElement('dialog');
+    movieDialog.className = 'video-modal';
+    movieDialog.setAttribute('aria-labelledby','video-modal-title');
+    const panel = document.createElement('div'); panel.className='video-modal-panel';
+    const heading = document.createElement('div'); heading.className='video-modal-heading';
+    modalTitle = document.createElement('h2'); modalTitle.id='video-modal-title';
+    const close = document.createElement('button'); close.type='button'; close.className='video-modal-close'; close.textContent='×'; close.setAttribute('aria-label',movieLabels.close);
+    close.addEventListener('click',()=>movieDialog.close());
+    modalVideo = document.createElement('video'); modalVideo.controls=true; modalVideo.playsInline=true; modalVideo.preload='metadata';
+    modalVideo.addEventListener('play',()=>document.querySelectorAll('video').forEach(other=>{if(other!==modalVideo)other.pause();}));
+    heading.append(modalTitle,close); panel.append(heading,modalVideo); movieDialog.append(panel); document.body.append(movieDialog);
+    movieDialog.addEventListener('click',event=>{if(event.target===movieDialog)movieDialog.close();});
+    movieDialog.addEventListener('close',()=>{
+      modalVideo.pause(); modalVideo.removeAttribute('src'); modalVideo.load();
+      document.body.style.overflow=previousOverflow;
+      if(movieReturnFocus?.isConnected)movieReturnFocus.focus({preventScroll:true});
+    });
+  };
+  const playProductMovie = (id, trigger) => {
     if (!['omakase','tsubame'].includes(id)) return;
     const video = document.querySelector(`[data-product-movie="${id}"]`);
     if (!video) return;
     video.scrollIntoView({behavior:'instant',block:'center'});
-    video.focus({preventScroll:true});
-    // Navigation can lose browser media permission; retry muted if necessary.
-    video.play().catch(() => { video.muted=true; return video.play(); }).catch(() => {});
+    ensureMovieDialog();
+    document.querySelectorAll('video').forEach(other=>other.pause());
+    if (!movieDialog.open) {
+      movieReturnFocus=trigger || document.activeElement; previousOverflow=document.body.style.overflow;
+      document.body.style.overflow='hidden'; movieDialog.showModal();
+    }
+    modalTitle.textContent=movieLabels[id];
+    modalVideo.poster=video.poster;
+    modalVideo.src=video.querySelector('source')?.src || video.currentSrc;
+    modalVideo.muted=false;
+    // Cross-page navigation may require muted playback under browser autoplay policy.
+    modalVideo.play().catch(()=>{modalVideo.muted=true;return modalVideo.play();}).catch(()=>{});
   };
   document.addEventListener('click', event => {
     const link=event.target.closest('a[data-movie-link]');
@@ -119,7 +150,7 @@
     const destination=new URL(link.href);
     const currentPath=location.pathname.endsWith('/')?location.pathname+'index.html':location.pathname;
     if(destination.origin===location.origin&&destination.pathname===currentPath){
-      event.preventDefault();history.pushState(null,'',destination.href);playProductMovie(link.dataset.movieLink);
+      event.preventDefault();history.pushState(null,'',destination.href);playProductMovie(link.dataset.movieLink, link);
     }
   });
   playProductMovie(new URLSearchParams(location.search).get('movie'));
