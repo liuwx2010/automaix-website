@@ -9,7 +9,7 @@
     "specs": [
       [
         "単一ゾーンの最大仕分け能力",
-        "S01：8,640 / S02・S03：7,200 / D01：17,280 / D02：14,400個/時"
+        "S01：8,640 / S02・S03：7,200 / D01：17,280 / D02：14,400個/時間"
       ],
       [
         "対応荷物重量",
@@ -23,7 +23,7 @@
     "features": [
       [
         "5機種から選べる処理能力・キャリッジ構成",
-        "Sシリーズは1支柱あたりキャリッジ1台、Dシリーズは2台を搭載。単一ゾーンの最大仕分け能力は、機種により7,200〜17,280個/時です。"
+        "Sシリーズは1支柱あたりキャリッジ1台、Dシリーズは2台を搭載。単一ゾーンの最大仕分け能力は、機種により7,200〜17,280個/時間です。"
       ],
       [
         "半自動・直角・手動の投入方式",
@@ -39,7 +39,7 @@
       ]
     ],
     "legacy": false,
-    "extra": "<details class=\"putwall-detail\" id=\"sortermx5-specs\" open>\n                    <summary>おまかせくん｜S・Dシリーズのモデル・仕様</summary>\n                    <div class=\"putwall-detail-body\">\n                        <h3>必要処理能力と投入方式で選定する5モデル</h3>\n                        <p>半自動投入方式は、底面の安定した中小型貨物の処理に適しており、直角投入方式は多様な荷姿の貨物に柔軟に対応いたします。</p><p>キャリッジについては、標準タイプ・横桟付きタイプ・サイドガード付きタイプの3仕様から選定可能であり、取り扱い対象貨物の特性に応じた仕様カスタマイズにも完全対応いたします。</p>\n                        <div class=\"putwall-variants\">\n                            <figure><img src=\"images/sortermx5-single-carriage.webp\" alt=\"Sシリーズ 1支柱あたりキャリッジ1台搭載構造\" loading=\"lazy\" decoding=\"async\" width=\"1384\" height=\"1125\"><figcaption><strong>Sシリーズ</strong>　1支柱あたりキャリッジ1台搭載構造</figcaption></figure>\n                            <figure><img src=\"images/sortermx5-double-carriage.webp\" alt=\"Dシリーズ 1支柱あたりキャリッジ2台搭載構造\" loading=\"lazy\" decoding=\"async\" width=\"1384\" height=\"1125\"><figcaption><strong>Dシリーズ</strong>　1支柱あたりキャリッジ2台搭載構造</figcaption></figure>\n                        </div>\n                        <div class=\"putwall-table-wrap\" role=\"region\" aria-label=\"Sシリーズ 仕様比較\" tabindex=\"0\"><table class=\"putwall-table\"><caption>Sシリーズ 仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">S01</th><th scope=\"col\">S02</th><th scope=\"col\">S03</th></tr></thead><tbody><tr><th scope=\"row\">キャリッジ構成</th><td>1支柱あたりキャリッジ1台搭載</td><td>1支柱あたりキャリッジ1台搭載</td><td>1支柱あたりキャリッジ1台搭載</td></tr><tr><th scope=\"row\">投入方式</th><td>半自動投入</td><td>直角投入</td><td>手動投入</td></tr><tr><th scope=\"row\">単一ゾーンの最大仕分け能力</th><td>8,640個/時<br>推奨速度 1.2 m/s</td><td>7,200個/時</td><td>7,200個/時</td></tr><tr><th scope=\"row\">最大走行速度</th><td>1.5 m/s</td><td>1.0 m/s</td><td>1.0 m/s</td></tr><tr><th scope=\"row\">対応荷物重量</th><td>0.1〜10 kg</td><td>0.1〜10 kg</td><td>0.1〜10 kg</td></tr><tr><th scope=\"row\">最小荷物寸法</th><td>100 × 100 × 20 mm</td><td>50 × 50 × 5 mm</td><td>50 × 50 × 5 mm</td></tr><tr><th scope=\"row\">最大荷物寸法</th><td>450 × 320 × 200 mm ※</td><td>450 × 320 × 200 mm ※</td><td>450 × 320 × 200 mm ※</td></tr><tr><th scope=\"row\">キャリッジピッチ</th><td>500 mm</td><td>500 mm</td><td>500 mm</td></tr><tr><th scope=\"row\">キャリッジ寸法</th><td>430 × 700 mm</td><td>430 × 700 mm</td><td>430 × 700 mm</td></tr><tr><th scope=\"row\">騒音レベル</th><td>72 dB以下</td><td>72 dB以下</td><td>72 dB以下</td></tr></tbody></table></div>\n                        <div class=\"putwall-table-wrap\" role=\"region\" aria-label=\"Dシリーズ 仕様比較\" tabindex=\"0\"><table class=\"putwall-table\"><caption>Dシリーズ 仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">D01</th><th scope=\"col\">D02</th></tr></thead><tbody><tr><th scope=\"row\">キャリッジ構成</th><td>1支柱あたりキャリッジ2台搭載</td><td>1支柱あたりキャリッジ2台搭載</td></tr><tr><th scope=\"row\">投入方式</th><td>半自動投入</td><td>直角投入</td></tr><tr><th scope=\"row\">単一ゾーンの最大仕分け能力</th><td>17,280個/時<br>推奨速度 1.2 m/s</td><td>14,400個/時</td></tr><tr><th scope=\"row\">最大走行速度</th><td>1.5 m/s</td><td>1.0 m/s</td></tr><tr><th scope=\"row\">対応荷物重量</th><td>0.1〜10 kg</td><td>0.1〜10 kg</td></tr><tr><th scope=\"row\">最小荷物寸法</th><td>100 × 100 × 20 mm</td><td>50 × 50 × 5 mm</td></tr><tr><th scope=\"row\">最大荷物寸法</th><td>450 × 320 × 200 mm ※</td><td>450 × 320 × 200 mm ※</td></tr><tr><th scope=\"row\">キャリッジピッチ</th><td>500 mm</td><td>500 mm</td></tr><tr><th scope=\"row\">キャリッジ寸法</th><td>430 × 700 mm</td><td>430 × 700 mm</td></tr><tr><th scope=\"row\">騒音レベル</th><td>72 dB以下</td><td>72 dB以下</td></tr></tbody></table></div>\n                        <p class=\"putwall-note\">※ 対応可能な荷物の最大高さは、仕分け間口の段数によって異なります。設備寸法・レイアウトは現場条件に応じて設計します。掲載する処理能力は単一ゾーンにおける最大値です。S01・D01の推奨走行速度は1.2 m/sです。</p>\n                        <h3>駆動・制御</h3>\n                        <p>昇降ストロークは1,900 / 2,900 mmです。昇降駆動には一体型サーボモータ、仕分け駆動にはサーボ電動ローラを採用しています。給電方式はDC48Vの接触給電または非接触給電、通信方式は赤外線通信または漏洩同軸ケーブルに対応します。</p>\n                    </div>\n                </details>\n                ",
+    "extra": "<details class=\"putwall-detail\" id=\"sortermx5-specs\" open>\n                    <summary>おまかせくん｜S・Dシリーズのモデル・仕様</summary>\n                    <div class=\"putwall-detail-body\">\n                        <h3>必要処理能力と投入方式で選定する5モデル</h3>\n                        <p>半自動投入方式は、底面の安定した中小型貨物の処理に適しており、直角投入方式は多様な荷姿の貨物に柔軟に対応いたします。</p><p>キャリッジについては、標準タイプ・横桟付きタイプ・サイドガード付きタイプの3仕様から選定可能であり、取り扱い対象貨物の特性に応じた仕様カスタマイズにも完全対応いたします。</p>\n                        <div class=\"putwall-variants\">\n                            <figure><img src=\"images/sortermx5-single-carriage.webp\" alt=\"Sシリーズ 1支柱あたりキャリッジ1台搭載構造\" loading=\"lazy\" decoding=\"async\" width=\"1384\" height=\"1125\"><figcaption><strong>Sシリーズ</strong>　1支柱あたりキャリッジ1台搭載構造</figcaption></figure>\n                            <figure><img src=\"images/sortermx5-double-carriage.webp\" alt=\"Dシリーズ 1支柱あたりキャリッジ2台搭載構造\" loading=\"lazy\" decoding=\"async\" width=\"1384\" height=\"1125\"><figcaption><strong>Dシリーズ</strong>　1支柱あたりキャリッジ2台搭載構造</figcaption></figure>\n                        </div>\n                        <div class=\"putwall-table-wrap\" role=\"region\" aria-label=\"Sシリーズ 仕様比較\" tabindex=\"0\"><table class=\"putwall-table\"><caption>Sシリーズ 仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">S01</th><th scope=\"col\">S02</th><th scope=\"col\">S03</th></tr></thead><tbody><tr><th scope=\"row\">キャリッジ構成</th><td>1支柱あたりキャリッジ1台搭載</td><td>1支柱あたりキャリッジ1台搭載</td><td>1支柱あたりキャリッジ1台搭載</td></tr><tr><th scope=\"row\">投入方式</th><td>半自動投入</td><td>直角投入</td><td>手動投入</td></tr><tr><th scope=\"row\">単一ゾーンの最大仕分け能力</th><td>8,640個/時間<br>推奨速度 1.2 m/s</td><td>7,200個/時間</td><td>7,200個/時間</td></tr><tr><th scope=\"row\">最大走行速度</th><td>1.5 m/s</td><td>1.0 m/s</td><td>1.0 m/s</td></tr><tr><th scope=\"row\">対応荷物重量</th><td>0.1〜10 kg</td><td>0.1〜10 kg</td><td>0.1〜10 kg</td></tr><tr><th scope=\"row\">最小荷物寸法</th><td>100 × 100 × 20 mm</td><td>50 × 50 × 5 mm</td><td>50 × 50 × 5 mm</td></tr><tr><th scope=\"row\">最大荷物寸法</th><td>450 × 320 × 200 mm ※</td><td>450 × 320 × 200 mm ※</td><td>450 × 320 × 200 mm ※</td></tr><tr><th scope=\"row\">キャリッジピッチ</th><td>500 mm</td><td>500 mm</td><td>500 mm</td></tr><tr><th scope=\"row\">キャリッジ寸法</th><td>430 × 700 mm</td><td>430 × 700 mm</td><td>430 × 700 mm</td></tr><tr><th scope=\"row\">騒音レベル</th><td>72 dB以下</td><td>72 dB以下</td><td>72 dB以下</td></tr></tbody></table></div>\n                        <div class=\"putwall-table-wrap\" role=\"region\" aria-label=\"Dシリーズ 仕様比較\" tabindex=\"0\"><table class=\"putwall-table\"><caption>Dシリーズ 仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">D01</th><th scope=\"col\">D02</th></tr></thead><tbody><tr><th scope=\"row\">キャリッジ構成</th><td>1支柱あたりキャリッジ2台搭載</td><td>1支柱あたりキャリッジ2台搭載</td></tr><tr><th scope=\"row\">投入方式</th><td>半自動投入</td><td>直角投入</td></tr><tr><th scope=\"row\">単一ゾーンの最大仕分け能力</th><td>17,280個/時間<br>推奨速度 1.2 m/s</td><td>14,400個/時間</td></tr><tr><th scope=\"row\">最大走行速度</th><td>1.5 m/s</td><td>1.0 m/s</td></tr><tr><th scope=\"row\">対応荷物重量</th><td>0.1〜10 kg</td><td>0.1〜10 kg</td></tr><tr><th scope=\"row\">最小荷物寸法</th><td>100 × 100 × 20 mm</td><td>50 × 50 × 5 mm</td></tr><tr><th scope=\"row\">最大荷物寸法</th><td>450 × 320 × 200 mm ※</td><td>450 × 320 × 200 mm ※</td></tr><tr><th scope=\"row\">キャリッジピッチ</th><td>500 mm</td><td>500 mm</td></tr><tr><th scope=\"row\">キャリッジ寸法</th><td>430 × 700 mm</td><td>430 × 700 mm</td></tr><tr><th scope=\"row\">騒音レベル</th><td>72 dB以下</td><td>72 dB以下</td></tr></tbody></table></div>\n                        <p class=\"putwall-note\">※ 対応可能な荷物の最大高さは、仕分け間口の段数によって異なります。設備寸法・レイアウトは現場条件に応じて設計します。掲載する処理能力は単一ゾーンにおける最大値です。S01・D01の推奨走行速度は1.2 m/sです。</p>\n                        <h3>駆動・制御</h3>\n                        <p>昇降ストロークは1,900 / 2,900 mmです。昇降駆動には一体型サーボモータ、仕分け駆動にはサーボ電動ローラを採用しています。給電方式はDC48Vの接触給電または非接触給電、通信方式は赤外線通信または漏洩同軸ケーブルに対応します。</p>\n                    </div>\n                </details>\n                ",
     "width": 1600,
     "height": 900,
     "specificationNote": "なお、実稼働処理能力については、貨物外形寸法・積載重量、投入サイクル条件、仕分けポイント数、ラインレイアウト構成等の各種運用パラメータにより変動いたします。"
@@ -50,7 +50,7 @@
     "name": "つばめちゃん",
     "model": "T-M-48-J",
     "image": "tsubame-01.webp",
-    "description": "小口・多品種の仕分けに適した、省スペース型の3D仕分けシステムです。T-M-48-Jの標準仕様は48間口、処理能力1,400個/時で、一次仕分け・二次仕分けに対応します。",
+    "description": "小口・多品種の仕分けに適した、省スペース型の3D仕分けシステムです。T-M-48-Jの標準仕様は48間口、処理能力1,600個/時間で、一次仕分け・二次仕分けに対応します。",
     "specs": [
       [
         "寸法（mm）",
@@ -62,7 +62,7 @@
       ],
       [
         "処理能力",
-        "1,400個/時"
+        "1,600個/時間"
       ],
       [
         "最大対応荷物寸法（mm）",
@@ -104,7 +104,7 @@
       ]
     ],
     "legacy": true,
-    "extra": "<section class=\"brochure-specs\"><h2>つばめちゃん家族｜3モデルの標準仕様</h2><div class=\"table-scroll\" role=\"region\" tabindex=\"0\" aria-label=\"つばめちゃん 標準仕様比較\"><table class=\"spec-table\"><caption>つばめちゃん 標準仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">T-M-48-J</th><th scope=\"col\">T-SL-50-J</th><th scope=\"col\">T-SL-60-J</th></tr></thead><tbody><tr><th scope=\"row\">寸法（mm）</th><td>6420 × 1870 × 2300</td><td>3859 × 1000 × 2369</td><td>4254 × 2115 × 2259</td></tr><tr><th scope=\"row\">仕分け間口数</th><td>48</td><td>40–50</td><td>48–60</td></tr><tr><th scope=\"row\">処理能力</th><td>1,400個/時</td><td>1,000個/時</td><td>1,250個/時</td></tr><tr><th scope=\"row\">最大対応荷物寸法（mm）</th><td>600 × 450 × 300</td><td>550 × 430 × 190</td><td>520 × 380 × 220</td></tr><tr><th scope=\"row\">読取方式</th><td>上部スキャン／ハンディスキャン</td><td>上部スキャン／ハンディスキャン</td><td>上部スキャン／ハンディスキャン</td></tr><tr><th scope=\"row\">対応荷物重量範囲</th><td>30–5,000 g</td><td>30–5,000 g</td><td>50–5,000 g</td></tr><tr><th scope=\"row\">運転速度</th><td>最大 2.5 m/s</td><td>最大 2 m/s</td><td>最大 2 m/s</td></tr></tbody></table></div><p class=\"small\">掲載値は会社パンフレットに記載された標準仕様です。実際の処理能力は、荷物の寸法・重量、投入条件、仕分け先数、ライン構成により異なります。設備寸法には、保守点検・作業に必要なスペースを含みません。</p></section>",
+    "extra": "<section class=\"brochure-specs\"><h2>つばめちゃん家族｜3モデルの標準仕様</h2><div class=\"table-scroll\" role=\"region\" tabindex=\"0\" aria-label=\"つばめちゃん 標準仕様比較\"><table class=\"spec-table\"><caption>つばめちゃん 標準仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">T-M-48-J</th><th scope=\"col\">T-SL-50-J</th><th scope=\"col\">T-SL-60-J</th></tr></thead><tbody><tr><th scope=\"row\">寸法（mm）</th><td>6420 × 1870 × 2300</td><td>3859 × 1000 × 2369</td><td>4254 × 2115 × 2259</td></tr><tr><th scope=\"row\">仕分け間口数</th><td>48</td><td>40–50</td><td>48–60</td></tr><tr><th scope=\"row\">処理能力</th><td>1,600個/時間</td><td>1,000個/時間</td><td>1,250個/時間</td></tr><tr><th scope=\"row\">最大対応荷物寸法（mm）</th><td>600 × 450 × 300</td><td>550 × 430 × 190</td><td>520 × 380 × 220</td></tr><tr><th scope=\"row\">読取方式</th><td>上部スキャン／ハンディスキャン</td><td>上部スキャン／ハンディスキャン</td><td>上部スキャン／ハンディスキャン</td></tr><tr><th scope=\"row\">対応荷物重量範囲</th><td>30–5,000 g</td><td>30–5,000 g</td><td>50–5,000 g</td></tr><tr><th scope=\"row\">運転速度</th><td>最大 2.5 m/s</td><td>最大 2 m/s</td><td>最大 2 m/s</td></tr></tbody></table></div><p class=\"small\">掲載値は会社パンフレットに記載された標準仕様です。実際の処理能力は、荷物の寸法・重量、投入条件、仕分け先数、ライン構成により異なります。設備寸法には、保守点検・作業に必要なスペースを含みません。</p></section>",
     "width": 1536,
     "height": 1024,
     "specificationNote": "掲載値は会社パンフレットに記載された標準仕様です。実際の処理能力は、荷物の寸法・重量、投入条件、仕分け先数、ライン構成により異なります。設備寸法には、保守点検・作業に必要なスペースを含みません。"
@@ -115,7 +115,7 @@
     "name": "つばめちゃん SLシリーズ",
     "model": "T-SL-50-J / T-SL-60-J",
     "image": "",
-    "description": "設置スペースに応じて選定できる、省スペース型仕分けシステムのSLシリーズです。標準仕様は、T-SL-50-Jが40〜50間口・1,000個/時、T-SL-60-Jが48〜60間口・1,250個/時です。",
+    "description": "設置スペースに応じて選定できる、省スペース型仕分けシステムのSLシリーズです。標準仕様は、T-SL-50-Jが40〜50間口・1,000個/時間、T-SL-60-Jが48〜60間口・1,250個/時間です。",
     "specs": [
       [
         "型式",
@@ -149,7 +149,7 @@
       ]
     ],
     "legacy": true,
-    "extra": "<section class=\"brochure-specs\"><h2>つばめちゃん家族｜3モデルの標準仕様</h2><div class=\"table-scroll\" role=\"region\" tabindex=\"0\" aria-label=\"つばめちゃん 標準仕様比較\"><table class=\"spec-table\"><caption>つばめちゃん 標準仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">T-M-48-J</th><th scope=\"col\">T-SL-50-J</th><th scope=\"col\">T-SL-60-J</th></tr></thead><tbody><tr><th scope=\"row\">寸法（mm）</th><td>6420 × 1870 × 2300</td><td>3859 × 1000 × 2369</td><td>4254 × 2115 × 2259</td></tr><tr><th scope=\"row\">仕分け間口数</th><td>48</td><td>40–50</td><td>48–60</td></tr><tr><th scope=\"row\">処理能力</th><td>1,400個/時</td><td>1,000個/時</td><td>1,250個/時</td></tr><tr><th scope=\"row\">最大対応荷物寸法（mm）</th><td>600 × 450 × 300</td><td>550 × 430 × 190</td><td>520 × 380 × 220</td></tr><tr><th scope=\"row\">読取方式</th><td>上部スキャン／ハンディスキャン</td><td>上部スキャン／ハンディスキャン</td><td>上部スキャン／ハンディスキャン</td></tr><tr><th scope=\"row\">対応荷物重量範囲</th><td>30–5,000 g</td><td>30–5,000 g</td><td>50–5,000 g</td></tr><tr><th scope=\"row\">運転速度</th><td>最大 2.5 m/s</td><td>最大 2 m/s</td><td>最大 2 m/s</td></tr></tbody></table></div><p class=\"small\">掲載値は会社パンフレットに記載された標準仕様です。実際の処理能力は、荷物の寸法・重量、投入条件、仕分け先数、ライン構成により異なります。設備寸法には、保守点検・作業に必要なスペースを含みません。</p></section>",
+    "extra": "<section class=\"brochure-specs\"><h2>つばめちゃん家族｜3モデルの標準仕様</h2><div class=\"table-scroll\" role=\"region\" tabindex=\"0\" aria-label=\"つばめちゃん 標準仕様比較\"><table class=\"spec-table\"><caption>つばめちゃん 標準仕様比較</caption><thead><tr><th scope=\"col\">項目</th><th scope=\"col\">T-M-48-J</th><th scope=\"col\">T-SL-50-J</th><th scope=\"col\">T-SL-60-J</th></tr></thead><tbody><tr><th scope=\"row\">寸法（mm）</th><td>6420 × 1870 × 2300</td><td>3859 × 1000 × 2369</td><td>4254 × 2115 × 2259</td></tr><tr><th scope=\"row\">仕分け間口数</th><td>48</td><td>40–50</td><td>48–60</td></tr><tr><th scope=\"row\">処理能力</th><td>1,600個/時間</td><td>1,000個/時間</td><td>1,250個/時間</td></tr><tr><th scope=\"row\">最大対応荷物寸法（mm）</th><td>600 × 450 × 300</td><td>550 × 430 × 190</td><td>520 × 380 × 220</td></tr><tr><th scope=\"row\">読取方式</th><td>上部スキャン／ハンディスキャン</td><td>上部スキャン／ハンディスキャン</td><td>上部スキャン／ハンディスキャン</td></tr><tr><th scope=\"row\">対応荷物重量範囲</th><td>30–5,000 g</td><td>30–5,000 g</td><td>50–5,000 g</td></tr><tr><th scope=\"row\">運転速度</th><td>最大 2.5 m/s</td><td>最大 2 m/s</td><td>最大 2 m/s</td></tr></tbody></table></div><p class=\"small\">掲載値は会社パンフレットに記載された標準仕様です。実際の処理能力は、荷物の寸法・重量、投入条件、仕分け先数、ライン構成により異なります。設備寸法には、保守点検・作業に必要なスペースを含みません。</p></section>",
     "width": 1536,
     "height": 1024,
     "specificationNote": "掲載値は会社パンフレットに記載された標準仕様です。実際の処理能力は、荷物の寸法・重量、投入条件、仕分け先数、ライン構成により異なります。設備寸法には、保守点検・作業に必要なスペースを含みません。",
@@ -165,7 +165,7 @@
     "specs": [
       [
         "単一ゾーンの仕分け能力",
-        "21,000個/時"
+        "21,000個/時間"
       ],
       [
         "最大走行速度",
@@ -197,7 +197,7 @@
     "specs": [
       [
         "仕分け能力",
-        "10,000個/時"
+        "10,000個/時間"
       ],
       [
         "最大走行速度",
@@ -229,7 +229,7 @@
     "specs": [
       [
         "仕分け能力",
-        "7,200個/時"
+        "7,200個/時間"
       ],
       [
         "最大走行速度",
@@ -261,7 +261,7 @@
     "specs": [
       [
         "仕分け能力",
-        "9,000個/時"
+        "9,000個/時間"
       ],
       [
         "最大走行速度",
@@ -381,7 +381,7 @@
     "specs": [
       [
         "分離能力",
-        "10,000個/時"
+        "10,000個/時間"
       ],
       [
         "最大搬送速度",
@@ -413,7 +413,7 @@
     "specs": [
       [
         "処理能力",
-        "4,000個/時"
+        "4,000個/時間"
       ],
       [
         "寸法計測精度",
