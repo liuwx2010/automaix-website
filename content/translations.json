@@ -2946,5 +2946,81 @@
   "株式会社Automaixを設立しました | AUTOMAIX": {
     "en": "Automaix Co., Ltd. has been established | AUTOMAIX",
     "zh": "Automaix株式会社正式成立 | AUTOMAIX"
+  },
+  "多段式仕分けスロットへ貨物を自動搬送し、受注単位・出荷拠点別に仕分け集積を行う三次元立体仕分けシステムです。キャリッジ仕様及び投入フローの構成に基づき、全5機種の中から運用仕様に適したモデルを選定可能です。": {
+    "en": "This three-dimensional sorting system automatically conveys parcels to multi-level sorting slots and consolidates them by order or shipping location. Five models are available to match operational requirements through different carriage specifications and induction configurations.",
+    "zh": "该三维立体分拣系统将货物自动输送至多层分拣格口，按订单或发货地点进行分拣集货。可根据载具规格及供件流程配置，从五款机型中选择适合运营需求的型号。"
+  },
+  "なお、実稼働処理能力については、貨物外形寸法・積載重量、投入サイクル条件、仕分けポイント数、ラインレイアウト構成等の各種運用パラメータにより変動いたします。": {
+    "en": "Actual operational throughput varies with parcel dimensions and weight, induction cycles, the number of sorting destinations, line layout and other operating parameters.",
+    "zh": "实际运行处理能力会随货物外形尺寸与重量、供件周期、分拣点数量、线路布局等运行参数而变化。"
+  },
+  "半自動投入方式は、底面の安定した中小型貨物の処理に適しており、直角投入方式は多様な荷姿の貨物に柔軟に対応いたします。": {
+    "en": "Semi-automatic induction suits small and medium parcels with stable bases, while right-angle induction flexibly accommodates a variety of parcel shapes.",
+    "zh": "半自动供件方式适用于底面稳定的中小型货物，直角供件方式可灵活适应多种货物形态。"
+  },
+  "キャリッジについては、標準タイプ・横桟付きタイプ・サイドガード付きタイプの3仕様から選定可能であり、取り扱い対象貨物の特性に応じた仕様カスタマイズにも完全対応いたします。": {
+    "en": "Carriages are available in three specifications: standard, crossbar-equipped and side-guard-equipped. Customization of the specifications is fully supported to suit the characteristics of the parcels handled.",
+    "zh": "载具可从标准型、带横杆型和带侧护栏型三种规格中选择，并全面支持根据所处理货物的特性进行规格定制。"
+  },
+  "5機種から選べる処理能力・キャリッジ構成": {
+    "en": "Five throughput and carriage configurations",
+    "zh": "五款机型的处理能力与载具配置"
+  },
+  "Sシリーズは1支柱あたりキャリッジ1台、Dシリーズは2台を搭載。単一ゾーンの最大仕分け能力は、機種により7,200〜17,280個/時です。": {
+    "en": "The S series has one carriage per column, while the D series has two. Maximum single-zone throughput ranges from 7,200 to 17,280 items/hour, depending on the model.",
+    "zh": "S系列每根立柱搭载一台载具，D系列搭载两台。单区域最大分拣能力因机型而异，为每小时7,200至17,280件。"
+  },
+  "半自動・直角・手動の投入方式": {
+    "en": "Semi-automatic, right-angle and manual induction",
+    "zh": "半自动、直角及手动供件方式"
+  },
+  "S01・D01は半自動投入、S02・D02は直角投入、S03は手動投入に対応し、運用フローに応じた機種選定が可能です。": {
+    "en": "S01 and D01 use semi-automatic induction, S02 and D02 use right-angle induction, and S03 uses manual induction, allowing selection to match the operating workflow.",
+    "zh": "S01、D01采用半自动供件，S02、D02采用直角供件，S03采用手动供件，可根据运营流程选择机型。"
+  },
+  "0.1〜10 kgの貨物と3種類のキャリッジ": {
+    "en": "0.1–10 kg parcels and three carriage options",
+    "zh": "支持0.1至10 kg货物及三种载具规格"
+  },
+  "全機種で0.1〜10 kgの貨物に対応。標準・横桟付き・サイドガード付きの3仕様から、貨物特性に応じてキャリッジを選定できます。": {
+    "en": "All models handle parcels weighing 0.1–10 kg. Standard, crossbar-equipped and side-guard-equipped carriages can be selected to suit parcel characteristics.",
+    "zh": "全机型均支持0.1至10 kg货物，可根据货物特性选择标准型、带横杆型或带侧护栏型载具。"
+  },
+  "サーボ駆動・DC48V給電": {
+    "en": "Servo drives and DC48V power supply",
+    "zh": "伺服驱动与DC48V供电"
+  },
+  "昇降には一体型サーボモータ、仕分けにはサーボ電動ローラを採用。DC48Vの接触／非接触給電、赤外線／漏洩同軸ケーブル通信に対応します。": {
+    "en": "An integrated servo motor drives vertical motion, while servo motorized rollers perform sorting. DC48V contact or contactless power and infrared or leaky-coaxial-cable communication are supported.",
+    "zh": "升降采用一体式伺服电机，分拣采用伺服电动滚筒。支持DC48V接触式或非接触式供电，以及红外或泄漏同轴电缆通信。"
+  },
+  "1支柱あたりキャリッジ1台搭載構造": {
+    "en": "Structure with one carriage per column",
+    "zh": "每根立柱搭载一台载具的结构"
+  },
+  "1支柱あたりキャリッジ2台搭載構造": {
+    "en": "Structure with two carriages per column",
+    "zh": "每根立柱搭载两台载具的结构"
+  },
+  "1支柱あたりキャリッジ1台搭載": {
+    "en": "One carriage per column",
+    "zh": "每根立柱搭载一台载具"
+  },
+  "1支柱あたりキャリッジ2台搭載": {
+    "en": "Two carriages per column",
+    "zh": "每根立柱搭载两台载具"
+  },
+  "S：1支柱あたりキャリッジ1台搭載 / D：1支柱あたりキャリッジ2台搭載": {
+    "en": "S: one carriage per column / D: two carriages per column",
+    "zh": "S：每根立柱搭载一台载具 / D：每根立柱搭载两台载具"
+  },
+  "Sシリーズ 1支柱あたりキャリッジ1台搭載構造": {
+    "en": "S series: structure with one carriage per column",
+    "zh": "S系列：每根立柱搭载一台载具的结构"
+  },
+  "Dシリーズ 1支柱あたりキャリッジ2台搭載構造": {
+    "en": "D series: structure with two carriages per column",
+    "zh": "D系列：每根立柱搭载两台载具的结构"
   }
 }
