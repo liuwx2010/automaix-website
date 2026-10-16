@@ -48,7 +48,7 @@
   languagePicker?.addEventListener('toggle', () => { if (languagePicker.open) closeMenu(); });
   document.addEventListener('click', e => { if (languagePicker && !e.target.closest('.language-picker')) languagePicker.open = false; });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && languagePicker?.open) { languagePicker.open = false; languagePicker.querySelector('summary').focus(); } });
-  matchMedia('(min-width:801px)').addEventListener('change', e => { if (e.matches) closeMenu(); });
+  matchMedia('(min-width:1101px)').addEventListener('change', e => { if (e.matches) closeMenu(); });
 
   const tabs = [...document.querySelectorAll('[data-category]')];
   const panels = [...document.querySelectorAll('.product-category')];

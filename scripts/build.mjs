@@ -11,7 +11,7 @@ for(const id of ['sortermn3','omakase'])for(const locale of ['','en/','zh/'])awa
 const pages = JSON.parse(await read('content/pages.json'));
 const version = async file => createHash('sha256').update(await read(file)).digest('hex').slice(0,12);
 const shell = (await read('templates/page.html')).replace('href="styles.css"',`href="styles.css?v=${await version('styles.css')}"`).replace('src="app.js"',`src="app.js?v=${await version('app.js')}"`);
-const groups = [['robot','3D仕分け'],['sorters','ソーター'],['conveyors','搬送設備'],['identification','投入・計測・識別'],['peripherals','周辺機器']];
+const groups = [['robot','3D仕分け'],['sorters','ソーター'],['conveyors','搬送設備'],['identification','投入・計測・識別'],['peripherals','その他']];
 const escape = value => String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
 const url = file => `https://www.automaix.co.jp/${file === 'index.html' ? '' : file}`;
 const render = async (file, title, description, body, schema) => {

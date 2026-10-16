@@ -418,3 +418,90 @@ html[lang="ja"] .brand-introduction-copy p{font-size:1rem;line-height:1.9}
 @media(max-width:1000px) and (min-width:801px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}.steps li:nth-child(2)::after{display:none}}
 @media(max-width:800px){.steps h3{min-height:0}.steps li{padding:22px}.steps li:nth-child(2)::after{display:none}#news .news-item{grid-template-columns:100px minmax(0,1fr);gap:10px 16px;padding:22px 52px 22px 20px}#news .news-item h3{grid-column:1/-1}#news .news-item a::after{right:20px}#news .news-tabs{gap:6px 18px}.detail-intro>.product-image-placeholder{min-height:220px}}
 @media(max-width:540px){.steps li{padding:22px 22px 24px}.steps li:not(:last-child)::after{display:none}.step-illustration{width:80px;height:80px;float:right;margin:-32px 0 16px 16px}.step-illustration svg{width:54px;height:54px}.steps h3{clear:both}#news .news-tabs{gap:4px 14px}#news .news-tabs button{font-size:.8125rem}#news .news-item h3{font-size:.9375rem}}
+
+/* Shared phone/tablet layout: generous controls, readable forms and contained tables. */
+:where(.container,.contact-grid,.detail-intro,.two-grid,.product-grid,.partner-quality)>*{min-width:0}
+@media(max-width:1100px){
+ html[lang]{font-size:16px;scroll-padding-top:86px;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+ main{padding-top:70px}
+ .header-top{display:none}
+ html[lang] .header-main{display:grid;grid-template-columns:minmax(0,1fr) auto auto;gap:12px;height:70px}
+ .hamburger{display:flex;width:44px;min-width:44px;height:44px}
+ .main-nav{display:none;position:absolute;top:70px;left:0;right:0;padding:12px 24px 20px;max-height:calc(100dvh - 70px);overflow:auto;overscroll-behavior:contain;background:#fff;box-shadow:0 12px 22px #003d5c15;list-style:none}
+ .main-nav.open{display:block}
+ html[lang] .main-nav a{display:flex;align-items:center;min-height:48px;padding:10px 4px;font-size:1rem;border-bottom:1px solid #edf2f5}
+ .language-picker>summary{display:flex;align-items:center;min-height:44px;padding:8px 10px;font-size:.8125rem}
+ .language-options a{display:flex;align-items:center;min-height:44px}
+ .contact-grid{grid-template-columns:minmax(0,1fr);gap:32px}
+ .contact-grid input:not([type=checkbox]),.contact-grid select,.contact-grid textarea{font-size:1rem;min-height:48px}
+ .contact-grid textarea{min-height:150px}
+ .btn,.product-tabs button,.news-tabs button{min-height:44px;white-space:normal}
+ .company-jump a,.site-footer a:not(.footer-logo){min-height:44px;display:flex;align-items:center}
+ .product-body>.text-link,.movie-card a{display:flex;align-items:center;min-height:44px}
+ .table-scroll,.putwall-table-wrap{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}
+ .table-scroll:has(thead th:nth-child(3))::before,.putwall-table-wrap::before{content:'表は左右にスクロールできます';display:block;font-size:.8125rem;line-height:1.7;color:var(--text-light);margin-bottom:10px}
+ html[lang=en] .table-scroll:has(thead th:nth-child(3))::before,html[lang=en] .putwall-table-wrap::before{content:'Swipe sideways to view the table'}
+ html[lang=zh-CN] .table-scroll:has(thead th:nth-child(3))::before,html[lang=zh-CN] .putwall-table-wrap::before{content:'左右滑动查看完整表格'}
+ .table-scroll:has(thead th:nth-child(3)) table,.putwall-table-wrap table{min-width:620px}
+ .spec-table td,.profile-table td{overflow-wrap:anywhere}
+ .steps h3{min-height:0}
+ .steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .steps li:nth-child(2)::after{display:none}
+ #news .news-item h3 a{display:flex;align-items:center;min-height:44px}
+ section[id],article[id],details[id],#company,#manufacturing-partner,#partner-projects,#partner-support,#company-history,#putwall{scroll-margin-top:16px}
+ .motion-toggle{min-height:44px;min-width:44px}
+ .footer-grid{gap:24px}
+}
+@media(min-width:601px) and (max-width:1100px){
+ .container{width:calc(100% - 48px)}
+ .product-grid,.factory-gallery,.partner-case-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .two-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .contact-grid .form-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .partner-metrics{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:24px}
+ html[lang=en] .partner-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .partner-metrics dd{white-space:normal}
+ .partner-quality{grid-template-columns:minmax(0,1fr)}
+ .company-summary dl>div{grid-template-columns:minmax(0,1fr)}
+ .company-summary>div{padding:24px}
+}
+@media(max-width:900px){.detail-intro{grid-template-columns:minmax(0,1fr);gap:24px}.detail-intro>img{max-height:400px}}
+@media(max-width:600px){
+ .container{width:calc(100% - 32px)}
+ .section{padding-block:44px}
+ html[lang] .header-main{gap:8px}
+ .logo img{width:clamp(128px,38vw,160px);height:46px}
+ .language-picker>summary{font-size:.75rem;padding-inline:8px}
+ .product-grid,.two-grid,.steps,.contact-grid .form-row{grid-template-columns:minmax(0,1fr)}
+ .steps li:not(:last-child)::after{display:none}
+ .hero-content{padding-block:40px}
+ .hero-actions{max-width:none}
+ .hero-actions .btn{white-space:normal;padding-inline:14px}
+ .section-heading h2,.partner-heading h3{overflow-wrap:anywhere}
+ .product-tabs{gap:8px}
+ .product-tabs button{padding:10px 8px;line-height:1.6}
+ .contact-grid .form-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+ .contact-grid .form-actions .btn{width:100%}
+ #download-form{padding:20px 16px}
+ .contact-address a{overflow-wrap:anywhere}
+ .company-jump{gap:6px 20px;padding-bottom:20px}
+ .partner-quality,.partner-support,.detail-consult{padding:20px 16px}
+ .company .profile-table tr{grid-template-columns:96px minmax(0,1fr)}
+ .company .profile-table td{line-height:1.8}
+ .putwall-detail summary{padding:16px;font-size:1rem;line-height:1.75}
+ .putwall-detail-body{padding:16px 12px}
+ .brand-concept{max-width:min(300px,90%)}
+ .partner-case-grid img{height:auto;aspect-ratio:16/10}
+ .factory-gallery{gap:12px}
+ .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}
+ .footer-grid>div:first-child{grid-column:1/-1}
+ .site-mascot{width:40px;height:48px}
+}
+@media(max-width:360px){
+ html[lang] .hero h1{font-size:1.125rem;line-height:1.7}
+ .hero-content{padding-block:32px}
+ .page-title h1{font-size:1.5rem}
+ html[lang] .company .profile-table tr{grid-template-columns:minmax(0,1fr)}
+ .company .profile-table tbody th{border-bottom:0;padding-bottom:4px}
+ .company .profile-table td{padding-top:4px}
+ #news .news-item{padding:18px 42px 18px 16px;gap:8px 10px}
+}

@@ -49,7 +49,7 @@
   },
   {
     "file": "news-1.html",
-    "title": "3D仕分けシステム（種まき方式）の製品情報",
+    "title": "3D仕分けシステム（種まき方式）の製品情報を公開しました",
     "description": "種まき方式によるオーダー別集約に対応したおまかせくんをご紹介します。モデル別の仕様、投入方式、設備構成は、各製品ページをご参照ください。",
     "schema": {
       "@context": "https://schema.org",
@@ -97,7 +97,7 @@
   },
   {
     "file": "news-3.html",
-    "title": "株式会社Automaix 設立のお知らせ",
+    "title": "株式会社Automaixを設立しました",
     "description": "2026年9月18日、株式会社Automaixを設立しました。所在地、代表者、事業内容等の詳細は、会社概要をご参照ください。",
     "schema": {
       "@context": "https://schema.org",
