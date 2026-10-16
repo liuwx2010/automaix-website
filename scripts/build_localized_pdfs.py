@@ -49,7 +49,7 @@ for locale in ['en','zh']:
     def furniture(canvas,doc):
         canvas.saveState();canvas.setFillColor(blue);canvas.rect(0,285*mm,210*mm,12*mm,fill=1,stroke=0);canvas.setFillColor(white);canvas.setFont('Helvetica',8);canvas.drawString(18*mm,289*mm,'AUTOMAIX  /  2026.10  /  '+locale.upper());canvas.setFillColor(grey);canvas.setFont('Helvetica',7);canvas.drawString(18*mm,11*mm,'www.automaix.co.jp   |   info@automaix.co.jp   |   +81-50-6864-1858');canvas.drawRightString(192*mm,11*mm,str(doc.page));canvas.restoreState()
     def build(file,story,title):
-        folder=repo/('private/brochures' if file.startswith('company-brochure-') else 'downloads')
+        folder=repo/'private/brochures'
         folder.mkdir(parents=True,exist_ok=True)
         document=SimpleDocTemplate(str(folder/file),pagesize=(210*mm,297*mm),leftMargin=18*mm,rightMargin=18*mm,topMargin=24*mm,bottomMargin=23*mm,title=title,author='Automaix Co., Ltd.')
         document.build(story,onFirstPage=furniture,onLaterPages=furniture)

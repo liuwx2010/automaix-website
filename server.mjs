@@ -15,12 +15,12 @@ export function mailerFromEnvironment(env=process.env){
     disableFileAccess:true,disableUrlAccess:true});
   return async data=>{
     const result=await transport.sendMail({from:env.SMTP_FROM,to:recipient,replyTo:data.email,
-      subject:'[AUTOMAIX] 公司资料下载登记 / Company brochure request',
-      text:`公司 / Company: ${data.company}\n姓名 / Name: ${data.name}\n邮箱 / Email: ${data.email}\n电话 / Phone: ${data.phone||'-'}\n资料语言 / Language: ${data.locale}\n登记时间 / UTC: ${new Date().toISOString()}\n用途: 公司资料提供与相关业务联系。已同意个人信息处理说明。`});
+      subject:'[AUTOMAIX] 資料ダウンロード登録 / Document download request',
+      text:`公司 / Company: ${data.company}\n姓名 / Name: ${data.name}\n邮箱 / Email: ${data.email}\n电话 / Phone: ${data.phone||'-'}\n资料 / Document: ${data.documentType==='product-guide'?'3D sorting product guide':'Company introduction'}\n资料语言 / Language: ${data.locale}\n登记时间 / UTC: ${new Date().toISOString()}\n用途: 公司资料提供与相关业务联系。已同意个人信息处理说明。`});
     if(!result.accepted?.some(address=>String(address).toLowerCase()===recipient))throw Error('Mail not accepted');
   };
 }
-export function createWebsiteServer({sendRegistration=mailerFromEnvironment(),origin=process.env.PUBLIC_ORIGIN,secureCookie=process.env.COOKIE_SECURE==='true',now=Date.now}={}){
+export function createWebsiteServer({sendRegistration=mailerFromEnvironment(),origin=process.env.PUBLIC_ORIGIN,secureCookie=process.env.COOKIE_SECURE==='true',now=Date.now,documentRoot=resolve(root,'private/brochures')}={}){
   const grants=new Map(), attempts=new Map();
   const lifetime=10*60*1000;
   const json=(res,status,data)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8'});res.end(JSON.stringify(data));};
@@ -33,6 +33,15 @@ export function createWebsiteServer({sendRegistration=mailerFromEnvironment(),or
         res.setHeader('Cache-Control','no-store, private');
         for(const [key,value] of grants)if(value.expires<=now())grants.delete(key);
         for(const [key,value] of attempts)if(value.expires<=now())attempts.delete(key);
+        if(path==='/api/download-status'&&req.method==='GET'){
+          const locale=new URL(req.url,'http://localhost').searchParams.get('locale');
+          if(!['ja','en','zh'].includes(locale))return json(res,400,{error:'validation'});
+          const available=[];
+          if(sendRegistration)for(const [type,name] of [['company','company-brochure-2026'],['product-guide','product-catalog-3d']]){
+            try{await stat(resolve(documentRoot,`${name}${locale==='ja'?'':'-'+locale}.pdf`));available.push(type);}catch{}
+          }
+          return json(res,200,{available});
+        }
         if(path==='/api/company-download'&&req.method==='POST'){
           const expectedOrigin=origin||`http://${req.headers.host}`;
           if(req.headers.origin!==expectedOrigin)return json(res,403,{error:'origin'});
@@ -48,23 +57,26 @@ export function createWebsiteServer({sendRegistration=mailerFromEnvironment(),or
           const raw=Buffer.concat(chunks).toString('utf8');
           let data;try{data=JSON.parse(raw);}catch{return json(res,400,{error:'validation'});}
           const clean=(key,max)=>typeof data?.[key]==='string'&&data[key].trim().length<=max&&!/[\x00-\x1f\x7f]/.test(data[key])?data[key].trim():'';
-          const entry={company:clean('company',150),name:clean('name',100),email:clean('email',254),phone:clean('phone',50),locale:data?.locale};
-          if(!entry.company||!entry.name||!entry.email||!/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(entry.email)||!['ja','en','zh'].includes(entry.locale)||data.consent!==true||data.website)return json(res,400,{error:'validation'});
+          const entry={company:clean('company',150),name:clean('name',100),email:clean('email',254),phone:clean('phone',50),locale:data?.locale,documentType:data?.documentType??'company'};
+          if(!entry.company||!entry.name||!entry.email||!/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/.test(entry.email)||!['ja','en','zh'].includes(entry.locale)||!['company','product-guide'].includes(entry.documentType)||data.consent!==true||data.website)return json(res,400,{error:'validation'});
           if(!sendRegistration)return json(res,503,{error:'unavailable'});
+          const fileName=`${entry.documentType==='product-guide'?'product-catalog-3d':'company-brochure-2026'}${entry.locale==='ja'?'':'-'+entry.locale}.pdf`;
+          try{await stat(resolve(documentRoot,fileName));}catch{return json(res,503,{error:'unavailable'});}
           // Issue a grant only after the company's mail server accepts the registration.
           try{await sendRegistration(entry);}catch{return json(res,502,{error:'delivery'});}
           if(grants.size>=10000)return json(res,503,{error:'unavailable'});
           const token=randomBytes(32).toString('hex');
-          grants.set(token,{locale:entry.locale,expires:now()+lifetime});
+          grants.set(token,{locale:entry.locale,documentType:entry.documentType,expires:now()+lifetime});
           res.setHeader('Set-Cookie',`automaix_brochure=${token}; HttpOnly; SameSite=Strict; Path=/api/; Max-Age=600${secureCookie?'; Secure':''}`);
-          return json(res,200,{download:'/api/company-file'});
+          return json(res,200,{download:entry.documentType==='product-guide'?'/api/product-guide-file':'/api/company-file'});
         }
-        if(path==='/api/company-file'&&req.method==='GET'){
+        if(['/api/company-file','/api/product-guide-file'].includes(path)&&req.method==='GET'){
           const token=(req.headers.cookie||'').split(';').map(s=>s.trim()).find(s=>s.startsWith('automaix_brochure='))?.split('=')[1];
           const grant=grants.get(token);
-          if(!grant)return json(res,403,{error:'registration_required'});
-          const filename=`company-brochure-2026${grant.locale==='ja'?'':'-'+grant.locale}.pdf`;
-          const file=await readFile(resolve(root,'private/brochures',filename));
+          const documentType=path==='/api/product-guide-file'?'product-guide':'company';
+          if(!grant||grant.documentType!==documentType)return json(res,403,{error:'registration_required'});
+          const filename=`${documentType==='product-guide'?'product-catalog-3d':'company-brochure-2026'}${grant.locale==='ja'?'':'-'+grant.locale}.pdf`;
+          const file=await readFile(resolve(documentRoot,filename));
           res.writeHead(200,{'Content-Type':'application/pdf','Content-Disposition':`attachment; filename="${filename}"`});return res.end(file);
         }
         return json(res,404,{error:'not_found'});
@@ -74,8 +86,7 @@ export function createWebsiteServer({sendRegistration=mailerFromEnvironment(),or
       // An explicit public route list also protects SMTP settings, source files and brochure originals.
       const publicPage=/^\/(?:en\/|zh\/)?[a-z0-9-]+\.html$/.test(pathname);
       const publicAsset=/^\/(?:images|videos)\/[a-zA-Z0-9_.-]+$/.test(pathname);
-      const publicGuide=/^\/downloads\/product-catalog-3d(?:-en|-zh)?\.pdf$/.test(pathname);
-      if(!publicPage&&!publicAsset&&!publicGuide&&!['/app.js','/styles.css','/robots.txt','/sitemap.xml'].includes(pathname)){res.writeHead(404);return res.end('Not found');}
+      if(!publicPage&&!publicAsset&&!['/app.js','/styles.css','/robots.txt','/sitemap.xml'].includes(pathname)){res.writeHead(404);return res.end('Not found');}
       const file=resolve(root,'.'+pathname);
       const meta=await stat(file);
       const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.pdf':'application/pdf','.webp':'image/webp','.png':'image/png','.jpg':'image/jpeg','.mp4':'video/mp4','.xml':'application/xml','.txt':'text/plain'};

@@ -154,16 +154,26 @@
   }
 })();
 
-// Company brochure registration: the server alone grants access after SMTP acceptance.
+// Document download registration: the server alone grants access after SMTP acceptance.
 (() => {
   const form=document.getElementById('download-form');if(!form)return;
   const locale=document.documentElement.lang==='zh-CN'?'zh':document.documentElement.lang;
   const labels={
-    ja:{busy:'登録内容を送信しています…',ready:'登録が完了しました。下のボタンから会社紹介PDFをダウンロードしてください（ダウンロード権限は10分間有効です）。',download:'会社紹介PDFをダウンロード',failed:'登録内容を送信できませんでした。入力内容は画面上に保持されています。時間をおいて、再度お試しください。',unavailable:'現在、資料のダウンロード登録をご利用いただけません。info@automaix.co.jpまでお問い合わせください。',rate:'送信回数が上限に達しました。15分後に、再度お試しください。',invalid:'必須項目、メールアドレスの形式、および個人情報の利用に関する同意欄をご確認ください。'},
-    en:{busy:'Sending your registration…',ready:'Registration complete. Download the brochure below within 10 minutes.',download:'Download company brochure PDF',failed:'We could not send your registration. Your entries are still here. Please try again shortly.',unavailable:'The registration service is being set up. Please contact info@automaix.co.jp.',rate:'Too many attempts. Please try again in 15 minutes.',invalid:'Please check required fields, your email and the consent checkbox.'},
-    zh:{busy:'正在提交登记…',ready:'登记成功，请点击下方按钮下载公司资料（10 分钟内有效）。',download:'下载公司介绍 PDF',failed:'登记发送失败，填写内容已保留，请稍后重试。',unavailable:'登记服务正在配置中，请联系 info@automaix.co.jp 获取资料。',rate:'提交过于频繁，请 15 分钟后再试。',invalid:'请检查必填资料、邮箱格式，并勾选个人信息使用同意项。'}
+    ja:{busy:'登録内容を送信しています…',ready:'登録が完了しました。下のボタンから資料をダウンロードしてください（ダウンロード権限は10分間有効です）。',download:'資料をダウンロード',failed:'登録内容を送信できませんでした。入力内容は画面上に保持されています。時間をおいて、再度お試しください。',unavailable:'Webでの資料受付は現在準備中です。資料をご希望の方はinfo@automaix.co.jpまでお問い合わせください。',rate:'送信回数が上限に達しました。15分後に、再度お試しください。',invalid:'必須項目、メールアドレスの形式、および個人情報の利用に関する同意欄をご確認ください。'},
+    en:{busy:'Sending your registration…',ready:'Registration complete. Download your selected document below within 10 minutes.',download:'Download PDF',failed:'We could not send your registration. Your entries are still here. Please try again shortly.',unavailable:'Online document requests are being prepared. Please contact info@automaix.co.jp to request materials.',rate:'Too many attempts. Please try again in 15 minutes.',invalid:'Please check required fields, your email and the consent checkbox.'},
+    zh:{busy:'正在提交登记…',ready:'登记成功，请点击下方按钮下载所选资料（10 分钟内有效）。',download:'下载所选 PDF',failed:'登记发送失败，填写内容已保留，请稍后重试。',unavailable:'登记服务正在配置中，请联系 info@automaix.co.jp 获取资料。',rate:'提交过于频繁，请 15 分钟后再试。',invalid:'请检查必填资料、邮箱格式，并勾选个人信息使用同意项。'}
   }[locale];
+  const documentSelect=form.elements.namedItem('documentType');
+  if(new URLSearchParams(location.search).get('document')==='product-guide')documentSelect.value='product-guide';
   const status=document.getElementById('download-status'),file=document.getElementById('download-file'),button=form.querySelector('button[type="submit"]');
+  let available=new Set();
+  const updateAvailability=()=>{if(form.getAttribute('aria-busy')==='true')return;button.disabled=!available.has(documentSelect.value);status.textContent=button.disabled?labels.unavailable:'';};
+  documentSelect.addEventListener('change',updateAvailability);
+  updateAvailability();
+  fetch('/api/download-status?locale='+encodeURIComponent(locale),{credentials:'same-origin',cache:'no-store'})
+    .then(response=>response.ok?response.json():{available:[]})
+    .then(result=>{available=new Set(Array.isArray(result.available)?result.available:[]);updateAvailability();})
+    .catch(updateAvailability);
   let grantTimer;
   const expired={ja:'ダウンロード権限の有効期限が切れました。お手数ですが、再度ご登録ください。',en:'Your download permission has expired. Please submit the form again.',zh:'下载权限已过期，请重新提交登记。'}[locale];
   form.method='dialog';
@@ -172,19 +182,19 @@
   form.addEventListener('submit',async event=>{
     event.preventDefault();if(button.disabled||!form.reportValidity())return;
     clearTimeout(grantTimer);
-    const values=new FormData(form),body={locale,consent:values.get('consent')==='on'};
+    const values=new FormData(form),body={locale,documentType:values.get('documentType'),consent:values.get('consent')==='on'};
     for(const field of ['company','name','email','phone','website'])body[field]=String(values.get(field)||'').trim();
     if(!body.company||!body.name){status.textContent=labels.invalid;return;}
-    button.disabled=true;form.setAttribute('aria-busy','true');file.hidden=true;status.textContent=labels.busy;
+    button.disabled=true;documentSelect.disabled=true;form.setAttribute('aria-busy','true');file.hidden=true;status.textContent=labels.busy;
     const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),35000);
     try{
       const response=await fetch('/api/company-download',{method:'POST',headers:{'Content-Type':'application/json'},credentials:'same-origin',body:JSON.stringify(body),signal:controller.signal});
       if(!response.ok){status.textContent=response.status===429?labels.rate:response.status===503||response.status===404||response.status===501?labels.unavailable:response.status===400?labels.invalid:labels.failed;return;}
-      const result=await response.json();if(result.download!=='/api/company-file')throw Error('Unexpected download route');
+      const result=await response.json();if(result.download!==(body.documentType==='product-guide'?'/api/product-guide-file':'/api/company-file'))throw Error('Unexpected download route');
       file.href=result.download;file.textContent=labels.download;file.hidden=false;status.textContent=labels.ready;status.focus();
       grantTimer=setTimeout(()=>{file.hidden=true;status.textContent=expired;},600000);
     }catch{status.textContent=labels.failed;}
-    finally{clearTimeout(timeout);button.disabled=false;form.removeAttribute('aria-busy');}
+    finally{clearTimeout(timeout);documentSelect.disabled=false;button.disabled=!available.has(documentSelect.value);form.removeAttribute('aria-busy');}
   });
 })();
 

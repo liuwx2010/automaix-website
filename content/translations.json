@@ -2806,5 +2806,49 @@
   "通信事業者向けプロジェクト": {
     "en": "Telecom operator project",
     "zh": "电信运营商项目"
+  },
+  "登録後に製品ガイドをダウンロード →": {
+    "en": "Register to download the product guide →",
+    "zh": "登记后下载产品指南 →"
+  },
+  "必要事項をご入力・ご登録のうえ、ご希望の資料をダウンロードいただけます。": {
+    "en": "Complete the registration form to download your selected document.",
+    "zh": "填写并提交登记资料后，即可下载所选资料。"
+  },
+  "ダウンロード資料": {
+    "en": "Available documents",
+    "zh": "可下载资料"
+  },
+  "会社紹介PDFと、SorterMX-5・SorterMN-3の仕様を掲載した3D仕分け製品ガイドをご用意しています。": {
+    "en": "Choose our company introduction or the 3D sorting product guide with SorterMX-5 and SorterMN-3 specifications.",
+    "zh": "可选择公司介绍PDF，或介绍SorterMX-5、SorterMN-3规格的3D分拣产品指南。"
+  },
+  "ご希望の資料": {
+    "en": "Requested document",
+    "zh": "所需资料"
+  },
+  "会社紹介PDF": {
+    "en": "Company introduction PDF",
+    "zh": "公司介绍PDF"
+  },
+  "3D仕分け 製品ガイドPDF": {
+    "en": "3D sorting product guide PDF",
+    "zh": "3D分拣产品指南PDF"
+  },
+  "登録して資料をダウンロード": {
+    "en": "Register to download",
+    "zh": "登记后下载资料"
+  },
+  "資料のダウンロード登録": {
+    "en": "Document download registration",
+    "zh": "资料下载登记"
+  },
+  "資料のダウンロード登録では、会社名、氏名、メールアドレス、任意で入力された電話番号、選択した資料、および言語を、当社のメールアドレスinfo@automaix.co.jp宛てに送信します。これらの情報は、資料の提供および関連する業務連絡に利用します。登録メールがメールサーバーに受け付けられた後、10分間有効なダウンロード権限を付与します。権限の管理には、個人情報を含まないCookieを使用します。": {
+    "en": "For document download registration, your company, name, email, optional phone number, selected document and language are sent to info@automaix.co.jp. We use this information to provide materials and related business communications. Download access is granted for ten minutes after our mail server accepts the registration email. A cookie containing no personal information manages this access.",
+    "zh": "资料下载登记时，公司名称、姓名、邮箱、选填电话号码、所选资料和语言将发送至info@automaix.co.jp，用于提供资料及相关业务联系。登记邮件被邮件服务器接受后，将授予10分钟的下载权限，并通过不含个人信息的Cookie管理该权限。"
+  },
+  "資料ダウンロード | AUTOMAIX": {
+    "en": "Document downloads | AUTOMAIX",
+    "zh": "资料下载 | AUTOMAIX"
   }
 }
