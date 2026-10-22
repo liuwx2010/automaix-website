@@ -416,7 +416,7 @@
     "zh": "辅助设备"
   },
   "会社情報": {
-    "en": "Company information",
+    "en": "Company",
     "zh": "公司信息"
   },
   "日本法人・会社概要": {
@@ -3342,5 +3342,189 @@
   "品質検査及び検査報告に加え、お客様の要求基準に応じた教育・評価、実技訓練、不具合や課題の検証を実施し、作業の標準化と品質の安定化を図っております。": {
     "en": "In addition to quality inspections and inspection reports, we conduct training, assessments and practical exercises aligned with customer requirements, and investigate defects and issues to standardize work and maintain consistent quality.",
     "zh": "除质量检验及检验报告外，还根据客户要求开展教育、评价及实操培训，验证缺陷与课题，推进作业标准化与质量稳定化。"
+  },
+  "製品・ソリューション": {
+    "en": "Products & solutions",
+    "zh": "产品与解决方案"
+  },
+  "Automaixについて": {
+    "en": "About Automaix",
+    "zh": "关于Automaix"
+  },
+  "物流ソリューション": {
+    "en": "Logistics solutions",
+    "zh": "物流解决方案"
+  },
+  "Automaixの物流自動化": {
+    "en": "Logistics automation by Automaix",
+    "zh": "Automaix物流自动化"
+  },
+  "自社工場が手がけた物流搬送・仕分けシステム": {
+    "en": "A conveying and sorting system delivered by our factory",
+    "zh": "自有工厂承建的物流输送与分拣系统"
+  },
+  "自動化に、知能を。": {
+    "en": "Intelligence for automation.",
+    "zh": "以智能，赋能自动化。"
+  },
+  "未来に、より大きな可能性。": {
+    "en": "Greater possibilities for the future.",
+    "zh": "为未来，创造更多可能。"
+  },
+  "日本品質 × 中国製造 × AI技術": {
+    "en": "Japanese quality × Chinese manufacturing × AI",
+    "zh": "日本品质 × 中国制造 × AI技术"
+  },
+  "仕分け・搬送の自動化を、現場に合うかたちで。": {
+    "en": "Sorting and conveying automation built around your operations.",
+    "zh": "以适合现场的方式，实现分拣与输送自动化。"
+  },
+  "構想から設計・製造、導入後の運用支援まで。": {
+    "en": "From planning, design and manufacturing to operational support.",
+    "zh": "从构想到设计制造，以及导入后的运行支持。"
+  },
+  "物流ソリューションを見る": {
+    "en": "Explore our solutions",
+    "zh": "查看物流解决方案"
+  },
+  "設備導入のご相談": {
+    "en": "Discuss your project",
+    "zh": "设备导入咨询"
+  },
+  "搬送・仕分けシステムの導入事例": {
+    "en": "Conveying and sorting system installation",
+    "zh": "输送与分拣系统导入案例"
+  },
+  "メインビジュアルの切り替え": {
+    "en": "Select main visual",
+    "zh": "切换主视觉"
+  },
+  "搬送・仕分けシステムの導入事例を表示": {
+    "en": "Show conveying and sorting installation",
+    "zh": "显示输送与分拣系统案例"
+  },
+  "海外導入事例を表示": {
+    "en": "Show overseas installation",
+    "zh": "显示海外导入案例"
+  },
+  "おまかせくんのシステムを表示": {
+    "en": "Show the Omakase-kun system",
+    "zh": "显示おまかせくん系统"
+  },
+  "注目の製品・サービス": {
+    "en": "Featured products & services",
+    "zh": "精选产品与服务"
+  },
+  "処理能力と投入方式から選べる、5機種の立体仕分けシステム。": {
+    "en": "Five 3D sorting models to match throughput and induction requirements.",
+    "zh": "可按处理能力与投入方式选择的五款立体分拣机型。"
+  },
+  "限られたスペースを活かし、小口・多品種の仕分けを自動化。": {
+    "en": "Automate small-parcel, multi-item sorting in limited space.",
+    "zh": "充分利用有限空间，实现小件、多品种分拣自动化。"
+  },
+  "保守・技術支援": {
+    "en": "Maintenance & technical support",
+    "zh": "维护与技术支持"
+  },
+  "設備の導入から稼働後まで、現場の課題をご相談いただけます。": {
+    "en": "Discuss operational challenges with us, from installation through ongoing use.",
+    "zh": "从设备导入到投产运行，均可咨询现场课题。"
+  },
+  "設備の運用支援を表すイラスト": {
+    "en": "Illustration of equipment operational support",
+    "zh": "设备运行支持示意插图"
+  },
+  "現場の課題を、": {
+    "en": "Operational challenges.",
+    "zh": "从现场课题出发，"
+  },
+  "仕組みから変えていく。": {
+    "en": "System-level solutions.",
+    "zh": "通过系统实现改善。"
+  },
+  "荷物の特性、物量、作業動線に合わせて、仕分け・搬送・計測・識別の各設備を組み合わせます。人の作業と設備の役割を整理し、現場に適した自動化をご提案します。": {
+    "en": "We combine sorting, conveying, measurement and identification equipment around parcel characteristics, volumes and work routes. Defining the roles of people and equipment helps us propose automation suited to your operations.",
+    "zh": "根据货物特性、货量及作业动线，组合分拣、输送、测量与识别设备，梳理人员与设备的分工，提出符合现场需求的自动化方案。"
+  },
+  "多段式の3D仕分けシステム": {
+    "en": "Multi-level 3D sorting system",
+    "zh": "多层立体分拣系统"
+  },
+  "仕分け・オーダー別集約": {
+    "en": "Sorting & order consolidation",
+    "zh": "分拣与订单集货"
+  },
+  "3D仕分け・ソーター": {
+    "en": "3D sorting & sorters",
+    "zh": "立体分拣与分拣机"
+  },
+  "搬送ラインの導入事例": {
+    "en": "Conveying line installation",
+    "zh": "输送线导入案例"
+  },
+  "搬送工程の自動化": {
+    "en": "Conveying automation",
+    "zh": "输送工序自动化"
+  },
+  "コンベヤ・ライン接続": {
+    "en": "Conveyors & line integration",
+    "zh": "输送机与产线衔接"
+  },
+  "寸法計測・計量・識別システム": {
+    "en": "Dimensioning, weighing and identification system",
+    "zh": "尺寸测量、称重与识别系统"
+  },
+  "投入・計測・識別の連携": {
+    "en": "Integrated induction & identification",
+    "zh": "投入、测量与识别协同"
+  },
+  "単品分離・DWS・RFID": {
+    "en": "Singulation, DWS & RFID",
+    "zh": "单件分离、DWS与RFID"
+  },
+  "現場に寄り添う、": {
+    "en": "Your partner in",
+    "zh": "贴近现场的，"
+  },
+  "自動化のパートナー。": {
+    "en": "practical automation.",
+    "zh": "自动化合作伙伴。"
+  },
+  "日本の品質管理とサービス、中国の製造・開発体制をつなぎ、お客様の設備導入と運用を支えます。": {
+    "en": "Combining Japanese quality management and service with Chinese manufacturing and development, we support your equipment installation and operation.",
+    "zh": "连接日本的质量管理与服务及中国的制造研发体系，为客户的设备导入与运行提供支持。"
+  },
+  "会社情報を見る": {
+    "en": "Explore our company",
+    "zh": "查看公司信息"
+  },
+  "未来に、": {
+    "en": "For the future, ",
+    "zh": "为未来，"
+  },
+  "より大きな可能性。": {
+    "en": "greater possibilities.",
+    "zh": "创造更多可能。"
+  },
+  "多段式の仕分け間口へ荷物を自動搬送し、オーダー別・出荷先別に仕分け・集約する立体仕分けシステムです。キャリッジ構成と投入方式に応じて、5機種から運用要件に適したモデルを選定できます。": {
+    "en": "A 3D sorting system that automatically conveys parcels to multi-level outlets for sorting and consolidation by order or destination. Choose from five models to match carriage configuration, induction method and operating requirements.",
+    "zh": "将货物自动输送至多层分拣格口，按订单或出货目的地进行分拣集货的立体分拣系统。可根据载具配置、投入方式与运行需求，从五款机型中选择适合的型号。"
+  },
+  "実際の処理能力は、荷物の寸法・重量、投入条件、仕分け先数、ライン構成などの運用条件により異なります。": {
+    "en": "Actual throughput varies with parcel dimensions and weight, induction conditions, number of destinations, line configuration and other operating conditions.",
+    "zh": "实际处理能力因货物尺寸、重量、投入条件、分拣目的地数量、产线配置等运行条件而异。"
+  },
+  "処理能力・投入方式に応じた5機種": {
+    "en": "Five models to match throughput and induction requirements",
+    "zh": "按处理能力与投入方式选择的五款机型"
+  },
+  "半自動投入方式は底面が安定した中小型の荷物に適しています。直角投入方式は、さまざまな荷姿に対応します。": {
+    "en": "Semi-automatic induction suits small and medium parcels with stable bases. Right-angle induction accommodates a variety of parcel forms.",
+    "zh": "半自动投入方式适合底面稳定的中小型货物，直角投入方式适应多种货物形态。"
+  },
+  "キャリッジは、標準タイプ・横桟付きタイプ・サイドガード付きタイプの3仕様から選定できます。対象荷物の特性に応じた仕様のカスタマイズにも対応します。": {
+    "en": "Choose from standard, crossbar or side-guard carriages. Specifications can also be customized to suit parcel characteristics.",
+    "zh": "载具可选择标准型、带横杆型及带侧护栏型三种规格，也可根据货物特性定制规格。"
   }
 }
