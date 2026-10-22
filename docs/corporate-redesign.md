@@ -9,3 +9,5 @@ All existing product specifications and the supplied company quality/certificati
 Existing product tabs, news filters, language switching, email-draft preparation, registered-download availability handling, mascot links, modal videos and reduced-motion controls remain available. The main visual uses one user-supplied blueprint illustration; the previous three-image controls and JavaScript have been removed. Native navigation disclosures support touch and keyboard interaction.
 
 Validation: generated site checks, JavaScript syntax and diff checks; all 78 localized pages at 320px; representative pages at 768/1100/1280px and desktop navigation boundaries at 1101/1200/1440px; real product navigation and both mascot video dialogs. The 18 product specification arrays are unchanged.
+
+The main illustration now uses the supplied 1672 × 941 PNG byte-for-byte, with no recompression, fade, filter or overlay. The artwork is displayed at full width with its original aspect ratio; the headline and actions sit in a separate area below it.
