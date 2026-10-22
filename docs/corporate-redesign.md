@@ -10,4 +10,6 @@ Existing product tabs, news filters, language switching, email-draft preparation
 
 Validation: generated site checks, JavaScript syntax and diff checks; all 78 localized pages at 320px; representative pages at 768/1100/1280px and desktop navigation boundaries at 1101/1200/1440px; real product navigation and both mascot video dialogs. The 18 product specification arrays are unchanged.
 
-The main illustration now uses the supplied 1672 × 941 PNG byte-for-byte, with no recompression, fade, filter or overlay. The artwork is displayed at full width with its original aspect ratio; the headline and actions sit in a separate area below it.
+The main illustration now uses the supplied 1672 × 941 PNG byte-for-byte, with no recompression, fade, filter or overlay. The artwork is displayed at full width with its original aspect ratio; the headline and actions sit over the illustration in their original position, with text outlines for legibility and no image overlay.
+
+PICK UP contains the Omakase-kun and Tsubame-chan product entries only; the maintenance/technical-support entry has been removed from this section.
