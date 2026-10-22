@@ -58,20 +58,6 @@
   });
   document.addEventListener('click',event=>{if(!event.target.closest('.nav-disclosure'))navDisclosures.forEach(item=>item.open=false);});
   document.addEventListener('keydown',event=>{if(event.key==='Escape')navDisclosures.forEach(item=>{if(item.open){item.open=false;item.querySelector('summary').focus();}});});
-  const heroPhoto=document.querySelector('.hero-photo');
-  if(heroPhoto){
-    const heroBase=new URL('.',document.currentScript.src);
-    const captions=language==='en'?['Conveying and sorting system installation','Overseas installation','Omakase-kun / 3D sorting system']:language.startsWith('zh')?['输送与分拣系统导入案例','海外导入案例','おまかせくん / 立体分拣系统']:['搬送・仕分けシステムの導入事例','海外導入事例','おまかせくん / 3D仕分けシステム'];
-    const views=['project-vietnam-telecom.webp','project-spain-cainiao.webp','sortermx5-system.webp'];
-    document.querySelectorAll('[data-hero-view]').forEach(button=>button.addEventListener('click',()=>{
-      const index=Number(button.dataset.heroView);
-      heroPhoto.src=new URL('images/'+views[index],heroBase).href;
-      heroPhoto.alt=captions[index];
-      document.querySelector('[data-hero-caption]').textContent=captions[index];
-      document.querySelectorAll('[data-hero-view]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
-    }));
-  }
-
   const tabs = [...document.querySelectorAll('[data-category]')];
   const panels = [...document.querySelectorAll('.product-category')];
   const selectCategory = category => {
