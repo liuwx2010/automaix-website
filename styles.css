@@ -800,3 +800,19 @@ html[lang] .corporate-site .steps h3{font-size:1.05rem;line-height:1.75}
 @media(min-width:1101px){html[lang=en] .corporate-site .main-nav{gap:16px}html[lang=en] .corporate-site .main-nav>li>a,html[lang=en] .corporate-site .main-nav summary{font-size:.76rem}html[lang=en] .corporate-site .logo{flex-basis:180px}html[lang=en] .corporate-site .logo img{width:180px}}
 
 html[lang=ja] .corporate-site .corporate-hero .hero-title>span{word-break:keep-all;overflow-wrap:normal}
+
+/* Approved single blueprint visual replaces the three-image main visual. */
+.corporate-site .hero-blueprint{background:#f6fbff;color:var(--blueprint-deep)}
+.corporate-site .hero-blueprint .hero-photo{object-position:center center}
+.corporate-site .hero-blueprint .hero-media::after{background:linear-gradient(90deg,#ffffffed 0%,#ffffffc4 40%,#ffffff3d 72%,#ffffff0a 100%)}
+html[lang] .corporate-site .hero-blueprint .hero-title{color:var(--blueprint-deep)}
+.corporate-site .hero-blueprint .hero-kicker{color:#316886}
+.corporate-site .hero-blueprint .hero-human,html[lang] .corporate-site .hero-blueprint .hero-lead{color:var(--blueprint-deep)}
+.corporate-site .hero-blueprint .hero-description{color:#314e63}
+.corporate-site .hero-blueprint .hero-actions .btn-primary{color:#fff;background:var(--blueprint-deep);border-color:var(--blueprint-deep)}
+.corporate-site .hero-blueprint .hero-actions .btn-primary:hover{background:var(--blueprint)}
+.corporate-site .hero-blueprint .hero-text-link{color:var(--blueprint-deep);border-color:#406a8880}
+.corporate-site .hero-blueprint .hero-caption{border-color:#406a8838}
+.corporate-site .hero-blueprint .hero-scroll{color:var(--blueprint-deep)}
+@media(max-width:800px){.corporate-site .hero-blueprint .hero-media::after{background:linear-gradient(90deg,#fffffff0,#ffffffb8 70%,#ffffff80)}.corporate-site .hero-blueprint,.corporate-site .hero-blueprint .hero-content{min-height:660px}}
+@media(max-width:540px){.corporate-site .hero-blueprint .hero-photo{object-position:58% center}.corporate-site .hero-blueprint .hero-content{padding-bottom:72px}.corporate-site .hero-blueprint .hero-caption{display:none}}
